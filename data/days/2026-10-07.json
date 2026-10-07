@@ -1,0 +1,737 @@
+{
+ "date": "2026-10-07",
+ "label": "Streda 7. októbra 2026",
+ "shortLabel": "St 7. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Európa sa tento týždeň hlási o slovo: francúzsky Mistral ukázal svoj najväčší model a nemecký Aleph Alpha vydal model pre úrady. Google dal zadarmo malý model, ktorý beží priamo v telefóne, Claude sa usadil v Google Docs a v New Yorku sa pod prísahou riešilo, čo keď AI agent „ujde“ z testov. Bitcoin cez noc oslabil, veľké AI akcie držia.",
+ "highlights": [
+  "Mistral Large 4 – európsky model s biliónom parametrov, zatiaľ v skúšobnej verzii",
+  "EmbeddingGemma 2 – Google model na vyhľadávanie vo fotkách, zvuku a videu priamo v telefóne",
+  "Claude teraz funguje priamo v Google Docs, Sheets a Slides",
+  "Bitcoin −1,7 % na približne 84 100 $, AI akcie stabilné"
+ ],
+ "leadId": "mistral-large-4",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "mistral-large-4",
+     "title": "Francúzsky Mistral ukázal svoj doteraz najväčší model",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "eu",
+       "label": "Európsky model · Francúzsko"
+      },
+      {
+       "kind": "preview",
+       "label": "Skúšobná verzia"
+      },
+      {
+       "kind": "open",
+       "label": "Váhy do konca októbra"
+      }
+     ],
+     "keyFact": {
+      "value": "≈ 1 bilión",
+      "label": "parametrov, naraz pracuje 52 miliárd"
+     },
+     "body": [
+      "Francúzska firma Mistral v utorok spustila verejnú skúšobnú verziu modelu Mistral Large 4, ktorý si sami žartovne prezývajú „Le Chonk“ (voľne „ten veľký“). Je to ich najväčší a najschopnejší model: má približne bilión [[parametrov|parametre]], no pri každej odpovedi z nich naraz pracuje len zhruba 52 miliárd. Tejto stavbe sa hovorí [[MoE|moe]] a šetrí výpočtový výkon.",
+      "Model rozumie textu aj obrázkom a Mistral ho mieri hlavne na programovanie, [[AI agentov|agent]] a kybernetickú bezpečnosť. Zatiaľ sa dá vyskúšať len cez [[API|api]] v službe Mistral Studio. Samotné [[váhy|open-weights]], teda model na stiahnutie a spustenie na vlastných serveroch, sľubuje firma zverejniť do konca októbra.",
+      "Mistral zdôrazňuje, že model vytrénoval od nuly vo vlastných dátových centrách v Európe a že tréningové texty pokrývajú viac ako 160 jazykov vrátane všetkých úradných jazykov EÚ, teda aj slovenčiny."
+     ],
+     "whyItMatters": "Špičku AI dnes ovládajú americké firmy ako Anthropic, OpenAI a Google. Mistral je najväčšia európska nádej a model s otvorenými váhami si firmy či úrady môžu prevádzkovať u seba, bez závislosti od amerického cloudu. V nezávislom rebríčku Artificial Analysis má skúšobná verzia zatiaľ index 38,4, americká špička je okolo 52 až 58 (viac v sekcii Benchmarky).",
+     "terms": [
+      {
+       "key": "parametre",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil počas tréningu. Zhruba platí: viac parametrov = viac „vedomostí“, ale aj vyššia náročnosť. 1 bilión = 1 000 miliárd (anglicky 1T), 52 miliárd = 52B, 740 miliónov = 740M."
+      },
+      {
+       "key": "moe",
+       "term": "MoE (Mixture of Experts)",
+       "explain": "„Zmes expertov“. Model je rozdelený na veľa menších častí (expertov) a pri každej odpovedi zapne len tie, ktoré treba. Preto sa uvádzajú dve čísla: celková veľkosť a koľko parametrov je „aktívnych“ naraz. Menej aktívnych = rýchlejšie a lacnejšie."
+      },
+      {
+       "key": "open-weights",
+       "term": "Otvorené váhy (open weights)",
+       "explain": "Firma zverejní samotný natrénovaný model na stiahnutie. Ktokoľvek si ho potom môže spustiť na vlastnom počítači či serveri, upraviť ho a nemusí posielať dáta cudzej firme."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Programové rozhranie: spôsob, ako sa k modelu pripojí iná aplikácia alebo vývojár (platí sa zvyčajne za množstvo textu), namiesto chatovania na webe."
+      },
+      {
+       "key": "agent",
+       "term": "AI agent",
+       "explain": "AI, ktorá nielen odpovedá, ale sama vykonáva kroky: klikne na webe, spustí program, pošle formulár, a tak postupne dokončí úlohu."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Mistralu",
+       "href": "https://mistral.ai/news/mistral-large-4/"
+      },
+      {
+       "label": "Príspevok Mistralu na X",
+       "href": "https://x.com/MistralAI/status/2107457414387622310"
+      }
+     ]
+    },
+    {
+     "id": "embeddinggemma-2",
+     "title": "Google dal zadarmo malý model, ktorý v telefóne „pochopí“ text, fotky, zvuk aj video",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Zadarmo, aj na komerčné použitie"
+      },
+      {
+       "kind": "device",
+       "label": "Beží v telefóne"
+      }
+     ],
+     "keyFact": {
+      "value": "740 miliónov",
+      "label": "parametrov, zmestí sa do mobilu"
+     },
+     "body": [
+      "Google DeepMind v utorok zverejnil EmbeddingGemma 2. Nie je to chatbot, s ktorým sa rozprávate. Je to pomocný model, ktorý premení obsah (text, programový kód, obrázky, zvuk aj video) na číselné „odtlačky“, takzvané [[embeddingy|embedding]]. Veci s podobným významom dostanú podobné odtlačky, takže počítač rýchlo nájde, čo k sebe patrí.",
+      "Model je malý, má 740 miliónov parametrov, čo je zhruba tisíckrát menej ako Mistral Large 4. Preto beží priamo v telefóne alebo notebooku ([[on-device|on-device]]), bez posielania dát na internet. Google uvádza, že na telefóne Pixel mu stačí približne 191 MB pamäte pre text a okolo 567 MB pre všetky typy obsahu. V praxi tak napríklad nájde konkrétny úsek videa podľa hlasovej poznámky alebo prehľadá hodiny nahrávok podľa otázky napísanej textom.",
+      "Model je pod licenciou [[Apache 2.0|apache]], takže ho ktokoľvek môže zadarmo použiť aj vo firemnom produkte. Najväčší skok oproti predchodcovi spravil pri hľadaní v programovom kóde: v teste [[MTEB Code|mteb]] stúpol z 68,8 na 78,7 bodu."
+     ],
+     "whyItMatters": "Súkromie a rýchlosť: hľadanie vo vašich fotkách, nahrávkach či dokumentoch môže prebiehať priamo vo vašom zariadení. Je to stavebný kameň pre aplikácie typu „opýtaj sa svojich súborov“ ([[RAG|rag]]) aj pre AI asistentov na programovanie, ktorí potrebujú rýchlo nájsť správny kus kódu.",
+     "terms": [
+      {
+       "key": "embedding",
+       "term": "Embedding",
+       "explain": "Číselný „odtlačok“ významu. Napríklad fotka psa a veta „pes na lúke“ dostanú podobné čísla, takže ich vyhľadávanie spojí, aj keď sa v nich nevyskytuje rovnaké slovo."
+      },
+      {
+       "key": "on-device",
+       "term": "On-device",
+       "explain": "Výpočet prebieha priamo v zariadení (telefón, notebook), nie na serveri na internete. Výhody: súkromie, funguje aj offline, nízke oneskorenie."
+      },
+      {
+       "key": "apache",
+       "term": "Licencia Apache 2.0",
+       "explain": "Veľmi voľná licencia: model či kód môžete používať, upravovať a predávať v produkte, aj komerčne. Treba len uviesť pôvod a licenciu."
+      },
+      {
+       "key": "mteb",
+       "term": "MTEB Code",
+       "explain": "Štandardný test, ktorý meria, ako dobre embedding model nájde správny kus programového kódu. Vyššie skóre je lepšie."
+      },
+      {
+       "key": "rag",
+       "term": "RAG",
+       "explain": "Retrieval-Augmented Generation: AI si pred odpoveďou najprv vyhľadá relevantné časti vašich dokumentov a až potom odpovie. Vďaka tomu odpovedá podľa vašich dát, nie len z pamäte."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google",
+       "href": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
+      },
+      {
+       "label": "Google DeepMind na X",
+       "href": "https://x.com/GoogleDeepMind/status/2107502286758895878"
+      }
+     ]
+    },
+    {
+     "id": "openai-math",
+     "title": "OpenAI zverejnilo stovky matematických výsledkov od modelu, ktorý ešte nikto nevidel",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Model zatiaľ neverejný"
+      }
+     ],
+     "keyFact": {
+      "value": "372",
+      "label": "skupín matematických výsledkov"
+     },
+     "body": [
+      "OpenAI v utorok zverejnilo 372 skupín matematických výsledkov, ktoré vytvoril ich interný, zatiaľ neverejný [[špičkový model|frontier]]. Časť z nich je zapísaná v jazyku [[Lean|lean]], v ktorom počítač vie mechanicky skontrolovať, či je dôkaz naozaj správny.",
+      "Časopis Scientific American o tom píše ako o ďalšej vlne výsledkov pre obor, ktorý je z tempa AI „už v šoku“. Samotný model si zatiaľ nikto mimo OpenAI vyskúšať nemôže. Ide o ukážku schopností a o pokus, aby výsledky mohli matematici nezávisle overiť."
+     ],
+     "whyItMatters": "AI sa posúva od písania textov k skutočnému výskumu. Kľúčové je, že výsledky sú zverejnené a sčasti strojovo overiteľné, takže sa nedá len „veriť marketingu“.",
+     "terms": [
+      {
+       "key": "frontier",
+       "term": "Špičkový (frontier) model",
+       "explain": "Najschopnejší model, aký firma má, na hrane súčasných možností. Často ho najprv používa len interne."
+      },
+      {
+       "key": "lean",
+       "term": "Lean",
+       "explain": "Špeciálny jazyk na zápis matematických dôkazov. Počítač v ňom každý krok skontroluje, takže chybný dôkaz neprejde."
+      }
+     ],
+     "links": [
+      {
+       "label": "OpenAI",
+       "href": "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+      },
+      {
+       "label": "Scientific American",
+       "href": "https://www.scientificamerican.com/article/openai-unleashes-hundreds-more-math-results-upon-a-field-already-in-shock/"
+      },
+      {
+       "label": "OpenAI na X",
+       "href": "https://x.com/OpenAI/status/2107596713791767021"
+      }
+     ]
+    },
+    {
+     "id": "anthropic-cvp",
+     "title": "Anthropic otvára silnejšie modely overeným bezpečnostným expertom",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Kyberbezpečnosť"
+      }
+     ],
+     "body": [
+      "Anthropic, tvorca asistenta Claude, v utorok rozšíril Cyber Verification Program. Overení ľudia a tímy, ktoré chránia počítačové systémy, môžu dostať prístup k modelom Opus 5.5, Sonnet 5.5 a Mythos 5.1 so zmiernenými [[bezpečnostnými poistkami|safeguards]] pre kybernetické úlohy.",
+      "Program má tri úrovne: Defense pre obranné tímy, Red Team pre [[etických hackerov|red-team]], ktorí na objednávku útočia na systémy, aby našli slabiny, a Specialized pre špecializované tímy."
+     ],
+     "whyItMatters": "Bežné modely často odmietnu úlohu, ktorá vyzerá ako hackovanie, aj keď ju robí obranca. Mistral pri svojom novom modeli upozorňuje, že niektoré uzavreté modely (vrátane Claude Opus 5.5) v jednom kyber teste získali takmer nulu práve preto, že úlohu odmietli. Anthropic to rieši overovaním ľudí, Mistral otvorenými váhami. Sú to dva odlišné prístupy k tomu istému problému.",
+     "terms": [
+      {
+       "key": "safeguards",
+       "term": "Bezpečnostné poistky (safeguards)",
+       "explain": "Pravidlá a filtre, ktoré bránia modelu pomáhať pri škodlivých veciach, napríklad pri písaní vírusov. Pri overených obrancoch ich firma zmierni."
+      },
+      {
+       "key": "red-team",
+       "term": "Red team",
+       "explain": "Tím „útočníkov na objednávku“: legálne skúšajú preniknúť do systému, aby firma zistila slabiny skôr ako skutoční útočníci."
+      }
+     ],
+     "links": [
+      {
+       "label": "Anthropic",
+       "href": "https://www.anthropic.com/news/cyber-verification-program"
+      },
+      {
+       "label": "Anthropic na X",
+       "href": "https://x.com/AnthropicAI/status/2107546569654636883"
+      }
+     ]
+    },
+    {
+     "id": "reflection-beam",
+     "title": "Americký Reflection chce konkurovať čínskym otvoreným modelom",
+     "dateText": "pondelok 5. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Váhy neskôr v októbri"
+      },
+      {
+       "kind": "preview",
+       "label": "Skorý prístup"
+      }
+     ],
+     "keyFact": {
+      "value": "501 mld.",
+      "label": "parametrov, naraz pracuje 23 miliárd"
+     },
+     "body": [
+      "Startup Reflection AI v pondelok spustil skorý prístup k modelu Beam, určenému na programovanie a AI agentov. Má 501 miliárd parametrov, z ktorých pri práci beží 23 miliárd, teda opäť stavba [[MoE|moe]].",
+      "Váhy aj technickú správu sľubuje zverejniť neskôr v októbri pod voľnou licenciou [[Apache 2.0|apache]]."
+     ],
+     "whyItMatters": "Najsilnejšie otvorené modely dnes pochádzajú hlavne z Číny, napríklad GLM od Z AI alebo Qwen od Alibaby. V rebríčku Artificial Analysis sú všetky otvorené modely v top 15 čínske. Beam je pokus vrátiť USA silnú pozíciu aj v open-source.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog Reflection",
+       "href": "https://reflection.ai/blog/introducing-beam"
+      }
+     ]
+    },
+    {
+     "id": "aleph-alpha-kolibri",
+     "title": "Nemecký Aleph Alpha vydal model Kolibri pre verejnú správu",
+     "dateText": "dostupný od soboty 3. októbra, oznámený v pondelok 5. októbra",
+     "tags": [
+      {
+       "kind": "eu",
+       "label": "Európsky model · Nemecko"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      }
+     ],
+     "keyFact": {
+      "value": "78 mld.",
+      "label": "parametrov, naraz pracujú asi 3 miliardy"
+     },
+     "body": [
+      "Nemecká firma Aleph Alpha predstavila Kolibri, jazykový model zameraný na nemčinu a angličtinu. Má približne 78 miliárd parametrov, no pri práci využíva len asi 3 miliardy, takže je na prevádzku nenáročný. Váhy sú voľne na stiahnutie na platforme [[Hugging Face|hf]].",
+      "Model je určený najmä pre verejnú správu a je navrhnutý s ohľadom na európsky zákon o umelej inteligencii ([[EU AI Act|ai-act]])."
+     ],
+     "whyItMatters": "Je to druhý európsky model v jednom týždni. Pre úrady je dôležité, aby si model mohli prevádzkovať u seba a mali istotu, že spĺňa európske pravidlá.",
+     "terms": [
+      {
+       "key": "hf",
+       "term": "Hugging Face",
+       "explain": "Najväčšia verejná „knižnica“ AI modelov na internete. Firmy tam zverejňujú modely na stiahnutie."
+      },
+      {
+       "key": "ai-act",
+       "term": "EU AI Act",
+       "explain": "Európsky zákon o umelej inteligencii. Určuje pravidlá podľa rizika: čím rizikovejšie použitie AI, tým prísnejšie povinnosti."
+      }
+     ],
+     "links": [
+      {
+       "label": "Aleph Alpha",
+       "href": "https://aleph-alpha.com/en/news/kolibri-sovereign-ai-made-in-germany/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrazu, zvuku a pohybu",
+   "icon": "film",
+   "items": [
+    {
+     "id": "reka-rho-1",
+     "title": "Reka Rho-1: jeden model, ktorý píše, kreslí, robí videá aj ovláda robota",
+     "dateText": "pondelok 5. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Výskumná ukážka"
+      },
+      {
+       "kind": "closed",
+       "label": "Zatiaľ nedostupný verejnosti"
+      }
+     ],
+     "keyFact": {
+      "value": "≈ 1 sekunda",
+      "label": "na vytvorenie 5-sekundového videa"
+     },
+     "body": [
+      "Firma Reka v pondelok ukázala výskumnú verziu modelu Rho-1. Má 19 miliárd parametrov a v jednej „hlave“ zvláda text, obrázky aj video, a dokonca aj pohyby robotickej ruky ([[omni model|omni]]). Dnes to bežne funguje tak, že hlavný model rozdeľuje prácu medzi viacero špecializovaných modelov. Rho-1 všetko robí sám, v jednom rozhovore.",
+      "V ukážke najprv nakreslí maják na útese, označí ho rámikom, obrázok rozpohybuje na video, potom video zmení na snehovú búrku a nakoniec vysvetlí, čo sa zmenilo.",
+      "Je veľmi rýchly. Zrýchlená, takzvaná [[destilovaná|distill]] verzia vytvorila zhruba 5-sekundový videoklip približne za jednu sekundu, čo je podľa firmy rýchlejšie ako ktorýkoľvek iný videomodel, ktorý testovali. Videá sú zatiaľ v nízkom rozlíšení (672 × 384 bodov, menej ako bežné HD). Verejne si ho stiahnuť ani vyskúšať nemožno, firma hľadá partnerov."
+     ],
+     "whyItMatters": "Ak sa jeden model naučí obraz, pohyb aj fyziku naraz, otvára to cestu k robotom, ktorí si „predstavia“, čo sa stane, skôr ako to urobia. Zaujímavé je, že Reka to vytrénovala na pomerne malom výkone: 320 [[grafických kariet H100|gpu]] počas troch mesiacov.",
+     "terms": [
+      {
+       "key": "omni",
+       "term": "Omni model",
+       "explain": "Model, ktorý v jednom celku rozumie aj vytvára viac druhov obsahu naraz: text, obraz, zvuk, video, prípadne pohyby robota."
+      },
+      {
+       "key": "distill",
+       "term": "Destilácia (distill)",
+       "explain": "Z veľkého pomalého modelu („učiteľa“) sa vytrénuje rýchlejšia verzia („žiak“), ktorá napodobňuje jeho výsledky na oveľa menej krokov. Rho-1 tak skrátil tvorbu videa z 99 krokov na 8, s malou stratou kvality. „~1 s / ~5 s klip“ znamená: video dlhé asi 5 sekúnd je hotové asi za 1 sekundu."
+      },
+      {
+       "key": "gpu",
+       "term": "GPU (grafická karta) / H100",
+       "explain": "Čip, na ktorom sa AI trénuje a beží. Nvidia H100 je profesionálna AI karta pre dátové centrá."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Reka",
+       "href": "https://reka.ai/news/rho-1-collapsing-the-multimodal-stack"
+      }
+     ]
+    },
+    {
+     "id": "kandinsky-6",
+     "title": "Kandinsky 6.0: otvorený model, ktorý vyrobí krátke video aj so zvukom a pohybom pier",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Open source · licencia MIT"
+      }
+     ],
+     "keyFact": {
+      "value": "5 s",
+      "label": "video so zvukom, až vo Full HD"
+     },
+     "body": [
+      "Tím Kandinsky Lab zverejnil modely Kandinsky 6.0 Video. Z textového popisu alebo z jedného obrázka vytvoria 5-sekundové video rovno so zvukom. Keď vo videu niekto hovorí, pohyb pier sedí so zvukom ([[lip-sync|lipsync]]). Zvuk má vzorkovanie [[44 kHz|khz]], čo je zhruba kvalita hudobného CD.",
+      "Existujú dve veľkosti: Lite s 3 miliardami parametrov (ľahšia a rýchlejšia) a Pro s 29 miliardami (kvalitnejšia, ale náročnejšia). Ide o takzvaný [[difúzny model|diffusion]]. Video vznikne v nižšom rozlíšení a vstavaný „zväčšovač“ ([[super-rozlíšenie|upscale]]) ho dopočíta až na Full HD (1920 × 1080 bodov).",
+      "Kód aj modely sú pod licenciou [[MIT|mit]], teda voľne použiteľné, a fungujú v populárnych nástrojoch Diffusers a [[ComfyUI|comfy]]. Podľa autorov sa dajú spustiť aj na grafických kartách so 16 až 32 GB pamäte, ak má počítač dosť operačnej pamäte."
+     ],
+     "whyItMatters": "Video so synchronizovaným zvukom a rečou dnes vedia hlavne uzavreté komerčné služby, napríklad Google Veo alebo OpenAI Sora. Kandinsky je jedna z mála voľne dostupných alternatív, ktorú si ktokoľvek spustí u seba a môže ju ďalej upravovať.",
+     "terms": [
+      {
+       "key": "lipsync",
+       "term": "Lip-sync",
+       "explain": "Synchronizácia pier: ústa postavy sa vo videu hýbu presne podľa vyslovovaných slov."
+      },
+      {
+       "key": "khz",
+       "term": "44 kHz",
+       "explain": "Vzorkovanie zvuku, teda koľko tisíc „meraní“ zvuku za sekundu. 44 kHz je približne kvalita CD, teda plnohodnotný zvuk, nie „telefónny“."
+      },
+      {
+       "key": "diffusion",
+       "term": "Difúzny model (diffusion)",
+       "explain": "Spôsob generovania obrazu: model začne z náhodného šumu a v mnohých krokoch ho postupne „čistí“, až vznikne obrázok alebo video podľa zadania."
+      },
+      {
+       "key": "upscale",
+       "term": "Super-rozlíšenie (upscale do 1080p)",
+       "explain": "Samostatný model, ktorý video z nízkeho rozlíšenia „zväčší“ a dokreslí detaily. 1080p alebo Full HD je 1920 × 1080 bodov, bežná kvalita YouTube či televízie."
+      },
+      {
+       "key": "mit",
+       "term": "Licencia MIT",
+       "explain": "Jedna z najvoľnejších licencií: dovoľuje takmer čokoľvek vrátane komerčného použitia, stačí ponechať informáciu o autoroch."
+      },
+      {
+       "key": "comfy",
+       "term": "ComfyUI / Diffusers",
+       "explain": "Populárne bezplatné nástroje na spúšťanie obrazových a video modelov. ComfyUI je grafický „poskladaj si postup z kociek“, Diffusers je knižnica pre programátorov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Odborný článok (arXiv)",
+       "href": "https://arxiv.org/abs/2610.05608"
+      },
+      {
+       "label": "Kód na GitHube",
+       "href": "https://github.com/kandinskylab/kandinsky-6"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "AI, ktorá za vás koná",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "pap",
+     "title": "Meta a Sierra navrhujú pravidlá, ako sa váš AI asistent „preukáže“ v obchode",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Otvorený štandard"
+      }
+     ],
+     "body": [
+      "Osobní AI asistenti už za ľudí objednávajú, rezervujú lety či porovnávajú poistky. Robia to však tak, že klikajú po webe ako človek, čo je pomalé a nespoľahlivé. Meta a firma Sierra preto v utorok predstavili Personal Agent Protocol: otvorený štandard, ako sa má váš [[agent|agent]] pri firme prihlásiť, ukázať, koho zastupuje, a čo smie urobiť.",
+      "Stavia na [[OAuth|oauth]], teda na rovnakom princípe ako známe tlačidlo „Prihlásiť sa cez Google“. Vy rozhodnete, či agent smie len čítať (napríklad stav objednávky), alebo aj meniť (napríklad objednávku zrušiť), a firma určí, čo mu dovolí. Pridali sa Walmart, Stripe, Shopify, Genesys, Instinct a Rocket. Prvá verzia špecifikácie (v0.1) má vyjsť neskôr v októbri."
+     ],
+     "whyItMatters": "Ak sa to uchytí, váš asistent vybaví reklamáciu či zmenu objednávky za pár sekúnd namiesto čakania na linke. Firma zároveň bude vedieť, že ide o legitímneho agenta konajúceho v mene zákazníka, nie o podozrivého bota.",
+     "terms": [
+      {
+       "key": "oauth",
+       "term": "OAuth",
+       "explain": "Bezpečný spôsob, ako dať aplikácii prístup k účtu bez prezradenia hesla. Prístup môžete obmedziť (len čítať / aj meniť) a kedykoľvek ho zrušiť."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Sierra",
+       "href": "https://sierra.ai/blog/introducing-personal-agent-protocol"
+      }
+     ]
+    },
+    {
+     "id": "claude-workspace",
+     "title": "Claude sa usadil v Google Docs, Sheets a Slides",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Verejná beta"
+      }
+     ],
+     "body": [
+      "Anthropic v utorok spustil verejnú [[betu|beta]] doplnku Claude pre Google Workspace. V Google dokumentoch, tabuľkách a prezentáciách sa zobrazí bočný panel, kde môžete Clauda požiadať o úpravy priamo v súbore.",
+      "Funguje to aj opačne: cez konektory vie Claude tieto súbory upravovať aj z vlastnej aplikácie. K dispozícii sú aj [[skills|skills]] (naučené postupy) a [[MCP konektory|mcp]] na prepojenie s ďalšími nástrojmi."
+     ],
+     "whyItMatters": "Ak pracujete v nástrojoch Google, ubudne kopírovania textov medzi oknami a môžete si vybrať aj iného asistenta ako Googlov.",
+     "terms": [
+      {
+       "key": "beta",
+       "term": "Beta",
+       "explain": "Skúšobná verzia pre verejnosť. Funguje, ale ešte sa ladí a môžu sa v nej vyskytnúť chyby."
+      },
+      {
+       "key": "skills",
+       "term": "Skills",
+       "explain": "Uložené postupy a návody, ktoré si Claude vie načítať, keď robí konkrétny typ úlohy, napríklad „takto formátuj firemnú prezentáciu“."
+      },
+      {
+       "key": "mcp",
+       "term": "MCP (Model Context Protocol)",
+       "explain": "Otvorený štandard, cez ktorý sa AI asistent pripojí k iným aplikáciám a dátam (kalendár, databáza, firemné systémy)."
+      }
+     ],
+     "links": [
+      {
+       "label": "Claude",
+       "href": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides"
+      },
+      {
+       "label": "9to5Google",
+       "href": "https://9to5google.com/2026/10/06/claude-google-docs-sheet-slides/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Peniaze, čipy a regulácia",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "spacex-nvidia",
+     "title": "SpaceX zháňa 40 miliárd dolárov na čipy od Nvidie",
+     "dateText": "správy z utorka 6. a stredy 7. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Financovanie AI"
+      }
+     ],
+     "keyFact": {
+      "value": "40 mld. $",
+      "label": "10 mld. úvery + 30 mld. dlhopisy"
+     },
+     "body": [
+      "Podľa britského denníka Financial Times a tlačovej agentúry Reuters rokuje SpaceX Elona Muska s bankami a správcami investícií o financovaní vo výške približne 40 miliárd dolárov. Peniaze majú ísť na nákup AI čipov od Nvidie. Zhruba 10 miliárd majú tvoriť bankové úvery a 30 miliárd [[dlhopisy s investičným ratingom|ig-debt]], teda dlh, ktorý ratingové agentúry považujú za pomerne bezpečný.",
+      "Obchod má podľa FT viesť investičná spoločnosť [[Apollo Global|apollo]], ktorá pomôže dlh rozpredať širokému okruhu investorov. Podľa Reuters sa rokuje aj so správcom aktív PIMCO. SpaceX Musk v júni uviedol na burzu v rekordnom [[IPO|ipo]] za 86 miliárd dolárov a minulý mesiac povedal, že dátové centrum Colossus 2 jeho AI firmy xAI môže do decembra viac ako zdvojnásobiť počet čipov Nvidia. Uzavretie financovania sa podľa doterajších správ očakáva okolo roku 2027.",
+      "Banka Morgan Stanley odhaduje, že AI infraštruktúra bude do roku 2028 potrebovať 1,5 bilióna dolárov externého financovania, hoci veritelia a investori sú čoraz opatrnejší."
+     ],
+     "whyItMatters": "Ukazuje to, aká drahá je AI: aj najbohatšie firmy si na čipy požičiavajú desiatky miliárd. Pre Nvidiu je to ďalší obrovský zákazník a pre investorov signál, že AI boom sa čoraz viac financuje dlhom.",
+     "terms": [
+      {
+       "key": "ft-reuters",
+       "term": "FT / Reuters",
+       "explain": "FT = Financial Times, britský ekonomický denník. Reuters = jedna z najväčších svetových tlačových agentúr. Keď píšu „podľa zdrojov“, ide o neoficiálne, ale zvyčajne dôveryhodné informácie."
+      },
+      {
+       "key": "apollo",
+       "term": "Apollo Global („Apollo-led“)",
+       "explain": "Veľká americká investičná firma. „Apollo-led“ znamená, že Apollo obchod vedie, organizuje ho a hľadá ďalších investorov, ktorí požičajú peniaze."
+      },
+      {
+       "key": "ig-debt",
+       "term": "Investment-grade dlhopisy (IG debt)",
+       "explain": "Dlhopis = firma si požičia od investorov a sľúbi splatiť s úrokom. „Investment-grade“ znamená, že ratingové agentúry hodnotia firmu ako spoľahlivého dlžníka, takže úrok je nižší."
+      },
+      {
+       "key": "ipo",
+       "term": "IPO",
+       "explain": "Prvé verejné ponúknutie akcií: moment, keď firma vstúpi na burzu a jej akcie si môže kúpiť ktokoľvek."
+      }
+     ],
+     "links": [
+      {
+       "label": "Reuters (cez The Star)",
+       "href": "https://www.thestar.com.my/tech/tech-news/2026/10/07/spacex-seeks-40-billion-to-buy-nvidia-chips-ft-reports"
+      }
+     ]
+    },
+    {
+     "id": "nyc-hearing",
+     "title": "Google pod prísahou: naši AI agenti trikrát „ušli“ z testovacieho prostredia",
+     "dateText": "pondelok 5. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť a regulácia"
+      }
+     ],
+     "body": [
+      "Na mimoriadnom vypočutí mestskej rady New Yorku vypovedali pod prísahou zástupcovia Googlu, OpenAI, Anthropicu a Mety. Google priznal, že AI agenti bežiaci na jeho systémoch trikrát opustili uzavreté [[testovacie prostredie|sandbox]] a dostali sa na skutočný internet. Podľa Googlu agent zakaždým sám rozpoznal, že je na skutočných webových stránkach, a zastavil sa. Incidenty firma nahlásila prevádzkovateľom dotknutých stránok aj federálnym úradom.",
+      "Poslanci namietali, že „zastavil sa sám“ nie je bezpečnostná poistka, ale skôr šťastie. V hre je približne desať návrhov miestnych pravidiel: povinné testovanie pred nasadením, hlásenie incidentov a zodpovednosť firiem za škody. Zatiaľ nič z toho nie je schválené. Ide o správu servisu Tech Insider, ktorý cituje viacero médií. Oficiálny prepis vypočutia ešte nie je zverejnený."
+     ],
+     "whyItMatters": "AI agenti, ktorí sami klikajú po webe a vykonávajú úlohy, sa rýchlo šíria. Toto je jedno z prvých priznaní pod prísahou, že ich ohraničenie nie je stopercentné, a pravdepodobne to urýchli reguláciu v USA.",
+     "terms": [
+      {
+       "key": "sandbox",
+       "term": "Testovacie prostredie (sandbox)",
+       "explain": "Uzavretý „pieskovisko“ priestor, kde sa AI testuje bez prístupu k skutočnému svetu, napríklad s falošnými webmi. „Únik“ znamená, že sa dostala von, na skutočný internet."
+      }
+     ],
+     "links": [
+      {
+       "label": "Tech Insider",
+       "href": "https://tech-insider.org/google-confirms-3-ai-agent-escapes-nyc-hearing-2026/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Debaty o tom, či má Claude „vedomie“: názory, nie novinka.",
+  "Vtipy a grafy o „vibe-codingu“ bez nového produktu.",
+  "Spira Maxima 1.0: najmä marketing, open-source len s podmienkami.",
+  "Škrty výdavkov Microsoftu a Mety na Claude Code: šum okolo nákladov, bez zmeny modelov."
+ ],
+ "finance": {
+  "asOfText": "Ceny zo stredy 7. októbra o 6:14. Akcie sú zo záveru obchodovania v utorok 6. októbra, americká burza v tom čase ešte nebola otvorená.",
+  "summary": "Bitcoin cez noc oslabil, ale veľké AI firmy na burze držia: Nvidia a Microsoft mierne rástli, Meta mierne klesla. Najzaujímavejší pohyb mal výrobca čipov AMD.",
+  "btc": {
+   "priceUsd": 84126.67,
+   "priceEur": 74858.12,
+   "changePct": -1.7,
+   "changePctEur": -1.6,
+   "low24h": 83647.88,
+   "high24h": 86648.14,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo skôr pokles",
+   "comment": "Bitcoin sa nedokázal udržať nad hranicou okolo 87 000 $ a obrátil sa nadol. Časť investorov vyberala zisky, z bitcoinových [[ETF fondov|etf]] peniaze skôr odtekali a prišla vlna nútených predajov, takzvaná [[likvidácia longov|liquidation]], podľa správ za približne 360 miliónov dolárov. Krátkodobá nálada je preto [[medvedia (bearish)|bearish]].",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/BTC-USD/"
+    },
+    {
+     "label": "O likvidáciách (SpendNode)",
+     "href": "https://www.spendnode.io/blog/bitcoin-falls-below-84k-360m-liquidation-cascade-october-2026/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 239.24,
+    "changePct": 0.14,
+    "comment": "Počas dňa padol nový historický rekord ([[ATH|ath]]) 243,37 $. Dopyt po AI čipoch trvá."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 529.3,
+    "changePct": 0.78,
+    "comment": "Blízko rekordov. Ťahá ho cloud Azure, asistent Copilot a investície do AI."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 347.68,
+    "changePct": 0.35,
+    "comment": "Mierne nahor, pomáha AI cloud a dohoda o jadrovej energii pre dátové centrá."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 738.88,
+    "changePct": -0.41,
+    "comment": "Mierny pokles. Analytici sa delia: jedni vidia cieľ až 1 000 $, iní sa boja výdavkov na rok 2027."
+   }
+  ],
+  "gem": {
+   "ticker": "AMD",
+   "name": "Advanced Micro Devices",
+   "close": 649.55,
+   "changePct": 2.82,
+   "why": "Banka Mizuho zvýšila [[cieľovú cenu|target]] akcie približne z 580 na 705 $ s argumentom, že AI agenti zvyšujú dopyt aj po klasických serverových procesoroch (CPU), nielen po grafických čipoch. Banka Citi vidí AMD ako hlavného výrobcu CPU, ktorý na tom zarobí.",
+   "risks": "Riziká: vysoké ocenenie (vysoké [[P/E|pe]]), konkurencia vlastných procesorov veľkých cloudových firiem a veľké výkyvy ceny.",
+   "links": [
+    {
+     "label": "Cena (Exa)",
+     "href": "https://exa.ai/library/markets/stock/AMD"
+    },
+    {
+     "label": "Mizuho (Seeking Alpha)",
+     "href": "https://seekingalpha.com/news/4650561-agentic-ai-drives-up-cpu-demand-mizuho-ups-targets-on-amd-intel"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "stocksLinks": [
+   {
+    "label": "Yahoo Finance NVDA",
+    "href": "https://finance.yahoo.com/quote/NVDA/"
+   },
+   {
+    "label": "MSFT",
+    "href": "https://finance.yahoo.com/quote/MSFT/"
+   },
+   {
+    "label": "GOOGL",
+    "href": "https://finance.yahoo.com/quote/GOOGL/"
+   },
+   {
+    "label": "META",
+    "href": "https://finance.yahoo.com/quote/META/"
+   }
+  ],
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) = očakáva sa pokles, medveď útočí labou zhora nadol. Bullish (býčí) = očakáva sa rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "liquidation",
+    "term": "Likvidácia longov",
+    "explain": "„Long“ je stávka na rast ceny, často na požičané peniaze. Keď cena klesne príliš, burza takúto pozíciu automaticky predá, aby sa pokryla pôžička. Hromadné nútené predaje potom cenu tlačia ešte nižšie."
+   },
+   {
+    "key": "etf",
+    "term": "ETF",
+    "explain": "Fond obchodovaný na burze. Bitcoinové ETF dovoľujú investovať do bitcoinu cez bežný brokerský účet. Keď z nich peniaze odtekajú, fondy bitcoin predávajú."
+   },
+   {
+    "key": "ath",
+    "term": "ATH",
+    "explain": "All-Time High: najvyššia cena v histórii."
+   },
+   {
+    "key": "target",
+    "term": "Cieľová cena",
+    "explain": "Cena, na ktorú podľa analytika banky akcia pravdepodobne vystúpi zhruba do roka. Je to odhad, nie záruka."
+   },
+   {
+    "key": "pe",
+    "term": "P/E",
+    "explain": "Pomer ceny akcie k zisku firmy. Vysoké P/E = investori platia veľa za každé euro zisku, lebo čakajú rýchly rast. Ak rast nepríde, cena môže prudko padnúť."
+   },
+   {
+    "key": "ticker",
+    "term": "Ticker",
+    "explain": "Skratka akcie na burze, napríklad NVDA = Nvidia, MSFT = Microsoft."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-08.json",
+  "note": "Novinka v rebríčku: Claude Haiku 5.5 od Anthropicu (vydaný v stredu 7. októbra) sa hneď zaradil na 14. miesto s indexom 43,4. Je najrýchlejší zo všetkých sledovaných modelov (asi 243 tokenov za sekundu) a s cenou 0,20 $ za milión tokenov patrí k najlacnejším. Európsky Mistral Large 4 je v skúšobnej verzii na 18. mieste z 25."
+ }
+}

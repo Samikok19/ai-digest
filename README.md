@@ -1,37 +1,13 @@
 # AI Digest
 
-Mobilný denný AI brief pre Samuela (slovenčina). Čistý HTML/CSS/JS — bez buildu.
+Samuelov denný AI prehľad v slovenčine – novinky po ľudsky, vysvetlivky pojmov, benchmarky modelov a financie.
+Čistý HTML/CSS/JS, bez buildu. Mobil: jeden stĺpec. Počítač: magazínový layout s bočným panelom.
 
-**Live:** https://samikok19.github.io/ai-digest/
+**Live:** https://samikok19.github.io/ai-digest/ (najnovšie vydanie; staršie cez dropdown, max 7 dní)
 
-## Súbory
+- Obsah dní: `data/days/YYYY-MM-DD.json`, zoznam `data/days/index.json`
+- Benchmarky: `data/benchmarks-YYYY-MM-DD.json` ← `python3 scripts/fetch_benchmarks.py`
+- Rotácia 7 dní: `python3 scripts/update_days.py`
+- Ako písať a denná rutina: **[STYLE.md](STYLE.md)**
 
-- `index.html` — shell + dropdown dní
-- `styles.css` — mobile-first dark (indigo/blue akcent)
-- `app.js` — dáta dní, render, localStorage výberu dňa
-
-## História (max 7 dní)
-
-| Deň | Poznámka |
-|-----|----------|
-| 7. 10. 2026 | predvolený (LLM, media, agenti, tech, finance) |
-
-Dropdown hore prepína dni. URL stránky ostáva rovnaká (`index.html`).
-
-## Lokálne
-
-```bash
-cd ai-digest
-python3 -m http.server 8080
-# → http://localhost:8080
-```
-
-## Deploy (GitHub Pages)
-
-Branch `master`, folder `/ (root)` → `https://samikok19.github.io/ai-digest/`
-
-## Poznámky
-
-- Výber dňa: `localStorage` kľúč `ai-digest-selected-day`.
-- Finance: BTC + akcie + max 1 gem s disclaimerom „Toto nie je investičná rada.“
-- Žiadny service worker — funguje offline po načítaní fontov.
+Lokálne: `python3 -m http.server 8080` → http://localhost:8080
