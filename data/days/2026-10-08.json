@@ -3,11 +3,12 @@
  "label": "Štvrtok 8. októbra 2026",
  "shortLabel": "Št 8. 10.",
  "greeting": "Dobré ráno, Samuel.",
- "intro": "Hlavná správa dňa je z ChatGPT: OpenAI tam nasadilo GPT-6 a odpovede už nie sú len text, ale aj klikateľné grafy, schémy a malé nástroje. Od dnešného rána ho majú aj ľudia bez predplatného. Anthropic odpovedal lacným a bleskovým Claude Haiku 5.5, Google vylepšil kreslenie obrázkov a viacero firiem stavia AI, ktorá namiesto písania len rýchlo rozhoduje. Bitcoin sa cez noc posunul nižšie, na burze sa po rekorde trochu vydýchlo.",
+ "intro": "Hlavná správa dňa je z ChatGPT: OpenAI tam nasadilo GPT-6 a odpovede už nie sú len text, ale aj klikateľné grafy, schémy a malé nástroje. Od dnešného rána ho majú aj ľudia bez predplatného. Anthropic odpovedal lacným a bleskovým Claude Haiku 5.5, Google vylepšil kreslenie obrázkov a viacero firiem stavia AI, ktorá namiesto písania len rýchlo rozhoduje. Pre AI agentov je dôležitý Microsoft, ktorý im na počítači vymedzil pevné hranice, čo smú a čo nie. Bitcoin sa cez noc posunul nižšie, na burze sa po rekorde trochu vydýchlo.",
  "highlights": [
   "GPT-6 je v ChatGPT pre všetkých, od dnes aj zadarmo, a odpovede vedia obsahovať klikateľné grafy a nástroje",
   "Anthropic vydal Claude Haiku 5.5, najlacnejší a najrýchlejší Claude, v nezávislom rebríčku hneď na 14. mieste",
   "Google Nano Banana 2.1 kreslí ostrejšie obrázky a v aréne je dva dni po vydaní štvrtý",
+  "Microsoft dal AI agentom na počítači pevné hranice: systém vopred určí, k čomu majú prístup",
   "Bitcoin klesol o 1,7 % na zhruba 82 700 $, akcie Mety stratili 2,4 %"
  ],
  "leadId": "gpt6-chatgpt",
@@ -83,9 +84,9 @@
       "label": "za milión vstupných tokenov, výstup od 0,50 $"
      },
      "body": [
-      "Anthropic, firma za chatbotom Claude, v stredu vydal Claude Haiku 5.5. Je to najmenší člen rodiny Claude 5.5, určený na rýchle a často opakované úlohy: zhrnutia, triedenie správ, vyťahovanie údajov z dokumentov, zákaznícku podporu či ovládanie prehliadača. Pri programovaní ho Anthropic odporúča ako pomocníka, takzvaného [[subagenta|subagent]], ktorému väčšie modely Opus a Sonnet prideľujú drobné kroky.",
-      "Cena začína na 0,10 dolára za milión vstupných [[tokenov|token]] a 0,50 dolára za milión výstupných, čo je podľa Anthropicu zhruba o 75 % lacnejšie než predchodca Haiku 4.5. Model si naraz udrží v pamäti až milión tokenov, teda má veľké [[kontextové okno|context]], a sám si podľa náročnosti otázky určí, koľko bude premýšľať.",
-      "Spolu s ním Anthropic o polovicu zlacnil opakované čítanie uloženého textu ([[cache|cache]]) pri modeli Sonnet 5.5, čím má pri práci agentov vyjsť asi o 20 % lacnejšie. Predplatitelia Claude Max a Team dostanú navyše mesačný kredit na [[API|api]]: 100 alebo 200 dolárov pri Max a tímy až 500 dolárov."
+      "Anthropic, firma za chatbotom Claude, v stredu vydal Claude Haiku 5.5. Je to najmenší člen rodiny Claude 5.5, určený na rýchle a často opakované úlohy: zhrnutia, triedenie správ, vyťahovanie údajov z dokumentov, zákaznícku podporu či ovládanie prehliadača. Pri programovaní ho Anthropic odporúča ako pomocníka, takzvaného [[subagenta|subagent]], ktorému väčšie modely Opus a Sonnet prideľujú drobné kroky. V teste OSWorld, kde AI samostatne ovláda skutočný počítač a plní dlhé úlohy s viacerými krokmi, uspel v 72,4 % prípadov, kým jeho predchodca Haiku 4.5 len v 15,7 %.",
+      "Cena je 0,10 dolára za milión vstupných [[tokenov|token]] a 0,50 dolára za milión výstupných, ak zadanie nepresiahne 100 000 tokenov. Nad touto hranicou je päťkrát vyššia, no podľa Anthropicu sa do nej zmestí zhruba 90 % bežných požiadaviek, takže model v priemere vychádza asi o 75 % lacnejšie než Haiku 4.5. Model si naraz udrží v pamäti až milión tokenov, teda má veľké [[kontextové okno|context]], a sám si podľa náročnosti otázky určí, koľko bude premýšľať.",
+      "Spolu s ním Anthropic o polovicu, z 0,20 na 0,10 dolára za milión tokenov, zlacnil opakované čítanie uloženého textu ([[cache|cache]]) pri modeli Sonnet 5.5, čím má pri práci agentov vyjsť asi o 20 % lacnejšie. Predplatitelia Claude Max a Team dostanú navyše mesačný kredit na [[API|api]]: 100 alebo 200 dolárov pri Max a tímy až 500 dolárov."
      ],
      "whyItMatters": "Lacné a rýchle modely sú to, na čom v skutočnosti beží väčšina AI v aplikáciách, ktoré denne používame. V nezávislom rebríčku Artificial Analysis sa Haiku 5.5 hneď zaradil na 14. miesto z 25 a je najrýchlejší zo všetkých sledovaných modelov, okolo 243 tokenov za sekundu. Pre vývojárov to znamená výrazne lacnejšie a svižnejšie chatboty a agentov.",
      "terms": [
@@ -172,6 +173,49 @@
        "href": "https://huggingface.co/LiquidAI/d1-3B"
       }
      ]
+    },
+    {
+     "id": "pplx-embed-v2-late",
+     "title": "Perplexity zverejnila zadarmo vyhľadávacie modely, ktoré rozumejú textu aj naskenovaným stranám",
+     "dateText": "streda 7. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      }
+     ],
+     "body": [
+      "Perplexity, firma za rovnomenným AI vyhľadávačom, v stredu zverejnila na Hugging Face dva [[embeddingové|embedding]] modely s názvom pplx-embed-v2-late: menší s 0,6 miliardy a väčší s 9 miliardami parametrov. Sú pod voľnou [[licenciou MIT|mit]], takže ich môže ktokoľvek použiť aj vo firme a zadarmo.",
+      "Modely prevedú text, obrázky aj celé strany dokumentov uložené ako obrázok, napríklad sken, do jedného spoločného „priestoru významov“. Otázka napísaná slovami tak nájde aj správnu stranu, ktorú nikto predtým neprepísal do textu. Namiesto jedného odtlačku pre celú stranu si model pamätá odtlačok každého kúska a porovnáva ich až pri hľadaní, preto „late“ v názve, čo pomáha nájsť aj drobné detaily."
+     ],
+     "whyItMatters": "Na takýchto modeloch stojí [[RAG|rag]], teda spôsob, akým chatbot odpovedá z vašich vlastných dokumentov. Otvorený model, ktorý rozumie aj obrázkom strán, sa hodí firmám s kopami PDF, faktúr či prezentácií, ktoré nechcú posielať cudzej firme.",
+     "terms": [
+      {
+       "key": "embedding",
+       "term": "Embedding",
+       "explain": "Prevod textu alebo obrázka na rad čísel, akýsi číselný odtlačok významu. Veci s podobným významom majú podobné čísla, takže počítač nájde súvisiace miesta, aj keď v nich nie sú rovnaké slová."
+      },
+      {
+       "key": "rag",
+       "term": "RAG",
+       "explain": "Z angličtiny „retrieval-augmented generation“, voľne odpovedanie s vyhľadávaním. Chatbot si pred odpoveďou najprv vyhľadá súvisiace časti vo vašich dokumentoch a odpovedá podľa nich, nie len z pamäte. Vďaka tomu menej vymýšľa."
+      },
+      {
+       "key": "mit",
+       "term": "Licencia MIT",
+       "explain": "Jedna z najvoľnejších licencií. Model či program môžete používať, upravovať aj na ňom zarábať, stačí zachovať informáciu o autoroch."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Perplexity",
+       "href": "https://community.perplexity.ai/t/were-releasing-pplx-embed-v2-late-two-late-interaction-embedding-models-that-retrieve-text-images-and-pages-with-a-shared-embedding-space-for-cross-model-querying/6296"
+      },
+      {
+       "label": "Modely na Hugging Face",
+       "href": "https://huggingface.co/perplexity-ai/pplx-embed-v2-late-9b"
+      }
+     ]
     }
    ]
   },
@@ -223,6 +267,89 @@
        "href": "https://www.androidauthority.com/google-launches-nano-banana-2-1-3719823/"
       }
      ]
+    },
+    {
+     "id": "vidu-q4",
+     "title": "Čínsky Vidu Q4 robí AI video v 4K a postavy v ňom hovoria stále rovnakým hlasom",
+     "dateText": "streda 7. októbra",
+     "tags": [
+      {
+       "kind": "cn",
+       "label": "Čínska firma · Peking"
+      },
+      {
+       "kind": "preview",
+       "label": "Preview"
+      }
+     ],
+     "keyFact": {
+      "value": "0,39 $",
+      "label": "za sekundu videa v 4K, v nízkom rozlíšení od 0,045 $"
+     },
+     "body": [
+      "Pekinská firma ShengShu, ktorá vznikla z AI laboratórií Univerzity Tsinghua, v stredu spustila Vidu Q4 Preview, skúšobnú verziu ([[preview|beta]]) svojho modelu na tvorbu videa. Stavila na herecké výkony: postava môže podľa [[ukážky hlasu|reference]] hovoriť v celom videu rovnakým hlasom a do jednej scény sa dá skombinovať až 15 referenčných obrázkov.",
+      "Video vyrobí až v rozlíšení [[4K|4k]] s [[10-bitovou farbou|10bit]], teda v kvalite, ktorá znesie aj profesionálnu úpravu farieb ako pri filme. Platí sa za každú sekundu hotového videa, od 0,045 dolára pri nízkom rozlíšení 540p, čo je polovica Full HD, po 0,39 dolára pri 4K. Desaťsekundový záber v najvyššej kvalite tak vyjde asi na 3,90 dolára, a kto video tvorí z obrázka alebo podľa referencií, má do konca novembra zľavu 30 %."
+     ],
+     "whyItMatters": "ShengShu cieli na výrobcov krátkych seriálov na mobil, reklamné agentúry a tvorcov na sociálne siete, teda tam, kde sa videa robia vo veľkom a rozhoduje cena za sekundu. Je to ďalší dôkaz, že v AI videu čínske firmy silno konkurujú americkým.",
+     "terms": [
+      {
+       "key": "10bit",
+       "term": "10-bitová farba",
+       "explain": "Každá farebná zložka bodu môže mať 1 024 odtieňov namiesto bežných 256 pri 8 bitoch. Prechody, napríklad obloha pri západe slnka, sú plynulé bez viditeľných pruhov a video znesie neskoršie úpravy farieb."
+      },
+      {
+       "key": "reference",
+       "term": "Referencia (referenčný obrázok či hlas)",
+       "explain": "Ukážka, podľa ktorej má AI tvoriť: fotka postavy, aby vyzerala v každom zábere rovnako, alebo nahrávka hlasu, ktorým má hovoriť."
+      }
+     ],
+     "links": [
+      {
+       "label": "Tlačová správa ShengShu (GlobeNewswire)",
+       "href": "https://www.globenewswire.com/news-release/2026/10/07/3376813/0/en/shengshu-technology-launches-vidu-q4-preview-a-next-generation-ai-video-model-built-for-lifelike-performances.html"
+      },
+      {
+       "label": "Platforma Vidu",
+       "href": "https://platform.vidu.com/"
+      }
+     ]
+    },
+    {
+     "id": "synthid-detector",
+     "title": "Google spustil pre všetkých nástroj, ktorý zistí, či obrázok, video alebo zvuk vyrobila AI",
+     "dateText": "streda 7. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Overovanie obsahu"
+      },
+      {
+       "kind": "standard",
+       "label": "Pre všetkých"
+      }
+     ],
+     "keyFact": {
+      "value": "180 miliárd",
+      "label": "obrázkov a videí už nesie neviditeľnú značku SynthID"
+     },
+     "body": [
+      "Google v stredu sprístupnil SynthID Detector všetkým ľuďom na svete, zatiaľ len v angličtine. Doteraz ho mohli skúšať iba novinári a iní profesionáli. Nahráte doň obrázok, video alebo zvukový súbor a nástroj zistí, či ho vytvorila AI od Googlu alebo jeho partnerov: OpenAI, Nvidie, juhokórejskej firmy Kakao a čoskoro aj Apple.",
+      "Funguje to vďaka [[neviditeľnému vodoznaku|watermark]] SynthID, ktorý Google od roku 2023 vkladá do toho, čo vytvorí jeho AI. Takto označil už vyše 180 miliárd obrázkov a videí a zvuk v dĺžke 240-tisíc rokov. Podobné overenie je zabudované aj vo vyhľadávaní Google, v aplikácii Gemini a v prehliadači Chrome, kde ho ľudia využijú viac ako miliónkrát denne."
+     ],
+     "whyItMatters": "Keď uvidíte podozrivú fotku alebo video, budete si môcť sami overiť, či nepochádza z AI. Má to však háčik: nástroj spozná len obsah od firiem, ktoré značku SynthID používajú, takže ak nič nenájde, ešte to neznamená, že je obsah pravý.",
+     "terms": [
+      {
+       "key": "watermark",
+       "term": "Neviditeľný vodoznak",
+       "explain": "Skrytá značka vložená priamo do obrázka, videa alebo zvuku. Človek ju nevidí ani nepočuje, ale špeciálny detektor ju rozpozná."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google",
+       "href": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/"
+      }
+     ]
     }
    ]
   },
@@ -232,6 +359,48 @@
    "kicker": "AI, ktorá za vás koná",
    "icon": "bot",
    "items": [
+    {
+     "id": "microsoft-mxc",
+     "title": "Microsoft dal AI agentom na počítači pevné hranice: vopred určí, čo smú čítať, meniť a kam sa pripojiť",
+     "dateText": "streda 7. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť agentov"
+      },
+      {
+       "kind": "standard",
+       "label": "Ostrá verzia"
+      }
+     ],
+     "keyFact": {
+      "value": "4 úrovne",
+      "label": "izolácie agenta, od ľahkej až po samostatný mini virtuálny počítač"
+     },
+     "body": [
+      "Microsoft v stredu uviedol v ostrej verzii ([[GA|ga]]) Microsoft Execution Containers, skrátene MXC. Je to vrstva priamo v operačnom systéme, ktorá AI agentovi vopred vymedzí, ku ktorým priečinkom má prístup, čo smie len čítať a čo meniť, kam sa smie pripojiť na internete a či smie siahať na pracovnú plochu. Pravidlá sú mimo dosahu agenta, takže si ich nemôže sám rozšíriť, nech sa model rozhodne akokoľvek.",
+      "Agent beží v takzvanom [[kontajneri|container]]. Podľa toho, ako veľmi mu treba nedôverovať, si vývojár vyberie ľahké obmedzenie, ktoré funguje na Windows 11, macOS aj Linuxe, alebo silnejšie oddelenie, napríklad samostatnú reláciu Windows s vlastným účtom. Podporujú to už GitHub Copilot, OpenAI Codex či Replit, Nvidia doň zapojila svoj bezpečnostný nástroj OpenShell a Claude Code od Anthropicu podporu chystá."
+     ],
+     "whyItMatters": "Doteraz mohol agent na počítači v podstate všetko, čo smel používateľ, a bezpečnosť stála hlavne na tom, či model poslúchne pokyny. MXC presúva hranice z pokynov do samotného operačného systému, čo je pre firmy predpoklad, aby agentov pustili k skutočnej práci. Firmy budú navyše môcť čoskoro tieto pravidlá spravovať centrálne cez Intune, nástroj Microsoftu na správu firemných počítačov.",
+     "terms": [
+      {
+       "key": "ga",
+       "term": "GA (všeobecná dostupnosť)",
+       "explain": "Z angličtiny „general availability“. Produkt už nie je skúšobná verzia, firma ho oficiálne podporuje a odporúča na ostré nasadenie."
+      },
+      {
+       "key": "container",
+       "term": "Kontajner",
+       "explain": "Uzavretý priestor v počítači, v ktorom program beží oddelene od zvyšku systému. Vidí len to, čo mu niekto výslovne povolil, takže ak sa pokazí alebo urobí niečo nečakané, škoda zostane vnútri."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Microsoftu pre vývojárov",
+       "href": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/"
+      }
+     ]
+    },
     {
      "id": "openai-decisions-api",
      "title": "OpenAI spustilo službu na bleskové rozhodnutia a zlacnilo vstup pre vývojárov",
@@ -275,6 +444,60 @@
       {
        "label": "The Decoder",
        "href": "https://the-decoder.com/openai-launches-decisions-api-that-reduces-complex-evaluations-to-yes-no-or-pick-one/"
+      }
+     ]
+    },
+    {
+     "id": "claude-code-2-1-292",
+     "title": "Claude Code opravil bezpečnostnú chybu a hlavný agent môže šetriť na pomocníkoch",
+     "dateText": "utorok 6. októbra večer",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnostná oprava"
+      }
+     ],
+     "body": [
+      "Anthropic v utorok večer vydal verziu 2.1.292 svojho programovacieho agenta Claude Code. Najdôležitejšia je bezpečnostná oprava: v automatickom režime mohol agent čítať súbory zo zdieľaných sieťových priečinkov bez toho, aby sa vás opýtal na povolenie. Hlavný agent po novom môže svojim [[subagentom|subagent]] určiť, ako veľmi sa majú snažiť, takže na jednoduché kroky minú menej.",
+      "Zmenil sa aj spôsob, akým sa Claude Code pripája k lokálnym [[MCP serverom|mcp]], teraz predvolene cez novšiu verziu protokolu. Ak vám po aktualizácii prestane fungovať starší server, dá sa vrátiť k pôvodnému správaniu nastavením MCP_PROTOCOL_NEGOTIATION=legacy."
+     ],
+     "whyItMatters": "Ak Claude Code používate, oplatí sa aktualizovať kvôli bezpečnostnej oprave. Ostatné zmeny sa týkajú najmä tých, čo si k nemu pripájajú vlastné nástroje alebo púšťajú veľa pomocných agentov naraz.",
+     "terms": [
+      {
+       "key": "mcp",
+       "term": "MCP (Model Context Protocol)",
+       "explain": "Otvorený štandard, cez ktorý sa AI asistent pripája k iným aplikáciám a dátam, napríklad k Jire, Google Drive či databáze. MCP server je akýsi adaptér na strane aplikácie, ktorý asistentovi ponúkne jej funkcie."
+      }
+     ],
+     "links": [
+      {
+       "label": "Poznámky k vydaniu na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292"
+      }
+     ]
+    },
+    {
+     "id": "atlassian-mcp",
+     "title": "Atlassian sprístupnil AI asistentom Jiru, Confluence aj Bitbucket cez jeden konektor",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Ostrá verzia"
+      }
+     ],
+     "keyFact": {
+      "value": "15 miliónov",
+      "label": "volaní denne cez konektor Atlassianu"
+     },
+     "body": [
+      "Atlassian, firma za nástrojmi Jira a Confluence, v utorok na konferencii Team '26 Europe uviedol v ostrej verzii prepracovaný [[MCP server|mcp]]. Cez neho sa AI asistenti ako Claude, ChatGPT či Cursor dostanú k úlohám v Jire, dokumentom v Confluence, kódu v Bitbuckete aj k prepisom videí z Loomu, spolu cez viac ako 220 nástrojov. Podľa Atlassianu pri rovnakej práci minie až o štvrtinu menej [[tokenov|token]] ako predchádzajúca verzia a už teraz cez neho ide viac ako 15 miliónov volaní denne."
+     ],
+     "whyItMatters": "Veľká časť firemnej práce je zapísaná práve v Jire a Confluence. Keď sa k nej AI dostane priamo, môže napríklad z nahrávky porady sama pripraviť úlohy a zápis, pričom vidí len to, k čomu má prístup aj daný človek.",
+     "links": [
+      {
+       "label": "Blog Atlassianu",
+       "href": "https://www.atlassian.com/blog/company-news/team26-europe-atlassian-mcp"
       }
      ]
     }
@@ -361,6 +584,48 @@
       {
        "label": "Reuters (cez StreetInsider)",
        "href": "https://www.streetinsider.com/Reuters/Nebius+hikes+AI+cloud+prices+again+as+demand+for+computing+power+soars/27074756.html"
+      }
+     ]
+    },
+    {
+     "id": "broadcom-openai-financing",
+     "title": "Broadcom podľa správ zháňa desiatky miliárd dolárov úverov, aby OpenAI mohlo kúpiť vlastné AI čipy",
+     "dateText": "správy zo stredy 7. októbra večer",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Neoficiálne správy"
+      }
+     ],
+     "keyFact": {
+      "value": "30 až 50 mld. $",
+      "label": "možný dlh na čipy pre OpenAI, zatiaľ len rokovania"
+     },
+     "body": [
+      "Výrobca čipov Broadcom, ktorý s OpenAI vyvíja vlastný AI čip, podľa amerického denníka [[The Wall Street Journal|wsj]] zháňa peniaze, aby OpenAI mohlo tieto čipy kúpiť. WSJ píše o viac ako 50 miliardách dolárov, agentúra Bloomberg o predbežných rozhovoroch o zhruba 30 miliardách dolárov [[dlhu|debt-financing]]. Obe sa odvolávajú na nemenované zdroje a podľa Bloombergu sa formálny proces ešte nezačal a plány sa môžu zmeniť, takže ide o rokovania, nie o uzavretú dohodu.",
+      "WSJ zároveň píše, že podobné obrie úvery na nákup AI čipov zháňajú aj Oracle a SpaceX a medzi veriteľmi, s ktorými sa rokuje, sú investičné firmy Apollo a Blackstone a banka Goldman Sachs."
+     ],
+     "whyItMatters": "Budovanie AI je také drahé, že ho firmy čoraz viac platia požičanými peniazmi namiesto vlastných ziskov. Kým dopyt po AI rastie, funguje to, ale ak by spomalil, veľké dlhy by sa mohli stať problémom pre firmy aj ich veriteľov.",
+     "terms": [
+      {
+       "key": "wsj",
+       "term": "WSJ a Bloomberg",
+       "explain": "The Wall Street Journal je americký finančný denník, Bloomberg je finančná spravodajská agentúra. Patria k najdôveryhodnejším zdrojom o obchodoch firiem, no o rokovaniach často píšu podľa nemenovaných zdrojov a výsledok sa ešte môže zmeniť."
+      },
+      {
+       "key": "debt-financing",
+       "term": "Dlhové financovanie",
+       "explain": "Firma si peniaze požičia, napríklad od bánk alebo investičných fondov, a neskôr ich vráti s úrokom. Na rozdiel od predaja akcií sa nevzdáva časti firmy, ale musí splácať."
+      }
+     ],
+     "links": [
+      {
+       "label": "The Wall Street Journal (platený obsah)",
+       "href": "https://www.wsj.com/tech/oracle-broadcom-and-spacex-seek-blockbuster-debt-deals-to-pay-for-ai-chips-848e8032"
+      },
+      {
+       "label": "Bloomberg (cez Bloomberg Law)",
+       "href": "https://news.bloomberglaw.com/artificial-intelligence/broadcom-holds-early-talks-about-financing-deal-for-openai-chips"
       }
      ]
     }
