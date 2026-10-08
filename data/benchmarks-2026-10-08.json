@@ -1,7 +1,7 @@
 {
   "date": "2026-10-08",
-  "fetchedAt": "2026-10-08T01:03+02:00",
-  "fetchedAtLabel": "8. októbra 2026, 01:03",
+  "fetchedAt": "2026-10-08T06:10+02:00",
+  "fetchedAtLabel": "8. októbra 2026, 06:10",
   "source": "Artificial Analysis",
   "sources": {
     "llm": "https://artificialanalysis.ai/models",
@@ -20,7 +20,7 @@
         "releaseDate": "2026-09-22",
         "isOpenWeights": false,
         "intelligenceIndex": 57.6,
-        "medianOutputSpeed": 94.6,
+        "medianOutputSpeed": 95.3,
         "priceBlended": 8,
         "priceInput": 4,
         "priceOutput": 20,
@@ -36,7 +36,7 @@
         "releaseDate": "2026-09-28",
         "isOpenWeights": false,
         "intelligenceIndex": 56.0,
-        "medianOutputSpeed": 125.0,
+        "medianOutputSpeed": 129.1,
         "priceBlended": 4,
         "priceInput": 2,
         "priceOutput": 10,
@@ -52,7 +52,7 @@
         "releaseDate": "2026-09-01",
         "isOpenWeights": false,
         "intelligenceIndex": 53.4,
-        "medianOutputSpeed": 66.0,
+        "medianOutputSpeed": 66.3,
         "priceBlended": 20,
         "priceInput": 10,
         "priceOutput": 50,
@@ -68,7 +68,7 @@
         "releaseDate": "2026-09-03",
         "isOpenWeights": false,
         "intelligenceIndex": 52.7,
-        "medianOutputSpeed": 47.6,
+        "medianOutputSpeed": 47.3,
         "priceBlended": 20,
         "priceInput": 10,
         "priceOutput": 50,
@@ -164,7 +164,7 @@
         "releaseDate": "2026-09-02",
         "isOpenWeights": false,
         "intelligenceIndex": 45.4,
-        "medianOutputSpeed": 37.6,
+        "medianOutputSpeed": 37.0,
         "priceBlended": 3,
         "priceInput": 2,
         "priceOutput": 6,
@@ -180,7 +180,7 @@
         "releaseDate": "2026-08-18",
         "isOpenWeights": true,
         "intelligenceIndex": 44.8,
-        "medianOutputSpeed": 79.3,
+        "medianOutputSpeed": 82.5,
         "priceBlended": 2.15,
         "priceInput": 1.4,
         "priceOutput": 4.4,
@@ -196,7 +196,7 @@
         "releaseDate": "2026-09-18",
         "isOpenWeights": false,
         "intelligenceIndex": 43.7,
-        "medianOutputSpeed": 89.7,
+        "medianOutputSpeed": 88.5,
         "priceBlended": 1.425,
         "priceInput": 1,
         "priceOutput": 2.7,
@@ -212,7 +212,7 @@
         "releaseDate": "2026-07-16",
         "isOpenWeights": true,
         "intelligenceIndex": 43.6,
-        "medianOutputSpeed": 41.7,
+        "medianOutputSpeed": 42.2,
         "priceBlended": 6,
         "priceInput": 3,
         "priceOutput": 15,
@@ -220,8 +220,8 @@
       },
       {
         "slug": "claude-haiku-5-5",
-        "name": "Claude Haiku 5.5 (Max, Default Fallback)",
-        "shortName": "Claude Haiku 5.5 (max with fallback)",
+        "name": "Claude Haiku 5.5 (Max)",
+        "shortName": "Claude Haiku 5.5 (max)",
         "creator": "Anthropic",
         "country": "us",
         "isEuropean": false,
@@ -276,7 +276,7 @@
         "releaseDate": "2026-09-10",
         "isOpenWeights": true,
         "intelligenceIndex": 39.5,
-        "medianOutputSpeed": 216.1,
+        "medianOutputSpeed": 223.1,
         "priceBlended": 0.525,
         "priceInput": 0.3,
         "priceOutput": 1.2,
@@ -308,7 +308,7 @@
         "releaseDate": "2026-09-22",
         "isOpenWeights": false,
         "intelligenceIndex": 38.1,
-        "medianOutputSpeed": 127.9,
+        "medianOutputSpeed": 128.2,
         "priceBlended": 0.2,
         "priceInput": 0.1,
         "priceOutput": 0.5,
@@ -340,7 +340,7 @@
         "releaseDate": "2026-09-03",
         "isOpenWeights": true,
         "intelligenceIndex": 30.5,
-        "medianOutputSpeed": 118.4,
+        "medianOutputSpeed": 118.6,
         "priceBlended": 0,
         "priceInput": 0,
         "priceOutput": 0,
@@ -356,7 +356,7 @@
         "releaseDate": "2026-06-01",
         "isOpenWeights": true,
         "intelligenceIndex": 29.2,
-        "medianOutputSpeed": 93.9,
+        "medianOutputSpeed": 92.5,
         "priceBlended": 0.525,
         "priceInput": 0.3,
         "priceOutput": 1.2,
@@ -388,7 +388,7 @@
         "releaseDate": "2026-06-04",
         "isOpenWeights": true,
         "intelligenceIndex": 22.9,
-        "medianOutputSpeed": 155.1,
+        "medianOutputSpeed": 153.2,
         "priceBlended": 1.075,
         "priceInput": 0.6,
         "priceOutput": 2.5,
@@ -404,7 +404,7 @@
         "releaseDate": "2026-08-10",
         "isOpenWeights": true,
         "intelligenceIndex": 17.5,
-        "medianOutputSpeed": 90.9,
+        "medianOutputSpeed": 87.7,
         "priceBlended": 0.581,
         "priceInput": 0.325,
         "priceOutput": 1.35,
@@ -455,6 +455,19 @@
       },
       {
         "rank": 4,
+        "name": "Nano Banana 2.1",
+        "creator": "Google",
+        "country": null,
+        "isEuropean": false,
+        "elo": 1160.1,
+        "ciLower": 1150.1,
+        "ciUpper": 1170.1,
+        "appearances": 6055,
+        "releaseDate": "2026-10-06",
+        "isOpenWeights": false
+      },
+      {
+        "rank": 5,
         "name": "Grok Imagine Image 2.0",
         "creator": "SpaceXAI",
         "country": null,
@@ -467,20 +480,20 @@
         "isOpenWeights": false
       },
       {
-        "rank": 5,
+        "rank": 6,
         "name": "MAI-Image-2.6",
         "creator": "Microsoft AI",
         "country": null,
         "isEuropean": false,
-        "elo": 1151.0,
-        "ciLower": 1141.0,
-        "ciUpper": 1161.0,
+        "elo": 1151.1,
+        "ciLower": 1141.1,
+        "ciUpper": 1161.1,
         "appearances": 9665,
         "releaseDate": "2026-08-10",
         "isOpenWeights": false
       },
       {
-        "rank": 6,
+        "rank": 7,
         "name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
         "creator": "Google",
         "country": null,
@@ -493,7 +506,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 7,
+        "rank": 8,
         "name": "Muse Image",
         "creator": "Meta",
         "country": null,
@@ -506,7 +519,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 8,
+        "rank": 9,
         "name": "GPT Image 1.5 (high)",
         "creator": "OpenAI",
         "country": null,
@@ -519,7 +532,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 9,
+        "rank": 10,
         "name": "MAI-Image-2.6-Flash",
         "creator": "Microsoft AI",
         "country": null,
@@ -532,7 +545,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 10,
+        "rank": 11,
         "name": "MAI-Image-2.5",
         "creator": "Microsoft AI",
         "country": null,
@@ -545,7 +558,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 11,
+        "rank": 12,
         "name": "Nano Banana Pro (Gemini 3 Pro Image)",
         "creator": "Google",
         "country": null,
@@ -558,7 +571,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 12,
+        "rank": 13,
         "name": "MAI-Image-2.5-Pro",
         "creator": "Microsoft AI",
         "country": null,
@@ -571,7 +584,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 13,
+        "rank": 14,
         "name": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
         "creator": "Google",
         "country": null,
@@ -584,7 +597,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 14,
+        "rank": 15,
         "name": "Qwen-Image-3.0-Pro",
         "creator": "Alibaba",
         "country": null,
@@ -597,7 +610,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 15,
+        "rank": 16,
         "name": "Seedream 5.0 Pro",
         "creator": "ByteDance Seed",
         "country": null,
@@ -610,7 +623,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 16,
+        "rank": 17,
         "name": "Qwen-Image-3.0",
         "creator": "Alibaba",
         "country": null,
@@ -623,7 +636,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 17,
+        "rank": 18,
         "name": "grok-imagine-image-quality",
         "creator": "SpaceXAI",
         "country": null,
@@ -636,7 +649,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 18,
+        "rank": 19,
         "name": "Qwen-Image-2.1",
         "creator": "Alibaba",
         "country": null,
@@ -649,7 +662,7 @@
         "isOpenWeights": true
       },
       {
-        "rank": 19,
+        "rank": 20,
         "name": "MAI-Image-2.5-Flash",
         "creator": "Microsoft AI",
         "country": null,
@@ -659,19 +672,6 @@
         "ciUpper": 1041.5,
         "appearances": 6210,
         "releaseDate": "2026-06-02",
-        "isOpenWeights": false
-      },
-      {
-        "rank": 20,
-        "name": "Qwen Image 2.0 Pro (2026-04-22)",
-        "creator": "Alibaba",
-        "country": null,
-        "isEuropean": false,
-        "elo": 1031.8,
-        "ciLower": 1022.8,
-        "ciUpper": 1040.8,
-        "appearances": 6469,
-        "releaseDate": "2026-04-22",
         "isOpenWeights": false
       }
     ]
@@ -810,7 +810,7 @@
       },
       {
         "rank": 11,
-        "name": "grok-imagine-video-1.5",
+        "name": "Grok Imagine Video 1.5",
         "creator": "SpaceXAI",
         "country": null,
         "isEuropean": false,
@@ -888,6 +888,19 @@
       },
       {
         "rank": 17,
+        "name": "Grok Imagine Video 1.5 Lite",
+        "creator": "SpaceXAI",
+        "country": null,
+        "isEuropean": false,
+        "elo": 993.3,
+        "ciLower": 983.3,
+        "ciUpper": 1003.3,
+        "appearances": 5715,
+        "releaseDate": "2026-08-26",
+        "isOpenWeights": false
+      },
+      {
+        "rank": 18,
         "name": "PixVerse V6",
         "creator": "PixVerse",
         "country": null,
@@ -900,7 +913,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 18,
+        "rank": 19,
         "name": "Veo 3.1",
         "creator": "Google",
         "country": null,
@@ -913,7 +926,7 @@
         "isOpenWeights": false
       },
       {
-        "rank": 19,
+        "rank": 20,
         "name": "Veo 3.1 Fast",
         "creator": "Google",
         "country": null,
@@ -924,19 +937,6 @@
         "appearances": 4325,
         "releaseDate": "2026-01-30",
         "isOpenWeights": false
-      },
-      {
-        "rank": 20,
-        "name": "MAGI-2 Preview (0912)",
-        "creator": "Sand.ai",
-        "country": null,
-        "isEuropean": false,
-        "elo": 959.6,
-        "ciLower": 949.6,
-        "ciUpper": 969.6,
-        "appearances": 3674,
-        "releaseDate": "2026-09-12",
-        "isOpenWeights": false
       }
     ]
   },
@@ -946,7 +946,7 @@
     "items": [],
     "recentReleases": [
       {
-        "name": "Claude Haiku 5.5 (max with fallback)",
+        "name": "Claude Haiku 5.5 (max)",
         "creator": "Anthropic",
         "releaseDate": "2026-10-07",
         "rank": 14,

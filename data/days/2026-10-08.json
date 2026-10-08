@@ -1,0 +1,503 @@
+{
+ "date": "2026-10-08",
+ "label": "Štvrtok 8. októbra 2026",
+ "shortLabel": "Št 8. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Hlavná správa dňa je z ChatGPT: OpenAI tam nasadilo GPT-6 a odpovede už nie sú len text, ale aj klikateľné grafy, schémy a malé nástroje. Od dnešného rána ho majú aj ľudia bez predplatného. Anthropic odpovedal lacným a bleskovým Claude Haiku 5.5, Google vylepšil kreslenie obrázkov a viacero firiem stavia AI, ktorá namiesto písania len rýchlo rozhoduje. Bitcoin sa cez noc posunul nižšie, na burze sa po rekorde trochu vydýchlo.",
+ "highlights": [
+  "GPT-6 je v ChatGPT pre všetkých, od dnes aj zadarmo, a odpovede vedia obsahovať klikateľné grafy a nástroje",
+  "Anthropic vydal Claude Haiku 5.5, najlacnejší a najrýchlejší Claude, v nezávislom rebríčku hneď na 14. mieste",
+  "Google Nano Banana 2.1 kreslí ostrejšie obrázky a v aréne je dva dni po vydaní štvrtý",
+  "Bitcoin klesol o 1,7 % na zhruba 82 700 $, akcie Mety stratili 2,4 %"
+ ],
+ "leadId": "gpt6-chatgpt",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "gpt6-chatgpt",
+     "title": "ChatGPT dostal GPT-6 a namiesto dlhého textu vie odpovedať klikateľnými obrázkami a nástrojmi",
+     "dateText": "streda 7. októbra, pre bezplatných používateľov od štvrtka 8. októbra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Uzavretý model"
+      },
+      {
+       "kind": "standard",
+       "label": "Aj zadarmo"
+      }
+     ],
+     "keyFact": {
+      "value": "GPT-6",
+      "label": "v ChatGPT pre všetkých, s novými interaktívnymi odpoveďami"
+     },
+     "body": [
+      "OpenAI v stredu začalo celosvetovo nasadzovať model GPT-6 priamo do ChatGPT. Predplatitelia (Plus, Pro, Business a Enterprise) dostali výkonnejšiu verziu GPT-6 Sol hneď, bezplatní používatelia a lacnejší program Go dostávajú od dnes úspornejšiu verziu GPT-6 Luna. Samotné modely GPT-6 OpenAI predstavilo už v septembri, novinkou je, že sa teraz dostávajú k bežným ľuďom v hlavnom okne chatu.",
+      "Najviditeľnejšou zmenou je funkcia, ktorú OpenAI volá [[Intelligent UI|intelligent-ui]]. ChatGPT môže k textu pridať schému, graf, formulár, tlačidlá či mapu. Keď sa spýtate, ako funguje bicykel s prehadzovačkou, dostanete obrázok, na ktorom si klikaním zvýrazníte jednotlivé časti. Recept vie sám prepočítať suroviny podľa počtu hostí a na požiadanie vám ChatGPT priamo v rozhovore postaví malú kalkulačku, rozdeľovač účtu alebo jednoduchú hru.",
+      "GPT-6 navyše začne odpovedať skôr, ešte kým premýšľa, a podľa OpenAI lepšie vyhľadáva na webe. Funguje na webe a v aktualizovaných mobilných aplikáciách, staršie desktopové aplikácie pre Mac a Windows to nepodporujú. Kto vizuálne prvky nechce, môže ich v nastaveniach obmedziť."
+     ],
+     "whyItMatters": "Pre bežného človeka je to najväčšia zmena v ChatGPT za posledné mesiace: menej čítania dlhých odsekov, viac vecí, ktoré sa dajú rovno použiť. Ak ChatGPT používate zadarmo, dnes ráno by ste novú verziu mali vidieť aj vy, len si aktualizujte aplikáciu.",
+     "terms": [
+      {
+       "key": "intelligent-ui",
+       "term": "Intelligent UI",
+       "explain": "Doslova „inteligentné používateľské rozhranie“. Model sám rozhodne, kedy je lepšie odpovedať obrázkom, tabuľkou alebo klikateľným nástrojom namiesto obyčajného textu, a ten prvok rovno vytvorí v rozhovore."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie OpenAI",
+       "href": "https://openai.com/index/gpt-6-for-everyone"
+      },
+      {
+       "label": "The Verge",
+       "href": "https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6"
+      },
+      {
+       "label": "Pomocník OpenAI: GPT-6 v ChatGPT",
+       "href": "https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt"
+      }
+     ]
+    },
+    {
+     "id": "claude-haiku-5-5",
+     "title": "Anthropic vydal Claude Haiku 5.5, svoj najlacnejší a najrýchlejší model",
+     "dateText": "streda 7. októbra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Uzavretý model"
+      },
+      {
+       "kind": "money",
+       "label": "Zlacnenie"
+      }
+     ],
+     "keyFact": {
+      "value": "0,10 $",
+      "label": "za milión vstupných tokenov, výstup od 0,50 $"
+     },
+     "body": [
+      "Anthropic, firma za chatbotom Claude, v stredu vydal Claude Haiku 5.5. Je to najmenší člen rodiny Claude 5.5, určený na rýchle a často opakované úlohy: zhrnutia, triedenie správ, vyťahovanie údajov z dokumentov, zákaznícku podporu či ovládanie prehliadača. Pri programovaní ho Anthropic odporúča ako pomocníka, takzvaného [[subagenta|subagent]], ktorému väčšie modely Opus a Sonnet prideľujú drobné kroky.",
+      "Cena začína na 0,10 dolára za milión vstupných [[tokenov|token]] a 0,50 dolára za milión výstupných, čo je podľa Anthropicu zhruba o 75 % lacnejšie než predchodca Haiku 4.5. Model si naraz udrží v pamäti až milión tokenov, teda má veľké [[kontextové okno|context]], a sám si podľa náročnosti otázky určí, koľko bude premýšľať.",
+      "Spolu s ním Anthropic o polovicu zlacnil opakované čítanie uloženého textu ([[cache|cache]]) pri modeli Sonnet 5.5, čím má pri práci agentov vyjsť asi o 20 % lacnejšie. Predplatitelia Claude Max a Team dostanú navyše mesačný kredit na [[API|api]]: 100 alebo 200 dolárov pri Max a tímy až 500 dolárov."
+     ],
+     "whyItMatters": "Lacné a rýchle modely sú to, na čom v skutočnosti beží väčšina AI v aplikáciách, ktoré denne používame. V nezávislom rebríčku Artificial Analysis sa Haiku 5.5 hneď zaradil na 14. miesto z 25 a je najrýchlejší zo všetkých sledovaných modelov, okolo 243 tokenov za sekundu. Pre vývojárov to znamená výrazne lacnejšie a svižnejšie chatboty a agentov.",
+     "terms": [
+      {
+       "key": "subagent",
+       "term": "Subagent",
+       "explain": "Pomocný AI agent, ktorému hlavný (väčší a drahší) model zadá menšiu časť úlohy, napríklad prehľadať súbory. Šetrí to čas aj peniaze."
+      },
+      {
+       "key": "context",
+       "term": "Kontextové okno",
+       "explain": "Koľko textu model „vidí“ naraz v jednom rozhovore. Milión tokenov je zhruba niekoľko hrubých kníh naraz."
+      },
+      {
+       "key": "cache",
+       "term": "Cache (vyrovnávacia pamäť)",
+       "explain": "Keď aplikácia posiela modelu stále ten istý dlhý úvodný text, model si ho môže uložiť a pri ďalšom použití ho len lacno „prečíta“ z pamäte namiesto plného spracovania."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Programové rozhranie: spôsob, ako sa k modelu pripojí iná aplikácia alebo vývojár. Platí sa zvyčajne podľa množstva spracovaného textu, nie mesačným predplatným."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Anthropicu",
+       "href": "https://www.anthropic.com/claude-haiku-5-5"
+      },
+      {
+       "label": "Dokumentácia Claude Haiku 5.5",
+       "href": "https://platform.claude.com/docs/en/models/haiku-5-5/overview.md"
+      }
+     ]
+    },
+    {
+     "id": "liquid-d1",
+     "title": "Liquid AI dala zadarmo malé modely, ktoré neodpovedajú textom, ale bleskovo rozhodujú",
+     "dateText": "streda 7. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      },
+      {
+       "kind": "device",
+       "label": "Beží v zariadení"
+      }
+     ],
+     "keyFact": {
+      "value": "16 ms",
+      "label": "jedna odpoveď na čipe Nvidia Jetson AGX Thor"
+     },
+     "body": [
+      "Americká firma Liquid AI v stredu zverejnila dva takzvané [[rozhodovacie modely|decision-model]]: d1-3B s približne tromi miliardami [[parametrov|parametre]], ktorý rozumie textu a obrázkom, a experimentálny d1-omni-600M so 600 miliónmi parametrov, ktorý zvládne aj zvuk. Oba sú na stiahnutie zadarmo na Hugging Face ako [[otvorené váhy|open-weights]].",
+      "Takýto model nepíše vety. Dostane situáciu, napríklad fotku, kus textu alebo nahrávku, a otázky typu „je to v poriadku, áno alebo nie?“, „ktorá z týchto možností?“ či „ohodnoť od 1 do 10“. Odpovie naraz a s pravdepodobnosťou, ako veľmi si je istý. Na malom počítači Nvidia Jetson AGX Thor, aký sa dáva do robotov či kamier, mu jedna odpoveď trvá 16 milisekúnd.",
+      "Podľa Liquid AI je d1-3B najlepší rozhodovací model do 10 miliárd parametrov v rebríčku Decision Index a predbehol aj oveľa väčšie modely. Rozhodovacie modely sú novým mini-trendom: tento týždeň s rovnakou myšlienkou prišli aj Perplexity a OpenAI (viac v sekcii AI agenti a nástroje)."
+     ],
+     "whyItMatters": "Veľa AI v praxi nemusí vôbec „rozprávať“, stačí jej rýchlo rozhodnúť: je na fotke poškodenie, patrí e-mail na podporu alebo do obchodného, je komentár urážlivý. Malé modely, ktoré to zvládnu priamo v zariadení, sú lacnejšie a dáta neopúšťajú telefón či kameru.",
+     "terms": [
+      {
+       "key": "decision-model",
+       "term": "Rozhodovací model",
+       "explain": "AI model, ktorý namiesto písania textu vráti typovanú odpoveď: áno alebo nie, výber z daných možností, alebo skóre. K tomu pridá, ako veľmi si je istý. Je oveľa rýchlejší a lacnejší než chatbot."
+      },
+      {
+       "key": "parametre",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil počas tréningu. Zhruba platí: viac parametrov znamená viac schopností, ale aj vyššiu náročnosť na výkon. Tri miliardy sú na dnešné pomery malý model, ktorý sa zmestí aj do slabšieho zariadenia."
+      },
+      {
+       "key": "open-weights",
+       "term": "Otvorené váhy (open weights)",
+       "explain": "Firma zverejní samotný natrénovaný model na stiahnutie. Ktokoľvek si ho môže spustiť na vlastnom počítači, upraviť ho a nemusí posielať dáta cudzej firme."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Liquid AI",
+       "href": "https://www.liquid.ai/blog/d1-open"
+      },
+      {
+       "label": "Model d1-3B na Hugging Face",
+       "href": "https://huggingface.co/LiquidAI/d1-3B"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrazu, zvuku a pohybu",
+   "icon": "film",
+   "items": [
+    {
+     "id": "nano-banana-2-1",
+     "title": "Google vylepšil Nano Banana: ostrejšie obrázky a postavy, ktoré pri úpravách zostanú rovnaké",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Uzavretý model"
+      }
+     ],
+     "keyFact": {
+      "value": "4. miesto",
+      "label": "v aréne obrázkov, dva dni po vydaní"
+     },
+     "body": [
+      "Google v utorok vydal Nano Banana 2.1, novú verziu svojho modelu na tvorbu a úpravu obrázkov. Postupne ho nasadzuje do aplikácie Gemini, do vyhľadávania v režime AI Mode, do nástroja pre vývojárov AI Studio, do video nástroja Flow aj do Google Ads.",
+      "Hlavné vylepšenia sú tri: krajší a čistejší vizuálny dizajn, úpravy len vybranej časti obrázka pomocou [[masky|mask]] a lepšia konzistencia, teda že tá istá osoba či predmet vyzerá rovnako aj po viacerých úpravách. Podľa prvých správ zvláda rozlíšenie až [[4K|4k]], dokáže skombinovať až 14 referenčných obrázkov a vývojárov cez API vyjde približne o polovicu lacnejšie než predchodca.",
+      "V nezávislej aréne Artificial Analysis, kde ľudia naslepo vyberajú lepší z dvoch obrázkov, je Nano Banana 2.1 už na 4. mieste so skóre [[Elo|elo]] okolo 1 160. Pred ním sú len tri modely od OpenAI."
+     ],
+     "whyItMatters": "Ak si v Gemini necháte upraviť fotku, napríklad zmeniť pozadie, mali by ste dostať prirodzenejší výsledok, na ktorom tvár a oblečenie zostanú také, aké boli. Súboj OpenAI a Google o najlepší generátor obrázkov sa tým znova vyrovnáva.",
+     "terms": [
+      {
+       "key": "mask",
+       "term": "Maska pri úprave obrázka",
+       "explain": "Označená časť obrázka, ktorú má AI zmeniť. Všetko mimo masky zostane nedotknuté, takže môžete napríklad vymeniť len oblohu."
+      },
+      {
+       "key": "4k",
+       "term": "4K",
+       "explain": "Vysoké rozlíšenie obrázka alebo videa, zhruba 3 840 × 2 160 bodov. Štyrikrát viac detailov než bežné Full HD."
+      }
+     ],
+     "links": [
+      {
+       "label": "Dokumentácia Google pre Nano Banana 2.1",
+       "href": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1"
+      },
+      {
+       "label": "Android Authority",
+       "href": "https://www.androidauthority.com/google-launches-nano-banana-2-1-3719823/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "AI, ktorá za vás koná",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "openai-decisions-api",
+     "title": "OpenAI spustilo službu na bleskové rozhodnutia a zlacnilo vstup pre vývojárov",
+     "dateText": "utorok 6. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Verejná beta"
+      },
+      {
+       "kind": "money",
+       "label": "Lacnejší prístup"
+      }
+     ],
+     "keyFact": {
+      "value": "10× rýchlejšie",
+      "label": "než bežné volanie modelu GPT-6 Luna"
+     },
+     "body": [
+      "OpenAI v utorok spustilo vo verejnej [[beta verzii|beta]] službu Decisions API. Funguje na rovnakom princípe ako rozhodovacie modely vyššie: aplikácia pošle text alebo obrázok a dostane pravdepodobnosť, že tvrdenie platí, výber z vopred daných možností alebo číselné hodnotenie. Pod kapotou beží model GPT-6 Luna a podľa OpenAI je to až desaťkrát rýchlejšie než bežná odpoveď toho istého modelu.",
+      "Cena je 0,10 dolára za milión vstupných tokenov a za výstup sa neplatí nič. OpenAI ako príklady uvádza rozpoznanie poškodenia na fotke, automatické triedenie zákazníckych otázok či dokumentov. Služba podporuje režim, v ktorom OpenAI dáta neuchováva, aj v Európe.",
+      "V ten istý deň OpenAI zjednodušilo platené úrovne pre vývojárov z piatich na tri: Build, Launch a Grow. Po nákupe kreditu za 5 dolárov môžete minúť až 500 dolárov mesačne, po 100 dolároch 5 000 a po 500 dolároch až 200 000 dolárov mesačne. Najvyššia úroveň je tak dostupná za polovicu toho, čo predtým."
+     ],
+     "whyItMatters": "Pre bežného človeka je to neviditeľná zmena, ale aplikácie, ktoré používate, budú vedieť rýchlejšie a lacnejšie triediť, kontrolovať a rozhodovať. Malé firmy a samostatní vývojári sa zároveň skôr dostanú k vysokým limitom.",
+     "terms": [
+      {
+       "key": "beta",
+       "term": "Beta / preview",
+       "explain": "Skúšobná verzia produktu. Funguje a dá sa používať, ale firma ešte môže meniť ceny či správanie a môžu sa objaviť chyby."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie OpenAI pre vývojárov",
+       "href": "https://community.openai.com/t/decisions-api-is-now-available-in-public-beta/1403877/2"
+      },
+      {
+       "label": "Zoznam zmien OpenAI API",
+       "href": "https://developers.openai.com/api/docs/changelog"
+      },
+      {
+       "label": "The Decoder",
+       "href": "https://the-decoder.com/openai-launches-decisions-api-that-reduces-complex-evaluations-to-yes-no-or-pick-one/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Peniaze, čipy a veda",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "virtual-biology",
+     "title": "Google, Meta a americká vláda dávajú 1,8 miliardy dolárov na dáta, z ktorých sa AI naučí, ako fungujú bunky",
+     "dateText": "streda 7. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Veda a AI"
+      }
+     ],
+     "keyFact": {
+      "value": "1,8 mld. $",
+      "label": "na otvorené biologické dáta pre AI"
+     },
+     "body": [
+      "Výskumná organizácia Biohub, ktorú založil Mark Zuckerberg so svojou manželkou Priscillou Chan, v stredu rozšírila svoj projekt Virtual Biology Initiative na 1,8 miliardy dolárov. Biohub dáva 500 miliónov, americké ministerstvo energetiky viac ako 500 miliónov počas piatich rokov, Národné inštitúty zdravia (NIH) viac ako 500 miliónov a spolu 300 miliónov pridávajú Google DeepMind, jeho sesterská firma Isomorphic Labs a Meta.",
+      "Cieľom je vytvoriť obrovské množstvo štandardizovaných meraní o tom, ako sa bunky správajú a ako reagujú na lieky či choroby. Na takých dátach sa potom dajú trénovať AI modely, ktoré budú správanie buniek predpovedať, napríklad pri Alzheimerovej chorobe alebo starnutí. Dáta majú byť po krátkom [[embargu|embargo]] verejne dostupné pre vedcov na celom svete, prvé približne o rok."
+     ],
+     "whyItMatters": "Jazykové modely sú dnes také dobré, lebo internet je plný textu. Pre biológiu podobne veľké a čisté dáta chýbajú. Ak sa to podarí, AI by mohla urýchliť vývoj liekov podobne, ako urýchlila programovanie.",
+     "terms": [
+      {
+       "key": "embargo",
+       "term": "Embargo na dáta",
+       "explain": "Dohodnutá doba, počas ktorej dáta používajú len tí, čo ich vytvorili. Po jej uplynutí sa zverejnia pre všetkých."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Biohubu",
+       "href": "https://biohub.org/news/virtual-biology-initiative-expansion/"
+      },
+      {
+       "label": "CNBC",
+       "href": "https://www.cnbc.com/2026/10/07/government-google-join-zuckerberg-backed-biohub-ai-biology-data.html"
+      }
+     ]
+    },
+    {
+     "id": "nebius-gpu-prices",
+     "title": "Prenájom AI čipov znova zdražel: Nebius zvýšil ceny až o 21 percent",
+     "dateText": "od štvrtka 1. októbra, správy z tohto týždňa",
+     "tags": [
+      {
+       "kind": "eu",
+       "label": "Európska firma · Amsterdam"
+      },
+      {
+       "kind": "money",
+       "label": "Ceny výpočtov"
+      }
+     ],
+     "keyFact": {
+      "value": "4,50 $",
+      "label": "za hodinu čipu H100, predtým 3,85 $"
+     },
+     "body": [
+      "Cloudová firma Nebius so sídlom v Amsterdame od 1. októbra zdražila prenájom grafických čipov od Nvidie. Hodina čipu [[H100|h100]] stojí namiesto 3,85 dolára 4,50 dolára, teda asi o 17 % viac. Novší čip H200 vyjde na 5,40 dolára za hodinu, B200 na 8,50 a najnovší B300 na 9,50 dolára, pri niektorých to je nárast až o 21 %.",
+      "Podľa správ je to už druhé zdraženie za tri mesiace a podobne predtým zdvihli ceny aj konkurenti CoreWeave a Amazon AWS. Dopyt po výpočtoch pre AI je taký veľký, že sa prenajímajú aj niekoľkoročné čipy, ktoré by inak už strácali hodnotu."
+     ],
+     "whyItMatters": "Nebius je jedna z mála európskych firiem, ktoré sú v AI infraštruktúre naozaj veľké, preto je zaujímavé sledovať, ako sa jej darí. Drahší výpočtový výkon sa nakoniec premieta do cien AI služieb, ktoré platíme, a ukazuje, že ponuka čipov stále nestíha dopyt.",
+     "terms": [
+      {
+       "key": "h100",
+       "term": "H100, H200, B200, B300",
+       "explain": "Označenia AI čipov od Nvidie, od starších po najnovšie. Firmy si ich prenajímajú na hodiny, aby na nich trénovali alebo prevádzkovali AI modely."
+      }
+     ],
+     "links": [
+      {
+       "label": "Cenník Nebius",
+       "href": "https://nebius.com/prices"
+      },
+      {
+       "label": "Reuters (cez StreetInsider)",
+       "href": "https://www.streetinsider.com/Reuters/Nebius+hikes+AI+cloud+prices+again+as+demand+for+computing+power+soars/27074756.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Virálne AI videá s mačkou v brnení zo Seedance 2.5: model je od júla, ide len o trend na sieťach.",
+  "Tvrdenia, že čínsky DeepSeek predbehol na OpenRouteri všetky americké modely dokopy: zdroje sa v číslach rozchádzajú.",
+  "Sťažnosti na slabší výkon a limity v OpenAI Codex: dojmy používateľov, bez oficiálnej zmeny.",
+  "Dokument Netflixu o AI agentoch, ktorí unikli z testov: premiéra až v pondelok 12. októbra."
+ ],
+ "finance": {
+  "asOfText": "Ceny zo štvrtka 8. októbra o 6:10. Akcie sú zo záveru obchodovania v stredu 7. októbra, americká burza je teraz zatvorená.",
+  "summary": "Bitcoin cez noc oslabil a je pri najnižšej cene za posledných 24 hodín. Na burze sa po utorkovom rekorde indexu S&P 500 trochu vydýchlo: Google a Microsoft mierne rástli, Nvidia mierne klesla a najviac stratila Meta.",
+  "btc": {
+   "priceUsd": 82663,
+   "priceEur": 73776,
+   "changePct": -1.7,
+   "changePctEur": -1.4,
+   "low24h": 82664,
+   "high24h": 84340,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo skôr pokles",
+   "comment": "Bitcoin sa nedokázal udržať nad hranicou 85 000 $ a za 24 hodín klesol o 1,7 % na približne 82 700 $, teda na spodok denného rozpätia. Na trh tlačia rastúce výnosy amerických [[štátnych dlhopisov|yields]]: keď bezpečné dlhopisy platia vysoký úrok, investori menej riskujú a predávajú rizikovejšie aktíva vrátane kryptomien. Obchodníci na sieti X opisujú pohyb ako „lov na stop-lossy“, teda pokles, ktorý vyvolal automatické predaje a [[likvidácie longov|liquidation]] tých, čo stavili na rast s požičanými peniazmi. Najbližšie sledované zóny sú podľa nich okolo 80 000 $ smerom dole a okolo 87 000 $ smerom hore, kde sa hromadia pozície, ktoré by sa pri dosiahnutí ceny nútene zatvorili. Za týždeň je bitcoin dole asi o 1,3 % a od historického maxima ([[ATH|ath]]) zhruba 126 000 $ z októbra 2025 je nižšie približne o tretinu. Nálada je preto krátkodobo [[medvedia (bearish)|bearish]].",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/BTC-USD/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 237.47,
+    "changePct": -0.74,
+    "comment": "Mierny pokles po utorkovom rekorde. Dopyt po čipoch trvá, ako ukazujú aj vyššie ceny ich prenájmu."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 529.76,
+    "changePct": 0.09,
+    "comment": "Prakticky bez zmeny, drží sa blízko svojich rekordov."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 350.5,
+    "changePct": 0.81,
+    "comment": "Najlepší z veľkých AI firiem dňa. Google tento týždeň uviedol aj nový generátor obrázkov Nano Banana 2.1."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 721.31,
+    "changePct": -2.38,
+    "comment": "Najväčší pokles. Investori pri rastúcich výnosoch dlhopisov vyberali zisky z rastových akcií a znepokojujú ich aj obrovské výdavky Mety na AI."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Yahoo Finance NVDA",
+    "href": "https://finance.yahoo.com/quote/NVDA/"
+   },
+   {
+    "label": "MSFT",
+    "href": "https://finance.yahoo.com/quote/MSFT/"
+   },
+   {
+    "label": "GOOGL",
+    "href": "https://finance.yahoo.com/quote/GOOGL/"
+   },
+   {
+    "label": "META",
+    "href": "https://finance.yahoo.com/quote/META/"
+   },
+   {
+    "label": "Prečo klesla Meta (Benzinga)",
+    "href": "https://www.benzinga.com/markets/tech/26/10/62225274/whats-going-on-with-meta-platforms-stock-wednesday-5"
+   }
+  ],
+  "gem": {
+   "ticker": "NBIS",
+   "name": "Nebius Group",
+   "close": 237.15,
+   "changePct": -5.09,
+   "why": "Nebius je cloudová firma so sídlom v Amsterdame, ktorá prenajíma AI čipy od Nvidie. Od 1. októbra zdražila prenájom o 17 až 21 %, už druhýkrát za tri mesiace, čo naznačuje, že dopyt je väčší ako ponuka. V stredu akcia klesla o 5 % a je asi o pätinu pod svojím ročným maximom okolo 300 $, preto ju niektorí môžu sledovať ako možnú príležitosť. Je to zároveň jeden z mála európskych hráčov v AI infraštruktúre.",
+   "risks": "Riziká: veľmi veľké denné výkyvy ceny, závislosť od dodávok čipov od Nvidie, silná konkurencia (CoreWeave, Amazon, Microsoft) a obrovské investície do dátových centier, ktoré sa musia vrátiť.",
+   "links": [
+    {
+     "label": "Yahoo Finance NBIS",
+     "href": "https://finance.yahoo.com/quote/NBIS/"
+    },
+    {
+     "label": "Cenník Nebius",
+     "href": "https://nebius.com/prices"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) znamená, že sa očakáva pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "liquidation",
+    "term": "Likvidácia longov",
+    "explain": "„Long“ je stávka na rast ceny, často na požičané peniaze. Keď cena klesne príliš, burza takúto pozíciu automaticky predá, aby sa pokryla pôžička. Hromadné nútené predaje potom cenu tlačia ešte nižšie."
+   },
+   {
+    "key": "yields",
+    "term": "Výnosy štátnych dlhopisov",
+    "explain": "Úrok, ktorý dostane investor, keď požičia peniaze štátu, tu americkej vláde. Keď sú výnosy vysoké, bezpečné dlhopisy sú lákavé a peniaze odchádzajú z rizikovejších investícií, ako sú kryptomeny či rastové akcie."
+   },
+   {
+    "key": "ath",
+    "term": "ATH",
+    "explain": "All-Time High: najvyššia cena v histórii."
+   },
+   {
+    "key": "ticker",
+    "term": "Ticker",
+    "explain": "Skratka akcie na burze, napríklad NVDA je Nvidia, NBIS je Nebius."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-08.json",
+  "note": "Novinkou dňa je Claude Haiku 5.5: hneď sa zaradil na 14. miesto z 25 s indexom 43,4, je najrýchlejší zo všetkých sledovaných modelov (okolo 243 tokenov za sekundu) a s cenou 0,20 $ za milión tokenov patrí k najlacnejším. V aréne obrázkov sa nový Google Nano Banana 2.1 dostal dva dni po vydaní na 4. miesto. Prvá päťka jazykových modelov je celá americká, Anthropic drží prvé tri miesta. Denné porovnanie so včerajškom sa začne od zajtrajška, dnešné meranie je prvé uložené."
+ }
+}
