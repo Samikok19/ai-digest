@@ -1,0 +1,444 @@
+{
+  "date": "2026-10-09",
+  "label": "Piatok 9. októbra 2026",
+  "shortLabel": "Pi 9. 10.",
+  "greeting": "Dobré ráno, Samuel.",
+  "intro": "Hlavná správa dňa je z Google: Gemini sa vo firmách mení z chatu na univerzálneho AI agenta s vlastným firemným e-mailom a plánovaním. JetBrains z Európy zverejnil otvorený model Mellum2.1 na programovanie, OpenAI spustilo rýchlejší tier Ultrafast a Anthropic ohlásil obranné skeny open-source kódu aj veľký nákup Claude pre americké vedecké agentúry. Bitcoin po včerajšom poklese cez noc skôr stál, na burze však klesali čipové akcie.",
+  "highlights": [
+    "Google dáva firmám Gemini ako univerzálneho AI agenta s vlastným e-mailom a plánovaním cieľov",
+    "JetBrains zverejnil otvorený coding model Mellum2.1 a OpenAI spustilo 6× drahší, ale rýchlejší Ultrafast",
+    "Anthropic spustil zadarmo skeny open-source kódu a Odyssey-3 učí AI fyziku zo videa",
+    "Bitcoin po včerajšku stagnoval okolo 82 400 $, Nvidia a AMD na burze klesli"
+  ],
+  "leadId": "gemini-work-agent",
+  "sections": [
+    {
+      "id": "llm",
+      "title": "Jazykové modely",
+      "kicker": "Chatboty a „mozgy“ AI",
+      "icon": "brain",
+      "items": [
+        {
+          "id": "mellum-2-1",
+          "title": "JetBrains zverejnil otvorený model Mellum2.1, ktorý vie programovať a premýšľať v malom balení",
+          "dateText": "vo štvrtok 8. októbra",
+          "tags": [
+            { "kind": "open", "label": "Otvorené váhy" },
+            { "kind": "eu", "label": "Európsky model · Česko / JetBrains" }
+          ],
+          "keyFact": {
+            "value": "12 mld.",
+            "label": "parametrov, naraz pracuje asi 2,5 miliardy"
+          },
+          "body": [
+            "Česká firma JetBrains, známa editorom IntelliJ, vo štvrtok vydala Mellum2.1. Ide o [[otvorené váhy|open-weights]] pod licenciou [[Apache 2.0|apache]], teda model si môže ktokoľvek stiahnuť a spustiť u seba. Celkovo má asi 12 miliárd [[parametrov|parametre]], ale vďaka architektúre [[MoE|moe]] naraz pracuje len zhruba 2,5 miliardy z nich, takže je rýchlejší a lacnejší na prevádzku, než by naznačovala veľkosť.",
+            "Model je určený hlavne ako pomocník do coding agentov: učil sa cez [[posilňovacie učenie|rl]] v skutočných sandboxoch, kde číta cudzí kód, edituje súbory a overuje, či zmeny fungujú. Váhy sú na Hugging Face; formáty GGUF pre llama.cpp a Ollama a špeciálna hlava MTP pre vLLM majú podľa JetBrains ešte prísť."
+          ],
+          "whyItMatters": "Väčšina silných coding modelov beží v cloude amerických firiem. Mellum2.1 je európska a otvorená alternatíva, ktorú si firma môže pustiť na vlastnom serveri bez posielania kódu von — hodí sa ako lacný worker alebo [[subagent|subagent]] v programovacích agendoch.",
+          "terms": [
+            {
+              "key": "open-weights",
+              "term": "Otvorené váhy (open weights)",
+              "explain": "Firma zverejní samotný natrénovaný model na stiahnutie. Ktokoľvek si ho môže spustiť na vlastnom počítači, upraviť ho a nemusí posielať dáta cudzej firme."
+            },
+            {
+              "key": "apache",
+              "term": "Apache 2.0",
+              "explain": "Voľná licencia, ktorá dovolí model používať aj komerčne, upravovať a ďalej šíriť, s niekoľkými jednoduchými povinnosťami (napríklad uviesť pôvod)."
+            },
+            {
+              "key": "parametre",
+              "term": "Parametre",
+              "explain": "Čísla vo vnútri modelu, ktoré sa naučil počas tréningu. Viac parametrov zvyčajne znamená viac schopností, ale aj vyššiu náročnosť na výkon."
+            },
+            {
+              "key": "moe",
+              "term": "MoE (Mixture of Experts)",
+              "explain": "Model je zložený z viacerých „expertov“, ale pri každej odpovedi zapne len niektorých. Preto môže byť veľký celkovo, no pri práci spotrebúva menej výpočtov — hovorí sa o aktívnych parametroch."
+            },
+            {
+              "key": "rl",
+              "term": "Posilňovacie učenie (RL)",
+              "explain": "Tréning, pri ktorom model skúša úlohy v prostredí a dostáva odmeny za správne kroky. Tu sa učil priamo pri programovaní v izolovaných sandboxoch."
+            },
+            {
+              "key": "subagent",
+              "term": "Subagent",
+              "explain": "Pomocný AI agent, ktorému hlavný (väčší a drahší) model zadá menšiu časť úlohy, napríklad prehľadať súbory alebo navrhnúť opravu. Šetrí to čas aj peniaze."
+            }
+          ],
+          "links": [
+            {
+              "label": "Blog JetBrains",
+              "href": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
+            }
+          ]
+        },
+        {
+          "id": "gpt61-sol-ultrafast",
+          "title": "OpenAI spustilo Ultrafast: rovnaký GPT-6.1 Sol, ale výrazne rýchlejšie odpovede za šesťnásobnú cenu",
+          "dateText": "vo štvrtok 8. októbra",
+          "tags": [
+            { "kind": "closed", "label": "Uzavretý model" },
+            { "kind": "money", "label": "Nový cenový tier" }
+          ],
+          "keyFact": {
+            "value": "12 / 60 $",
+            "label": "za milión vstupných / výstupných tokenov (6× Standard)"
+          },
+          "body": [
+            "OpenAI vo štvrtok v [[API|api]] changelogu pridalo nový [[service tier|service-tier]] s názvom Ultrafast pre model gpt-6.1-sol. Ide o rovnaké váhy ako pri štandardnom Soli, len generovanie [[tokenov|token]] má byť výrazne rýchlejšie — marketing hovorí až o osemnásobku, oficiálne merania OpenAI doteraz podrobnejšie ukazovalo hlavne pri modeli Astra. Tier funguje v Responses API, v Codexe a v ChatGPT Work.",
+            "Cena je 12 dolárov za milión vstupných tokenov a 60 dolárov za milión výstupných, teda šesťkrát viac než Standard (2 / 10 dolárov). V Codexe a ChatGPT Work je Ultrafast zatiaľ len pre predplatiteľov Pro za 500 dolárov mesačne a pre vybrané Enterprise a Edu účty. Dôležité pre Európu: [[EU residency|eu-residency]] funguje aj na Ultrafast, na rozdiel od Astra Ultrafast, kde to nešlo."
+          ],
+          "whyItMatters": "Pri AI agendoch a programovaní často rozhoduje latencia: každý ďalší krok čaká na odpoveď modelu. Ultrafast kupuje rýchlosť za šesťnásobnú cenu — hodí sa tam, kde sa sekundy sčítajú, nie na bežný chat.",
+          "terms": [
+            {
+              "key": "api",
+              "term": "API",
+              "explain": "Programové rozhranie: spôsob, ako sa k modelu pripojí iná aplikácia alebo vývojár. Platí sa zvyčajne podľa množstva spracovaného textu."
+            },
+            {
+              "key": "service-tier",
+              "term": "Service tier",
+              "explain": "Cenová a výkonnostná trieda v API. Ten istý model môže bežať lacnejšie a pomalšie, alebo drahšie a rýchlejšie — tu Ultrafast."
+            },
+            {
+              "key": "token",
+              "term": "Token",
+              "explain": "Základná jednotka textu pre AI. Zhruba platí, že jedno slovo je jeden až dva tokeny; podľa počtu tokenov sa platí aj cena API."
+            },
+            {
+              "key": "eu-residency",
+              "term": "EU residency",
+              "explain": "Nastavenie, pri ktorom spracovanie dát ostáva v dátových centrách v Európskej únii. Dôležité pre firmy s prísnymi pravidlami o tom, kam môžu ísť citlivé údaje."
+            }
+          ],
+          "links": [
+            {
+              "label": "Changelog OpenAI API",
+              "href": "https://developers.openai.com/api/docs/changelog"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "title": "Obrázky a video",
+      "kicker": "Generovanie a „svetové“ modely",
+      "icon": "film",
+      "items": [
+        {
+          "id": "odyssey-3",
+          "title": "Odyssey-3 učí AI fyziku a dynamiku zo videa a skúša ju na robotoch, autách aj dronoch",
+          "dateText": "vo štvrtok 8. októbra",
+          "tags": [
+            { "kind": "preview", "label": "Research preview" }
+          ],
+          "keyFact": {
+            "value": "66,1",
+            "label": "skóre Physics-IQ Verified Pro (video na video)"
+          },
+          "body": [
+            "Firma Odyssey vo štvrtok predstavila Odyssey-3, takzvaný [[foundation world model|world-model]]. Ide o autoregresívny [[difúzny|diffusion]] transformátor, ktorý sa z vizuálnych dát učí, ako sa vo svete hýbu predmety a čo sa stane po akcii. Je dostupný ako research preview a cez API.",
+            "Na teste Physics-IQ Verified Pro (video na video) dosiahol verzia Pro skóre 66,1. Firma ukazuje použitie pri robotických ramenách, humanoidoch (partner Flexion), pri autách v Indii zhruba z 20 hodín dát, pri dronoch a pri generovaní prostredí pre agentov."
+          ],
+          "whyItMatters": "Vedľa Nvidia Cosmos a World Labs pribúda ďalší komerčný stack, ktorý sa snaží dať AI zmysel pre fyziku, nie len pekné obrázky. To je základ pre robotiku, simulácie a agentov, ktorí majú konať vo svete, nie len písať text.",
+          "terms": [
+            {
+              "key": "world-model",
+              "term": "World model (model sveta)",
+              "explain": "AI, ktorá sa snaží vnútorným modelom predpovedať, čo sa vo svete stane po nejakej akcii — napríklad kam spadne predmet alebo ako sa pohne robot. Nie je to chatbot, ale skôr „simulátor fyziky“ z dát."
+            },
+            {
+              "key": "diffusion",
+              "term": "Difúzny model",
+              "explain": "Spôsob generovania obrázkov a videa: model začne od šumu a postupne ho čistí, kým nevznikne zmysluplný obraz. Autoregresívny variant navyše skladá výsledok krok za krokom v čase."
+            }
+          ],
+          "links": [
+            {
+              "label": "Oznámenie Odyssey",
+              "href": "https://odyssey.systems/meet-odyssey-3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "title": "AI agenti a nástroje",
+      "kicker": "Od chatu k práci",
+      "icon": "bot",
+      "items": [
+        {
+          "id": "gemini-work-agent",
+          "title": "Google mení Gemini vo firmách na univerzálneho agenta: zadáte cieľ, nie návod, a on si naplánuje prácu",
+          "dateText": "vo štvrtok 8. októbra",
+          "tags": [
+            { "kind": "preview", "label": "Private preview" },
+            { "kind": "closed", "label": "Firemný produkt" }
+          ],
+          "keyFact": {
+            "value": "@agents…",
+            "label": "vlastný Workspace e-mail pre každého agenta"
+          },
+          "body": [
+            "Google vo štvrtok na akciách Gemini at Work predstavil enterprise „univerzálneho agenta“ v Gemini. Namiesto podrobných inštrukcií mu máte dať cieľ — napríklad pripraviť report alebo zosúladiť termíny — a agent si sám naplánuje kroky, použije skills a nástroje, [[MCP|mcp]] konektory a môže spúšťať [[subagentov|subagent]].",
+            "Každý taký agent dostane vlastný Workspace účet s e-mailom v tvare @agents.company.com a audit trail, čo robil. Vie sa napojiť na Workspace, Microsoft 365, Slack, Jira či BigQuery. V modelovom pickeri má byť neskôr aj Anthropic Claude a ďalšie open alebo private modely. Zatiaľ ide o private preview pre vybrané firmy."
+          ],
+          "whyItMatters": "Google tým posúva Gemini z „pýtaj sa a odpovedám“ na dlhodobého firemného kolegu s identitou, právami a dohľadom. Pre bežného človeka to zatiaľ nie je v osobnom chatbote, ale ukazuje, kam sa uberajú firemné AI: menej klikania, viac delegovania cieľov.",
+          "terms": [
+            {
+              "key": "mcp",
+              "term": "MCP",
+              "explain": "Model Context Protocol: otvorený spôsob, ako AI agent bezpečne pripojí nástroje a dáta (súbory, Slack, databázy). Aplikácie sa dohodnú na spoločnom „konektore“, namiesto vlastného napojenia pre každý model."
+            }
+          ],
+          "links": [
+            {
+              "label": "Blog Google",
+              "href": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/"
+            },
+            {
+              "label": "TechCrunch",
+              "href": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+            }
+          ]
+        },
+        {
+          "id": "anthropic-cyber-mission",
+          "title": "Anthropic spustil Cyber Mission: Claude má pomáhať brániť kritickú infraštruktúru a zadarmo skenovať open-source",
+          "dateText": "vo štvrtok 8. októbra",
+          "tags": [
+            { "kind": "safety", "label": "Kyberbezpečnosť" },
+            { "kind": "open", "label": "OSS skeny zadarmo" }
+          ],
+          "keyFact": {
+            "value": ">90 %",
+            "label": "očakávaná miera správnych nálezov (true positive)"
+          },
+          "body": [
+            "Anthropic vo štvrtok oznámil Anthropic Cyber Mission. Jeho súčasťou je Critical Infrastructure Defense Program (CIDP) s partnermi ako CrowdStrike, Palo Alto Networks, Deloitte či Rockwell — spoločne majú pomáhať chrániť kritickú infraštruktúru pomocou Claude.",
+            "Druhá novinka je OSS Scanner: dobrovoľná služba, ktorá periodicky skenuje open-source projekty frontier modelmi (vrátane Mythos) zadarmo. Reporty idú bez ľudského review, Anthropic očakáva mieru správnych nálezov nad 90 percent, a k nálezu má prísť aj [[PoC|poc]] a návrh opravy."
+          ],
+          "whyItMatters": "Open-source knižnice sú v takmer každej aplikácii a chyby v nich sa šíria rýchlo. Ak frontier modely dokážu spoľahlivo hľadať diery a navrhovať opravy, môže to zrýchliť obranu — a zároveň ukazuje, že Anthropic chce Claude použiť aj ako obranný scanning stack, nielen ako chat.",
+          "terms": [
+            {
+              "key": "poc",
+              "term": "PoC (proof of concept)",
+              "explain": "Dôkaz, že bezpečnostná chyba je skutočne zneužiteľná: krátky príklad alebo skript, ktorý ukáže problém, aby sa dal overiť a opraviť."
+            }
+          ],
+          "links": [
+            {
+              "label": "Oznámenie Anthropicu",
+              "href": "https://www.anthropic.com/news/anthropic-cyber-mission"
+            },
+            {
+              "label": "OSS Scanner (research)",
+              "href": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source"
+            }
+          ]
+        },
+        {
+          "id": "claude-code-2-1-295",
+          "title": "Claude Code 2.1.295 spevnil pripojenie nástrojov cez MCP a pridal bezpečnejšie hooks",
+          "dateText": "vo štvrtok 8. októbra večer",
+          "tags": [
+            { "kind": "standard", "label": "Aktualizácia nástroja" }
+          ],
+          "body": [
+            "Anthropic vo štvrtok večer vydal Claude Code 2.1.295. Vylepšuje spoľahlivosť [[MCP|mcp]]: pri výpadku sa znova pripája s backoffom do 30 sekúnd, lepšie zvláda stránkovanie a headless či SDK režimy. Predvolený MCP protokol pre konektory na claude.ai je 2026-07-28 (starší režim cez MCP_PROTOCOL_NEGOTIATION=legacy), WebSocket MCP zvládne správy do 16 MiB a hooks môžu pri zlyhaní použiť onFailure: \"block\". Popisy MCP nástrojov cez tool search môžu mať až 16 384 znakov."
+          ],
+          "whyItMatters": "Je to údržbový update po včerajšom 2.1.292, ale práve spoľahlivosť konektorov a bezpečnosť hooks rozhodujú, či coding agent v praxi nespadne alebo neurobí niečo nežiaduce.",
+          "terms": [],
+          "links": [
+            {
+              "label": "GitHub release v2.1.295",
+              "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "Tech a biznis",
+      "kicker": "Peniaze, čipy a veda",
+      "icon": "chip",
+      "items": [
+        {
+          "id": "genesis-mission",
+          "title": "Anthropic dáva americkým vedeckým agentúram Claude za 150 miliónov dolárov na tri roky",
+          "dateText": "vo štvrtok 8. októbra",
+          "tags": [
+            { "kind": "money", "label": "Verejný nákup" }
+          ],
+          "keyFact": {
+            "value": "150 mil. $",
+            "label": "kredity Claude a API na 3 roky pre 15+ agentúr"
+          },
+          "body": [
+            "Anthropic vo štvrtok oznámil záväzok v rámci Genesis Mission: počas troch rokov poskytne Claude, Claude Code a [[API|api]] kredity v hodnote 150 miliónov dolárov viac ako pätnástim americkým federálnym agentúram vrátane NASA, NIH a NSF. Ide o partnerstvo s ministerstvom energetiky (DOE).",
+            "Cieľom je dať vedcom a úradom prístup k frontier modelom na výskum a prácu s dátami, nie len na bežný chat."
+          ],
+          "whyItMatters": "Je to jeden z najväčších verejných nákupov Claude do vedeckých inštitúcií. Ukazuje, že AI sa stáva súčasťou štátnej výskumnej infraštruktúry — podobne ako kedysi superpočítače.",
+          "terms": [],
+          "links": [
+            {
+              "label": "Oznámenie Anthropicu",
+              "href": "https://www.anthropic.com/news/genesis-mission-commitment"
+            }
+          ]
+        },
+        {
+          "id": "robojepa",
+          "title": "Meta FAIR zverejnila RoboJEPA, otvorené modely sveta pre robotov až do 8 miliárd parametrov",
+          "dateText": "okolo štvrtka 8. októbra",
+          "tags": [
+            { "kind": "open", "label": "Otvorené váhy" }
+          ],
+          "body": [
+            "Podľa arXiv a sekundárnych správ zverejnil tím Meta FAIR rodinu RoboJEPA: otvorené latentné [[world modely|world-model]] podmienené akciami, veľkosťou až do 8 miliárd parametrov, trénované na zhruba 15-tisíc hodinách robotického videa z 12 typov telies (embodiments). Kód a checkpointy majú byť na GitHub. Primárny blog Meta sme priamo neoverili, preto berte detaily s rezervou."
+          ],
+          "whyItMatters": "Otvorené world modely pre robotiku znižujú prah pre laboratóriá, ktoré chcú skúšať fyzickú AI bez budovania celého stacku od nuly.",
+          "terms": [],
+          "links": [
+            {
+              "label": "arXiv (RoboJEPA)",
+              "href": "https://arxiv.org/html/2610.10515"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    "Pokračovanie rolloutu GPT-6 Intelligent UI a Luna zadarmo: už v digeste zo 8. októbra, nie nový produkt.",
+    "Rumory o Gemini 4 Argon billingu a app listingoch: stále len pozorovania, nie oficiálne oznámenie.",
+    "StepFun Step 5 Preview, Scale HSS, Fable 5.5, Nous Hermes a podobné: bez oficiálneho update alebo nízka priorita.",
+    "Cloudflare Clef / Clef-Flash: release okolo 1. októbra, mimo sledovaného okna.",
+    "NVIDIA PixelUMM: váhy a paper skôr koniec septembra / 1. októbra.",
+    "HuggingFaceBio Carbon-A (anotátor genómov): zaujímavé bio-AI, ale mimo jadra digestu (LLM / obraz / agenti).",
+    "Promo videá JetBrains Air / Junie: marketing, nie nový model (signál je Mellum2.1)."
+  ],
+  "finance": {
+    "asOfText": "Ceny z piatka 9. októbra ráno okolo 6:16. Akcie sú zo záveru obchodovania vo štvrtok 8. októbra, americká burza je teraz zatvorená.",
+    "summary": "Bitcoin po včerajšom poklese cez noc skôr stál okolo 82 400 dolárov. Na burze v štvrtok výrazne oslabili čipové akcie, najmä Nvidia a AMD.",
+    "btc": {
+      "priceUsd": 82447,
+      "priceEur": 73443,
+      "changePct": -0.29,
+      "changePctEur": -0.48,
+      "low24h": 80427,
+      "high24h": 83215,
+      "mood": "neutral",
+      "moodLabel": "Po včerajšom poklese skôr pokoj",
+      "comment": "Bitcoin sa po včerajšom poklese o zhruba 1,7 % cez noc držal okolo 82 400 dolárov: za posledných 24 hodín klesol len o 0,29 % a pohyboval sa medzi približne 80 400 a 83 200 $. Nálada je preto skôr pokojná až mierne [[medvedia (bearish)|bearish]] — nie panika, ale ani obrat nahor. Za sedem dní je dole asi o 3,6 % a od historického maxima ([[ATH|ath]]) okolo 126 080 $ z októbra 2025 je nižšie približne o 35 %. Obchodníci sledujú, či sa udrží pásmo okolo 80–83-tisíc, kým sa nevráti silnejší nákupný dopyt.",
+      "links": [
+        {
+          "label": "CoinGecko",
+          "href": "https://www.coingecko.com/en/coins/bitcoin"
+        },
+        {
+          "label": "Yahoo Finance BTC-USD",
+          "href": "https://finance.yahoo.com/quote/BTC-USD/"
+        }
+      ]
+    },
+    "stocks": [
+      {
+        "ticker": "NVDA",
+        "name": "Nvidia",
+        "close": 230.48,
+        "changePct": -2.94,
+        "comment": "Najväčší pokles z veľkej štvorky: vo štvrtok šli dole čipové akcie a Nvidia stratila takmer tri percentá."
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft",
+        "close": 522.61,
+        "changePct": -1.35,
+        "comment": "Sledoval širší pokles tech akcií, strata okolo percenta a pol."
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet (Google)",
+        "close": 348.29,
+        "changePct": -0.63,
+        "comment": "Mierny pokles napriek veľkej produktovej správe o Gemini agentovi — burza reagovala skôr na sektor čipov."
+      },
+      {
+        "ticker": "META",
+        "name": "Meta",
+        "close": 720.89,
+        "changePct": -0.06,
+        "comment": "Prakticky bez zmeny po včerajšom väčšom výpredaji."
+      }
+    ],
+    "stocksLinks": [
+      {
+        "label": "Yahoo Finance NVDA",
+        "href": "https://finance.yahoo.com/quote/NVDA/"
+      },
+      {
+        "label": "MSFT",
+        "href": "https://finance.yahoo.com/quote/MSFT/"
+      },
+      {
+        "label": "GOOGL",
+        "href": "https://finance.yahoo.com/quote/GOOGL/"
+      },
+      {
+        "label": "META",
+        "href": "https://finance.yahoo.com/quote/META/"
+      }
+    ],
+    "gem": {
+      "ticker": "AMD",
+      "name": "AMD",
+      "close": 620.75,
+      "changePct": -3.89,
+      "why": "AMD vo štvrtok zatvorila na 620,75 $ po predchádzajúcom close 645,86 $, teda strata takmer štyri percentá — jeden z najväčších poklesov medzi čipovými menami spolu s Nvidiou. AMD je hlavný konkurent Nvidie pri AI GPU, preto ju investori často sledujú ako „druhú stávku“ na dopyt po AI čipoch. Silný overnight drop v sektore môže niektorých lákať na lacnejší vstup, iných varovať pred pokračujúcim výpredajom.",
+      "risks": "Riziká: vysoká volatilita, cyklický dopyt po čipoch a silná konkurencia Nvidie; jeden slabý deň v sektore ešte nič nehovorí o dlhodobom trende.",
+      "links": [
+        {
+          "label": "Yahoo Finance AMD",
+          "href": "https://finance.yahoo.com/quote/AMD/"
+        }
+      ],
+      "disclaimer": "Toto nie je investičná rada."
+    },
+    "terms": [
+      {
+        "key": "bearish",
+        "term": "Bearish / bullish",
+        "explain": "Burzový slang. Bearish (medvedí) znamená, že sa očakáva pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+      },
+      {
+        "key": "liquidation",
+        "term": "Likvidácia longov",
+        "explain": "„Long“ je stávka na rast ceny, často na požičané peniaze. Keď cena klesne príliš, burza takúto pozíciu automaticky predá, aby sa pokryla pôžička. Hromadné nútené predaje potom cenu tlačia ešte nižšie."
+      },
+      {
+        "key": "yields",
+        "term": "Výnosy štátnych dlhopisov",
+        "explain": "Úrok, ktorý dostane investor, keď požičia peniaze štátu, tu americkej vláde. Keď sú výnosy vysoké, bezpečné dlhopisy sú lákavé a peniaze odchádzajú z rizikovejších investícií, ako sú kryptomeny či rastové akcie."
+      },
+      {
+        "key": "ath",
+        "term": "ATH",
+        "explain": "All-Time High: najvyššia cena v histórii."
+      },
+      {
+        "key": "ticker",
+        "term": "Ticker",
+        "explain": "Skratka akcie na burze, napríklad NVDA je Nvidia, AMD je Advanced Micro Devices."
+      }
+    ]
+  },
+  "benchmarks": {
+    "snapshot": "data/benchmarks-2026-10-09.json"
+  }
+}
