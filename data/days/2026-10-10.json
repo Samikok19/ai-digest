@@ -1,0 +1,553 @@
+{
+  "date": "2026-10-10",
+  "label": "Sobota 10. októbra 2026",
+  "shortLabel": "So 10. 10.",
+  "greeting": "Dobré ráno, Samuel.",
+  "intro": "Víkendové vydanie je pokojnejšie, ale Anthropic toho v piatok a vo štvrtok večer pustil veľa: Claude vie po novom stavať živé firemné dashboardy a animované videá, Docs a Slides sú hotové aj pre bezplatných používateľov a vývojári dostali hotovú službu, ktorá naraz riadi až tisíc AI agentov. Microsoft predstavil malý a extrémne lacný model, ktorý nepíše texty, ale rozhoduje. Na burze TSMC potvrdilo rekordný štvrťrok, Bitcoin sa drží okolo 82 600 dolárov.",
+  "highlights": [
+    "Claude vie z firemných dát postaviť živý dashboard a z textu animované video, Docs a Slides sú už pre všetkých vrátane Free",
+    "Anthropic spustil službu, v ktorej jeden agent napíše plán a nechá naraz pracovať až tisíc ďalších agentov",
+    "Microsoft vydal lacný model Decision-1, ktorý nepíše texty, ale rýchlo vyberá z možností a hodnotí",
+    "TSMC hlási rekordný štvrťrok s tržbami vyššími o polovicu, čipové akcie však v piatok ďalej klesali",
+    "Bitcoin sa drží okolo 82 600 dolárov, v piatok mierne posilnil Microsoft a Google"
+  ],
+  "leadId": "claude-dashboards-motion",
+  "sections": [
+    {
+      "id": "llm",
+      "title": "Jazykové modely",
+      "kicker": "Chatboty a „mozgy“ AI",
+      "icon": "brain",
+      "items": [
+        {
+          "id": "microsoft-decision-1",
+          "title": "Microsoft vydal malý model, ktorý nepíše texty, ale bleskovo a lacno rozhoduje",
+          "dateText": "v piatok 9. októbra",
+          "tags": [
+            {
+              "kind": "closed",
+              "label": "Cez API"
+            },
+            {
+              "kind": "money",
+              "label": "Výstup zadarmo"
+            }
+          ],
+          "keyFact": {
+            "value": "0,042 $",
+            "label": "za milión vstupných tokenov, odpoveď je zadarmo"
+          },
+          "body": [
+            "Microsoft v piatok predstavil Microsoft-Decision-1. Na rozdiel od bežných chatbotov nepíše odpovede, ale pri pevne daných možnostiach (áno alebo nie, výber z niekoľkých variantov, známka podľa hodnotiacej tabuľky) vráti ku každej možnosti pravdepodobnosť, ako veľmi sedí. Takýto výstup môže iný program okamžite použiť, napríklad rozhodnúť, kam poslať požiadavku zákazníka.",
+            "Základom je otvorený čínsky model Qwen3.5 s 9 miliardami [[parametrov|parametre]], ktorý Microsoft [[dotrénoval|fine-tune]] na rozhodovanie; neskôr ho chce postaviť aj na vlastných modeloch MAI a na modeloch OpenAI. Podľa Microsoftu dosiahol najvyššiu presnosť v porovnaní na 36 testoch s takmer 150-tisíc otázkami a je zhruba 35-krát rýchlejší než GPT-6 Sol. Dôležitá je aj [[kalibrácia|calibration]]: keď model povie 90 percent, má mať pravdu zhruba deväťkrát z desiatich.",
+            "Cena je 0,042 dolára za milión vstupných [[tokenov|token]] a výstup sa neplatí vôbec. Model je dostupný v Microsoft Foundry a cez službu OpenRouter."
+          ],
+          "whyItMatters": "Je to už tretí veľký hráč v novej kategórii takzvaných rozhodovacích modelov za jediný týždeň, po OpenAI Decisions a Liquid d1. AI agenti robia desiatky malých rozhodnutí za sebou a každé stojí čas aj peniaze; lacný a rýchly „rozhodca“ môže agentov zrýchliť a zlacniť, aj keď to bežný človek uvidí len nepriamo.",
+          "terms": [
+            {
+              "key": "parametre",
+              "term": "Parametre",
+              "explain": "Čísla vo vnútri modelu, ktoré sa naučil počas tréningu. Viac parametrov zvyčajne znamená viac schopností, ale aj vyššiu náročnosť na výkon."
+            },
+            {
+              "key": "fine-tune",
+              "term": "Dotrénovanie (fine-tuning)",
+              "explain": "Vezme sa už hotový model a krátko sa ďalej trénuje na konkrétnu úlohu. Je to oveľa lacnejšie než trénovať nový model od nuly."
+            },
+            {
+              "key": "calibration",
+              "term": "Kalibrácia",
+              "explain": "Ako dobre sedí sebaistota modelu so skutočnosťou. Dobre kalibrovaný model, ktorý tvrdí 70 percent, má pravdu približne v 70 prípadoch zo sto."
+            },
+            {
+              "key": "token",
+              "term": "Token",
+              "explain": "Základná jednotka textu pre AI. Zhruba platí, že jedno slovo je jeden až dva tokeny; podľa počtu tokenov sa platí aj cena API."
+            }
+          ],
+          "links": [
+            {
+              "label": "Oznámenie Microsoftu",
+              "href": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+            },
+            {
+              "label": "Model na OpenRouteri",
+              "href": "https://openrouter.ai/microsoft/microsoft-decision-1"
+            }
+          ]
+        },
+        {
+          "id": "stepfun-step-5-preview",
+          "title": "Čínsky StepFun má oficiálne potvrdený veľký model Step 5 a sľubuje, že ho o pár dní dá zadarmo na stiahnutie",
+          "dateText": "vo štvrtok 8. a v piatok 9. októbra",
+          "tags": [
+            {
+              "kind": "preview",
+              "label": "Preview"
+            },
+            {
+              "kind": "open",
+              "label": "Otvorené váhy sľúbené"
+            }
+          ],
+          "keyFact": {
+            "value": "1 milión",
+            "label": "tokenov kontextu, odpoveď až 64-tisíc tokenov"
+          },
+          "body": [
+            "O modeli Step 5 Preview od čínskej firmy StepFun sme vo štvrtok písali len okrajovo, lebo chýbal oficiálny zdroj. Teraz ho potvrdzuje dokumentácia StepFunu: ide o vlajkový model pre agentov a programovanie, ktorý naraz udrží v [[pamäti|context]] až milión tokenov, teda rádovo celú knihu alebo veľký kus zdrojového kódu, a rozumie textu, obrázkom aj videu.",
+            "Podľa stránky na OpenRouteri má zhruba 600 miliárd parametrov, z ktorých vďaka architektúre [[MoE|moe]] naraz pracuje asi 27 miliárd. Cena je 1 dolár za milión vstupných a 2,70 dolára za milión výstupných tokenov. StepFun sľubuje [[otvorené váhy|open-weights]] na štvrtok 15. októbra; repozitár, ktorý sa už objavil na Hugging Face, nahral niekto tretí, nie firma."
+          ],
+          "whyItMatters": "Ak váhy naozaj prídu, pribudne ďalší veľký otvorený model na programovanie s obrovskou pamäťou. Čínske firmy tak pokračujú v trende dávať silné modely voľne k dispozícii, kým americkí lídri ich držia zatvorené.",
+          "terms": [
+            {
+              "key": "moe",
+              "term": "MoE (Mixture of Experts)",
+              "explain": "Model je zložený z viacerých „expertov“, ale pri každej odpovedi zapne len niektorých. Preto môže byť veľký celkovo, no pri práci spotrebúva menej výpočtov — hovorí sa o aktívnych parametroch."
+            },
+            {
+              "key": "open-weights",
+              "term": "Otvorené váhy (open weights)",
+              "explain": "Firma zverejní samotný natrénovaný model na stiahnutie. Ktokoľvek si ho môže spustiť na vlastnom počítači, upraviť ho a nemusí posielať dáta cudzej firme."
+            },
+            {
+              "key": "context",
+              "term": "Kontext (kontextové okno)",
+              "explain": "Koľko textu model „vidí“ naraz pri jednej odpovedi. Milión tokenov je zhruba 700-tisíc slov."
+            }
+          ],
+          "links": [
+            {
+              "label": "Dokumentácia StepFun",
+              "href": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview"
+            },
+            {
+              "label": "Step 5 na OpenRouteri",
+              "href": "https://openrouter.ai/stepfun/step-5-preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "title": "Obrázky, video a hlas",
+      "kicker": "Generovanie obrazu a zvuku",
+      "icon": "film",
+      "items": [
+        {
+          "id": "qwen-image-2-1-turbo",
+          "title": "Alibaba zrýchlila svoj obrázkový model Qwen-Image: namiesto 40 krokov mu stačí osem",
+          "dateText": "v piatok 9. októbra",
+          "tags": [
+            {
+              "kind": "open",
+              "label": "Váhy na stiahnutie"
+            },
+            {
+              "kind": "device",
+              "label": "Beží aj lokálne"
+            }
+          ],
+          "keyFact": {
+            "value": "8 krokov",
+            "label": "namiesto 40, obrázok až 2048 × 2048 bodov"
+          },
+          "body": [
+            "Tím Qwen z Alibaby v piatok zverejnil Qwen-Image-2.1-Turbo, zrýchlenú verziu modelu na tvorbu a úpravu obrázkov zo septembra. Vizuálna časť má 7 miliárd parametrov a obrázok vytvorí za 8 krokov [[difúzie|diffusion]] namiesto 40, takže je výrazne rýchlejší. Odporúčaný postup krokov je uložený priamo v modeli, používateľ ho nemusí ladiť.",
+            "Vie aj upravovať existujúce fotky (až s desiatimi referenčnými obrázkami), dodržať tvár človeka či vzhľad produktu a priamo vytvárať obrázky s priehľadným pozadím, napríklad nálepky alebo logá. Komunita už pripravila zmenšené [[kvantizované|quant]] verzie s veľkosťou od 2,6 do 16,4 GB, ktoré sa zmestia aj na bežnejšie počítače vrátane Macov."
+          ],
+          "whyItMatters": "Rýchly obrázkový model, ktorý beží doma bez cloudu, je dobrá správa pre tvorcov aj súkromie. Pozor však na licenciu Qwen Research: je len na nekomerčné použitie, na biznis treba platené API alebo osobitnú dohodu.",
+          "terms": [
+            {
+              "key": "diffusion",
+              "term": "Difúzny model",
+              "explain": "Spôsob generovania obrázkov a videa: model začne od šumu a postupne ho čistí, kým nevznikne zmysluplný obraz. Každé „vyčistenie“ je jeden krok, menej krokov znamená rýchlejší výsledok."
+            },
+            {
+              "key": "quant",
+              "term": "Kvantizácia (napríklad GGUF)",
+              "explain": "Zmenšenie modelu tým, že sa jeho čísla uložia s menšou presnosťou. Model potom zaberá menej pamäte a beží aj na slabšom hardvéri, za cenu malej straty kvality."
+            }
+          ],
+          "links": [
+            {
+              "label": "Qwen-Image-2.1 na GitHube",
+              "href": "https://github.com/QwenLM/Qwen-Image-2.1"
+            },
+            {
+              "label": "Model na Hugging Face",
+              "href": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo"
+            }
+          ]
+        },
+        {
+          "id": "heygen-voice",
+          "title": "HeyGen, známy AI avatarmi, vydal prvý vlastný hlasový model a hneď je prvý v rebríčku klonovaných hlasov",
+          "dateText": "v piatok 9. októbra",
+          "tags": [
+            {
+              "kind": "closed",
+              "label": "Cez API"
+            }
+          ],
+          "keyFact": {
+            "value": "1 202",
+            "label": "bodov Elo, druhý Qwen má 1 186, ElevenLabs 1 167"
+          },
+          "body": [
+            "Firma HeyGen, ktorá robí videá s AI avatarmi, v piatok predstavila HeyGen Voice, svoj prvý vlastný model na prevod textu na reč. V rebríčku Artificial Analysis pre takzvané kontrolované hlasy sa hneď dostal na prvé miesto so skóre 1 202 bodov [[Elo|elo]], pred Qwen-Audio-3.1-TTS-Plus (1 186) a Eleven v4 Turbo od ElevenLabs (1 167).",
+            "Test porovnáva, ako prirodzene modely hovoria ôsmimi rovnakými naklonovanými hlasmi, a hodnotia ich ľudia naslepo. V širšom rebríčku hotových hlasov zatiaľ HeyGen nie je, lebo ich ešte neponúka dosť. Model je dostupný cez HeyGen API."
+          ],
+          "whyItMatters": "ElevenLabs bol doteraz synonymom pre kvalitné AI hlasy. Ak HeyGen ponúkne avatara aj hlas z jednej dielne, firmám sa zjednoduší výroba videí, napríklad školení či reklám v rôznych jazykoch.",
+          "terms": [],
+          "links": [
+            {
+              "label": "Rebríček Artificial Analysis",
+              "href": "https://artificialanalysis.ai/text-to-speech/leaderboard/controlled-voice"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "title": "AI agenti a nástroje",
+      "kicker": "Od chatu k práci",
+      "icon": "bot",
+      "items": [
+        {
+          "id": "claude-dashboards-motion",
+          "title": "Claude vie z firemných dát postaviť živý dashboard a z textu animované video, Docs a Slides sú už pre všetkých",
+          "dateText": "vo štvrtok 8. októbra večer",
+          "tags": [
+            {
+              "kind": "preview",
+              "label": "Dashboards a Motion v bete"
+            },
+            {
+              "kind": "standard",
+              "label": "Docs a Slides aj vo Free"
+            }
+          ],
+          "keyFact": {
+            "value": "45 miliónov",
+            "label": "dokumentov, prezentácií a návrhov už ľudia v Claude vytvorili"
+          },
+          "body": [
+            "Anthropic vo štvrtok večer spustil dve nové funkcie. Claude Dashboards sa napojí na firemné dáta, napríklad BigQuery, Snowflake, Databricks či Salesforce, a na otázku v bežnej reči postaví [[dashboard|dashboard]], ktorý sa sám aktualizuje. Pri každom čísle môžete kliknúť a pozrieť si [[SQL|sql]] dotaz, z ktorého vzniklo, takže výsledok sa dá overiť. Funkcia je v bete pre platené plány.",
+            "Claude Motion zase z textu, grafov a obrázkov vyrobí krátke animované vysvetľujúce video, napríklad 30-sekundové zhrnutie štvrťročného reportu, ktoré sa dá stiahnuť ako MP4. Nepoužíva generátor videa, ale píše kód animácie, takže každé slovo, číslo aj časovanie sa dá zmeniť a nevznikajú žiadni AI ľudia. Motion je v bete pre plány Team a Enterprise.",
+            "Tretia novinka: Claude Docs, Slides a Design vyšli z [[bety|beta]] a sú dostupné vo všetkých plánoch vrátane bezplatného. Pribudla spoločná úprava v tíme, verné exporty do PowerPointu a PDF, priame poslanie do Google Slides a úpravy v mobilnej aplikácii."
+          ],
+          "whyItMatters": "Claude sa mení z chatu na kancelársky balík a nástroj na analýzu dát, čím priamo konkuruje Microsoftu, Googlu aj ChatGPT. Pre bežného používateľa je najdôležitejšie, že tvorba dokumentov a prezentácií je teraz hotová funkcia aj zadarmo.",
+          "terms": [
+            {
+              "key": "dashboard",
+              "term": "Dashboard",
+              "explain": "Prehľadná obrazovka s grafmi a číslami, ktorá na jednom mieste ukazuje stav firmy alebo projektu, napríklad tržby podľa regiónov."
+            },
+            {
+              "key": "sql",
+              "term": "SQL",
+              "explain": "Jazyk, ktorým sa kladú otázky databázam, napríklad „spočítaj objednávky za september“. Doteraz ho museli písať analytici ručne."
+            },
+            {
+              "key": "beta",
+              "term": "Beta",
+              "explain": "Skúšobná verzia funkcie: už sa dá používať, ale môže mať chyby a ešte sa mení. Keď vyjde z bety, firma ju považuje za hotovú."
+            }
+          ],
+          "links": [
+            {
+              "label": "Oznámenie Anthropicu",
+              "href": "https://claude.com/resources/articles/dashboards-and-motion"
+            },
+            {
+              "label": "Návod k Dashboards",
+              "href": "https://support.claude.com/en/articles/17454700-get-started-with-claude-dashboards"
+            }
+          ]
+        },
+        {
+          "id": "claude-dynamic-workflows",
+          "title": "Anthropic spustil službu, v ktorej jeden AI agent napíše plán a naraz nechá pracovať až tisíc ďalších",
+          "dateText": "v piatok 9. októbra",
+          "tags": [
+            {
+              "kind": "preview",
+              "label": "Verejná beta"
+            },
+            {
+              "kind": "money",
+              "label": "Pozor na spotrebu"
+            }
+          ],
+          "keyFact": {
+            "value": "1 000",
+            "label": "agentov v jednom behu, 64 naraz"
+          },
+          "body": [
+            "Anthropic v piatok sprístupnil vo verejnej bete takzvané dynamické workflowy v službe Claude Managed Agents, kde agenti bežia na serveroch Anthropicu. Hlavný agent pri veľkej úlohe napíše workflow, teda malý program, ktorý vo fázach rozdelí prácu medzi mnoho ďalších agentov, nechá ich pracovať na pozadí a na konci spojí ich výsledky. Hlavný agent medzitým môže ďalej komunikovať s používateľom.",
+            "Podľa portálu The Decoder je limit 64 súbežných vlákien, najviac 1 000 agentov za jeden beh a predvolene 24 hodín. V interných testoch Anthropicu vraj jeden agent našiel 14 až 27 zo 70 skrytých chýb v kóde, kým workflow ich konzistentne našiel 66. Typické použitie sú audity, migrácie kódu, hĺbkový výskum či kontrola stoviek zmlúv.",
+            "Súvisí s tým aj piatková aktualizácia Claude Code 2.1.296, ktorá umožňuje pustiť všetkých agentov workflowu na jednom zvolenom modeli a opravuje dve bezpečnostné diery v systéme povolení."
+          ],
+          "whyItMatters": "Riadenie celého „roja“ agentov je teraz hotová služba, nie niečo, čo si firma musí stavať sama. Háčik je cena: každý agent spotrebúva tokeny, preto Anthropic odporúča nastaviť rozpočet na reláciu, inak môže jedna veľká úloha poriadne zaťažiť účet.",
+          "terms": [
+            {
+              "key": "workflow",
+              "term": "Workflow",
+              "explain": "Postup krokov, ktorý sa vykoná automaticky. Tu ho napíše sám AI agent ako program, ktorý určuje, ktorí pomocní agenti čo robia a v akom poradí."
+            }
+          ],
+          "links": [
+            {
+              "label": "Dokumentácia Anthropicu",
+              "href": "https://platform.claude.com/docs/en/managed-agents/multiagent-orchestration"
+            },
+            {
+              "label": "The Decoder",
+              "href": "https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows/"
+            },
+            {
+              "label": "Claude Code v2.1.296",
+              "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296"
+            }
+          ]
+        },
+        {
+          "id": "codex-mxc-windows",
+          "title": "Codex od OpenAI na Windows 11 ako prvý veľký programovací agent používa nové bezpečné kontajnery Microsoftu",
+          "dateText": "od štvrtka 8. októbra",
+          "tags": [
+            {
+              "kind": "safety",
+              "label": "Bezpečnosť"
+            },
+            {
+              "kind": "standard",
+              "label": "Aktualizácia nástroja"
+            }
+          ],
+          "body": [
+            "Vo štvrtok sme písali o Microsoft Execution Containers (MXC), novom spôsobe, ako na Windows bezpečne izolovať AI agentov. Teraz ich ako prvý veľký nástroj reálne nasadil Codex od OpenAI: od verzie 0.162.0 ich vie na Windows 11 použiť ako [[sandbox|sandbox]], zatiaľ po zapnutí v nastaveniach.",
+            "Výhodou je, že nepotrebuje administrátorské práva, ďalšie používateľské účty ani pravidlá firewallu, a presnejšie určí, ku ktorým súborom a sieťam má agent prístup. Keď MXC na počítači nie je, Codex použije pôvodný sandbox. Vyžaduje Windows 11 vo verzii 24H2 s novou aktualizáciou; opravná verzia 0.162.1 vyšla v piatok večer."
+          ],
+          "whyItMatters": "AI agent, ktorý spúšťa príkazy na vašom počítači, môže pri chybe niečo zmazať alebo poslať von. Lepšia izolácia priamo vo Windows znižuje toto riziko pre milióny vývojárov; podľa Microsoftu má podporu dostať aj Claude Code.",
+          "terms": [
+            {
+              "key": "sandbox",
+              "term": "Sandbox",
+              "explain": "Izolované „pieskovisko“, v ktorom program beží oddelene od zvyšku počítača. Ak urobí chybu, nepoškodí vaše súbory ani systém."
+            }
+          ],
+          "links": [
+            {
+              "label": "Návod OpenAI k Windows sandboxu",
+              "href": "https://learn.chatgpt.com/docs/windows/windows-sandbox"
+            },
+            {
+              "label": "Codex 0.162.0 na GitHube",
+              "href": "https://github.com/openai/codex/releases/tag/rust-v0.162.0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "Tech a biznis",
+      "kicker": "Peniaze, čipy a veda",
+      "icon": "chip",
+      "items": [
+        {
+          "id": "tsmc-q3-record",
+          "title": "TSMC, najväčší výrobca čipov na svete, má rekordný štvrťrok s tržbami vyššími o polovicu",
+          "dateText": "vo štvrtok 8. októbra",
+          "tags": [
+            {
+              "kind": "money",
+              "label": "Výsledky firmy"
+            }
+          ],
+          "keyFact": {
+            "value": "1,49 bil. NT$",
+            "label": "tržby za tretí štvrťrok, o 50,9 % viac než pred rokom"
+          },
+          "body": [
+            "Taiwanská firma TSMC, ktorá vyrába čipy pre Nvidiu, AMD, Apple a takmer celý AI priemysel, vo štvrtok zverejnila tržby za september: 511,86 miliardy taiwanských dolárov, čo je rekord pre september a o 54,6 percenta viac než pred rokom. Za celý tretí štvrťrok to podľa agentúry CNA a Taiwan News dáva rekordných 1,494 bilióna taiwanských dolárov, teda približne 46 miliárd amerických, o 50,9 percenta viac než pred rokom.",
+            "Výsledok prekonal aj horný okraj vlastného odhadu firmy (44,6 až 45,8 miliardy dolárov). Analytici to pripisujú silnému dopytu po AI čipoch a objednávkam pre smartfóny. Plné výsledky aj výhľad na ďalší štvrťrok TSMC predstaví vo štvrtok 15. októbra."
+          ],
+          "whyItMatters": "TSMC je najlepší teplomer AI boomu: keď rastú jeho tržby, firmy stále míňajú obrovské peniaze na čipy. Zaujímavé je, že akcie TSMC aj iných výrobcov čipov napriek tomu v piatok klesali, investori zrejme už rekord čakali.",
+          "terms": [
+            {
+              "key": "guidance",
+              "term": "Výhľad (guidance)",
+              "explain": "Odhad, ktorý firma sama zverejní o svojich budúcich tržbách či zisku. Keď ho prekoná, trh to berie ako dobrú správu."
+            }
+          ],
+          "links": [
+            {
+              "label": "Tlačová správa TSMC",
+              "href": "https://pr.tsmc.com/english/news/3343"
+            },
+            {
+              "label": "Focus Taiwan (CNA)",
+              "href": "https://focustaiwan.tw/business/202610080012"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    "Claude Fable 5.1 a Mythos 5.1: na X sa šíria ako novinka, ale vyšli už 1. septembra.",
+    "DeepSeek V4.1 Flash, Seedance 2.5 a rýchly režim pre Opus 5.5: staršie vydania, na X len recyklované.",
+    "Sťažnosti na krátku pamäť (cache) pri Claude subagentoch: zatiaľ bez oficiálneho vyjadrenia Anthropicu.",
+    "Predpovede v Codexe pre predplatiteľov Pro: neoverené z oficiálneho zdroja.",
+    "Pauza programu Claude Startups, kritika „AI slop“, menší hráči ako Nace Drex či Underdog Saluki: diskusie alebo marketing bez väčšieho dopadu.",
+    "State of AI Report 2026: užitočný prehľad, ale nie nový produkt."
+  ],
+  "finance": {
+    "asOfText": "Ceny Bitcoinu zo soboty 10. októbra o 6:10 (CoinGecko). Akcie sú zo záveru obchodovania v piatok 9. októbra, cez víkend je americká burza zatvorená, takže sa do pondelka nezmenia.",
+    "summary": "Bitcoin po strmom poklese z utorka a stredy už tretí deň stojí okolo 82 600 dolárov a za posledných 24 hodín mierne pridal. Na burze sa v piatok rozdelili veľké technologické firmy: Microsoft a Google rástli, kým výrobcovia čipov Nvidia, AMD a TSMC ďalej strácali.",
+    "btc": {
+      "priceUsd": 82639,
+      "priceEur": 73765,
+      "changePct": 0.27,
+      "changePctEur": 0.48,
+      "low24h": 82180,
+      "high24h": 83398,
+      "mood": "neutral",
+      "moodLabel": "Pokojné ustálenie po poklese",
+      "comment": "Bitcoin stojí okolo 82 600 dolárov, teda asi 73 800 eur, a za posledných 24 hodín pridal približne štvrť percenta. Celý deň sa pohyboval v úzkom pásme medzi 82 200 a 83 400 dolármi, čo je po rozkolísanom týždni znak upokojenia. Pre porovnanie: ešte v nedeľu 4. októbra bol nad 86 000 dolármi, potom v utorok a v stredu prudko klesol až k 80 400 a odvtedy sa drží na jednom mieste. Za sedem dní je dole asi o 2,4 percenta a od historického maxima ([[ATH|ath]]) 126 080 dolárov z októbra 2025 je nižšie zhruba o 34 percent. Ako čítať zóny: spodná hranica okolo 80 000 až 82 000 dolárov je takzvaná [[podpora|support]], teda úroveň, kde sa v stredu objavili kupujúci a pokles zastavili. Horná hranica okolo 83 200 až 83 400 dolárov je odpor, ktorý cena za posledné dni neprerazila. Pri takýchto hraniciach sa zvyčajne hromadia príkazy obchodníkov na požičané peniaze. Ak cena spadne pod podporu, burzy automaticky zatvárajú stávky na rast ([[likvidácia longov|liquidation]]) a ich nútené predaje pokles zrýchlia; ak naopak prerazí odpor, môžu byť nútene zatvárané stávky na pokles a cena vyskočí rýchlejšie nahor. Nálada je preto skôr neutrálna, nie [[bearish|bearish]] ani bullish. Zaujímavé je, že [[index strachu a chamtivosti|fng]] (Fear & Greed) napriek poklesu ceny stúpol zo 59 na 64 bodov, čo znamená „chamtivosť“: časť trhu pokles berie ako príležitosť na nákup. Víkendy bývajú pri Bitcoine pokojnejšie, väčší pohyb sa dá čakať skôr po otvorení burzy v pondelok.",
+      "links": [
+        {
+          "label": "CoinGecko",
+          "href": "https://www.coingecko.com/en/coins/bitcoin"
+        },
+        {
+          "label": "Fear & Greed Index (alternative.me)",
+          "href": "https://alternative.me/crypto/fear-and-greed-index/"
+        }
+      ]
+    },
+    "stocks": [
+      {
+        "ticker": "NVDA",
+        "name": "Nvidia",
+        "close": 229.28,
+        "changePct": -0.52,
+        "comment": "Po štvrtkovom prepade o tri percentá v piatok pridala ešte malý pokles a za týždeň stratila zhruba štyri percentá."
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft",
+        "close": 535.07,
+        "changePct": 2.38,
+        "comment": "Najlepší deň z veľkých mien: po štvrtkovom poklese sa odrazil o viac než dve percentá, v deň, keď predstavil model Decision-1."
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet (Google)",
+        "close": 351.66,
+        "changePct": 0.97,
+        "comment": "Rástol takmer o percento a uzavrel týždeň blízko svojich maxím z posledných dní."
+      },
+      {
+        "ticker": "META",
+        "name": "Meta",
+        "close": 718.67,
+        "changePct": -0.31,
+        "comment": "Mierny pokles, pokračuje pomalý zostup z pondelkových takmer 742 dolárov."
+      },
+      {
+        "ticker": "AMD",
+        "name": "AMD",
+        "close": 608.1,
+        "changePct": -2.03,
+        "comment": "Ďalší pokles o dve percentá; za dva dni stratila takmer šesť percent, čipový sektor je tento týždeň pod tlakom."
+      }
+    ],
+    "stocksLinks": [
+      {
+        "label": "Yahoo Finance NVDA",
+        "href": "https://finance.yahoo.com/quote/NVDA/"
+      },
+      {
+        "label": "MSFT",
+        "href": "https://finance.yahoo.com/quote/MSFT/"
+      },
+      {
+        "label": "GOOGL",
+        "href": "https://finance.yahoo.com/quote/GOOGL/"
+      },
+      {
+        "label": "META",
+        "href": "https://finance.yahoo.com/quote/META/"
+      },
+      {
+        "label": "AMD",
+        "href": "https://finance.yahoo.com/quote/AMD/"
+      }
+    ],
+    "gem": {
+      "ticker": "TSM",
+      "name": "TSMC (americké akcie ADR)",
+      "close": 453.31,
+      "changePct": -1.02,
+      "why": "TSMC vo štvrtok ohlásil rekordný štvrťrok s tržbami vyššími o 50,9 percenta a prekonal vlastný výhľad, no jeho americké akcie ([[ADR|adr]]) napriek tomu v piatok klesli o percento na 453,31 dolára a za týždeň stratili asi sedem percent z 485,80 dolára. Ide teda o situáciu, keď firma hlási výborné čísla a cena akcie zároveň klesá. Niektorí investori v tom vidia lacnejší vstup do firmy, bez ktorej sa AI čipy dnes nevyrobia. Kľúčový bude štvrtok 15. októbra, keď TSMC zverejní zisk a výhľad na koniec roka.",
+      "risks": "Riziká: geopolitické napätie okolo Taiwanu, závislosť od niekoľkých veľkých zákazníkov (Nvidia, Apple, AMD), kolísanie taiwanského dolára a možnosť, že výhľad 15. októbra trh sklame. Celý čipový sektor je teraz veľmi rozkolísaný.",
+      "links": [
+        {
+          "label": "Yahoo Finance TSM",
+          "href": "https://finance.yahoo.com/quote/TSM/"
+        },
+        {
+          "label": "Výsledky TSMC pre investorov",
+          "href": "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+        }
+      ],
+      "disclaimer": "Toto nie je investičná rada."
+    },
+    "terms": [
+      {
+        "key": "bearish",
+        "term": "Bearish / bullish",
+        "explain": "Burzový slang. Bearish (medvedí) znamená, že sa očakáva pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+      },
+      {
+        "key": "liquidation",
+        "term": "Likvidácia longov",
+        "explain": "„Long“ je stávka na rast ceny, často na požičané peniaze. Keď cena klesne príliš, burza takúto pozíciu automaticky predá, aby sa pokryla pôžička. Hromadné nútené predaje potom cenu tlačia ešte nižšie. Opačne to funguje pri stávkach na pokles („short“)."
+      },
+      {
+        "key": "ath",
+        "term": "ATH",
+        "explain": "All-Time High: najvyššia cena v histórii."
+      },
+      {
+        "key": "support",
+        "term": "Podpora a odpor",
+        "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky. Nie sú to pevné steny, len miesta, kde sa trh často láme."
+      },
+      {
+        "key": "fng",
+        "term": "Index strachu a chamtivosti",
+        "explain": "Číslo od 0 do 100, ktoré z cien, objemov obchodov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+      },
+      {
+        "key": "adr",
+        "term": "ADR",
+        "explain": "Certifikát, cez ktorý sa na americkej burze obchodujú akcie zahraničnej firmy, tu taiwanského TSMC, pod tickerom TSM."
+      },
+      {
+        "key": "ticker",
+        "term": "Ticker",
+        "explain": "Skratka akcie na burze, napríklad NVDA je Nvidia, TSM je TSMC."
+      }
+    ]
+  },
+  "benchmarks": {
+    "snapshot": "data/benchmarks-2026-10-10.json"
+  }
+}
