@@ -1,0 +1,423 @@
+{
+ "date": "2026-10-13",
+ "label": "Utorok 13. októbra 2026",
+ "shortLabel": "Ut 13. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Pondelok bol v AI silný deň. Meta vydala svoj prvý frontier model Muse Wonder, Cursor sa dobrovoľne presunul pod spoločné predplatné The X Subscription a Anthropic sprísnil ochranu proti kopírovaniu svojich modelov. V rebríčku Artificial Analysis sa Muse Wonder Full hneď dostal na tretie miesto.",
+ "highlights": [
+  "Meta vydala Muse Wonder, svoj prvý frontier model, v preview za rovnakú cenu ako Claude Opus 5.5",
+  "Cursor je teraz súčasťou The X Subscription: jeden pool použitia s Grok Build, Claude a GPT sa účtujú od prvého použitia",
+  "Anthropic sprísnil ochranu proti distilácii; niektorí vývojári museli upraviť svoje integrácie",
+  "Helix World generuje z jedného obrázka prechádzateľnú scénu so stereo zvukom v reálnom čase",
+  "Bitcoin okolo 83 200 dolárov mierne klesol; Muse Wonder Full skočil na 3. miesto v rebríčku AI modelov"
+ ],
+ "leadId": "muse-wonder",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "muse-wonder",
+     "title": "Meta vydala Muse Wonder, svoj prvý frontier model",
+     "dateText": "v pondelok 12. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Preview"
+      },
+      {
+       "kind": "closed",
+       "label": "Uzavretý model"
+      }
+     ],
+     "keyFact": {
+      "value": "4 $ / 20 $",
+      "label": "za milión vstupných / výstupných tokenov, rovnako ako Claude Opus 5.5"
+     },
+     "body": [
+      "Meta Superintelligence Labs v pondelok spustila Muse Wonder, svoj prvý takzvaný [[frontier model|frontier]]. Ide o model na úrovni najsilnejších chatbotov od OpenAI, Anthropicu a Googlu. V preview je dostupný cez Meta Model API pod názvom muse-wonder-1.0 s kontextom asi milión [[tokenov|token]] a stojí 4 doláre za milión tokenov na vstupe a 20 dolárov na výstupe. Kešované vstupy stoja 0,20 dolára a webové vyhľadávanie 2,50 dolára za tisíc dopytov, čo je rovnaká cenová úroveň ako Claude Opus 5.5.",
+      "Silnejší variant Muse Wonder Full cez API zatiaľ nie je; dostanete ho len v predplatnom Muse Code za 50 alebo 200 dolárov mesačne. Meta model cieli na dlhé agentické úlohy, programovanie a pamäť naprieč konverzáciami. Na X ho chvália vývojári ako Theo a šéf Shopify Tobi Lütke, no nezávislé benchmarky zatiaľ chýbajú a plný safety report ešte nevyšiel.",
+      "Do porovnania frontier API tak pribudol štvrtý vážny hráč vedľa OpenAI, Anthropicu a Googlu. V rebríčku Artificial Analysis je Wonder Full hneď tretí a lacnejší Wonder siedmy."
+     ],
+     "whyItMatters": "Meta dlho zaostávala za špičkou v uzavretých modeloch; teraz má vlastný frontier produkt. Pre bežného vývojára to znamená ďalšiu voľbu pri agentoch a kóde, za cenu porovnateľnú s Claude Opus.",
+     "terms": [
+      {
+       "key": "frontier",
+       "term": "Frontier model",
+       "explain": "Najsilnejšia trieda jazykových modelov, ktoré laboratóriá berú ako svoju špičku. Typicky majú veľký kontext, dobre programujú a zvládajú dlhé úlohy."
+      },
+      {
+       "key": "token",
+       "term": "Token",
+       "explain": "Základná jednotka textu pre AI; zhruba jedno slovo je jeden až dva tokeny. Podľa tokenov sa platí cena API."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Meta Research",
+       "href": "https://research.meta.ai/blog/muse-wonder"
+      },
+      {
+       "label": "Dokumentácia Meta Model API",
+       "href": "https://dev.meta.ai/docs/overview"
+      },
+      {
+       "label": "TechCrunch",
+       "href": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
+      }
+     ]
+    },
+    {
+     "id": "subq-snap",
+     "title": "Subquadratic vydal SubQ Snap, rozhodovací model s kontextom 384-tisíc tokenov",
+     "dateText": "v pondelok 12. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Public preview"
+      }
+     ],
+     "keyFact": {
+      "value": "0,05 $",
+      "label": "za milión vstupných tokenov; výstup je zadarmo"
+     },
+     "body": [
+      "Firma Subquadratic spustila SubQ Snap, ďalší takzvaný rozhodovací model: namiesto dlhej textovej odpovede vráti [[pravdepodobnosti|decision]] pre vopred dané možnosti, napríklad kam poslať požiadavku alebo či test prešiel. Funguje nad textom aj obrázkami, zvláda kontext 384-tisíc tokenov a podľa firiem spracuje 100-tisíc tokenov zhruba za sekundu.",
+      "Stojí 5 centov za milión vstupných tokenov a výstup je zadarmo. Public preview beží cez Decisions API ako subq-snap-preview; pri plnej kapacite je waitlist. Subquadratic tvrdí, že na Decision Index prekonáva Jev (61,7 proti 57,9), hlavne pri dlhom kontexte, kde ostatné rozhodovacie modely končia na 32 až 64-tisíc tokenoch."
+     ],
+     "whyItMatters": "Po Clefe, Jeve a Microsoft Decision-1 je to ďalší hráč v cenovej vojne rozhodovacích modelov, tentoraz so silou v dlhom kontexte. Pre agentov to znamená lacnejšie a rýchlejšie áno alebo nie aj nad veľkými dokumentmi.",
+     "terms": [
+      {
+       "key": "decision",
+       "term": "Rozhodovací model",
+       "explain": "Špecializovaný model, ktorý namiesto eseje vráti pravdepodobnosti pre vopred zadané možnosti. Hodí sa na smerovanie požiadaviek, kontrolu testov alebo filter obrázkov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Subquadratic",
+       "href": "https://subq.ai/introducing-subq-snap"
+      },
+      {
+       "label": "Dokumentácia Decisions API",
+       "href": "https://docs.subq.ai/endpoints/decisions-api/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie vizuálov",
+   "icon": "film",
+   "items": [
+    {
+     "id": "helix-world",
+     "title": "Helix World z jedného obrázka vytvorí prechádzateľnú scénu so stereo zvukom",
+     "dateText": "v pondelok 12. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorený kód"
+      }
+     ],
+     "keyFact": {
+      "value": "24 fps",
+      "label": "v rozlíšení 768×512 na jednom čipe H800, rýchlejšie ako real-time"
+     },
+     "body": [
+      "Noiz AI spolu s hongkonskou univerzitou HKUST predstavili Helix World, takzvaný [[world model|worldmodel]], ktorý z jedného obrázka vygeneruje scénu, ktorou sa dá prechádzať klávesnicou. Beží 24 snímok za sekundu v rozlíšení 768 krát 512 na jednom čipe H800 a je rýchlejší než real-time. Zvuk sa generuje naraz so videom a otáča sa s kamerou, ide teda o natívny stereo priestorový zvuk.",
+      "Systém stavia na open-source modeli LTX-2.3. Kód je na GitHube, preview váhy na Hugging Face a demo je verejné. Autori píšu, že ide o prvý otvorený interaktívny world model s natívnym priestorovým zvukom; samotný obraz je ešte mierne za najlepšími „tichými“ modelmi."
+     ],
+     "whyItMatters": "Doteraz sa interaktívne scény a priestorový zvuk robili oddelene. Helix World ukazuje, že open-source dokáže oboje naraz v reálnom čase, čo otvára cesty pre hry, simulácie a virtuálne prehliadky.",
+     "terms": [
+      {
+       "key": "worldmodel",
+       "term": "World model",
+       "explain": "Model, ktorý z obrázka alebo krátkeho vstupu vytvorí svet, v ktorom sa dá pohybovať a pozerať sa okolo, namiesto jedného statického videa."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Noiz AI",
+       "href": "https://noiz.ai/lp/blog/meet-helix-world"
+      },
+      {
+       "label": "GitHub HelixWorld",
+       "href": "https://github.com/NoizAI/HelixWorld"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "Od chatu k práci",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "cursor-x-subscription",
+     "title": "Cursor je súčasťou The X Subscription so spoločným poolom použitia",
+     "dateText": "v pondelok 12. októbra večer",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Predplatné"
+      }
+     ],
+     "keyFact": {
+      "value": "2×",
+      "label": "coding použitie na Grok modeloch oproti zodpovedajúcemu Cursor plánu"
+     },
+     "body": [
+      "Cursor oznámil, že nové platené plány spadajú pod [[The X Subscription|xsub]]. Jeden týždenný pool použitia sa zdieľa medzi Cursorom, Grok Build a ďalšími Grok produktmi. Na Grok modeloch dostanete dvojnásobné coding použitie oproti zodpovedajúcemu Cursor plánu. Plány Premium, Super a Ultra zahŕňajú aj Grok Bot.",
+      "Dôležitá zmena pre ľudí, čo v Cursore používajú Claude alebo GPT: na nových plánoch sa tieto modely tretích strán účtujú od prvého použitia podľa API cenníka z predplateného kreditu. Prechod je dobrovoľný, ale nevratný; existujúce Cursor plány zostávajú."
+     ],
+     "whyItMatters": "Ak voľne striedate Claude a GPT v Cursore, nové plány môžu byť drahšie, lebo sa účtujú od prvého tokenu. Ak vám stačí Grok, naopak dostanete viac coding limitu za rovnaké peniaze.",
+     "terms": [
+      {
+       "key": "xsub",
+       "term": "The X Subscription",
+       "explain": "Spoločné predplatné okolo produktov X a Grok, do ktorého teraz spadajú aj nové platené plány Cursora. Jedno použitie sa delí medzi viacero nástrojov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Pomocník Cursoru: The X Subscription",
+       "href": "https://cursor.com/help/the-x-subscription/overview"
+      },
+      {
+       "label": "Oznámenie Cursora na X",
+       "href": "https://x.com/cursor_ai/status/2109783879490191502"
+      }
+     ]
+    },
+    {
+     "id": "anthropic-distillation",
+     "title": "Anthropic sprísnil ochranu proti distilácii a mení správanie API",
+     "dateText": "v pondelok 12. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "keyFact": {
+      "value": "< 0,1 %",
+      "label": "false positive pri novom dvojstupňovom klasifikátore"
+     },
+     "body": [
+      "Anthropic zverejnil výskum o ochrane proti [[distilácii|distill]], teda proti tomu, aby konkurencia alebo útočník systematicky kopíroval správanie Claude a z toho trénoval vlastný model. Na Sonnet 5.5, Opus 5 a 5.5 aj Fable 5 a 5.1 beží dvojstupňový [[klasifikátor|classifier2]], ktorý má podľa firmy menej než 0,1 percenta falošných poplachov. Od 24. septembra sa opäť účtujú aj požiadavky, ktoré tieto safeguardy zablokujú.",
+      "Pri Fable 5.1 a Opus 5.5 takzvané preserved thinking bráni API účtom založeným od 31. augusta upravovať predchádzajúci kontext. Reasoning zo Sonnet 5.5 je čitateľný len pre organizáciu, ktorá ho vyprodukovala. Anthropic priznáva, že niektorí vývojári museli upraviť integrácie, najmä harnessy, ktoré prepisujú alebo prenášajú thinking bloky medzi požiadavkami či modelmi."
+     ],
+     "whyItMatters": "Ak staviate nástroje nad Claude a medzi volaniami prenášate alebo upravujete thinking, môžete naraziť na blokáciu alebo zmenu správania. Je to obrana proti kopírovaniu modelu, ale zasahuje aj legitímne agentické workflow.",
+     "terms": [
+      {
+       "key": "distill",
+       "term": "Destilácia (distillation)",
+       "explain": "Technika, pri ktorej sa z odpovedí silného modelu trénuje lacnejší „žiak“. Anthropic ju chce zabrániť, lebo by niekto mohol prakticky skopírovať Claude bez toho, aby ho sám vyvíjal."
+      },
+      {
+       "key": "classifier2",
+       "term": "Klasifikátor",
+       "explain": "Pomocný model, ktorý len rozhoduje, do ktorej kategórie požiadavka patrí, napríklad či vyzerá ako pokus o systematické kopírovanie správania Claude."
+      }
+     ],
+     "links": [
+      {
+       "label": "Výskum Anthropicu: Distillation defenses",
+       "href": "https://www.anthropic.com/research/distillation-defenses"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Peniaze, čipy a pravidlá",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "maia-300",
+     "title": "Microsoft predstavil Maia 300 a chce z nej urobiť hlavný inference systém od roku 2027",
+     "dateText": "v pondelok 12. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Čipy"
+      }
+     ],
+     "keyFact": {
+      "value": "+40 %",
+      "label": "tokenov na megawatt oproti špičkovým GPU systémom podľa Microsoftu"
+     },
+     "body": [
+      "Microsoft predstavil tretiu generáciu vlastného AI čipu Maia 300. Je navrhnutý predovšetkým na [[inference|inference]], teda na beh hotových modelov, nie na tréning. Compute chiplety pôjdu na procese TSMC N2P, pamäť bude 8× HBM4 s priepustnosťou 18 terabajtov za sekundu pri spotrebe 950 wattov. Celý rack s 96 akcelerátormi má ťahať 167 kilowattov.",
+      "Microsoft sľubuje o 40 percent viac tokenov na megawatt než špičkové GPU systémy a až sedemnásobný rack throughput oproti Maia 200. Maia 200 už obsluhuje Copilot a do konca roka má ísť aj do GitHub Copilot a Foundry; Maia 300 má ísť do produkcie v roku 2027."
+     ],
+     "whyItMatters": "Hyperscaleri chcú byť menej závislí od Nvidie pri behu modelov. Ak Microsoft dodrží sľuby, lacnejšia inference môže znížiť ceny AI služieb, no zároveň zvyšuje tlak na akcie čipových dodávateľov.",
+     "terms": [
+      {
+       "key": "inference",
+       "term": "Inference",
+       "explain": "Beh už natrénovaného modelu, keď odpovedá na otázky alebo generuje text. Je to iná záťaž než tréning, pri ktorom sa model ešte učí."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Microsoftu",
+       "href": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "GLM-Legal od Z.ai: právnický model v uzavretej bete bez ceny a váh, prakticky nedostupný.",
+  "MiniCPM-V 4.7 a Hunmin-397B computer-use na Hugging Face: zaujímavé open-weight dropy, ale bez nezávislých benchmarkov.",
+  "DigitalOcean Agent Learning/Data Services a QwenGyre RL framework: skôr infra a výskum, nie produkt pre bežného používateľa; QwenGyre navyše ešte nemá zverejnený kód.",
+  "Gemini 4 Argon „plošne tento týždeň“, White House Accord a spekulácie o nerfnutom Opus 5.5: komunitné očakávania alebo recyklované správy bez nového oficiálneho zdroja.",
+  "Claude Code, Codex a Cursor changelog: od piatka bez nového releasu."
+ ],
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-13.json",
+  "note": "Do rebríčka pribudli Muse Wonder Full od Mety na 3. mieste (index 55,8) a Muse Wonder na 7. mieste (52,4). Nové top 5: Claude Opus 5.5, Claude Sonnet 5.5, Muse Wonder Full, Claude Fable 5.1 a GPT-6 Astra. Predtým bolo tretie Fable 5.1 a Gemini 4 Argon bol piaty."
+ },
+ "finance": {
+  "asOfText": "Ceny Bitcoinu z utorka 13. októbra o 6:14 (CoinGecko). Akcie sú zo záveru obchodovania v pondelok 12. októbra na Wall Street.",
+  "summary": "Bitcoin mierne klesol na zhruba 83 200 dolárov po tom, čo v noci siahol až nad 84 200. Na akciách Meta vyskočila o viac než tri percentá po vydaní Muse Wonder, zatiaľ čo Nvidia a AMD klesli; Microsoft rástol aj po oznámení Maia 300.",
+  "btc": {
+   "priceUsd": 83217,
+   "priceEur": 74484,
+   "changePct": -0.3,
+   "changePctEur": 0.04,
+   "low24h": 81018,
+   "high24h": 84231,
+   "mood": "neutral",
+   "moodLabel": "Pokojný mierny pokles",
+   "comment": "Bitcoin stojí okolo 83 200 dolárov, teda asi 74 500 eur, a za 24 hodín v dolároch stratil zhruba tri desatiny percenta. V noci sa dostal až na 84 231 dolárov, potom klesol a spodok dňa bol pri 81 018 dolároch. Od historického maxima ([[ATH|ath]]) 126 080 dolárov ho delí zhruba 34 percent. [[Podpora|support]] okolo 80 000 až 82 000 dolárov zatiaľ drží; odpor nad 84 000 dolármi včera nevydržal. [[Index strachu a chamtivosti|fng]] klesol zo 69 na 57 bodov, stále v pásme „chamtivosti“, ale už bez včerajšieho nadšenia. Nálada je neutrálna, nie jasne [[bearish|bearish]] ani bullish.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Fear & Greed Index (alternative.me)",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 226.32,
+    "changePct": -1.29,
+    "comment": "Klesla o vyše percenta; trh reagoval aj na správu, že Microsoft chce od 2027 viac bežať inference na vlastných čipoch Maia."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 541.15,
+    "changePct": 1.14,
+    "comment": "Rástol o percento v deň, keď predstavil Maia 300 a plán multi-gigawattových nasadení vo vlastných dátových centrách."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 352.72,
+    "changePct": 0.3,
+    "comment": "Mierny rast; uzavrel blízko pondelkových maxím z posledných dní."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 742.96,
+    "changePct": 3.38,
+    "comment": "Najlepší deň z veľkých mien: po vydaní Muse Wonder vyskočila o viac než tri percentá a zvrátila týždňový pokles."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 594.24,
+    "changePct": -2.28,
+    "comment": "Ďalší pokles o dve percentá; čipový sektor je pred štvrtkovými výsledkami TSMC stále pod tlakom."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Yahoo Finance NVDA",
+    "href": "https://finance.yahoo.com/quote/NVDA/"
+   },
+   {
+    "label": "MSFT",
+    "href": "https://finance.yahoo.com/quote/MSFT/"
+   },
+   {
+    "label": "GOOGL",
+    "href": "https://finance.yahoo.com/quote/GOOGL/"
+   },
+   {
+    "label": "META",
+    "href": "https://finance.yahoo.com/quote/META/"
+   },
+   {
+    "label": "AMD",
+    "href": "https://finance.yahoo.com/quote/AMD/"
+   }
+  ],
+  "gem": {
+   "ticker": "META",
+   "name": "Meta Platforms",
+   "close": 742.96,
+   "changePct": 3.38,
+   "why": "Meta v pondelok vydala Muse Wonder, svoj prvý frontier model, a akcie okamžite vyskočili o viac než tri percentá na zhruba 743 dolárov. Trh tým ocenil, že Meta už nie je len otvorenými Llama modelmi, ale má aj uzavretý produkt na úrovni Anthropicu a OpenAI. Wonder Full je v rebríčku Artificial Analysis už tretí. Pre ľudí, čo sledujú AI akcie, je to najjasnejší pondelkový pohyb medzi veľkými tech firmami.",
+   "risks": "Riziká: Wonder zatiaľ nemá plný safety report ani široké nezávislé benchmarky, Wonder Full nie je cez API, a celý sektor môže v štvrtok 15. októbra zatriasť výsledkami TSMC. Jednodňový skok po oznámení často aj rýchlo vyprchá.",
+   "links": [
+    {
+     "label": "Yahoo Finance META",
+     "href": "https://finance.yahoo.com/quote/META/"
+    },
+    {
+     "label": "Blog Meta Research",
+     "href": "https://research.meta.ai/blog/muse-wonder"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) znamená očakávaný pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "ath",
+    "term": "ATH",
+    "explain": "All-Time High: najvyššia cena v histórii."
+   },
+   {
+    "key": "support",
+    "term": "Podpora a odpor",
+    "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky."
+   },
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré z cien, objemov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "ticker",
+    "term": "Ticker",
+    "explain": "Skratka akcie na burze, napríklad META je Meta Platforms, NVDA je Nvidia."
+   }
+  ]
+ }
+}
