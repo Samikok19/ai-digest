@@ -1,0 +1,520 @@
+{
+ "date": "2026-10-14",
+ "label": "Streda 14. októbra 2026",
+ "shortLabel": "St 14. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Hlavnou správou dňa je Google: Gemini 4 Argon, jeho najsilnejší model, je od utorka dostupný pre všetkých, v aplikácii, vo vyhľadávaní aj pre vývojárov, a do konca novembra za polovičnú cenu. Popri tom pribudli dva zaujímavé otvorené modely, agentický Liquid a hlasový Fish Audio Drama 3, OpenAI ohlásilo koniec starých GPT-4o a GPT-4.1 a Anthropic ukázal, že kvôli AI agentom musel nahradiť git vlastným systémom.",
+ "highlights": [
+  "Google spustil Gemini 4 Argon pre všetkých: v API, v aplikácii Gemini aj vo vyhľadávaní, do konca novembra za polovičnú cenu",
+  "OpenAI vypne v API staré modely GPT-4o a GPT-4.1 vo štvrtok 14. januára 2027; náhradou je GPT-6 Luna",
+  "Liquid AI vydal otvorený agentický model, ktorý beží aj na notebooku, a Fish Audio otvorený emotívny hlas Drama 3 v 83 jazykoch",
+  "Anthropic nahradil git vlastným systémom Scion, lebo jeho AI agenti robia vyše 30-tisíc zlúčení kódu denne",
+  "Bitcoin mierne rastie na zhruba 83 700 dolárov; v rebríčku AI modelov sa top 5 nezmenila"
+ ],
+ "leadId": "gemini-4-argon",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "gemini-4-argon",
+     "title": "Google sprístupnil Gemini 4 Argon všetkým, do konca novembra za polovičnú cenu",
+     "dateText": "v utorok 13. októbra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Uzavretý model"
+      },
+      {
+       "kind": "money",
+       "label": "Úvodná zľava"
+      }
+     ],
+     "keyFact": {
+      "value": "2 $ / 10 $",
+      "label": "za milión vstupných / výstupných tokenov do 30. novembra, potom 4 $ / 20 $"
+     },
+     "body": [
+      "Google v utorok 13. októbra pustil svoj najsilnejší model Gemini 4 Argon naplno do sveta. Ešte včera sme o tom písali len ako o špekulácii, dnes je to oficiálne: vývojári ho majú cez [[Gemini API|api]] v AI Studiu aj v Android Studiu, predplatitelia AI Ultra v agentickom nástroji Google Antigravity a bežní používatelia v aplikácii Gemini a v režime AI Mode vo vyhľadávaní Google (pre predplatné Pro a Ultra).",
+      "Argon si naraz udrží až milión [[tokenov|token]] [[kontextu|context]], teda zhruba hrubú knihu či veľký kus kódu. Do 30. novembra 2026 stojí 2 doláre za milión vstupných a 10 dolárov za milión výstupných tokenov, potom cena stúpne na dvojnásobok, 4 a 20 dolárov. Opakované vstupy uložené v [[cache|cache]] sú o 95 percent lacnejšie.",
+      "Google ho stavia na dlhú [[agentickú|agentic]] a profesionálnu prácu: programovanie, právo, financie, kybernetickú bezpečnosť a vedu. Hlási prvé miesto v nezávislom teste [[Vals Index|vals]] a vo vlastnej firme vraj s ním programátori v Antigravity odovzdali o 35 percent viac agentických zmien kódu. V rebríčku [[Artificial Analysis|aa]] je Argon zatiaľ šiesty s indexom 52,6."
+     ],
+     "whyItMatters": "Počas úvodného obdobia je Argon zhruba za polovicu ceny konkurenčných špičiek Muse Wonder od Mety a Claude Opus 5.5. Pre bežného človeka to znamená, že silný model sa dostáva priamo do vyhľadávania Google, a pre firmy, že medzi najlepšími modelmi sa rozbieha cenová vojna.",
+     "terms": [
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré programy a aplikácie posielajú modelu požiadavky a platia za použitie. Nie je to bežný chat pre ľudí, ale „zásuvka“ pre vývojárov."
+      },
+      {
+       "key": "context",
+       "term": "Kontext",
+       "explain": "Koľko textu si model naraz „pamätá“ v jednej konverzácii, vrátane vašich súborov a jeho odpovedí. Milión tokenov je zhruba 750-tisíc anglických slov."
+      },
+      {
+       "key": "cache",
+       "term": "Cache (vyrovnávacia pamäť)",
+       "explain": "Ak modelu opakovane posielate ten istý začiatok textu, napríklad dlhý dokument, uloží si ho a ďalšie použitie je výrazne lacnejšie a rýchlejšie."
+      },
+      {
+       "key": "agentic",
+       "term": "Agentická práca",
+       "explain": "Model nielen odpovedá, ale sám plánuje a robí viac krokov za sebou: otvára súbory, spúšťa príkazy, opravuje chyby, až kým úlohu nedokončí."
+      },
+      {
+       "key": "vals",
+       "term": "Vals Index",
+       "explain": "Nezávislý súhrnný test firmy Vals AI, ktorý meria, ako dobre modely zvládajú reálne profesionálne úlohy, napríklad z práva, financií či programovania."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google: Gemini 4 Argon",
+       "href": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+      },
+      {
+       "label": "Blog Google pre vývojárov",
+       "href": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/"
+      }
+     ]
+    },
+    {
+     "id": "liquid-lfm25",
+     "title": "Liquid AI vydal otvorený agentický model, ktorý beží aj priamo v počítači",
+     "dateText": "v utorok 13. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      },
+      {
+       "kind": "device",
+       "label": "Beží lokálne"
+      }
+     ],
+     "keyFact": {
+      "value": "24 miliárd",
+      "label": "parametrov, pri každom slove však pracujú len asi 2 miliardy"
+     },
+     "body": [
+      "Americká firma Liquid AI zverejnila model LFM2.5-24B-A2B s [[otvorenými váhami|openweights]], ktoré si môže ktokoľvek stiahnuť z Hugging Face. Má 24 miliárd [[parametrov|params]], ale je postavený ako [[MoE|moe]], takže pri každom slove pracujú len zhruba 2 miliardy z nich. Vďaka tomu je dosť ľahký na to, aby bežal [[priamo v zariadení|ondevice]], na Apple čipe M5 Max až 184 tokenov za sekundu.",
+      "Model vždy najprv nahlas „premýšľa“ krok za krokom a až potom odpovedá, udrží 131-tisíc tokenov kontextu a bol dotrénovaný priamo v agentických [[harnessoch|harness]] ako OpenClaw, Hermes, Pi či OpenCode. Na agentických testoch podľa Liquidu často bije väčšie modely: v teste LiveClaw má 48,09 bodu proti 38,19 pri čínskom Qwen3.6-35B-A3B a v AutomationBench 27,69 proti 8,72. Cez API stojí 10 centov za milión vstupných a dolár za milión výstupných tokenov."
+     ],
+     "whyItMatters": "Ak chcete AI agenta, ktorý pracuje s vašimi súbormi bez posielania dát do cloudu, toto je jeden z najsilnejších kandidátov, ktorý sa zmestí do lepšieho notebooku. Čísla zatiaľ pochádzajú od samotnej firmy.",
+     "terms": [
+      {
+       "key": "openweights",
+       "term": "Otvorené váhy",
+       "explain": "Firma zverejní samotný natrénovaný model, takže si ho môžete stiahnuť, spustiť u seba a upravovať, bez platenia za každé použitie."
+      },
+      {
+       "key": "params",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil pri tréningu. Zhruba platí, že viac parametrov znamená schopnejší, ale aj ťažší a drahší model."
+      },
+      {
+       "key": "moe",
+       "term": "MoE (mixture of experts)",
+       "explain": "Model zložený z mnohých „expertov“, z ktorých sa pri každom slove zapne len malá časť. Má veľa vedomostí, ale počíta rýchlo a lacno ako menší model."
+      },
+      {
+       "key": "ondevice",
+       "term": "Priamo v zariadení",
+       "explain": "Model beží na vašom telefóne či počítači, nie na serveri firmy. Funguje aj bez internetu a vaše dáta neodchádzajú preč."
+      },
+      {
+       "key": "harness",
+       "term": "Harness",
+       "explain": "Program okolo modelu, ktorý mu dáva nástroje, napríklad prístup k súborom či terminálu, a riadi, ako agent krok za krokom pracuje."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Liquid AI",
+       "href": "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+      },
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"
+      }
+     ]
+    },
+    {
+     "id": "openai-4o-shutdown",
+     "title": "OpenAI vypne staré modely GPT-4o a GPT-4.1 v polovici januára",
+     "dateText": "streda 14. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Koniec podpory"
+      }
+     ],
+     "keyFact": {
+      "value": "14. 1. 2027",
+      "label": "po tomto dni modely GPT-4o a GPT-4.1 v API prestanú fungovať"
+     },
+     "body": [
+      "OpenAI poslalo vývojárom upozornenie, že celú rodinu modelov GPT-4o a GPT-4.1 v API ukončí. Vypnutie je naplánované na štvrtok 14. januára 2027; dovtedy modely ešte fungujú, ale už sa označujú ako [[zastarané|deprecation]].",
+      "Ako náhradu OpenAI odporúča novší model gpt-6-luna, a to aj pre takzvané [[fine-tune|finetune]] verzie, teda modely, ktoré si firmy na základe 4o či 4.1 doladili na vlastných dátach. Tie bude treba pretrénovať alebo nahradiť."
+     ],
+     "whyItMatters": "Veľa aplikácií, chatbotov na webe či firemných nástrojov stále beží na GPT-4o alebo 4.1. Ich tvorcovia majú zhruba tri mesiace na prechod, inak im služba v januári prestane odpovedať.",
+     "terms": [
+      {
+       "key": "deprecation",
+       "term": "Zastaranie (deprecation)",
+       "explain": "Oficiálne oznámenie, že produkt sa prestane podporovať a k určitému dátumu vypne. Dovtedy funguje, no treba prejsť na náhradu."
+      },
+      {
+       "key": "finetune",
+       "term": "Fine-tune (doladenie)",
+       "explain": "Dotrénovanie hotového modelu na vlastných príkladoch, aby lepšie zvládal konkrétnu úlohu alebo písal vo firemnom štýle."
+      }
+     ],
+     "links": [
+      {
+       "label": "OpenAI: zoznam ukončených modelov",
+       "href": "https://developers.openai.com/api/docs/deprecations"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky, video a hlas",
+   "kicker": "Generovanie vizuálov a zvuku",
+   "icon": "film",
+   "items": [
+    {
+     "id": "heygen-video-civitai",
+     "title": "HeyGen vydal svoj prvý univerzálny video model, aj so zvukom a dialógom",
+     "dateText": "v utorok 13. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Zľava do konca októbra"
+      }
+     ],
+     "keyFact": {
+      "value": "5 až 15 s",
+      "label": "dlhé klipy s dialógom, ruchmi a efektmi v jednom kroku"
+     },
+     "body": [
+      "HeyGen, známy hlavne digitálnymi avatarmi, predstavil HeyGen Video, svoj prvý video model na všetko. Video vytvorí z textu, z obrázka aj z referenčného záberu, napríklad konkrétnej postavy, a klipy majú 5 až 15 sekúnd v rôznych pomeroch strán, teda na šírku aj na výšku.",
+      "Zaujímavé je, že zvuk vzniká naraz s obrazom: dialóg postáv, zvuky prostredia aj efekty v jednom kroku, bez dodatočného ozvučovania. Model je dostupný na platforme Civitai a do konca októbra je tam v generátore o polovicu lacnejší."
+     ],
+     "whyItMatters": "Video so zvukom už nie je len doménou veľkých laboratórií ako Google či OpenAI. Pre tvorcov krátkych videí je to ďalšia lacnejšia voľba na vyskúšanie.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Článok na Civitai",
+       "href": "https://civitai.com/articles/36653/heygen-video-is-now-on-civitai"
+      }
+     ]
+    },
+    {
+     "id": "fish-drama-3",
+     "title": "Fish Audio zverejnil Drama 3, otvorený hlas, ktorému poviete, s akou emóciou má hovoriť",
+     "dateText": "v utorok 13. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      }
+     ],
+     "keyFact": {
+      "value": "83 jazykov",
+      "label": "a prvé miesto v teste výslovnosti Artificial Analysis (93,2 %)"
+     },
+     "body": [
+      "Fish Audio vydal Drama 3, model na [[prevod textu na reč|tts]], ktorý sa zameriava na emócie. Réžiu mu zadáte obyčajnými slovami v zátvorkách, napríklad „(šeptom, vystrašene)“, a hovorí 83 jazykmi. V teste odolnosti výslovnosti od Artificial Analysis je so skóre 93,2 percenta na prvom mieste.",
+      "Ide o MoE model s 35 miliardami parametrov, z ktorých naraz pracujú asi 3 miliardy. Váhy sú na Hugging Face pod komunitnou [[licenciou|license]], ktorá dovoľuje bezplatné komerčné použitie firmám s príjmom do 500-tisíc dolárov. Cez API pod názvom drama-3 stojí do 12. novembra 10 dolárov za milión znakov, čo je o 80 percent menej než bežne."
+     ],
+     "whyItMatters": "Kvalitný a výrazný hlas bol doteraz najmä v platených službách. Otvorený model s réžiou emócií sa hodí na audioknihy, rozhlasové hry či ozvučenie krátkych videí, aj v menších jazykoch.",
+     "terms": [
+      {
+       "key": "tts",
+       "term": "Prevod textu na reč (TTS)",
+       "explain": "Text-to-speech: AI prečíta napísaný text nahlas umelým hlasom, ktorý môže znieť veľmi ľudsky."
+      },
+      {
+       "key": "license",
+       "term": "Licencia",
+       "explain": "Pravidlá, ako smiete model používať, napríklad či aj na zarábanie peňazí a za akých podmienok."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Fish Audio",
+       "href": "https://fish.audio/blog/fish-audio-drama-3/"
+      },
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/fishaudio/drama-3"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "Od chatu k práci",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "anthropic-scion",
+     "title": "Anthropic nahradil git vlastným systémom, lebo ho AI agenti zahlcovali",
+     "dateText": "v utorok 13. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Interná infraštruktúra"
+      }
+     ],
+     "keyFact": {
+      "value": "30-tisíc+",
+      "label": "zlúčení kódu denne v septembri, v máji ich bolo asi 2 500"
+     },
+     "body": [
+      "Anthropic opísal, ako prerobil správu zdrojového kódu. Väčšina softvéru na svete používa na verzovanie kódu [[git|git]], no v Anthropicu dnes kód píšu najmä roje AI agentov. Počet zlúčení zmien do spoločného [[monorepa|monorepo]] vyskočil z približne 2 500 denne v máji na vyše 30-tisíc v septembri a klasická git infraštruktúra to prestala zvládať.",
+      "Sedemčlenný tím preto za päť mesiacov presunul celý kód do vlastného serverového systému Scion. Ten si zmeny zapisuje do priebežného denníka a počítačom sťahuje len tú časť kódu, ktorú naozaj potrebujú. Spotreba procesorov je podľa firmy asi 200-krát menšia než pri predošlej flotile git serverov a automatické testy ([[CI|ci]]) si kód pripravia za pár sekúnd. Scion nebude otvorený a nemá byť všeobecnou náhradou gitu."
+     ],
+     "whyItMatters": "Je to zriedkavý pohľad do toho, ako vyzerá firma, kde kód píšu hlavne agenti: nástroje stavané pre ľudí začínajú nestačiť. Podobné problémy čakajú aj ďalšie firmy, ktoré nasadia agentov vo veľkom.",
+     "terms": [
+      {
+       "key": "git",
+       "term": "Git",
+       "explain": "Najrozšírenejší nástroj na ukladanie histórie zmien v kóde. Umožňuje, aby na jednom projekte pracovalo veľa ľudí naraz a zmeny sa dali spájať a vracať."
+      },
+      {
+       "key": "monorepo",
+       "term": "Monorepo",
+       "explain": "Jedno obrovské úložisko, v ktorom je všetok kód firmy pokope, namiesto mnohých menších projektov."
+      },
+      {
+       "key": "ci",
+       "term": "CI (priebežná integrácia)",
+       "explain": "Automatika, ktorá po každej zmene kódu sama stiahne projekt, zostaví ho a spustí testy, aby sa chyby odhalili hneď."
+      }
+     ],
+     "links": [
+      {
+       "label": "Inžiniersky blog Anthropicu",
+       "href": "https://www.anthropic.com/engineering/redesigning-source-control"
+      }
+     ]
+    },
+    {
+     "id": "claude-code-2-1-299",
+     "title": "Claude Code 2.1.299 šetrí pri dlhých reláciách a pridáva nové nastavenia",
+     "dateText": "v stredu 14. októbra ráno",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Aktualizácia"
+      }
+     ],
+     "body": [
+      "Anthropic dnes nadránom vydal novú stabilnú verziu programovacieho agenta Claude Code, prvú od piatka 9. októbra. Najzaujímavejšia novinka je takzvané idle compaction: ak máte dlhú konverzáciu nad 200-tisíc tokenov a asi 54 minút sa jej nevenujete, Claude Code ju sám zhustí ešte predtým, než po hodine vyprší [[prompt cache|cache]]. Po návrate tak neplatíte za nové načítanie celej histórie.",
+      "Pribudlo aj nastavenie, aby sa pri označení súboru cez zavináč posielala len jeho cesta, nie celý obsah, nové možnosti pre [[hooky|hooks]], prepínače /effort a /fast v prehľade agentov a voľba na zakázanie vybraných nástrojov pri testovaní pluginov. V záložke Code v aplikácii Claude Desktop sa dá vypnúť podpis, že kód napísal Claude."
+     ],
+     "whyItMatters": "Pre ľudí, čo s Claude Code pracujú celý deň s prestávkami, to môže citeľne znížiť spotrebu limitu. Ostatné zmeny sú skôr pre pokročilých používateľov.",
+     "terms": [
+      {
+       "key": "hooks",
+       "term": "Hooky",
+       "explain": "Vlastné skripty, ktoré sa automaticky spustia pri určitej udalosti, napríklad pred odoslaním požiadavky, a môžu ju upraviť alebo skontrolovať."
+      }
+     ],
+     "links": [
+      {
+       "label": "Poznámky k vydaniu na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Peniaze, čipy a pravidlá",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "tsmc-earnings",
+     "title": "Zajtra zverejní výsledky TSMC, prvý tvrdý údaj o dopyte po AI čipoch",
+     "dateText": "vo štvrtok 15. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Výsledky"
+      }
+     ],
+     "body": [
+      "Vo štvrtok 15. októbra zverejní štvrťročné výsledky taiwanská TSMC, najväčší výrobca čipov na svete, ktorý vyrába procesory pre Nvidiu, AMD, Apple aj vlastné čipy Microsoftu či Googlu. Trh bude sledovať hlavne dopyt po AI čipoch a po [[CoWoS|cowos]], špeciálnom balení čipov, bez ktorého sa moderné AI akcelerátory nezaobídu.",
+      "Pred výsledkami sa objavili správy, že tržby za tretí štvrťrok prekonali očakávania, no skutočný obraz dajú až štvrtkové čísla a výhľad firmy. Inak sa od pondelkovej správy o čipe Maia 300 od Microsoftu nič zásadné v čipoch neudialo."
+     ],
+     "whyItMatters": "Čipové akcie v posledných dňoch klesali; výsledky TSMC môžu rozhodnúť, či ide len o vydýchnutie, alebo o začiatok väčšej opatrnosti okolo AI investícií.",
+     "terms": [
+      {
+       "key": "cowos",
+       "term": "CoWoS",
+       "explain": "Technológia TSMC na „zlepenie“ výpočtového čipu a rýchlej pamäte do jedného balíka. Je to úzke hrdlo výroby AI čipov, preto sa jej kapacita sleduje tak pozorne."
+      }
+     ],
+     "links": [
+      {
+       "label": "TSMC: vzťahy s investormi",
+       "href": "https://investor.tsmc.com/english"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Muse Wonder, Helix World, The X Subscription, ochrana Anthropicu proti destilácii a MiniCPM-V 4.7: písali sme o nich včera, nič zásadné nové.",
+  "Microsoft Research Code Video Model: zaujímavý výskum, kde sa video najprv „naprogramuje“ ako 3D scéna, ale nie je to nový produkt.",
+  "Codex: stabilná verzia stále z 9. októbra, nové alfa verzie bez popisu zmien. Cursor: bez nového vydania; Origin App Marketplace existoval už skôr, nejde o nový launch.",
+  "Virálne klipy zo Seedance 2.5, Vivix W1, dojmy o „oslabenom“ Opus 5.5 a podobné: recyklované správy alebo názory bez nového faktu.",
+  "Úzke výskumné či komunitné projekty (Modal RL na Qwen3.6, MeckaAI, Natura-1, ArtCraft) a prípadová štúdia Higgsfield s OpenAI: bez dopadu pre bežného používateľa."
+ ],
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-14.json"
+ },
+ "finance": {
+  "asOfText": "Ceny Bitcoinu zo stredy 14. októbra o 6:12 (CoinGecko). Akcie sú zo záveru obchodovania v utorok 13. októbra na Wall Street.",
+  "summary": "Bitcoin sa drží nad 83-tisíc dolármi a za deň mierne pridal. Technologické akcie v utorok väčšinou rástli: Meta pokračovala v raste po Muse Wonder a čipy Nvidia a AMD sa po pondelkovom poklese čiastočne odrazili.",
+  "btc": {
+   "priceUsd": 83663,
+   "priceEur": 74634,
+   "changePct": 0.48,
+   "changePctEur": 0.15,
+   "low24h": 82919,
+   "high24h": 84074,
+   "mood": "neutral",
+   "moodLabel": "Pokojný mierny rast",
+   "comment": "Bitcoin stojí okolo 83 700 dolárov, teda asi 74 600 eur, a za 24 hodín v dolároch pridal zhruba pol percenta. Pohyb bol tentoraz pokojný: najnižšie bol pri 82 919 dolároch a najvyššie pri 84 074 dolároch. Od historického maxima ([[ATH|ath]]) 126 080 dolárov ho delí asi 34 percent. Pásmo okolo 84-tisíc dolárov zatiaľ funguje ako [[odpor|support]], cez ktorý sa cena za posledné dni nedokázala presadiť. [[Index strachu a chamtivosti|fng]] stúpol z 57 na 62 bodov, teda mierna „chamtivosť“. Nálada je neutrálna, nie jasne [[bullish|bearish]] ani bearish.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Fear & Greed Index (alternative.me)",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 228.52,
+    "changePct": 0.97,
+    "comment": "Po pondelkovom poklese sa odrazila takmer o percento, no od začiatku minulého týždňa je stále nižšie."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 543.45,
+    "changePct": 0.43,
+    "comment": "Pridal ďalšie necelé pol percenta a drží sa pri najvyšších hodnotách za posledné dni."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 353.78,
+    "changePct": 0.3,
+    "comment": "Mierny rast v deň, keď Google spustil Gemini 4 Argon pre všetkých; trh zatiaľ reagoval pokojne."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 762.5,
+    "changePct": 2.63,
+    "comment": "Druhý silný deň po sebe: po vydaní Muse Wonder pridala ďalšie viac ako dve a pol percenta."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 605.53,
+    "changePct": 1.9,
+    "comment": "Po sérii poklesov sa odrazila takmer o dve percentá, znova nad 600 dolárov."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Yahoo Finance NVDA",
+    "href": "https://finance.yahoo.com/quote/NVDA/"
+   },
+   {
+    "label": "MSFT",
+    "href": "https://finance.yahoo.com/quote/MSFT/"
+   },
+   {
+    "label": "GOOGL",
+    "href": "https://finance.yahoo.com/quote/GOOGL/"
+   },
+   {
+    "label": "META",
+    "href": "https://finance.yahoo.com/quote/META/"
+   },
+   {
+    "label": "AMD",
+    "href": "https://finance.yahoo.com/quote/AMD/"
+   }
+  ],
+  "gem": {
+   "ticker": "TSM",
+   "name": "TSMC (Taiwan Semiconductor)",
+   "close": 445.12,
+   "changePct": 0.17,
+   "why": "Vo štvrtok 15. októbra TSMC zverejní výsledky a tie bývajú pre celý AI sektor barometrom, lebo TSMC vyrába čipy pre takmer všetkých veľkých hráčov. Akcia v utorok uzavrela na zhruba 445 dolároch, čo je asi o 6 percent menej než v stredu 7. októbra. Kto sleduje AI čipy, pre toho je TSMC tento týždeň najdôležitejšie meno.",
+   "risks": "Riziká: výsledky alebo výhľad môžu sklamať a cena sa okolo zverejnenia môže prudko pohnúť oboma smermi. Firma je navyše citlivá na napätie okolo Taiwanu a na americké obchodné obmedzenia.",
+   "links": [
+    {
+     "label": "Yahoo Finance TSM",
+     "href": "https://finance.yahoo.com/quote/TSM/"
+    },
+    {
+     "label": "TSMC: vzťahy s investormi",
+     "href": "https://investor.tsmc.com/english"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) znamená očakávaný pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "ath",
+    "term": "ATH",
+    "explain": "All-Time High: najvyššia cena v histórii."
+   },
+   {
+    "key": "support",
+    "term": "Podpora a odpor",
+    "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky."
+   },
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré z cien, objemov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "ticker",
+    "term": "Ticker",
+    "explain": "Skratka akcie na burze, napríklad TSM je TSMC, NVDA je Nvidia."
+   }
+  ]
+ }
+}
