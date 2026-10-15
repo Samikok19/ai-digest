@@ -1,0 +1,492 @@
+{
+ "date": "2026-10-15",
+ "label": "Štvrtok 15. októbra 2026",
+ "shortLabel": "Št 15. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Hlavnou správou dňa je hlas: xAI vydalo Grok Voice 3.0, ktorý podľa nezávislého testu vedie v reči na reč a už beží v call centrách Tesly, SpaceX a Starlinku. Popri tom vyšiel veľký čínsky otvorený model Ling-3.1-flash, Anthropic pridal sledovanie agentov cez OpenTelemetry a dnes o ôsmej ráno ide earnings call TSMC — prvý tvrdý údaj o dopyte po AI čipoch po quiet period.",
+ "highlights": [
+  "xAI vydalo Grok Voice 3.0: vedie v AA Speech-to-Speech Indexe (86,9), latencia pod sekundu, rovnaká cena 0,08 $ za minútu; beží v Tesla/SpaceX/Starlink",
+  "inclusionAI vypustil otvorené váhy Ling-3.1-flash: 560 miliárd parametrov MoE pod licenciou MIT, kontext až milión tokenov",
+  "Anthropic spustil OpenTelemetry stopy na Claude Platform (public beta) a Claude Code 2.1.300",
+  "Dnes o 8:00 Europe/Bratislava earnings call TSMC; Bitcoin klesol na zhruba 81-tisíc dolárov, tech akcie v stredu padali"
+ ],
+ "leadId": "grok-voice-3",
+ "sections": [
+  {
+   "id": "media",
+   "title": "Obrázky, video a hlas",
+   "kicker": "Generovanie vizuálov a zvuku",
+   "icon": "film",
+   "items": [
+    {
+     "id": "grok-voice-3",
+     "title": "xAI pustilo Grok Voice 3.0, hlasový model, ktorý vedie v reči na reč",
+     "dateText": "v utorok 14. októbra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Uzavretý model"
+      },
+      {
+       "kind": "money",
+       "label": "Rovnaká cena ako 2.0"
+      }
+     ],
+     "keyFact": {
+      "value": "86,9",
+      "label": "bodov v AA Speech-to-Speech Indexe, prvé miesto"
+     },
+     "body": [
+      "xAI v utorok 14. októbra oznámilo Grok Voice 3.0, nový model na [[prevod reči na reč|sts]]. Namiesto toho, aby najprv prepisoval hovor na text a potom znova čítal odpoveď, počúva a odpovedá priamo hlasom. V nezávislom teste Artificial Analysis je so skóre 86,9 na prvom mieste v Speech-to-Speech Indexe a vo Full Duplex Bench, ktorý meria, ako zvláda pauzy, striedanie a prerušenia, má 97 percent. Latencia je podľa firmy pod jednou sekundou.",
+      "Model už beží v praxi: v autách Tesly a v call centrách SpaceX a Starlinku. Samotný Starlink cezňho denne zvládne asi 20-tisíc hovorov vo viacerých jazykoch a zhruba 70 percent vyrieši bez človeka. Cez Voice Agent [[API|api]] stojí rovnako ako predchodca, 8 centov za minútu, teda 4,80 dolára za hodinu; alias grok-voice-latest už na novú verziu prepol automaticky."
+     ],
+     "whyItMatters": "Hlasoví agenti prestávajú byť len „čítačkou textu“. Pre firmy to znamená lacnejšie a prirodzenejšie call centrum; pre bežného človeka skôr to, že rovnaká trieda modelu už odpovedá aj v aute a v podpore Starlinku.",
+     "terms": [
+      {
+       "key": "sts",
+       "term": "Speech-to-speech (reč na reč)",
+       "explain": "Model počúva hovor a odpovedá priamo hlasom, bez toho, aby najprv všetko prepisoval na text a potom čítal. Pôsobí to prirodzenejšie a rýchlejšie."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré programy a aplikácie posielajú modelu požiadavky a platia za použitie. Nie je to bežný chat pre ľudí, ale „zásuvka“ pre vývojárov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie xAI: Grok Voice 3.0",
+       "href": "https://x.ai/news/grok-voice-3"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "ling-3-1-flash",
+     "title": "Čínsky inclusionAI vypustil otvorené váhy Ling-3.1-flash, veľký MoE model pod MIT",
+     "dateText": "v utorok 13. až stredu 14. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · MIT"
+      },
+      {
+       "kind": "open",
+       "label": "Čínsky otvorený model"
+      }
+     ],
+     "keyFact": {
+      "value": "560 miliárd",
+      "label": "parametrov, naraz pracuje asi 25 miliárd"
+     },
+     "body": [
+      "Po skúšobnom [[API|api]] vyšli na Hugging Face [[otvorené váhy|openweights]] modelu Ling-3.1-flash od čínskej skupiny inclusionAI. Ide o hybrid-lineárny [[MoE|moe]] s približne 560 miliardami [[parametrov|params]], z ktorých pri každom slove pracuje asi 25 miliárd. [[Kontext|context]] zvláda až milión tokenov a od prvého dňa sú k dispozícii recepty pre SGLang a vLLM, teda bežné nástroje na self-hosting.",
+      "Firma hlási silné výsledky v agentických a office testoch, no čísla sú zatiaľ najmä na obrázkoch v model carde a nezávislé overenie ešte chýba. Licencia je MIT, čo je pre taký veľký model nezvyčajne voľné."
+     ],
+     "whyItMatters": "Dominujú americkí OpenAI, Anthropic a Google; veľký čínsky otvorený model s dlhým kontextom a MIT licenciou je pre firmy, ktoré chcú hostovať AI u seba, jedna z najzaujímavejších noviniek týždňa.",
+     "terms": [
+      {
+       "key": "openweights",
+       "term": "Otvorené váhy",
+       "explain": "Firma zverejní samotný natrénovaný model, takže si ho môžete stiahnuť, spustiť u seba a upravovať, bez platenia za každé použitie."
+      },
+      {
+       "key": "params",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil pri tréningu. Zhruba platí, že viac parametrov znamená schopnejší, ale aj ťažší a drahší model."
+      },
+      {
+       "key": "moe",
+       "term": "MoE (mixture of experts)",
+       "explain": "Model zložený z mnohých „expertov“, z ktorých sa pri každom slove zapne len malá časť. Má veľa vedomostí, ale počíta rýchlo a lacno ako menší model."
+      },
+      {
+       "key": "context",
+       "term": "Kontext",
+       "explain": "Koľko textu si model naraz „pamätá“ v jednej konverzácii, vrátane vašich súborov a jeho odpovedí. Milión tokenov je zhruba 750-tisíc anglických slov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/inclusionAI/Ling-3.1-flash"
+      },
+      {
+       "label": "SGLang recept",
+       "href": "https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.1-flash"
+      }
+     ]
+    },
+    {
+     "id": "ultramarine-1-flash",
+     "title": "Paper Instruments vydal Ultramarine 1 Flash, lacný model na Excel, Word a PowerPoint",
+     "dateText": "v utorok 14. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "API teraz, váhy neskôr"
+      },
+      {
+       "kind": "money",
+       "label": "Lacný knowledge-work model"
+      }
+     ],
+     "keyFact": {
+      "value": "0,15 $ / 0,50 $",
+      "label": "za milión vstupných / výstupných tokenov"
+     },
+     "body": [
+      "Americký Paper Instruments predstavil Ultramarine 1 Flash, model doladený na knowledge-work úlohy v Office, teda tabuľky, prezentácie a dokumenty. Stojí na otvorenej základni GLM-5.3 Flash od Z.ai a cez API pod menom ultramarine-1-flash stojí 15 centov za milión vstupných a 50 centov za milión výstupných [[tokenov|token]]; uložený vstup v [[cache|cache]] je za 3 centy.",
+      "Vo vlastnom teste PI Knowledge Work firma hlási asi 13 centov na úlohu a skóre nad Fable 5 a GPT-5.6 Sol pri maximálnom uvažovaní; ide o interné čísla, nie o nezávislý rebríček. Otvorené zatiaľ nie sú váhy modelu, ale Feather [[harness|harness]] a forky nástrojov paper-docx, paper-pptx a paper-xlsx. Váhy majú prísť neskôr."
+     ],
+     "whyItMatters": "Ak chcete lacného agenta na Excel či PowerPoint, toto je konkrétna ponuka už teraz. Až keď vyjdú váhy, bude zaujímavé aj pre self-hosting.",
+     "terms": [
+      {
+       "key": "token",
+       "term": "Token",
+       "explain": "Základná jednotka textu, ktorú model spracúva. Zhruba platí, že 100 tokenov je okolo 75 anglických slov; za tokeny sa pri API aj platí."
+      },
+      {
+       "key": "cache",
+       "term": "Cache (vyrovnávacia pamäť)",
+       "explain": "Ak modelu opakovane posielate ten istý začiatok textu, napríklad dlhý dokument, uloží si ho a ďalšie použitie je výrazne lacnejšie a rýchlejšie."
+      },
+      {
+       "key": "harness",
+       "term": "Harness",
+       "explain": "Program okolo modelu, ktorý mu dáva nástroje, napríklad prístup k súborom či terminálu, a riadi, ako agent krok za krokom pracuje."
+      }
+     ],
+     "links": [
+      {
+       "label": "Ultramarine 1 Flash",
+       "href": "https://www.paperinstruments.com/ultramarine"
+      },
+      {
+       "label": "Blog Paper Instruments",
+       "href": "https://www.paperinstruments.com/blog/ultramarine"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "Od chatu k práci",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "anthropic-otel",
+     "title": "Anthropic pridal OpenTelemetry stopy na Claude Platform, aby ste videli, čo agent robí",
+     "dateText": "v utorok 14. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Public beta"
+      },
+      {
+       "kind": "standard",
+       "label": "Observability"
+      }
+     ],
+     "body": [
+      "Anthropic spustil public beta sledovania agentov cez [[OpenTelemetry|otel]] na Claude Platform. Managed Agents, Messages API aj Claude SDK môžu exportovať stopy: latenciu, spotrebu tokenov, volania nástrojov a MCP, a voliteľne aj obsah správ. Destináciu nastavíte v Console alebo cez Admin API a dáta môžu ísť do Langfuse, LangSmith, Sentry, Grafana Cloud, Datadog a podobných nástrojov.",
+      "Ide o to isté, čo firmy už roky používajú pri bežných serveroch: vidieť, kde agent viazne, koľko stojí jeden beh a ktoré nástroje volá. Pre produkčné nasadenie Claude agentov je to praktický chýbajúci kúsok."
+     ],
+     "whyItMatters": "Bez merania je agentická AI čierna skrinka. Keď firmy platia za tisíce behov denne, potrebujú rovnaký prehľad ako pri klasickom softvéri — a Anthropic im to teraz dáva nativne.",
+     "terms": [
+      {
+       "key": "otel",
+       "term": "OpenTelemetry",
+       "explain": "Otvorený štandard na meranie a sledovanie softvéru: koľko trvá požiadavka, kde padá chyba a čo sa dialo krok za krokom. Funguje s mnohými monitoring nástrojmi."
+      }
+     ],
+     "links": [
+      {
+       "label": "Článok Anthropicu o observability",
+       "href": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform"
+      },
+      {
+       "label": "Dokumentácia OpenTelemetry",
+       "href": "https://platform.claude.com/docs/en/manage-claude/opentelemetry"
+      }
+     ]
+    },
+    {
+     "id": "claude-code-2-1-300",
+     "title": "Claude Code 2.1.300 pridáva advisor na AWS a bohatšie metriky",
+     "dateText": "v utorok 14. októbra večer",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Aktualizácia"
+      }
+     ],
+     "body": [
+      "Anthropic vo utorok večer vydal Claude Code 2.1.300, stabilný skok oproti včerajšiemu 2.1.299. Pribudol príkaz /advisor pre Claude Platform na AWS, bohatšie [[OpenTelemetry|otel]] atribúty GenAI vrátane metrík [[cache|cache]] podľa TTL a nové možnosti pre [[hooky|hooks]], napríklad prompt.change, virtualText a $.ui.view.",
+      "Okrem toho je desiatky opráv: worktree a reftable, obnovenie cloud relácií a dvojité spustenie CLI vo VS Code či Cursore. Pre bežného používateľa je to skôr údržbové vydanie; pre tých, čo merajú agentov, sú nové OTel polia užitočné."
+     ],
+     "whyItMatters": "Po pondelkových úsporách pri dlhých reláciách (idle compaction) ide Anthropic ďalej v meraní a ladení Claude Code — teda v tom, čo firmy potrebujú, keď agenta nechajú bežať celý deň.",
+     "terms": [
+      {
+       "key": "hooks",
+       "term": "Hooky",
+       "explain": "Vlastné skripty, ktoré sa automaticky spustia pri určitej udalosti, napríklad pred odoslaním požiadavky, a môžu ju upraviť alebo skontrolovať."
+      }
+     ],
+     "links": [
+      {
+       "label": "Poznámky k vydaniu na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.300"
+      }
+     ]
+    },
+    {
+     "id": "aa-robotics",
+     "title": "Artificial Analysis spustil AA-Robotics, prvý rebríček jazykových modelov pri riadení robota",
+     "dateText": "v utorok 14. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Research preview"
+      }
+     ],
+     "keyFact": {
+      "value": "~69",
+      "label": "bodov vedie GPT-6 Astra; úloha trvá asi 30 minút"
+     },
+     "body": [
+      "Artificial Analysis zverejnil research preview AA-Robotics v0.1: špičkové jazykové modely v programovacích [[harnessoch|harness]] riadia šesťosové rameno cez HTTP API a štyri kamery. Testujú osem stolných úloh bez predchádzajúceho tréningu na robote, takzvané [[zero-shot|zeroshot]].",
+      "Vedie GPT-6 Astra s približne 69 bodmi, potom GPT-6.1 Sol s asi 65, Gemini 4 Argon s asi 55 a ďalej Claude Opus 5.5 a Fable 5.1. Jedna úloha trvá zhruba pol hodiny a môže stáť až okolo 16 dolárov; Sol je lacnejší, asi 2 doláre. Voči človeku je to podľa AA asi stokrát pomalšie."
+     ],
+     "whyItMatters": "Doteraz sme porovnávali chatovacie a kódovacie schopnosti. Teraz vidíme, ako si „mozog“ poradí s reálnym ramenom — a že sme ešte ďaleko od ľudskej rýchlosti.",
+     "terms": [
+      {
+       "key": "zeroshot",
+       "term": "Zero-shot",
+       "explain": "Model dostane úlohu, na ktorej nebol špeciálne trénovaný, a má ju zvládnuť hneď z popisu a pozorovania, bez dodatočného učenia."
+      }
+     ],
+     "links": [
+      {
+       "label": "Článok Artificial Analysis: AA-Robotics",
+       "href": "https://artificialanalysis.ai/articles/aa-robotics"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Peniaze, čipy a pravidlá",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "tsmc-earnings",
+     "title": "Dnes o ôsmej ráno ide earnings call TSMC, barometer dopytu po AI čipoch",
+     "dateText": "vo štvrtok 15. októbra o 8:00 Europe/Bratislava",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Výsledky"
+      }
+     ],
+     "keyFact": {
+      "value": "~1,49 bilióna NT$",
+      "label": "už známe tržby za Q3, asi 46,7 miliardy USD"
+     },
+     "body": [
+      "Vo štvrtok 15. októbra o 14:00 taiwanského času, teda o 8:00 Europe/Bratislava, ide konferenčný hovor TSMC k výsledkom tretieho štvrťroka. TSMC je najväčší výrobca čipov na svete a vyrába procesory pre Nvidiu, AMD, Apple aj vlastné čipy veľkých cloudov. Tržby za štvrťrok sú už známe, zhruba 1,49 bilióna taiwanských dolárov, teda asi 46,7 miliardy amerických; oproti minulému roku to je nárast okolo 50 percent a nad pôvodným výhľadom.",
+      "Call má dať čistý zisk, marže, tempo nástupu procesu N2 a výhľad na štvrtý štvrťrok a celý rok. Trh bude sledovať najmä dopyt po AI čipoch a po [[CoWoS|cowos]], špeciálnom balení, bez ktorého sa moderné AI akcelerátory nezaobídu. Quiet period firmy trvala od 5. do 14. októbra."
+     ],
+     "whyItMatters": "Čipové akcie v stredu klesali; čísla a výhľad TSMC môžu rozhodnúť, či ide len o nervozitu pred výsledkami, alebo o skutočné ochladenie AI investícií.",
+     "terms": [
+      {
+       "key": "cowos",
+       "term": "CoWoS",
+       "explain": "Technológia TSMC na „zlepenie“ výpočtového čipu a rýchlej pamäte do jedného balíka. Je to úzke hrdlo výroby AI čipov, preto sa jej kapacita sleduje tak pozorne."
+      }
+     ],
+     "links": [
+      {
+       "label": "TSMC: výsledky Q3 2026",
+       "href": "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+      }
+     ]
+    },
+    {
+     "id": "anthropic-singapore",
+     "title": "Anthropic otvoril kanceláriu v Singapure a podpísal dohodu s vládou",
+     "dateText": "v utorok 14. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Expanzia APAC"
+      }
+     ],
+     "body": [
+      "Anthropic oznámil otvorenie kancelárie v Singapure, piatej v ázijsko-pacifickom regióne. Súčasne podpísal memorandum o porozumení s miestnym ministerstvom digitálneho rozvoja a informácií o bezpečnosti, vyhodnocovaní modelov a reakcii na incidenty.",
+      "Nejde o nový model ani o produktové spustenie, ale o geo a politický signál: Anthropic si buduje prítomnosť v Ázii a oficiálny kanál s regulátorom."
+     ],
+     "whyItMatters": "Pre Európu je to pripomienka, že súboj o pravidlá AI sa hrá naraz v USA, EÚ aj v Ázii — a veľké laby si otvárajú miestne zastúpenia skôr, než prídu prísnejšie pravidlá.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Oznámenie Anthropicu",
+       "href": "https://www.anthropic.com/news/singapore-office-opening"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Gemini 4 Argon, Liquid LFM2.5-24B-A2B, OpenAI GPT-4o/4.1 deprecation, Anthropic Scion, Claude Code 2.1.299, Fish Audio Drama 3, HeyGen na Civitai, Muse Wonder, Origin App Marketplace: písali sme 13.–14. októbra, bez materiálnej novej správy.",
+  "Claude Fable 5.5 v Azure katalógu: leak/špekulácia pred oficiálnym vydaním.",
+  "Grok Imagine Video 1.5, Seedance 2.5, Vidu Q4: staré alebo recyklované (Imagine Video 1.5 je z júna 2026); dnes žiadny nový image/video gen model.",
+  "TypeSafe Jev 1.14 a Codex alpha.11: produktové drobnosti bez dopadu pre bežného čitateľa.",
+  "MiniCPM-V 4.7 Day-0 na AMD, Theo Codex→Claude Code logy, debaty Opus vs Sol, ArtCraft, Jester, Graylark, Tether TranscribePsy, White Circle RISE: dojmy, úzke laby alebo security research."
+ ],
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-15.json"
+ },
+ "finance": {
+  "asOfText": "Ceny Bitcoinu zo štvrtka 15. októbra o 6:12 (CoinGecko). Akcie sú zo záveru obchodovania v stredu 14. októbra na Wall Street.",
+  "summary": "Bitcoin za deň stratil viac ako tri percentá a klesol k 81-tisíc dolárom. Technologické akcie v stredu plošne padali: AMD o takmer šesť percent, Nvidia a Meta o viac ako tri; pred dnešným callom TSMC klesla aj akcia TSM.",
+  "btc": {
+   "priceUsd": 80902,
+   "priceEur": 72083,
+   "changePct": -3.3,
+   "changePctEur": -3.42,
+   "low24h": 80444,
+   "high24h": 84025,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo skôr pokles",
+   "comment": "Bitcoin stojí okolo 80 900 dolárov, teda asi 72 100 eur, a za 24 hodín v dolároch stratil zhruba 3,3 percenta. Pohyb bol ostrý: najvyššie bol pri 84 025 dolároch a najnižšie pri 80 444 dolároch. Od historického maxima ([[ATH|ath]]) 126 080 dolárov ho delí asi 36 percent. Pásmo okolo 84-tisíc dolárov, ktoré ešte včera pôsobilo ako [[odpor|support]], tentoraz neudržalo cenu. [[Index strachu a chamtivosti|fng]] klesol z 62 na 53 bodov, teda z miernej „chamtivosti“ na neutrál. Nálada je krátkodobo skôr [[bearish|bearish]].",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Fear & Greed Index (alternative.me)",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 221.3,
+    "changePct": -3.16,
+    "comment": "V stredu stratila viac ako tri percentá a uzavrela na 221,30 dolára; trh je nervózny pred výsledkami TSMC."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 533.69,
+    "changePct": -1.8,
+    "comment": "Klesla o necelé dve percentá, menej než čisté čipové mená."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 347.64,
+    "changePct": -1.74,
+    "comment": "Po spustení Gemini 4 Argon v utorok v stredu aj ona ustúpila o necelé dve percentá."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 737.54,
+    "changePct": -3.27,
+    "comment": "Po dvoch silných dňoch po Muse Wonder v stredu oddýchla o viac ako tri percentá."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 570.82,
+    "changePct": -5.73,
+    "comment": "Najväčší pokles v našom zozname: takmer šesť percent, späť hlboko pod 600 dolárov."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Yahoo Finance NVDA",
+    "href": "https://finance.yahoo.com/quote/NVDA/"
+   },
+   {
+    "label": "MSFT",
+    "href": "https://finance.yahoo.com/quote/MSFT/"
+   },
+   {
+    "label": "GOOGL",
+    "href": "https://finance.yahoo.com/quote/GOOGL/"
+   },
+   {
+    "label": "META",
+    "href": "https://finance.yahoo.com/quote/META/"
+   },
+   {
+    "label": "AMD",
+    "href": "https://finance.yahoo.com/quote/AMD/"
+   }
+  ],
+  "gem": {
+   "ticker": "TSM",
+   "name": "TSMC (Taiwan Semiconductor)",
+   "close": 430.0,
+   "changePct": -3.4,
+   "why": "Dnes o 8:00 Europe/Bratislava ide earnings call TSMC, prvý tvrdý dátový bod o AI a CoWoS dopyte po quiet period. Akcia v stredu uzavrela na 430 dolároch, o 3,4 percenta nižšie než v utorok. Kto sleduje AI čipy, pre toho je TSMC dnes najdôležitejšie meno — sledovať call, nie tipovať obchod.",
+   "risks": "Riziká: výsledky alebo výhľad môžu sklamať a cena sa okolo zverejnenia môže prudko pohnúť oboma smermi. Firma je navyše citlivá na napätie okolo Taiwanu a na americké obchodné obmedzenia.",
+   "links": [
+    {
+     "label": "Yahoo Finance TSM",
+     "href": "https://finance.yahoo.com/quote/TSM/"
+    },
+    {
+     "label": "TSMC: výsledky Q3 2026",
+     "href": "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) znamená očakávaný pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "ath",
+    "term": "ATH",
+    "explain": "All-Time High: najvyššia cena v histórii."
+   },
+   {
+    "key": "support",
+    "term": "Podpora a odpor",
+    "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky."
+   },
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré z cien, objemov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "ticker",
+    "term": "Ticker",
+    "explain": "Skratka akcie na burze, napríklad TSM je TSMC, NVDA je Nvidia."
+   }
+  ]
+ }
+}
