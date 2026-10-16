@@ -1,0 +1,532 @@
+{
+ "date": "2026-10-16",
+ "label": "Piatok 16. októbra 2026",
+ "shortLabel": "Pi 16. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Štvrtok patril otvoreným modelom. Meta zverejnila Muse Spark Open, svoj veľký model, ktorý si môžete stiahnuť a spustiť u seba, čínsky StepFun splnil sľub a pustil váhy Step 5 Preview a Nvidia pridala Nemotron 3.5 Super VL. Z obrázkov zaujal nemecký Black Forest Labs s malým otvoreným FLUX 3 Image Klein a TSMC potvrdilo, že dopyt po AI čipoch je stále obrovský.",
+ "highlights": [
+  "Meta pustila otvorené váhy Muse Spark Open: 816 miliárd parametrov, kontext milión tokenov, beží aj na dvoch Mac Studiách",
+  "StepFun zverejnil váhy Step 5 Preview a Nvidia otvorený Nemotron 3.5 Super VL pre agentov, ktorí čítajú dokumenty",
+  "Nemecký Black Forest Labs vydal FLUX 3 Image Klein, malý otvorený model na obrázky, ktorý zvládne aj bežná grafická karta",
+  "Anthropic sprístupnil Code Review pre firmy; Codex 0.163.0 a Claude Code 2.1.301 vyšli včera večer",
+  "TSMC hlási tržby 46,7 miliardy dolárov a výhľad až 54,3 miliardy; akcia aj tak klesla o 1,8 %, Bitcoin sa odrazil k 82-tisícom"
+ ],
+ "leadId": "muse-spark-open",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "muse-spark-open",
+     "title": "Meta pustila Muse Spark Open, veľký otvorený model, ktorý beží aj na dvoch Macoch",
+     "dateText": "vo štvrtok 15. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      },
+      {
+       "kind": "device",
+       "label": "Beží aj lokálne"
+      }
+     ],
+     "keyFact": {
+      "value": "816 miliárd",
+      "label": "parametrov, naraz pracuje 42 miliárd"
+     },
+     "body": [
+      "Meta vo štvrtok 15. októbra zverejnila Muse Spark Open, otvorenú vetvu svojej novej rodiny Muse. Kým pondelkový Muse Wonder je dostupný len cez [[API|api]], tento model si môže ktokoľvek stiahnuť ako [[otvorené váhy|openweights]] z Hugging Face alebo spustiť v cloudoch Amazonu, Googlu a Microsoftu. Je to [[MoE|moe]] model s 816 miliardami [[parametrov|params]], z ktorých pri každom slove pracuje 42 miliárd, rozumie textu aj obrázkom a jeho [[kontext|context]] má milión tokenov.",
+      "Meta ho cieli hlavne na programovanie a dlhé agentické úlohy, kde model sám pracuje v mnohých krokoch. Zaujímavé je, že podľa Mety ide o prvý model tejto veľkosti, ktorý beží aj na stole: na dvoch počítačoch Apple Mac Studio s čipom M5 Ultra, každý s až 512 GB pamäte. Kto nechce hostovať sám, nájde ho u poskytovateľov ako Groq, Fireworks, Together či OpenRouter. Licencia je vlastná licencia Mety a pri komerčnom použití má obmedzenia.",
+      "V rebríčku Artificial Analysis sa model objavil hneď vo štvrtok na 19. mieste s indexom 38,9, teda za Muse Wonder aj za čínskym Step 5 Preview."
+     ],
+     "whyItMatters": "Väčšina najlepších modelov je uzavretá. Veľký otvorený model od americkej firmy, ktorý sa dá spustiť aj doma bez posielania dát do cloudu, je dobrá správa pre firmy s citlivými dátami a pre nadšencov, ktorí chcú agentov vlastných.",
+     "terms": [
+      {
+       "key": "openweights",
+       "term": "Otvorené váhy",
+       "explain": "Firma zverejní samotný natrénovaný model, takže si ho môžete stiahnuť, spustiť u seba a upravovať, bez platenia za každé použitie."
+      },
+      {
+       "key": "params",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil pri tréningu. Zhruba platí, že viac parametrov znamená schopnejší, ale aj ťažší a drahší model."
+      },
+      {
+       "key": "moe",
+       "term": "MoE (mixture of experts)",
+       "explain": "Model zložený z mnohých „expertov“, z ktorých sa pri každom slove zapne len malá časť. Má veľa vedomostí, ale počíta rýchlo a lacno ako menší model."
+      },
+      {
+       "key": "context",
+       "term": "Kontext",
+       "explain": "Koľko textu si model naraz „pamätá“ v jednej konverzácii, vrátane vašich súborov a jeho odpovedí. Milión tokenov je zhruba 750-tisíc anglických slov."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré programy a aplikácie posielajú modelu požiadavky a platia za použitie. Nie je to bežný chat pre ľudí, ale „zásuvka“ pre vývojárov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Meta: Muse Spark Open",
+       "href": "https://research.meta.ai/blog/muse-spark-open"
+      },
+      {
+       "label": "Modely na Hugging Face",
+       "href": "https://huggingface.co/collections/meta-models/muse-spark-open"
+      }
+     ]
+    },
+    {
+     "id": "step-5-preview-open",
+     "title": "Čínsky StepFun splnil sľub a zverejnil váhy modelu Step 5 Preview",
+     "dateText": "vo štvrtok 15. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Čínsky otvorený model"
+      }
+     ],
+     "keyFact": {
+      "value": "600 miliárd",
+      "label": "parametrov, naraz pracuje 27 miliárd"
+     },
+     "body": [
+      "Čínsky StepFun predstavil Step 5 Preview v septembri len cez API a sľúbil, že váhy pustí neskôr. Vo štvrtok 15. októbra ich naozaj zverejnil na Hugging Face a ModelScope, a to v niekoľkých veľkostiach presnosti, od plnej po úspornú [[kvantizovanú|quant]] verziu pre novšie grafické karty Nvidia.",
+      "Ide o MoE s 600 miliardami parametrov, z ktorých naraz pracuje 27 miliárd, s kontextom milión tokenov a podporou textu aj obrázkov. Cez API stojí naďalej 1 dolár za milión vstupných a 2,70 dolára za milión výstupných tokenov. V rebríčku Artificial Analysis je na 13. mieste s indexom 43,7, teda vyššie než štvrtkový model Mety."
+     ],
+     "whyItMatters": "Dominujú americkí OpenAI, Anthropic a Google, no v otvorených modeloch už roky ťahajú čínske laby. Step 5 Preview je ďalší veľký otvorený model, ktorý si firmy môžu nasadiť u seba, a zároveň dôkaz, že sľub otvorených váh sa tentoraz dodržal.",
+     "terms": [
+      {
+       "key": "quant",
+       "term": "Kvantizácia",
+       "explain": "Zmenšenie modelu tak, že čísla v ňom ukladáme s menšou presnosťou. Model potom zaberie menej pamäte a beží rýchlejšie, za cenu malej straty kvality."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog StepFun: Inside Step 5 Preview",
+       "href": "https://platform.stepfun.ai/blog/inside-step-5-preview"
+      },
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/stepfun-ai/Step-5-Preview"
+      }
+     ]
+    },
+    {
+     "id": "nemotron-3-5",
+     "title": "Nvidia vydala otvorený Nemotron 3.5 Super VL pre agentov, ktorí čítajú dokumenty a tabuľky",
+     "dateText": "vo štvrtok 15. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy aj dáta"
+      },
+      {
+       "kind": "device",
+       "label": "Menšie verzie na RTX"
+      }
+     ],
+     "keyFact": {
+      "value": "120 miliárd",
+      "label": "parametrov, naraz pracuje asi 12 miliárd"
+     },
+     "body": [
+      "Nvidia predstavila Nemotron 3.5 Super VL, otvorený model, ktorý rozumie textu aj obrázkom. Je stavaný pre agentov, ktorí bežia stále: čítajú naskenované dokumenty, tabuľky, volajú nástroje a pracujú s firemnými súbormi. Podľa Nvidie dosahuje vo svojej triede asi päťkrát vyššiu priepustnosť, teda spracuje viac práce za rovnaký čas.",
+      "Spolu s ním vyšla menšia rodina Bolt: verzia so 74 miliardami parametrov, ktorá sa po silnom zmenšení zmestí do grafickej karty s 24 GB pamäte, a od 23. októbra aj drobná verzia na 4 GB. Nvidia zverejnila nielen váhy, ale aj dáta a návody na ďalšie dotrénovanie. V rebríčku Artificial Analysis je veľký model na 25. mieste s indexom 26,5, takže v čistej „inteligencii“ nevyniká; jeho silou má byť rýchlosť a práca s dokumentmi."
+     ],
+     "whyItMatters": "Nvidia predáva čipy, a tak dáva zadarmo modely, ktoré ich vyťažia. Pre firmy je to hotová stavebnica od servera po stolný počítač, ak chcú vlastného agenta na dokumenty bez závislosti od cloudu.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog Nvidie: Nemotron 3.5 Super VL",
+       "href": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+      },
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie vizuálov",
+   "icon": "film",
+   "items": [
+    {
+     "id": "flux-3-klein",
+     "title": "Nemecký Black Forest Labs vydal FLUX 3 Image Klein, malý otvorený model na obrázky",
+     "dateText": "vo štvrtok 15. októbra",
+     "tags": [
+      {
+       "kind": "eu",
+       "label": "Európsky model · Nemecko"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      }
+     ],
+     "keyFact": {
+      "value": "5,6 miliardy",
+      "label": "parametrov, zmestí sa do karty s asi 8 GB"
+     },
+     "body": [
+      "Black Forest Labs z nemeckého Freiburgu, tvorcovia populárnych modelov FLUX, vydali FLUX 3 Image Klein. Ide o kompaktný otvorený model na tvorbu obrázkov z textu, ktorý vie pracovať až s desiatimi referenčnými obrázkami, presne upraviť časť fotky a rozložiť prvky na obrázku podľa nakreslených rámčekov. Výstup zvládne priamo v rozlíšení 4K.",
+      "Model vyšiel v dvoch verziách: [[destilovanej|distill]], ktorá obrázok vytvorí za 16 krokov, a základnej s 50 krokmi, ktorá je pomalšia, ale lepšia na ďalšie doladenie. Úsporná verzia beží na grafickej karte od približne 8 GB pamäte a od prvého dňa funguje v ComfyUI a knižnici Diffusers. Cez API stojí asi 0,9 centa za obrázok a licencia povoľuje bezplatné komerčné použitie firmám s tržbami pod 5 miliónov dolárov."
+     ],
+     "whyItMatters": "Väčšine AI sveta dominujú americké a čínske firmy, Black Forest Labs je jeden z mála európskych lídrov. Pre bežného človeka to znamená kvalitný generátor obrázkov, ktorý si spustí aj na hernom počítači doma, zadarmo a bez posielania obrázkov do cloudu.",
+     "terms": [
+      {
+       "key": "distill",
+       "term": "Destilácia",
+       "explain": "Menší alebo rýchlejší model sa učí napodobňovať väčší. Výsledok je takmer rovnako dobrý, ale potrebuje oveľa menej výpočtov, tu menej krokov na jeden obrázok."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Black Forest Labs",
+       "href": "https://bfl.ai/blog/flux-3-image-klein"
+      },
+      {
+       "label": "Hugging Face: FLUX 3 v Diffusers",
+       "href": "https://huggingface.co/blog/flux-3"
+      }
+     ]
+    },
+    {
+     "id": "kling-4-full",
+     "title": "Kling 4.0 je dostupný pre všetkých a ovládať ho môžu aj AI agenti",
+     "dateText": "vo štvrtok 15. októbra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Uzavretý model"
+      }
+     ],
+     "body": [
+      "Čínsky video generátor Kling 4.0 bol od konca septembra len v predbežnom prístupe, vo štvrtok 15. októbra ho firma oficiálne sprístupnila všetkým s prerobeným rozhraním. Novinkou je, že sa dá ovládať aj mimo webu, cez príkazový riadok a cez [[MCP|mcp]], takže video môže objednať priamo AI agent.",
+      "Kling 4.0 vytvorí naraz až 30-sekundové video a dá sa riadiť až desiatimi kľúčovými snímkami a pätnástimi referenciami. Video vo vyššej farebnej hĺbke a firemné API sú zatiaľ len „čoskoro“."
+     ],
+     "whyItMatters": "Nie je to nový model, ale dôležitý krok: video generátor sa stáva nástrojom, ktorý si agent zavolá sám, napríklad pri tvorbe reklamy alebo videa na sociálne siete.",
+     "terms": [
+      {
+       "key": "mcp",
+       "term": "MCP (Model Context Protocol)",
+       "explain": "Spoločný „konektor“, cez ktorý AI agent volá cudzie nástroje a služby. Ak služba podporuje MCP, agent ju vie použiť bez špeciálneho programovania."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Kling: Kling 4.0",
+       "href": "https://kling.ai/blog/kling40-kling-visual-realism-creative-control-introducing-storytelling"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "Od chatu k práci",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "claude-code-review-ga",
+     "title": "Anthropic sprístupnil Code Review, ktorý automaticky kontroluje kód pre tímy a firmy",
+     "dateText": "vo štvrtok 15. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Všeobecne dostupné"
+      }
+     ],
+     "keyFact": {
+      "value": "6 až 10 minút",
+      "label": "na kontrolu jednej zmeny, asi 3× rýchlejšie"
+     },
+     "body": [
+      "Anthropic presunul Code Review z testovacej fázy do bežnej dostupnosti pre plány Team a Enterprise. Nástroj automaticky prečíta každý [[pull request|pr]] na GitHube, teda navrhovanú zmenu kódu, a k problematickým riadkom napíše pripomienky. Jedna kontrola trvá zhruba 6 až 10 minút, podľa firmy asi trikrát rýchlejšie než v testovacej verzii.",
+      "Pre každý repozitár si tím vyberie intenzitu: rýchlu, štandardnú alebo hĺbkovú. Vybraní firemní zákazníci dostanú aspoň 10-tisíc dolárov kreditov na Code Review, ktoré platia do 15. januára 2027."
+     ],
+     "whyItMatters": "Keď AI píše kód rýchlejšie, než ho ľudia stihnú čítať, úzkym hrdlom sa stáva kontrola. Automatická recenzia je presne tá časť, ktorú firmy potrebujú, aby agentov pustili k ostrému kódu.",
+     "terms": [
+      {
+       "key": "pr",
+       "term": "Pull request",
+       "explain": "Návrh zmeny v kóde, ktorý programátor pošle na kontrolu, než sa pridá do hlavnej verzie projektu."
+      }
+     ],
+     "links": [
+      {
+       "label": "Anthropic: Code Review je všeobecne dostupný",
+       "href": "https://claude.com/resources/articles/code-review-is-now-generally-available"
+      },
+      {
+       "label": "Dokumentácia Code Review",
+       "href": "https://code.claude.com/docs/en/code-review"
+      }
+     ]
+    },
+    {
+     "id": "codex-claude-code-updates",
+     "title": "Codex aj Claude Code dostali včera večer nové verzie",
+     "dateText": "vo štvrtok 15. októbra večer",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Aktualizácia"
+      }
+     ],
+     "body": [
+      "OpenAI vydalo okolo 23:30 nášho času Codex 0.163.0, väčšie vydanie svojho programovacieho agenta. Nastavenia sa dajú prehľadávať, agenta môžete usmerniť uprostred odpovede bez toho, aby začínal odznova, a nástroje, ktoré len čítajú súbory, bežia súbežne, takže práca ide rýchlejšie.",
+      "Anthropic o pol desiatej večer vydal Claude Code 2.1.301. Pribudlo nastavenie, ako dlho má agent čakať, keď narazí na limit používania, podrobnejšie záznamy pre meranie cez OpenTelemetry a desiatky opráv. Pre bežného používateľa ide o údržbové vydanie, pri Codexe sú zmeny citeľnejšie."
+     ],
+     "whyItMatters": "Oba nástroje sa vylepšujú takmer denne. Ak ich používate, oplatí sa aktualizovať, najmä Codex, kde je možnosť usmerniť agenta počas práce praktická novinka.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Codex 0.163.0 na GitHube",
+       "href": "https://github.com/openai/codex/releases/tag/rust-v0.163.0"
+      },
+      {
+       "label": "Claude Code 2.1.301 na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Peniaze, čipy a pravidlá",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "tsmc-q3",
+     "title": "TSMC potvrdilo, že dopyt po AI čipoch je „mimoriadne silný“, a zvýšilo výhľad",
+     "dateText": "vo štvrtok 15. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Výsledky"
+      }
+     ],
+     "keyFact": {
+      "value": "52,3 až 54,3 mld. $",
+      "label": "očakávané tržby vo štvrtom štvrťroku"
+     },
+     "body": [
+      "TSMC, najväčší výrobca čipov na svete, vo štvrtok zverejnilo výsledky tretieho štvrťroka. Tržby dosiahli 46,72 miliardy dolárov, nad vlastným výhľadom, hrubá marža bola 66,4 percenta a prevádzková 58,7 percenta. Na štvrtý štvrťrok firma čaká tržby 52,3 až 54,3 miliardy dolárov a za celý rok rast okolo 44 percent v dolároch.",
+      "Vedenie označilo dopyt po AI za „mimoriadne silný“, a to nielen pri AI akcelerátoroch, ale aj pri procesoroch pre agentov a sieťových čipoch. Firma chce v rokoch 2026 až 2028 investovať viac, než plánovala, a rozširuje [[CoWoS|cowos]] aj výrobu väčších čipov."
+     ],
+     "whyItMatters": "Výsledky TSMC sú najlepší teplomer AI boomu, lebo vyrába čipy pre Nvidiu, AMD aj Apple. Čísla ukazujú, že investície do AI nespomaľujú. Akcia TSMC aj tak vo štvrtok klesla o 1,8 percenta, čo sa po dlhom raste a vysokých očakávaniach stáva.",
+     "terms": [
+      {
+       "key": "cowos",
+       "term": "CoWoS",
+       "explain": "Technológia TSMC na „zlepenie“ výpočtového čipu a rýchlej pamäte do jedného balíka. Je to úzke hrdlo výroby AI čipov, preto sa jej kapacita sleduje tak pozorne."
+      }
+     ],
+     "links": [
+      {
+       "label": "TSMC: výsledky Q3 2026",
+       "href": "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+      },
+      {
+       "label": "CNBC o výsledkoch TSMC",
+       "href": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html"
+      }
+     ]
+    },
+    {
+     "id": "simons-math-ai",
+     "title": "OpenAI, Anthropic a Simonsova nadácia dajú 15 miliónov dolárov na matematiku v ére AI",
+     "dateText": "vo štvrtok 15. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Výskum a granty"
+      }
+     ],
+     "body": [
+      "Simonsova nadácia, veľký americký sponzor základného výskumu, spustila program za 15 miliónov dolárov, ktorý má matematikom pomôcť zorientovať sa v ére AI. OpenAI prispieva 5 miliónmi dolárov a prístupom k modelom a výpočtovému výkonu, Anthropic sa podľa nadácie pripojil s porovnateľným príspevkom.",
+      "Peniaze pôjdu na workshopy a granty, najmä na to, ako overovať matematické dôkazy, ktoré vytvorí AI. Nie je to nový model, ale signál, že AI v matematike už rieši reálne problémy a treba ich vedieť skontrolovať."
+     ],
+     "whyItMatters": "Keď AI začne produkovať dôkazy rýchlejšie, než ich ľudia stihnú prečítať, dôvera v ne bude závisieť od dobrých kontrolných nástrojov. Tento program je na to prvá väčšia investícia.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Simons Foundation: program za 15 miliónov",
+       "href": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/"
+      },
+      {
+       "label": "OpenAI o pokroku v matematike",
+       "href": "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Muse Wonder, Gemini 4 Argon, Ultramarine 1 Flash, Ling-3.1-flash, Grok Voice 3.0, OpenTelemetry v Claude, AA-Robotics: písali sme od pondelka 13. do štvrtka 15. októbra, bez novej podstatnej správy.",
+  "Claude Fable 5.5 v katalógu Azure: stále len únik a špekulácia bez oficiálneho vydania.",
+  "Seedance 2.5 Spicy, Protoface a buzz okolo Krea 3: predajcovia a agregátory alebo neoverené správy z druhej ruky.",
+  "Mercury platby cez MCP, meme agent Jester, limity Claude v Accenture a debaty o vibe-codingu: úzke alebo komunitné témy."
+ ],
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-16.json",
+  "note": "Prvá päťka sa nezmenila: vedie Claude Opus 5.5 pred Claude Sonnet 5.5 a Muse Wonder Full. Do zoznamu 26 sledovaných modelov pribudli dva štvrtkové otvorené modely: Muse Spark Open od Mety na 19. mieste s indexom 38,9 a Nemotron 3.5 Super VL od Nvidie na 25. mieste s indexom 26,5. Zo zoznamu naopak vypadli starší Muse Spark 1.3, Muse Glimmer a Nemotron 3 Ultra."
+ },
+ "finance": {
+  "asOfText": "Ceny Bitcoinu z piatka 16. októbra o 6:16 (CoinGecko). Akcie sú zo záveru obchodovania vo štvrtok 15. októbra na Wall Street.",
+  "summary": "Bitcoin sa po stredajšom poklese odrazil o viac ako jedno percento k 82-tisíc dolárom a nálada na krypto trhu sa zlepšila na miernu chamtivosť. Akcie boli zmiešané: Microsoft rástol o percento, čipové mená Nvidia, AMD a TSMC naopak klesli aj napriek silným výsledkom TSMC.",
+  "btc": {
+   "priceUsd": 81911,
+   "priceEur": 72966,
+   "changePct": 1.29,
+   "changePctEur": 1.27,
+   "low24h": 79806,
+   "high24h": 82508,
+   "mood": "neutral",
+   "moodLabel": "Krátkodobo odraz, trend zatiaľ neutrálny",
+   "comment": "Bitcoin stojí okolo 81 900 dolárov, teda asi 73 000 eur, a za 24 hodín pridal zhruba 1,3 percenta. Cez noc sa ešte krátko prepadol až k 79 806 dolárom, teda pod hranicu 80-tisíc, a odtiaľ sa vrátil; najvyššie bol pri 82 508 dolároch. Za celý týždeň je takmer na nule, mínus pol percenta, a od historického maxima ([[ATH|ath]]) 126 080 dolárov ho delí asi 35 percent. Pásmo okolo 80-tisíc teraz funguje ako [[podpora|support]], kde prišli kupujúci; nad cenou čaká [[odpor|support]] okolo 84-tisíc, kde bola cena ešte v stredu. [[Index strachu a chamtivosti|fng]] stúpol z 53 na 63 bodov, z neutrálu na miernu chamtivosť. Krátkodobo ide o odraz, no kým cena neprekoná 84-tisíc, celkový trend nie je ani jasne [[bullish|bearish]], ani bearish.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Fear & Greed Index (alternative.me)",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 217.23,
+    "changePct": -1.84,
+    "comment": "Aj po silných číslach TSMC klesla o necelé dve percentá, tretí deň po sebe."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 539.44,
+    "changePct": 1.08,
+    "comment": "Najlepší z veľkých mien, po stredajšom poklese pridal približne percento."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 349.22,
+    "changePct": 0.45,
+    "comment": "Mierne hore, zhruba o pol percenta."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 736.72,
+    "changePct": -0.11,
+    "comment": "V deň vydania Muse Spark Open takmer bez zmeny."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 562.23,
+    "changePct": -1.5,
+    "comment": "Pokračuje v poklese, za dva dni stratila viac ako sedem percent."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 422.25,
+    "changePct": -1.8,
+    "comment": "Napriek výsledkom nad očakávaním a vyššiemu výhľadu klesla o 1,8 percenta."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Yahoo Finance NVDA",
+    "href": "https://finance.yahoo.com/quote/NVDA/"
+   },
+   {
+    "label": "MSFT",
+    "href": "https://finance.yahoo.com/quote/MSFT/"
+   },
+   {
+    "label": "GOOGL",
+    "href": "https://finance.yahoo.com/quote/GOOGL/"
+   },
+   {
+    "label": "META",
+    "href": "https://finance.yahoo.com/quote/META/"
+   },
+   {
+    "label": "AMD",
+    "href": "https://finance.yahoo.com/quote/AMD/"
+   },
+   {
+    "label": "TSM",
+    "href": "https://finance.yahoo.com/quote/TSM/"
+   }
+  ],
+  "gem": {
+   "ticker": "ASML",
+   "name": "ASML (Holandsko)",
+   "close": 1657.44,
+   "changePct": 0.45,
+   "why": "ASML je holandská firma a jediný výrobca najmodernejších litografických strojov, na ktorých TSMC a ďalší výrobcovia „tlačia“ čipy. Keď TSMC vo štvrtok povedalo, že v rokoch 2026 až 2028 bude investovať viac, než plánovalo, časť týchto peňazí smeruje práve k dodávateľom strojov, ako je ASML. Akcia vo štvrtok uzavrela na 1 657,44 dolára, o 0,45 percenta vyššie. Je to európske meno, ktoré profituje z AI boomu nepriamo, cez výrobu čipov.",
+   "risks": "Riziká: akcia je drahá a citlivá na cyklus investícií do výroby čipov; obmedzenia vývozu do Číny môžu znížiť tržby a pri akomkoľvek spomalení AI investícií môže prudko klesnúť.",
+   "links": [
+    {
+     "label": "Yahoo Finance ASML",
+     "href": "https://finance.yahoo.com/quote/ASML/"
+    },
+    {
+     "label": "TSMC: výsledky Q3 2026",
+     "href": "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) znamená očakávaný pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "ath",
+    "term": "ATH",
+    "explain": "All-Time High: najvyššia cena v histórii."
+   },
+   {
+    "key": "support",
+    "term": "Podpora a odpor",
+    "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky."
+   },
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré z cien, objemov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "ticker",
+    "term": "Ticker",
+    "explain": "Skratka akcie na burze, napríklad TSM je TSMC, NVDA je Nvidia."
+   }
+  ]
+ }
+}
