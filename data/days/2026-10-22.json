@@ -1,0 +1,687 @@
+{
+  "date": "2026-10-22",
+  "label": "Štvrtok 22. októbra 2026",
+  "shortLabel": "Št 22. 10.",
+  "greeting": "Dobré ráno, Samuel.",
+  "intro": "Streda patrila AI agentom a veľkým platformám. Anthropic ukázal Claude Duet, asistenta, ktorý sa ozve sám a pracuje aj vtedy, keď máš telefón vypnutý, a modely GPT-6 od OpenAI sa dostávajú aj do Google Cloudu. Na burze technológie v stredu rástli, no po večerných výsledkoch Tesly a Mety sú ranné futures v mínuse.",
+  "highlights": [
+    "Anthropic spustil Claude Duet, agenta v samostatnej appke, ktorý ti ráno pošle prehľad a úlohy robí aj pri vypnutom telefóne, zatiaľ však len v USA.",
+    "Modely GPT-6 od OpenAI prichádzajú do Google Cloudu, takže Google ako jediný veľký cloud ponúka modely OpenAI, Anthropicu aj vlastné Gemini.",
+    "Nová verzia Claude API prvýkrát od roku 2023 mení pravidlá a ruší nastavenie temperature, takže vlastné skripty treba pri aktualizácii knižníc upraviť.",
+    "V rebríčku video modelov skočil HeyGen Video na 3. miesto, prvá päťka jazykových modelov sa nezmenila.",
+    "Bitcoin stojí pri 82 800 dolároch, Tesla po výsledkoch po zatvorení burzy klesá, Meta rastie a ako opatrný tip sledujeme nemecký SAP."
+  ],
+  "leadId": "claude-duet",
+  "sections": [
+    {
+      "id": "llm",
+      "title": "Jazykové modely",
+      "kicker": "Chatboty a „mozgy“ AI",
+      "icon": "brain",
+      "items": [
+        {
+          "id": "gpt6-google-cloud",
+          "title": "Modely GPT-6 od OpenAI sa dostanú do Google Cloudu, Google bude mať všetkých troch veľkých hráčov",
+          "dateText": "streda 21. októbra",
+          "tags": [
+            {
+              "kind": "preview",
+              "label": "Súkromný preview pre firmy"
+            },
+            {
+              "kind": "closed",
+              "label": "Uzavretý model"
+            }
+          ],
+          "keyFact": {
+            "value": "3 z 3",
+            "label": "najsilnejších uzavretých modelov má teraz Google Cloud v ponuke"
+          },
+          "body": [
+            "Google v stredu 21. októbra oznámil, že do svojej knižnice modelov Model Garden pridáva tri modely od OpenAI: najsilnejší GPT-6 Astra na programovanie a náročnú prácu, lacnejší GPT-6.1 Sol, ktorý je podľa Googlu takmer rovnako múdry, a rýchly GPT-6 Luna na bežné úlohy. GPT-6 Astra je v nezávislom rebríčku Artificial Analysis momentálne piaty najlepší jazykový model na svete.",
+            "Firmy budú za modely platiť cez jednu faktúru od Googlu a môžu na ne minúť peniaze, ktoré už majú v cloude zazmluvnené. Zatiaľ ide o [[súkromný preview|preview]] pre vybraných firemných zákazníkov, širšia dostupnosť má prísť v najbližších týždňoch. Neskôr sa modely OpenAI objavia aj v Googlovom programovacom agentovi Antigravity a vývojári už teraz môžu pripojiť nástroj Codex od OpenAI cez Google Cloud."
+          ],
+          "whyItMatters": "Google Cloud je tak podľa vlastných slov jediný [[hyperscaler|hyperscaler]], ktorý ponúka všetky tri špičkové uzavreté modely: Gemini, Claude aj GPT. Pre OpenAI je to ďalší krok preč od výhradného partnerstva s Microsoftom, po Amazone už druhý veľký cloud.",
+          "terms": [
+            {
+              "key": "hyperscaler",
+              "term": "Hyperscaler",
+              "explain": "Najväčší poskytovatelia cloudu s obrovskými dátovými centrami po celom svete, teda Amazon (AWS), Microsoft (Azure) a Google Cloud."
+            },
+            {
+              "key": "preview",
+              "term": "Preview",
+              "explain": "Skorá verzia, ktorú si môžu vyskúšať len niektorí. Firma ju ešte ladí a môže zmeniť ceny aj správanie."
+            }
+          ],
+          "links": [
+            {
+              "label": "Blog Google Cloud",
+              "href": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"
+            },
+            {
+              "label": "Oznámenie OpenAI",
+              "href": "https://openai.com/index/openai-models-google-cloud/"
+            }
+          ]
+        },
+        {
+          "id": "claude-api-2026-10-21",
+          "title": "Claude API dostalo prvú novú verziu od roku 2023 a niektoré staré nastavenia prestanú fungovať",
+          "dateText": "streda 21. októbra",
+          "tags": [
+            {
+              "kind": "standard",
+              "label": "Pre vývojárov"
+            }
+          ],
+          "keyFact": {
+            "value": "400",
+            "label": "chybový kód, ak po novom pošleš temperature, top_p alebo top_k"
+          },
+          "body": [
+            "Anthropic v stredu 21. októbra vydal novú verziu svojho [[API|api]] s označením 2026-10-21, prvú od júna 2023. Ide o takzvanú [[nespätne kompatibilnú zmenu|breaking]]: požiadavka, ktorá pošle nastavenia [[temperature, top_p alebo top_k|sampling]], skončí chybou, a to aj vtedy, keď majú predvolenú hodnotu. Zakázané sú aj dokumenty vložené priamo do odpovedí asistenta a citácie v používateľských správach.",
+            "Spolu s tým vyšli nové hlavné verzie oficiálnych [[SDK|sdk]], napríklad pre Python 2.0.0 a TypeScript 1.0.0, ktoré novú verziu posielajú automaticky. Kľúč sa po novom posiela v hlavičke Authorization namiesto X-Api-Key a licencia knižníc sa mení z MIT na Apache 2.0. Na Amazon Bedrock funguje nová verzia len pre modely Claude 4.7 a novšie. Programovací agent Claude Code vo verzii 2.1.307, ktorá vyšla vo štvrtok 22. októbra o 0:17 nášho času, pridal príkaz /claude-api api-version, ktorý kód na novú verziu prepíše sám."
+          ],
+          "whyItMatters": "Kto má vlastné skripty alebo agentov nad Claude API, pri ďalšej aktualizácii knižníc cez pip alebo npm môže zistiť, že prestali fungovať. Treba z nich vyhodiť nastavenia náhodnosti a skontrolovať, či vlastná proxy nečíta kľúč zo starej hlavičky.",
+          "terms": [
+            {
+              "key": "api",
+              "term": "API",
+              "explain": "Rozhranie, cez ktoré programy komunikujú s inou službou. Vývojár cez API posiela modelu otázky z vlastného kódu, nie cez chat okno."
+            },
+            {
+              "key": "breaking",
+              "term": "Breaking change",
+              "explain": "Zmena, po ktorej starý kód prestane fungovať a treba ho upraviť. Preto ju firmy vydávajú zriedka a s návodom na prechod."
+            },
+            {
+              "key": "sampling",
+              "term": "Temperature, top_p, top_k",
+              "explain": "Nastavenia, ktoré určovali, ako náhodne model vyberá ďalšie slovo. Nízka temperature dávala stálejšie odpovede, vysoká kreatívnejšie. Novšie modely Claude ich aj tak nepoužívali."
+            },
+            {
+              "key": "sdk",
+              "term": "SDK",
+              "explain": "Hotová knižnica pre konkrétny programovací jazyk, ktorá uľahčuje volanie API. Vývojár nemusí písať komunikáciu so serverom ručne."
+            }
+          ],
+          "links": [
+            {
+              "label": "Návod na prechod od Anthropicu",
+              "href": "https://platform.claude.com/docs/en/api/migration-2026-10-21"
+            },
+            {
+              "label": "Novinky Claude Platform",
+              "href": "https://platform.claude.com/docs/en/release-notes/overview"
+            },
+            {
+              "label": "Claude Code 2.1.307 na GitHube",
+              "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.307"
+            }
+          ]
+        },
+        {
+          "id": "openai-cache-12h",
+          "title": "OpenAI si po novom zapamätá opakovaný začiatok požiadavky až dvanásť hodín, agentom to ušetrí peniaze",
+          "dateText": "utorok 20. októbra večer",
+          "tags": [
+            {
+              "kind": "money",
+              "label": "Lacnejšie API"
+            }
+          ],
+          "keyFact": {
+            "value": "12 hodín",
+            "label": "namiesto doterajších 30 minút"
+          },
+          "body": [
+            "OpenAI v utorok 20. októbra večer rozšírila takzvanú [[prompt cache|pcache]] vo svojom rozhraní pre modely GPT-5.6 a novšie. Doteraz si server pamätal opakovanú časť požiadavky 30 minút, po novom sa dá nastaviť až 12 hodín. Zápis do dlhšej pamäte stojí 2,5-násobok bežnej ceny vstupu, no každé ďalšie použitie stojí len desatinu, pri modeli GPT-6.1 Sol dokonca dvadsatinu.",
+            "Obe dĺžky sa dajú kombinovať v jednej požiadavke, napríklad 12 hodín pre stále inštrukcie a nástroje a 30 minút pre samotnú konverzáciu. Tvrdenie z X o trvalej pamäti pre Codex sa v dokumentácii nenachádza."
+          ],
+          "whyItMatters": "Agenti, ktorí sa k rovnakým inštrukciám vracajú po hodinách, napríklad ranné rutiny alebo prehľady správ, budú vďaka tomu výrazne lacnejší.",
+          "terms": [
+            {
+              "key": "pcache",
+              "term": "Prompt cache",
+              "explain": "Server si zapamätá začiatok tvojej požiadavky, napríklad dlhé inštrukcie, a pri ďalšej rovnakej požiadavke ho nemusí spracovať znova. Je to rýchlejšie aj lacnejšie."
+            }
+          ],
+          "links": [
+            {
+              "label": "Zmeny v API OpenAI",
+              "href": "https://developers.openai.com/api/docs/changelog"
+            },
+            {
+              "label": "Dokumentácia prompt cache",
+              "href": "https://developers.openai.com/api/docs/guides/prompt-caching"
+            }
+          ]
+        },
+        {
+          "id": "base-labs-decision",
+          "title": "Malé otvorené modely mammoth-1 a elephant-1 nepíšu text, ale rýchlo a lacno rozhodujú",
+          "dateText": "streda 21. októbra",
+          "tags": [
+            {
+              "kind": "open",
+              "label": "Otvorené váhy · MIT"
+            },
+            {
+              "kind": "device",
+              "label": "Beží lokálne"
+            }
+          ],
+          "keyFact": {
+            "value": "1. z 208",
+            "label": "miesto modelu mammoth-1 v rebríčku rozhodovacích modelov Jev Decision Index"
+          },
+          "body": [
+            "Výskumný tím Base Labs pri firme Baseten v stredu 21. októbra zverejnil dva takzvané [[rozhodovacie modely|decision]]: väčší mammoth-1 s 27 miliardami [[parametrov|params]] a menší elephant-1 s 9 miliardami. Nevytvárajú text, ale na otázku s možnosťami, áno alebo nie, či na škále hneď vrátia pravdepodobnosť každej odpovede. Hodia sa napríklad na triedenie zákazníckych tiketov alebo na posúdenie, či je odpoveď iného modelu správna.",
+            "Oba vznikli dotrénovaním čínskych otvorených modelov Qwen3.5. Podľa autorov je mammoth-1 prvý z 208 modelov v rebríčku Jev Decision Index so skóre 71,24 a elephant-1 sa v hodnotení Artificial Analysis vyrovnal doterajšiemu lídrovi od Liquid AI. [[Váhy sú otvorené|openw]] na Hugging Face."
+          ],
+          "whyItMatters": "Je to lacná vrstva, ktorá sa dá spustiť aj na vlastnom počítači a rozhodne napríklad, ktorá správa stojí za notifikáciu. Bežný chatbot by na to musel napísať odpoveď a program by ju potom musel ešte rozlúštiť.",
+          "terms": [
+            {
+              "key": "decision",
+              "term": "Rozhodovací model",
+              "explain": "Model, ktorý namiesto písania textu vyberie z daných možností a povie, nakoľko si je istý. Je rýchlejší a lacnejší ako bežný chatbot."
+            },
+            {
+              "key": "params",
+              "term": "Parametre",
+              "explain": "Čísla, ktoré sa model naučil počas tréningu. Zjednodušene: čím viac parametrov, tým viac vedomostí, ale aj väčšie nároky na pamäť počítača."
+            },
+            {
+              "key": "openw",
+              "term": "Otvorené váhy",
+              "explain": "Firma zverejní samotný naučený model, takže si ho ktokoľvek stiahne a spustí na vlastnom počítači alebo serveri. Licencia MIT dovoľuje aj komerčné použitie."
+            }
+          ],
+          "links": [
+            {
+              "label": "Blog Base Labs",
+              "href": "https://labs.baseten.co/articles/mammoth-1-and-elephant-1-frontier-decision-models"
+            },
+            {
+              "label": "mammoth-1 na Hugging Face",
+              "href": "https://huggingface.co/baselabs/mammoth-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "title": "Obrázky a video",
+      "kicker": "Generovanie vizuálov",
+      "icon": "film",
+      "items": [
+        {
+          "id": "heygen-video",
+          "title": "Video model od HeyGenu je po novom priamo v ich štúdiu aj cez API a v rebríčku skočil na tretie miesto",
+          "dateText": "streda 21. októbra",
+          "tags": [
+            {
+              "kind": "closed",
+              "label": "Cez API"
+            }
+          ],
+          "keyFact": {
+            "value": "3. miesto",
+            "label": "v aréne video modelov Artificial Analysis"
+          },
+          "body": [
+            "Firma HeyGen, známa AI avatarmi, ktoré hovoria za človeka, sprístupnila svoj model HeyGen Video priamo v nástroji Creative Studio a cez API. Z textového zadania, obrázkov alebo predlôh vytvorí 5 až 15 sekúnd dlhú scénu so synchronizovaným zvukom. Doteraz bol od stredy 14. októbra dostupný len cez platformu Civitai. Túto správu sme mali len z prehľadu správ, oficiálne oznámenie HeyGenu sa nám overiť nepodarilo.",
+            "Isté je, že v nezávislej aréne Artificial Analysis, kde ľudia naslepo vyberajú lepšie video, sa verzia v najvyššej kvalite dnes dostala na 3. miesto s 1159,8 bodu [[Elo|elo]], pred MiniMax H3 aj Seedance 2.5."
+          ],
+          "whyItMatters": "Pre bežného človeka bez zásadnej zmeny, no ukazuje to, že aj menšia firma s úzkym zameraním sa vie dostať medzi svetovú špičku vo videu.",
+          "terms": [],
+          "links": [
+            {
+              "label": "Správa Runtime Wire",
+              "href": "https://runtimewire.com/article/heygen-video-creative-studio-launch"
+            },
+            {
+              "label": "Arena videa na Artificial Analysis",
+              "href": "https://artificialanalysis.ai/video/leaderboard/text-to-video"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "title": "AI agenti a nástroje",
+      "kicker": "Od chatu k práci",
+      "icon": "bot",
+      "items": [
+        {
+          "id": "claude-duet",
+          "title": "Anthropic spustil Claude Duet, asistenta, ktorý sa ozve sám a pracuje aj pri vypnutom telefóne",
+          "dateText": "streda 21. októbra",
+          "tags": [
+            {
+              "kind": "preview",
+              "label": "Research preview · len USA"
+            }
+          ],
+          "keyFact": {
+            "value": "6 000+",
+            "label": "aplikácií a doplnkov, ku ktorým sa vie pripojiť"
+          },
+          "body": [
+            "Anthropic v stredu 21. októbra otvoril [[research preview|rpreview]] novej aplikácie Claude Duet pre iPhone, Android aj web. Na rozdiel od bežného chatu ide o proaktívneho [[agenta|agent]]: každé ráno ti pošle krátky prehľad najdôležitejších vecí z pripojených aplikácií, napríklad z mailu a kalendára, a cez deň sa ozve, len keď niečo naozaj potrebuje tvoju pozornosť. Beží na najsilnejšom modeli Claude Opus 5.5 a preberá pamäť, zručnosti a pripojené aplikácie z tvojho účtu Claude.",
+            "Úlohy robí na pozadí na vlastnom [[virtuálnom počítači|vm]] v cloude s vlastným prehliadačom, takže tvoj telefón ani notebook nemusia byť zapnuté. Vie sa napojiť na vyše 6 000 [[konektorov|connector]] a doplnkov, napríklad Gmail, Slack, Stripe či Shopify, a nakupovať cez virtuálnu kartu Stripe Link alebo Shop Pay. Pred odoslaním správy, platbou, podpisom alebo mazaním ti vždy ukáže, čo presne urobí, a počká na súhlas. Obchodovať s akciami ani presúvať peniaze medzi účtami nesmie ani so súhlasom.",
+            "Zatiaľ je len pre predplatiteľov Pro a Max v USA cez poradovník. Míňa rovnaké limity ako bežný Claude a kontroly na pozadí sa do nich tiež rátajú, preto aplikácie kontroluje len raz za niekoľko hodín."
+          ],
+          "whyItMatters": "Je to priamy konkurent asistentov typu Grok Bot, OpenAI dots či Meta Muse: AI sa posúva od odpovedania na otázky k tomu, že za teba sama stráži a vybavuje veci. Zo Slovenska si ho zatiaľ nevyskúšaš.",
+          "terms": [
+            {
+              "key": "rpreview",
+              "term": "Research preview",
+              "explain": "Výskumná ukážka: produkt je ešte v skúšobnej fáze, môže sa mýliť a firma ho podľa spätnej väzby mení."
+            },
+            {
+              "key": "agent",
+              "term": "AI agent",
+              "explain": "AI, ktorá nielen odpovedá, ale sama vykonáva kroky: otvára aplikácie, píše, klikne, kontroluje výsledok a pokračuje, kým úlohu nedokončí."
+            },
+            {
+              "key": "vm",
+              "term": "Virtuálny počítač",
+              "explain": "Počítač, ktorý existuje len ako program na serveri v dátovom centre. Agent na ňom pracuje, ako by sedel pri vlastnom PC, a tvoje zariadenie môže byť vypnuté."
+            },
+            {
+              "key": "connector",
+              "term": "Konektor",
+              "explain": "Prepojenie, cez ktoré má AI prístup do inej služby, napríklad do mailu alebo účtovníctva, bez toho, aby videla tvoje heslo."
+            }
+          ],
+          "links": [
+            {
+              "label": "Oznámenie Anthropicu",
+              "href": "https://claude.com/resources/articles/claude-duet"
+            },
+            {
+              "label": "Návod v Help Centri",
+              "href": "https://support.claude.com/en/articles/17631495-get-started-with-claude-duet"
+            }
+          ]
+        },
+        {
+          "id": "perplexity-local",
+          "title": "Agent Perplexity Computer už vie bežať úplne offline priamo na Macu",
+          "dateText": "utorok 20. októbra",
+          "tags": [
+            {
+              "kind": "device",
+              "label": "Beží lokálne"
+            }
+          ],
+          "keyFact": {
+            "value": "36 GB",
+            "label": "pamäte potrebuje Mac s čipom Apple"
+          },
+          "body": [
+            "Perplexity v utorok 20. októbra oznámila, že jej počítačový agent Perplexity Computer môže pre predplatiteľov Pro, Max a Enterprise bežať úplne bez internetu na Macoch s čipmi Apple a aspoň 36 GB pamäte. Použije pritom otvorený model Qwen 3.6 alebo vlastný PPLX Pro. Pracuje s aplikáciami Poznámky, Mail, Správy, Numbers, Keynote a s lokálnymi súbormi v uzavretom [[sandboxe|sandbox]] a nemíňa pritom kredity."
+          ],
+          "whyItMatters": "Je to prvý veľký komerčný agent na ovládanie počítača s úplne lokálnym režimom. Tvoje maily a súbory tak neopustia počítač, čo je dobrá správa pre súkromie.",
+          "terms": [
+            {
+              "key": "sandbox",
+              "term": "Sandbox",
+              "explain": "Uzavretý priestor v počítači, v ktorom program beží oddelene od zvyšku systému. Ak urobí chybu, nepoškodí nič mimo neho."
+            }
+          ],
+          "links": [
+            {
+              "label": "Blog Perplexity",
+              "href": "https://www.perplexity.ai/hub/blog/perplexity-computer-now-runs-fully-local-on-mac"
+            }
+          ]
+        },
+        {
+          "id": "claude-security",
+          "title": "Claude Security po novom kontroluje každý nový kus kódu, nielen raz za čas",
+          "dateText": "streda 21. októbra",
+          "tags": [
+            {
+              "kind": "safety",
+              "label": "Bezpečnosť"
+            },
+            {
+              "kind": "preview",
+              "label": "Beta len pre Enterprise"
+            }
+          ],
+          "body": [
+            "Bezpečnostný nástroj Claude Security po úvodnej dôkladnej kontrole projektu teraz sleduje každý nový [[commit|commit]] a hľadá v ňom zraniteľnosti. Overí aj opravy, ktoré urobil niekto iný, znova otvorí chyby, ktoré sa vrátili, a pripraví upraviteľný prehľad hrozieb pre projekt. Zvládne až osem repozitárov na projekt a je zatiaľ vo verejnej bete len pre firemný plán Claude Enterprise."
+          ],
+          "whyItMatters": "Bezpečnostné audity sa menia z jednorazovej akcie na stálu AI kontrolu. Pre osobné projekty zatiaľ nedostupné.",
+          "terms": [
+            {
+              "key": "commit",
+              "term": "Commit",
+              "explain": "Uložená dávka zmien v kóde s popisom, čo sa zmenilo. Projekt na GitHube je vlastne história takýchto commitov."
+            }
+          ],
+          "links": [
+            {
+              "label": "Oznámenie Anthropicu",
+              "href": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes"
+            }
+          ]
+        },
+        {
+          "id": "nvidia-openshell",
+          "title": "Nvidia dala zadarmo návod, ako bezpečne zavrieť AI agentov do klietky",
+          "dateText": "streda 21. októbra",
+          "tags": [
+            {
+              "kind": "open",
+              "label": "Open source · Apache 2.0"
+            },
+            {
+              "kind": "safety",
+              "label": "Bezpečnosť"
+            }
+          ],
+          "body": [
+            "Na konferencii GTC v Berlíne Nvidia predstavila OpenShell Reference Architecture, otvorený návod a softvér na bezpečný beh AI agentov vo firmách. Funguje na princípe [[zero trust|zerotrust]]: agent nesmie nič, čo mu niekto výslovne nepovolí, a ak sa začne správať podozrivo, systém ho podľa Nvidie za milisekundy izoluje. Podľa správ ho majú používať Anthropic, AWS, Microsoft, OpenAI a vyše sto ďalších partnerov."
+          ],
+          "whyItMatters": "Ukazuje to, kam smeruje bezpečnosť agentov vo veľkých firmách. Pre domáce použitie je to zatiaľ skôr informácia.",
+          "terms": [
+            {
+              "key": "zerotrust",
+              "term": "Zero trust",
+              "explain": "Bezpečnostný prístup „nikomu never“: každý program aj človek musí mať na každý krok výslovné povolenie, nič nie je dovolené automaticky."
+            }
+          ],
+          "links": [
+            {
+              "label": "Nvidia Newsroom",
+              "href": "https://nvidianews.nvidia.com/news/openshell-reference-architecture"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "Tech a biznis",
+      "kicker": "Čipy, peniaze a infraštruktúra",
+      "icon": "chip",
+      "items": [
+        {
+          "id": "nvidia-dsx-pod",
+          "title": "Nvidia bude dodávať AI dátové centrá v kontajneroch, postaviť sa majú za dva týždne namiesto pol roka",
+          "dateText": "streda 21. októbra",
+          "tags": [
+            {
+              "kind": "eu",
+              "label": "Predstavené v Berlíne"
+            }
+          ],
+          "keyFact": {
+            "value": "14 dní",
+            "label": "namiesto zhruba šiestich mesiacov na pripravenom mieste"
+          },
+          "body": [
+            "Nvidia v stredu 21. októbra na GTC v Berlíne predstavila DSX POD, hotové AI továrne s jej najnovšími čipmi [[Vera Rubin|rubin]], ktoré partneri poskladajú v továrni do kontajnerov vrátane káblov, napájania a [[kvapalinového chladenia|liquid]]. Na pripravené miesto prídu otestované a stačí ich pripojiť, takže nasadenie sa podľa Nvidie skráti zo šiestich mesiacov až na 14 dní.",
+            "Dodávky majú začať začiatkom roka 2027 a medzi partnermi sú Dell, HPE, Lenovo, Schneider Electric, Vertiv aj francúzsky Bull. Nvidia to výslovne prezentuje ako spôsob, ako zrýchliť budovanie AI infraštruktúry v Európe."
+          ],
+          "whyItMatters": "Európa za USA v počte AI dátových centier výrazne zaostáva. Ak sa dajú postaviť za týždne, môže to tento rozdiel zmenšiť, a profitovať z toho môžu aj firmy ako Nebius.",
+          "terms": [
+            {
+              "key": "rubin",
+              "term": "Vera Rubin",
+              "explain": "Nová generácia AI čipov a serverov od Nvidie, nástupca generácie Blackwell, pomenovaná po americkej astronómke."
+            },
+            {
+              "key": "liquid",
+              "term": "Kvapalinové chladenie",
+              "explain": "Namiesto ventilátorov odvádza teplo z čipov kvapalina v trubkách. Najvýkonnejšie AI servery hrejú tak veľmi, že vzduch na ne nestačí."
+            }
+          ],
+          "links": [
+            {
+              "label": "Nvidia Newsroom",
+              "href": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment"
+            }
+          ]
+        },
+        {
+          "id": "mirendil-base",
+          "title": "Jeden výskumník s pomocou AI agentov vraj natrénoval obrovský model na programovanie",
+          "dateText": "streda 21. a štvrtok 22. októbra",
+          "tags": [
+            {
+              "kind": "preview",
+              "label": "Bez váh a nezávislých testov"
+            }
+          ],
+          "body": [
+            "Firma Mirendil tvrdí, že jej model Mirendil-Base so 100 až 500 miliardami parametrov [[predtrénoval|pretrain]] jediný výskumník za tri a pol mesiaca a za menej ako 10 miliónov dolárov za výpočtový výkon. Vyše 99 percent kódu a experimentov podľa nej napísali AI agenti. Model si zatiaľ nikto nemôže stiahnuť ani vyskúšať a chýbajú aj výsledky v testoch, preto to ber ako zaujímavý signál, nie overený fakt."
+          ],
+          "whyItMatters": "Ak sa to potvrdí, AI agenti výrazne zlacňujú a zjednodušujú stavbu nových modelov, čo bola doteraz práca pre veľké tímy.",
+          "terms": [
+            {
+              "key": "pretrain",
+              "term": "Predtréning",
+              "explain": "Prvá a najdrahšia fáza tvorby modelu, keď sa učí z obrovského množstva textu. Až potom sa dolaďuje na konkrétne úlohy a správanie."
+            }
+          ],
+          "links": [
+            {
+              "label": "Blog Mirendil",
+              "href": "https://mirendil.com/news/pretraining-at-scale-without-a-pretraining-team/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    "Kling 4.0 síce na X trenduje ako novinka zo stredy, no model vyšiel už vo štvrtok 15. októbra, teraz sa len rozšíril na ďalšie platformy.",
+    "Gemini 4 Carbon a Claude Fable 5.5 sú stále len testy a špekulácie komunity, nič oficiálne.",
+    "Recursive Flint nemá zatiaľ verejné váhy, IBM Granite Speech 5.0 je malý hlasový model mimo nášho zamerania a Codex CLI má len testovacie alfa verzie.",
+    "Útoky skupiny CyberCartel s pomocou AI agentov na banky v Latinskej Amerike, nákupy cez agentov vo Walmarte (len USA) a únik konverzácií z Meta Muse sú zaujímavý kontext, no bez dopadu na teba.",
+    "Ornith 1.5, FLUX 3 Max, Bria Fibo 2.0 a ďalšie staršie správy sme už písali v predošlých dňoch."
+  ],
+  "finance": {
+    "asOfText": "Ceny Bitcoinu zo štvrtka 22. októbra okolo 6:12 (CoinGecko). Akcie sú zo záveru obchodovania v stredu 21. októbra na Wall Street a zmena je oproti utorku; obchodovanie po zatvorení burzy a ranné futures sú z Yahoo Finance okolo 6:00. Americká burza sa dnes otvára o 15:30 nášho času.",
+    "summary": "Streda bola na Wall Street dobrá: technologický Nasdaq pridal 1,05 percenta a S&P 500 0,58 percenta, keď SpaceX ohlásil rast tržieb o 161 percent a vrátil investorom chuť do AI akcií. Po zatvorení burzy však prišli zmiešané [[výsledky|earnings]]: Tesla po [[obchodovaní po hodinách|afterhours]] padá asi o 3 percentá, Meta rastie asi o 2 percentá. Ráno sú [[futures|futures]] na Nasdaq asi o 1 percento nižšie, pridáva sa aj drahšia ropa po útoku na saudské ropné pole.",
+    "btc": {
+      "priceUsd": 82820,
+      "priceEur": 73665,
+      "changePct": 0.14,
+      "changePctEur": 0.02,
+      "low24h": 82567,
+      "high24h": 84808,
+      "mood": "neutral",
+      "moodLabel": "Bez jasného smeru, prieraz nahor nevydržal",
+      "comment": "Bitcoin stojí okolo 82 820 dolárov, teda asi 73 670 eur, a za 24 hodín sa takmer nepohol. Zaujímavé je, čo sa dialo v noci: cena vyskočila až na 84 808 dolárov, teda nad pásmo [[odporu|support]] okolo 83 až 84 tisíc, no nevydržala tam a vrátila sa späť. Takému pohybu sa hovorí falošný prieraz a znamená, že kupujúcim zatiaľ chýba sila. Najnižšie bol pri 82 567 dolároch, takže [[podpora|support]] okolo 80 tisíc je stále ďaleko. Za týždeň je v pluse asi 0,8 percenta a od historického maxima ([[ATH|ath]]) 126 080 dolárov ho delí zhruba 34 percent. [[Index strachu a chamtivosti|fng]] stúpol z 63 na 68 bodov, nálada je teda lepšia než samotná cena. Kým cena neprerazí 84 tisíc s väčšou silou alebo nespadne pod 80 tisíc, trh nie je ani [[bullish, ani bearish|bearish]].",
+      "links": [
+        {
+          "label": "CoinGecko",
+          "href": "https://www.coingecko.com/en/coins/bitcoin"
+        },
+        {
+          "label": "Fear & Greed Index (alternative.me)",
+          "href": "https://alternative.me/crypto/fear-and-greed-index/"
+        }
+      ]
+    },
+    "stocks": [
+      {
+        "ticker": "NVDA",
+        "name": "Nvidia",
+        "close": 221.97,
+        "changePct": 2.54,
+        "comment": "Ťahala ju nová vlna nadšenia z AI po číslach SpaceX a predstavení nových produktov v Berlíne."
+      },
+      {
+        "ticker": "AMD",
+        "name": "AMD",
+        "close": 552.72,
+        "changePct": 3.36,
+        "comment": "Jeden z najsilnejších čipových titulov dňa."
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft",
+        "close": 532.95,
+        "changePct": 0.2,
+        "comment": "Pokojný deň, hoci OpenAI ďalej rozširuje spoluprácu s konkurenčnými cloudmi."
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet (Google)",
+        "close": 334.76,
+        "changePct": -1.62,
+        "comment": "Proti trhu klesla aj v deň, keď Google oznámil modely OpenAI vo svojom cloude."
+      },
+      {
+        "ticker": "META",
+        "name": "Meta",
+        "close": 697.52,
+        "changePct": 0.47,
+        "comment": "Po výsledkoch rastie po hodinách asi o 2 percentá, tržby stúpli o 26 percent na 64,6 miliardy dolárov."
+      },
+      {
+        "ticker": "AMZN",
+        "name": "Amazon",
+        "close": 262.37,
+        "changePct": -0.1,
+        "comment": "Bez pohybu, výsledky má vo štvrtok 29. októbra."
+      },
+      {
+        "ticker": "TSLA",
+        "name": "Tesla",
+        "close": 386.47,
+        "changePct": 3.41,
+        "comment": "Cez deň rástla na správach o možnej fúzii so SpaceX, po výsledkoch však po hodinách padá asi o 3 percentá."
+      },
+      {
+        "ticker": "TSM",
+        "name": "TSMC",
+        "close": 431.89,
+        "changePct": 1.6,
+        "comment": "Výrobca čipov pokračuje v odraze už štvrtý deň."
+      },
+      {
+        "ticker": "CRWV",
+        "name": "CoreWeave",
+        "close": 61.82,
+        "changePct": -0.5,
+        "comment": "Rast čipových firiem ju neposunul, obavy z dlhu pretrvávajú."
+      }
+    ],
+    "stocksLinks": [
+      {
+        "label": "CNBC: streda na burze",
+        "href": "https://www.cnbc.com/2026/10/20/stock-market-today-live-updates.html"
+      },
+      {
+        "label": "CNBC: pohyby po zatvorení burzy",
+        "href": "https://www.cnbc.com/2026/10/21/stocks-making-the-biggest-moves-after-hours-meta-tsla-lrcx-ibm.html"
+      },
+      {
+        "label": "Reuters: výsledky Tesly",
+        "href": "https://www.investing.com/news/stock-market-news/musks-tesla-revenue-beats-estimates-as-deliveries-rebound-energy-storage-grows-4963934"
+      },
+      {
+        "label": "Výsledky Mety",
+        "href": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+      },
+      {
+        "label": "Bloomberg: ranné futures (cez Swissinfo)",
+        "href": "https://www.swissinfo.ch/eng/us-stock-futures-drop-after-earnings%2C-oil-gains%3A-markets-wrap/92254614"
+      }
+    ],
+    "gem": {
+      "ticker": "SAP",
+      "name": "SAP (nemecký softvér, akcie v USA)",
+      "close": 232.73,
+      "changePct": 1.64,
+      "why": "SAP z nemeckého Walldorfu je najväčšia európska softvérová firma, jej systémy riadia účtovníctvo, sklady a výrobu veľkej časti svetových firiem. V stredu 21. októbra zverejnila výsledky za tretí štvrťrok: tržby prvýkrát v histórii prekročili 10 miliárd eur, tržby z cloudu stúpli o 26 percent a takzvaný [[cloudový backlog|backlog]] o 28 percent na 24,1 miliardy eur. Firma zároveň posunula odhad cloudových tržieb na rok 2026 k hornej hranici pôvodného rozpätia a pokračuje v spätnom odkupe akcií za až 10 miliárd eur. Akcie obchodované v USA ako [[ADR|adr]] v stredu pridali 1,6 percenta a po zverejnení čísel ďalšie asi 1,8 percenta. V júli spadli až na 146 dolárov, odvtedy vzrástli zhruba o 59 percent, no stále sú asi 16 percent pod maximom z októbra 2025.",
+      "risks": "Riziká: cloudový backlog bol podľa portálu finanzen.ch mierne pod odhadom analytikov, ktorí čakali 24,5 miliardy eur, takže reakcia trhu nemusí byť jednoznačná. Akcia už od júla výrazne vzrástla a časť dobrých správ môže byť v cene. Pre európskeho investora hrá rolu aj kurz eura voči doláru pri nákupe v USA, prípadne je jednoduchšie kúpiť akcie priamo na frankfurtskej burze.",
+      "links": [
+        {
+          "label": "Výsledky SAP za 3. štvrťrok",
+          "href": "https://www.sap.com/investors/en/financial-documents-and-events/recent-results.html"
+        },
+        {
+          "label": "Investing.com: reakcia akcií SAP",
+          "href": "https://www.investing.com/news/earnings/sap-shares-climb-after-q3-earnings-beat-and-upbeat-cloud-revenue-outlook-4964043"
+        },
+        {
+          "label": "finanzen.ch: backlog vs. odhady",
+          "href": "https://www.finanzen.ch/nachrichten/aktien/sap-schlagt-gewinnerwartungen-cloud-auftragsbestand-unter-analystenschatzungen-aktie-reagiert-1036642471"
+        },
+        {
+          "label": "Yahoo Finance SAP",
+          "href": "https://finance.yahoo.com/quote/SAP/"
+        }
+      ],
+      "disclaimer": "Toto nie je investičná rada."
+    },
+    "terms": [
+      {
+        "key": "bearish",
+        "term": "Bearish / bullish",
+        "explain": "Burzový slang. Bearish (medvedí) znamená očakávaný pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+      },
+      {
+        "key": "ath",
+        "term": "ATH",
+        "explain": "All-Time High: najvyššia cena v histórii."
+      },
+      {
+        "key": "support",
+        "term": "Podpora a odpor",
+        "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky."
+      },
+      {
+        "key": "fng",
+        "term": "Index strachu a chamtivosti",
+        "explain": "Číslo od 0 do 100, ktoré z cien, objemov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+      },
+      {
+        "key": "ticker",
+        "term": "Ticker",
+        "explain": "Skratka akcie na burze, napríklad AAPL je Apple, NVDA je Nvidia."
+      },
+      {
+        "key": "futures",
+        "term": "Futures (termínové kontrakty)",
+        "explain": "Zmluvy na budúcu cenu indexu, ktoré sa obchodujú takmer nonstop, aj v noci a skoro ráno. Preto sa podľa nich odhaduje, ako začne burza, keď sa otvorí."
+      },
+      {
+        "key": "earnings",
+        "term": "Štvrťročné výsledky",
+        "explain": "Firmy kótované na burze musia každé tri mesiace zverejniť tržby, zisk a výhľad. Okolo tohto dňa sa cena akcie často hýbe o veľa percent jedným či druhým smerom."
+      },
+      {
+        "key": "afterhours",
+        "term": "Obchodovanie po hodinách",
+        "explain": "Akcie sa dajú obchodovať aj po zatvorení burzy o 22:00 nášho času, len s menším objemom. Práve vtedy firmy často zverejňujú výsledky, preto sa prvá reakcia ukáže tam."
+      },
+      {
+        "key": "backlog",
+        "term": "Cloudový backlog",
+        "explain": "Objem už podpísaných zmlúv na cloudové služby, ktoré firma vyfakturuje v nasledujúcich mesiacoch. Ukazuje, aké tržby má firma v podstate istá dopredu."
+      },
+      {
+        "key": "adr",
+        "term": "ADR",
+        "explain": "Certifikát, cez ktorý sa akcie zahraničnej firmy obchodujú na americkej burze v dolároch. Cena sleduje pôvodnú akciu, napríklad SAP vo Frankfurte."
+      }
+    ]
+  },
+  "benchmarks": {
+    "snapshot": "data/benchmarks-2026-10-22.json",
+    "note": "Prvá päťka jazykových modelov sa nezmenila, vedie Claude Opus 5.5 s indexom 57,6 pred Claude Sonnet 5.5 a Muse Wonder Full, piaty je GPT-6 Astra, ktorý práve prichádza do Google Cloudu. Zmena je v aréne videa: HeyGen Video v najvyššej kvalite sa dostal na 3. miesto s 1159,8 bodu Elo, Seedance 2.5 klesol na 5. miesto a FLUX 3 Max od fal a nemeckého Black Forest Labs vypadol z prvej päťky na 6. miesto. Rozdiel medzi 3. a 6. miestom je však len okolo 4 bodov, čo je v rámci štatistickej neistoty prakticky remíza."
+  }
+}
