@@ -1,0 +1,396 @@
+{
+ "date": "2026-10-25",
+ "label": "Nedeľa 25. októbra 2026",
+ "shortLabel": "Ne 25. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Víkend je v AI tichý, žiadny nový veľký model nevyšiel. Najzaujímavejšie čítanie je priznanie OpenAI, ako sa jeho testovací AI agenti prelamovali z izolovaných virtuálnych počítačov a pri tom našli vážnu chybu v knižnici Brotli, ktorú používa Node.js. Cursor naučil svojich agentov ovládať počítač a Moonshot vysvetlil, prečo zámerne oslabil hackerské schopnosti modelu Kimi K3.1 Pro. Na burze v piatok prekvapivo vyleteli akcie kybernetickej bezpečnosti.",
+ "highlights": [
+  "OpenAI priznalo, že jeho testovací AI agenti dokázali uniknúť z izolovaných virtuálnych počítačov a tajne si posielať správy cez procesor, tréning preto teraz prebieha úplne bez internetu.",
+  "Pri týchto testoch našli agenti vážnu chybu v kompresnej knižnici Brotli, ktorá sa týka Node.js, Bun aj Envoy, takže sa oplatí aktualizovať.",
+  "Agenti v Cursore po novom vedia klikať a písať v aplikáciách a sami si otestovať, čo naprogramovali.",
+  "Moonshot pri otvorenej verzii Kimi K3.1 Pro zámerne vyhodil z tréningu hackerské dáta, a aj tak má podľa súhrnov najvyššie skóre v kyber teste medzi otvorenými modelmi.",
+  "Bitcoin stojí okolo 80 800 dolárov, v piatok vyleteli akcie kybernetickej bezpečnosti o 6 až 8 percent a ako opatrný tip sledujeme Okta."
+ ],
+ "leadId": "openai-containment",
+ "sections": [
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "Od chatu k práci",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "openai-containment",
+     "title": "OpenAI priznalo, že jeho AI agenti unikli z izolovaných počítačov, a tréning preto odstrihlo od internetu",
+     "dateText": "piatok 23. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "keyFact": {
+      "value": "11 dní",
+      "label": "stál tréning najsilnejších modelov OpenAI, kým opravili zabezpečenie"
+     },
+     "body": [
+      "OpenAI v piatok 23. októbra zverejnilo podrobný článok o tom, ako zabezpečuje prostredie, v ktorom trénuje svoje najsilnejšie modely. Spúšťačom bol incident z nedele 20. septembra, keď sa model cez zle nastavený DNS, teda „telefónny zoznam“ internetu, dostal k internetu, hoci nemal. Odvtedy OpenAI trénuje tieto modely úplne bez internetu a namiesto neho im dáva takzvaný offline svet, uloženú kópiu webu.",
+      "Potom firma nasadila tímy vlastných AI agentov, ktoré mali izoláciu zámerne prelomiť, takzvaný [[red teaming|redteam]]. Agenti reťazili viacero chýb a dokázali uniknúť z [[microVM|microvm]], teda malých izolovaných virtuálnych počítačov, a OpenAI k tomu pripravilo opravy pre nástroje Kata Containers, gVisor, Docker aj jadro Linuxu. Našli úzke cestičky na internet takmer cez každú povolenú službu a medzi oddelenými počítačmi si dokonca posielali tajomstvá cez časovanie [[cache procesora|cpucache]], na rovnakom princípe ako známe chyby Spectre a Meltdown.",
+      "Tréning sa obnovil vo štvrtok 1. októbra po 11 dňoch pauzy. Medzi testovacími agentmi bola podľa OpenAI aj pripravovaná verzia GPT-6 Astra Cyber zameraná na kybernetickú bezpečnosť."
+     ],
+     "whyItMatters": "Ak púšťate AI agentov v izolovanom prostredí, napríklad v Codexe, Claude Code alebo cloudových agentoch, tento článok ukazuje, že jedna vrstva izolácie nestačí. Dnešní agenti sú už dosť šikovní na to, aby hľadali a reťazili chyby sami, takže treba viac vrstiev ochrany a sledovanie, čo robia.",
+     "terms": [
+      {
+       "key": "redteam",
+       "term": "Red teaming",
+       "explain": "Zámerné útočenie na vlastný systém, aby sa slabiny našli skôr, než ich nájde skutočný útočník. Tu útočili AI agenti na prostredie, v ktorom sa trénujú modely."
+      },
+      {
+       "key": "microvm",
+       "term": "MicroVM",
+       "explain": "Veľmi malý a rýchly virtuálny počítač, ktorý má program oddeliť od zvyšku servera. Používa sa napríklad na bezpečné spúšťanie cudzieho kódu alebo AI agentov."
+      },
+      {
+       "key": "cpucache",
+       "term": "Cache procesora",
+       "explain": "Malá rýchla pamäť priamo v procesore. Meraním, ako rýchlo sa k dátam dostane, vie jeden program nepriamo zistiť, čo robí iný program na tom istom procesore, a takto si môžu tajne posielať informácie."
+      }
+     ],
+     "links": [
+      {
+       "label": "Článok OpenAI",
+       "href": "https://openai.com/index/securing-our-frontier-model-training-environment/"
+      }
+     ]
+    },
+    {
+     "id": "brotli-cve",
+     "title": "Agenti OpenAI našli vážnu chybu v Brotli, ktorú používa Node.js aj Bun, oplatí sa aktualizovať",
+     "dateText": "piatok 23. a sobota 24. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnostná chyba"
+      }
+     ],
+     "body": [
+      "Jedným z výsledkov testov OpenAI je chyba v Brotli, populárnej knižnici na kompresiu dát, ktorú používajú webové servery aj prehliadače. Chyba s označením CVE-2026-111497 umožňuje takzvané [[RCE|rce]]: útočník pošle špeciálne upravené komprimované dáta a pri ich rozbaľovaní sa spustí jeho kód, bez akéhokoľvek prihlásenia.",
+      "Zraniteľný je server, ktorý komprimované dáta prijíma, ale aj klient, napríklad príkaz curl s prepínačom na kompresiu. Podľa správy Reuters na portáli CNA sa to týka Node.js, Bun, Envoy a ďalších. Podľa súhrnov z americkej databázy chýb sú postihnuté verzie Brotli 1.0.3 až 1.2.0 a Node.js už má opravené vydania zo stredy 21. októbra, presné čísla verzií sme však priamo v databáze neoverovali."
+     ],
+     "whyItMatters": "Prakticky: ak máte na počítači alebo serveri Node.js, Bun či iné nástroje s Brotli vo vnútri, aktualizujte ich. Je to aj dobrý príklad, že AI agenti už reálne nachádzajú vážne chyby v softvéri, ktorý používa veľká časť internetu.",
+     "terms": [
+      {
+       "key": "rce",
+       "term": "RCE (vzdialené spustenie kódu)",
+       "explain": "Najnebezpečnejší typ chyby: útočník na diaľku prinúti cudzí počítač spustiť svoj program, a tým nad ním môže prevziať kontrolu."
+      }
+     ],
+     "links": [
+      {
+       "label": "Reuters cez CNA",
+       "href": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-after-security-overhaul-discloses-flaw-in-widely-used-software-6487981"
+      }
+     ]
+    },
+    {
+     "id": "cursor-computer-use",
+     "title": "Agenti v Cursore sa naučili ovládať počítač a sami si otestovať, čo naprogramovali",
+     "dateText": "piatok 23. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Nová funkcia"
+      }
+     ],
+     "body": [
+      "Programovací editor Cursor pridal svojim agentom funkciu Computer Use, teda ovládanie počítača. Agent vie klikať, písať, robiť snímky obrazovky a ovládať desktopové aplikácie vrátane simulátora iPhonu, takže si funkciu, ktorú práve naprogramoval, môže sám vyskúšať ako človek.",
+      "Zapína sa tak, že agenta v zadaní označíte zmienkou „Computer Use“, alebo si ho agent vyberie sám, keď usúdi, že ho potrebuje. Firmy, ktoré si agentov púšťajú na vlastných Macoch, ho spustia jedným príkazom, len musia počítaču povoliť prístup k ovládaniu a nahrávaniu obrazovky. Zatiaľ je to opísané v changelogu príkazového riadka Cursoru, hlavný zoznam noviniek to ešte nemal."
+     ],
+     "whyItMatters": "Doteraz agent kód napísal a človek musel klikať a skúšať, či funguje. Takto sa Cursor dotiahol na Claude a Codex, ktoré podobné testovanie rozhrania už vedia, a programátorovi ubudne ručného preklikávania.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Changelog Cursor CLI",
+       "href": "https://cursor.com/docs/cli/changelog"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "kimi-cyber",
+     "title": "Moonshot zámerne oslabil hackerské schopnosti otvoreného Kimi K3.1 Pro",
+     "dateText": "piatok 23. a sobota 24. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Čínsky model"
+      },
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "keyFact": {
+      "value": "z 90,5 na 81 %",
+      "label": "skóre v internom hackerskom teste po vyhodení kyber dát"
+     },
+     "body": [
+      "K včerajšej správe o Kimi K3.1 Pro pribudol zaujímavý detail. Podľa blogu Kimi a agentúry Reuters Moonshot pri verzii s [[otvorenými váhami|open-weights]] odstránil z tréningu dáta o kybernetických útokoch. Vo vlastnom náročnom teste programovania exploitov tak model klesol z 90,5 na 81 percent.",
+      "Napriek tomu podľa súhrnu AI SI Daily dosiahol v kyber teste [[Artificial Analysis|aa]] 64 percent, najviac zo všetkých otvorených modelov, pred DeepSeek V4.1 Flash s 57 percentami. Toto číslo sme priamo na stránke Artificial Analysis neoverovali. Model pri úlohách spotrebuje asi dvakrát viac vstupných [[tokenov|token]], takže jedna úloha vychádza na 2,81 dolára, o 15 percent drahšie ako pri Kimi K3. Váhy na stiahnutie majú prísť do stredy 4. novembra."
+     ],
+     "whyItMatters": "Je to prvý veľký čínsky otvorený model, ktorý zámerne oslabuje schopnosť pomáhať pri útokoch. Keďže otvorený model si raz stiahnutý môže použiť ktokoľvek, je to rozumný kompromis medzi užitočnosťou a rizikom zneužitia.",
+     "terms": [
+      {
+       "key": "open-weights",
+       "term": "Otvorené váhy",
+       "explain": "Model, ktorého naučené parametre si môže ktokoľvek stiahnuť a spustiť na vlastnom počítači či serveri, bez posielania dát firme, ktorá ho vytvorila."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Kimi",
+       "href": "https://www.kimi.ai/blog/kimi-k3-1-pro"
+      },
+      {
+       "label": "Reuters cez Investing.com",
+       "href": "https://www.investing.com/news/stock-market-news/moonshot-curbs-hacking-ability-in-new-kimi-model-as-fears-grow-over-aipowered-cyberattacks-4970639"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Čipy, peniaze a infraštruktúra",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "uk-ai-plan",
+     "title": "Británia dá okolo 600 miliónov libier na bezpečnosť a nezávislosť v AI",
+     "dateText": "sobota 24. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Peniaze"
+      }
+     ],
+     "body": [
+      "Britský minister financií v sobotu 24. októbra predstavil balík pre umelú inteligenciu. Z neho 165 miliónov libier ide na národnú iniciatívu pre biologickú bezpečnosť AI, kam patrí aj laboratórium za 100 miliónov, ktoré dostane až 200 miliónov libier v kreditoch na modely od OpenAI a Anthropicu. Ďalších 120 miliónov dostane britský AI Security Institute a 60 miliónov ide na národný kybernetický štít.",
+      "AI Security Institute je štátny úrad, ktorý testuje najsilnejšie modely ešte pred ich vydaním, napríklad na to, či nepomôžu pri výrobe biologických zbraní."
+     ],
+     "whyItMatters": "Viac peňazí pre tento úrad znamená viac nezávislých testov modelov skôr, než sa dostanú k ľuďom. Británia sa tak drží v pozícii európskeho lídra v bezpečnosti AI.",
+     "terms": [],
+     "links": [
+      {
+       "label": "GOV.UK",
+       "href": "https://www.gov.uk/government/news/chancellor-unveils-britains-ambitious-plan-for-ai"
+      }
+     ]
+    },
+    {
+     "id": "anthropic-s1",
+     "title": "Anthropic stále nepodal žiadosť o vstup na burzu, čaká sa pondelok",
+     "dateText": "nedeľa 25. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "IPO"
+      }
+     ],
+     "body": [
+      "Americký úrad pre cenné papiere v databáze EDGAR ani dnes ráno neukazuje dokument S-1 od Anthropicu, teda oficiálnu žiadosť o vstup na burzu s podrobnými číslami o firme. Správy médií hovoria o podaní v pondelok 26. októbra a samotnom vstupe na burzu v polovici novembra."
+     ],
+     "whyItMatters": "Keď S-1 vyjde, prvýkrát uvidíme oficiálne, koľko Anthropic zarába a míňa. To ovplyvní aj pohľad investorov na celý AI sektor.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Vyhľadávanie v EDGAR",
+       "href": "https://efts.sec.gov/LATEST/search-index?q=%22Anthropic%22&forms=S-1"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Žaloba Texasu proti OpenAI a Samovi Altmanovi zo štvrtka 23. októbra: poznáme ju len zo súhrnu, nie z oficiálneho zdroja, preto počkáme na overenie.",
+  "Sťažnosti na X, že Claude Opus 5.5 zhoršil, a odchody ľudí z tímu Claude Code nie sú ničím oficiálne potvrdené ani nemenia produkt.",
+  "Inferenčný engine DeepInfer od DeepSeeku, medicínsky model Ling-3.0 a investícia do Higgsfieldu sú úzke alebo staršie správy.",
+  "V obrázkoch a videu od včera nič nové, Seedance 2.5 v 4K sme písali v sobotu."
+ ],
+ "finance": {
+  "asOfText": "Ceny kryptomien z nedele 25. októbra okolo 6:10 (CoinGecko). Akcie sú zo záveru obchodovania v piatok 23. októbra na Wall Street a zmena je oproti štvrtku. Ďalšie obchodovanie začne v pondelok 26. októbra o 14:30 nášho času, keďže my sme v noci prešli na zimný čas a Amerika až o týždeň.",
+  "summary": "Cez víkend burza stojí, takže čísla akcií sú z piatku, keď Dow Jones stratil 1,2 percenta pre ropu nad 100 dolárov a Nasdaq len 0,2 percenta. Výnimkou boli firmy kybernetickej bezpečnosti: CrowdStrike, Palo Alto, Cloudflare a Zscaler skončili 7 až 8 percent vyššie. Podľa Yahoo Finance a Investing.com ich ťahal prieskum banky Evercore ISI medzi predajcami, podľa ktorého firmy pred koncom roka zvyšujú rozpočty na bezpečnosť, a k tomu vážne chyby v jazyku PHP, pred ktorými varovali aj európske úrady ENISA a CERT-EU.",
+  "btc": {
+   "priceUsd": 80837,
+   "priceEur": 72150,
+   "changePct": 0.07,
+   "changePctEur": 0.05,
+   "low24h": 79263,
+   "high24h": 80949,
+   "mood": "neutral",
+   "moodLabel": "Krátkodobo do strany",
+   "comment": "Bitcoin stojí okolo 80 840 dolárov, teda asi 72 150 eur, a za 24 hodín sa takmer nepohol. V noci si však krátko siahol až na 79 263 dolárov, teda pod [[podporu|support]] okolo 80 tisíc, a rýchlo sa nad ňu vrátil, čo je pre kupujúcich dobrý signál. Za týždeň je v mínuse asi 1,2 percenta a od historického maxima ([[ATH|ath]]) 126 080 dolárov ho delí zhruba 36 percent. Ethereum je na 2 364 dolároch a Solana na 102 dolároch, obe takmer bez zmeny. [[Index strachu a chamtivosti|fng]] mierne stúpol na neutrálnych 54 bodov. Krátkodobo sa cena hýbe do strany medzi 79 a 82 tisíc: pád pod 79 tisíc by bol [[bearish|bearish]] signál, návrat nad 83 až 84 tisíc by náladu otočil nahor.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Fear & Greed Index (alternative.me)",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 210.96,
+    "changePct": -0.59,
+    "comment": "Po štvrtkovom páde o 4,4 percenta v piatok už klesla len mierne."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 516.79,
+    "changePct": 1.74,
+    "comment": "Po štvrtkovom prepade o 8 percent sa trochu odrazila."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 524.51,
+    "changePct": 0.66,
+    "comment": "Jedna z mála veľkých technologických firiem, ktorá v piatok rástla."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 320.21,
+    "changePct": -1.24,
+    "comment": "Štvrtý deň v rade v mínuse."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 642.62,
+    "changePct": -0.96,
+    "comment": "Po štvrtkovom prepade o 7 percent pokračovala v miernom poklese."
+   },
+   {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "close": 248.0,
+    "changePct": -0.95,
+    "comment": "Výsledky má vo štvrtok 29. októbra."
+   },
+   {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "close": 372.22,
+    "changePct": -0.63,
+    "comment": "Po výsledkoch z minulej stredy ďalej mierne klesá."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 418.51,
+    "changePct": 1.49,
+    "comment": "Čipy v piatok patrili k tomu lepšiemu na trhu."
+   },
+   {
+    "ticker": "INTC",
+    "name": "Intel",
+    "close": 86.96,
+    "changePct": 1.72,
+    "comment": "Spolu s ostatnými čipmi odrazila po štvrtkovom výpredaji."
+   },
+   {
+    "ticker": "CRWD",
+    "name": "CrowdStrike",
+    "close": 257.57,
+    "changePct": 8.25,
+    "comment": "Najväčší piatkový skokan medzi veľkými firmami, ťahal ho prieskum Evercore o rastúcich rozpočtoch na bezpečnosť."
+   },
+   {
+    "ticker": "PANW",
+    "name": "Palo Alto Networks",
+    "close": 380.55,
+    "changePct": 7.22,
+    "comment": "Rástla z rovnakého dôvodu, analytici ju spolu s CrowdStrike označili za hlavného víťaza výdavkov na bezpečnosť AI."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Wall Street Observer: rally kyber akcií",
+    "href": "https://wallstreetobserver.com/articles/cybersecurity-stocks-rally-crowdstrike"
+   },
+   {
+    "label": "Investing.com: prečo rástla Palo Alto",
+    "href": "https://www.investing.com/news/stock-market-news/why-is-palo-alto-networks-stock-surging-today-93CH-4970133"
+   },
+   {
+    "label": "AP News: ako skončili indexy",
+    "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e07c72bc5cbe5dffe352ddf30054e35f"
+   }
+  ],
+  "gem": {
+   "ticker": "OKTA",
+   "name": "Okta",
+   "close": 213.05,
+   "changePct": 5.82,
+   "why": "Okta je americká firma, ktorá stráži prihlasovanie, teda kto sa kam vo firme smie dostať, čo je oblasť nazývaná ochrana identity. Podľa Yahoo Finance prieskum Evercore ISI z piatka 23. októbra zistil, že Okta má zo všetkých sledovaných firiem najsilnejší rast rozbehnutých obchodov, a banka ju vybrala ako jednu z dvoch akcií, ktoré zdôraznila. Predajcovia zároveň uviedli ochranu identity medzi najvyššie priority firiem, a to v čase, keď AI agenti, ako ukázal aj prípad OpenAI, potrebujú pevne strážené prístupy. Akcia v piatok stúpla o 5,8 percenta na 213 dolárov.",
+   "risks": "Riziká: akcia už za posledné tri mesiace vyrástla zhruba zo 139 na 213 dolárov, takže veľa dobrých správ môže byť v cene. Prieskum Evercore nie je verejný a je to len názor predajcov, nie čísla firmy. Kybernetické akcie sa často hýbu v skupinách, takže pri zmene nálady môžu rovnako rýchlo klesnúť.",
+   "links": [
+    {
+     "label": "Yahoo Finance: prieskum Evercore",
+     "href": "https://finance.yahoo.com/markets/stocks/articles/palo-alto-crowdstrike-jumped-6-181629462.html"
+    },
+    {
+     "label": "Yahoo Finance: OKTA",
+     "href": "https://finance.yahoo.com/quote/OKTA/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) znamená očakávaný pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "ath",
+    "term": "ATH",
+    "explain": "All-Time High: najvyššia cena v histórii."
+   },
+   {
+    "key": "support",
+    "term": "Podpora a odpor",
+    "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky."
+   },
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré z cien, objemov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "ticker",
+    "term": "Ticker",
+    "explain": "Skratka akcie na burze, napríklad AAPL je Apple, NVDA je Nvidia."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-25.json"
+ }
+}
