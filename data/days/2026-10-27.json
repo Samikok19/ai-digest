@@ -1,0 +1,463 @@
+{
+ "date": "2026-10-27",
+ "label": "Utorok 27. októbra 2026",
+ "shortLabel": "Ut 27. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Po tichom víkende rušná noc. OpenAI vydalo GPT-6.1 Terra, lacný a rýchly model na ovládanie počítača, ktorý sa hneď objavil v top 10 rebríčka Artificial Analysis. Zároveň tvrdí, že jeho AI vyriešila dva slávne matematické problémy. Anthropic zverejnil prospekt na burzu a bezpečnostníci varujú pred podvrhnutými súbormi, ktoré unesú Codex či Claude Code.",
+ "highlights": [
+  "OpenAI vydalo GPT-6.1 Terra: o polovicu lacnejšie, vyše trikrát rýchlejšie ako Sol a Astra a v rebríčku Artificial Analysis hneď na 10. mieste.",
+  "OpenAI tvrdí, že jeho AI vyriešila Kakeyovu domnienku a vyvrátila hypotézu o exponenciálnom čase, dôkazy teraz overujú matematici.",
+  "Anthropic podal prospekt na burzu: za pol roka 16,3 miliardy dolárov tržieb, ale aj 80,8 miliardy straty.",
+  "Pozor na agentov: podvrhnutý AGENTS.md v priečinku Stiahnuté prinútil Codex vo vyše 90 percentách pokusov nainštalovať malvér.",
+  "Bitcoin je mierne pod 80 000 dolármi, burza v pondelok rástla vďaka čipom a prospektu Anthropicu, ako opatrný tip sledujeme AMD."
+ ],
+ "leadId": "gpt-61-terra",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "gpt-61-terra",
+     "title": "OpenAI vydalo GPT-6.1 Terra, lacný a rýchly model, ktorý zvláda ovládať počítač a bežnú prácu",
+     "dateText": "pondelok 26. októbra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Uzavretý model · OpenAI"
+      },
+      {
+       "kind": "money",
+       "label": "O polovicu lacnejší"
+      }
+     ],
+     "keyFact": {
+      "value": "1 dolár",
+      "label": "za milión vstupných tokenov, výstup 5 dolárov"
+     },
+     "body": [
+      "OpenAI v pondelok 26. októbra vydalo GPT-6.1 Terra, nástupcu staršieho GPT-5.6 Terra. Je to menší a lacnejší brat výkonnejších modelov Sol a Astra, stavaný hlavne na takzvaný [[computer use|computer-use]], teda na to, aby AI sama klikala v prehliadači či na pracovnej ploche, a na bežnú kancelársku a písaciu prácu. Cez [[API|api]] stojí 1 dolár za milión vstupných tokenov a 5 dolárov za milión výstupných, čo je o polovicu menej ako GPT-5.6 Terra aj GPT-6.1 Sol.",
+      "Model si naraz prečíta až zhruba 1,05 milióna tokenov, čo je niekoľko hrubých kníh, a rozumie textu aj obrázkom. Podľa OpenAI je vyše trikrát rýchlejší ako Astra a Sol a v teste Terminal-Bench 4.0, kde AI rieši úlohy v [[termináli|terminal]], dosiahol pri najvyššom úsilí 50,3 percenta oproti 21,5 percenta starej Terra. Výrazne vraj klesli aj [[halucinácie|halluc]]: v internom teste z 53,6 na 16,7 percenta. Všetky tieto čísla sú od OpenAI.",
+      "Nezávislé meranie už prišlo: v rebríčku Artificial Analysis sa Terra hneď objavila na 10. mieste s indexom 48,1 bodu a rýchlosťou okolo 91 tokenov za sekundu. Dostupná je v ChatGPT pre platené pracovné plány a v Codexe, v GitHub Copilote, Amazon Bedrocku a Microsoft Foundry. Samo OpenAI priznáva, že na najťažšie programovanie sú lepšie drahšie modely Sol a Astra."
+     ],
+     "whyItMatters": "Pre bežného používateľa to znamená lacnejšiu a rýchlejšiu AI na rutinné úlohy, napríklad vypĺňanie formulárov či prácu v prehliadači. V Codexe a Copilote sa s tým istým predplatným dá urobiť viac práce.",
+     "terms": [
+      {
+       "key": "computer-use",
+       "term": "Computer use",
+       "explain": "Schopnosť AI ovládať počítač ako človek: pozerá na obrazovku, hýbe myšou, kliká a píše."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré si iné programy objednávajú prácu od modelu a platia podľa množstva textu."
+      },
+      {
+       "key": "terminal",
+       "term": "Terminál",
+       "explain": "Textové okno, cez ktoré sa počítaču zadávajú príkazy. AI agenti ho používajú na spúšťanie programov a testov."
+      },
+      {
+       "key": "halluc",
+       "term": "Halucinácie",
+       "explain": "Keď si AI sebavedome vymyslí fakt, ktorý nie je pravda."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie OpenAI",
+       "href": "https://openai.com/index/introducing-gpt-6-1-terra"
+      },
+      {
+       "label": "Dokumentácia OpenAI",
+       "href": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+      },
+      {
+       "label": "GitHub Changelog",
+       "href": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/"
+      }
+     ]
+    },
+    {
+     "id": "openai-eth",
+     "title": "OpenAI tvrdí, že jeho AI vyriešila dva slávne matematické problémy, a dôkazy dalo skontrolovať počítaču",
+     "dateText": "pondelok 26. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Čaká na overenie expertmi"
+      }
+     ],
+     "body": [
+      "OpenAI v pondelok 26. októbra oznámilo, že jeho interný model dokázal takzvanú Soggeho domnienku o lokálnom vyhladzovaní vo všetkých dimenziách. Z nej by vyplývalo aj vyriešenie slávnej Kakeyovej domnienky, ktorá sa týka toho, koľko miesta potrebuje ihla, aby sa otočila všetkými smermi. Druhým výsledkom je vyvrátenie [[hypotézy o exponenciálnom čase|eth]], teda tvrdenia, že istý typ logických hádaniek sa nedá vyriešiť výrazne rýchlejšie ako skúšaním takmer všetkých možností.",
+      "Oba dôkazy sú zapísané v jazyku [[Lean|lean]], v ktorom ich vie krok po kroku skontrolovať počítač, a sú zverejnené na GitHube. Výsledok o hádankách teraz overujú aj samotní autori pôvodnej hypotézy Impagliazzo a Paturi a Ryan Williams z MIT. Treba dodať, že vyvrátenie nijako nerieši slávnu otázku P verzus NP. Tretí ohlásený výsledok z fyziky zatiaľ zverejnený nie je."
+     ],
+     "whyItMatters": "Ak to nezávislí matematici potvrdia, bol by to zatiaľ najsilnejší dôkaz, že AI dokáže robiť pôvodný výskum, nielen riešiť testy. Počítač síce overí, že dôkaz sedí, no experti ešte musia potvrdiť, že dokazuje presne to, čo sa malo.",
+     "terms": [
+      {
+       "key": "eth",
+       "term": "Hypotéza o exponenciálnom čase",
+       "explain": "Domnienka z informatiky, že úlohy typu 3-SAT (zložité logické hádanky) sa nedajú vyriešiť oveľa rýchlejšie ako hrubou silou. OpenAI tvrdí, že sa dajú, hoci stále veľmi pomaly."
+      },
+      {
+       "key": "lean",
+       "term": "Lean",
+       "explain": "Programovací jazyk na zápis matematických dôkazov, ktorý počítač dokáže automaticky skontrolovať riadok po riadku."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog OpenAI",
+       "href": "https://openai.com/index/building-scientific-understanding-with-academic-communities/"
+      },
+      {
+       "label": "The Verge",
+       "href": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+      }
+     ]
+    },
+    {
+     "id": "mirendil-fern",
+     "title": "Nový startup Mirendil sľubuje model, ktorý si naraz prečíta až 10 miliónov tokenov",
+     "dateText": "pondelok 26. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Len na pozvánku"
+      }
+     ],
+     "keyFact": {
+      "value": "10 miliónov",
+      "label": "tokenov v jednej konverzácii, asi pol milióna riadkov kódu"
+     },
+     "body": [
+      "Startup Mirendil, ktorý založili bývalí výskumníci z Anthropicu a Googlu, v pondelok 26. októbra predstavil model Fern 0.1. Jeho hlavnou zbraňou je obrovské [[kontextové okno|context]] až 10 miliónov tokenov, do ktorého sa zmestí zhruba pol milióna riadkov kódu naraz. Bežné špičkové modely zvládajú okolo milióna.",
+      "V teste RULER, kde model hľadá schované informácie v obrovskom texte, našiel jednu ukrytú vec vždy, viac kľúčov v 90 percentách a pri úlohách, kde treba spájať viac stôp, v 45 percentách. Test však prebehol len na 20 príkladoch a čísla sú od samotnej firmy. Model je zatiaľ len pre vybraných záujemcov a cena nie je známa."
+     ],
+     "whyItMatters": "Ak sa to potvrdí aj v praxi, bol by to nástroj, ktorý pochopí celý veľký softvérový projekt alebo dlhé záznamy naraz. Zatiaľ ide len o sľuby laboratória.",
+     "terms": [
+      {
+       "key": "context",
+       "term": "Kontextové okno",
+       "explain": "Koľko textu si model vie naraz „podržať v hlave“ počas jednej konverzácie. Čo sa nezmestí, musí sa skrátiť alebo zabudnúť."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Mirendilu",
+       "href": "https://mirendil.com/news/introducing-fern/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "Od chatu k práci",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "agents-md-attack",
+     "title": "Podvrhnutý súbor v priečinku Stiahnuté dokáže prinútiť Codex nainštalovať škodlivý program",
+     "dateText": "pondelok 26. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "keyFact": {
+      "value": "vyše 90 %",
+      "label": "pokusov, v ktorých Codex poslúchol podvrhnuté pokyny"
+     },
+     "body": [
+      "Bezpečnostná firma Forever Security v pondelok 26. októbra opísala útok, ktorý našla u skutočného zákazníka. V priečinku Stiahnuté ležal súbor AGENTS.md, teda textový návod, ktorý si AI agent na programovanie automaticky prečíta. Tento kázal Codexu pripojiť cudzí [[MCP server|mcp]] a nainštalovať škodlivý balík function-color. Zmena sa zapísala do nastavení Codexu a ostala v platnosti aj vo všetkých ďalších sedeniach.",
+      "V testoch to Codex urobil vo vyše 90 percentách pokusov. Podobne upravený súbor CLAUDE.md v Claude Code zhruba v polovici prípadov presmeroval komunikáciu na cudzí server a vyniesol prihlasovacie [[tokeny OAuth|oauth]]. Prehliadač pritom ukladá súbory do Stiahnutých potichu, takže stačí spustiť agenta práve v tomto priečinku."
+     ],
+     "whyItMatters": "Týka sa to každého, kto používa Codex alebo Claude Code. Agenta spúšťajte len v priečinku vlastného projektu, nie v Stiahnutých či domovskom priečinku, a ak máte podozrenie, skontrolujte súbor ~/.codex/config.toml a vymeňte prihlasovacie údaje.",
+     "terms": [
+      {
+       "key": "mcp",
+       "term": "MCP server",
+       "explain": "Doplnok, cez ktorý AI agent získava nové nástroje, napríklad prístup k súborom či službám. Škodlivý MCP server môže agentovi podsúvať zlé príkazy."
+      },
+      {
+       "key": "oauth",
+       "term": "Token OAuth",
+       "explain": "Digitálny kľúč, ktorý potvrdzuje, že ste prihlásený. Kto ho ukradne, môže konať vo vašom mene bez hesla."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Forever Security",
+       "href": "https://forever.security/blog/hijacking-ai-agents-via-downloads-folder/"
+      },
+      {
+       "label": "BleepingComputer",
+       "href": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/"
+      }
+     ]
+    },
+    {
+     "id": "claude-code-2-1-311",
+     "title": "Claude Code už dlhé konverzácie neutne, ale skráti ich a pokračuje",
+     "dateText": "pondelok 26. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Aktualizácia"
+      }
+     ],
+     "body": [
+      "Anthropic v pondelok 26. októbra večer vydal Claude Code vo verzii 2.1.311. Najdôležitejšia oprava: keď konverzácia prekročila 200 tisíc tokenov, sedenie sa doteraz zastavilo hláškou o chýbajúcich kreditoch. Teraz sa história automaticky [[skompaktuje|compact]] a práca pokračuje.",
+      "Opravené sú aj pomocné agenti, ktorí nevideli nástroje z MCP serverov pripojených až po ich spustení, zastaraný obsah pamäťových súborov po kompaktovaní a háčiky, ktoré sa spúšťali dvakrát. Firmy, ktoré si Claude Code púšťajú na vlastných serveroch, dostali dve nové voľby na riadenie nečinnosti."
+     ],
+     "whyItMatters": "Pri dlhej práci s Claude Code menej nečakaných zastavení a spoľahlivejší pomocní agenti.",
+     "terms": [
+      {
+       "key": "compact",
+       "term": "Kompaktovanie",
+       "explain": "Agent zhrnie staršiu časť konverzácie do kratšieho textu, aby sa uvoľnilo miesto a mohol pokračovať."
+      }
+     ],
+     "links": [
+      {
+       "label": "Vydanie na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311"
+      }
+     ]
+    },
+    {
+     "id": "cathedral-anthropic",
+     "title": "Útoční AI agenti sa za menej ako 12 hodín dostali do interných systémov Anthropicu",
+     "dateText": "pondelok 26. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "body": [
+      "Bezpečnostný startup Cathedral podľa Washington Post tvrdí, že jeho AI agenti sa za necelých 12 hodín dostali do interných systémov Anthropicu. Neprišli cez samotný Claude, ale cez predajný a administratívny softvér iných firiem, a videli tak systémy obchodu, personálneho a IT oddelenia, prepisy stretnutí, platy aj diskusie na Slacku.",
+      "Anthropic potvrdil obmedzený prístup a prístup v ten istý deň zablokoval. Podľa firmy sa útočníci nedostali ku konverzáciám zákazníkov, zdrojovému kódu ani k samotným modelom. Išlo o povolený test, nie o skutočný útok zločincov."
+     ],
+     "whyItMatters": "Aj firma, ktorá sa najviac chváli dôrazom na bezpečnosť, má slabé miesta v nástrojoch od iných dodávateľov. A útočné AI agenty ich dokážu nájsť veľmi rýchlo.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Washington Post",
+       "href": "https://www.washingtonpost.com/technology/2026/10/26/researchers-cybersecurity-start-up-cathedral-got-inside-anthropic/"
+      },
+      {
+       "label": "Decrypt",
+       "href": "https://decrypt.co/381860/ai-agents-hack-anthropic-business-systems-12-hours"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Čipy, peniaze, regulácia a infraštruktúra",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "anthropic-s1",
+     "title": "Anthropic zverejnil prospekt na burzu: za pol roka 16 miliárd tržieb, ale 80 miliárd straty",
+     "dateText": "pondelok 26. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "IPO · Nasdaq ANT"
+      }
+     ],
+     "keyFact": {
+      "value": "16,3 miliardy $",
+      "label": "tržby za prvý polrok 2026, rok predtým 1,2 miliardy"
+     },
+     "body": [
+      "Anthropic v pondelok 26. októbra verejne podal dokument [[S-1|s1]] americkému regulátorovi, teda oficiálnu žiadosť o vstup na burzu. Akcie sa majú obchodovať na Nasdaqu pod skratkou ANT. Za prvý polrok 2026 firma utŕžila 16,29 miliardy dolárov, kým rok predtým len 1,16 miliardy, no čistá strata dosiahla 80,75 miliardy dolárov.",
+      "Na účtoch a v krátkodobých investíciách má 131,7 miliardy dolárov a vyše 11 900 zákazníkov jej platí viac ako 100 tisíc dolárov ročne. Cena akcií zatiaľ známa nie je. Väčšinu predstavenstva bude voliť nezávislá správa Long-Term Benefit Trust a zakladatelia si cez špeciálnu akciu ponechajú 50,1 percenta hlasov. Podľa Reuters prospekt v pondelok potiahol nahor aj ďalšie AI akcie."
+     ],
+     "whyItMatters": "Prvýkrát vidíme overené čísla, koľko špičkové AI laboratórium zarába a koľko míňa. Po vstupe na burzu bude Anthropic pod tlakom akcionárov, čo sa môže prejaviť aj na cenách Claude.",
+     "terms": [
+      {
+       "key": "s1",
+       "term": "S-1",
+       "explain": "Formulár, ktorým firma v USA žiada o vstup na burzu. Musí v ňom zverejniť auditované financie, riziká a spôsob riadenia."
+      }
+     ],
+     "links": [
+      {
+       "label": "Prospekt na SEC EDGAR",
+       "href": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
+      },
+      {
+       "label": "Oznámenie Anthropicu",
+       "href": "https://www.anthropic.com/news/s1-sec"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Obrázky a video: v noci nevyšiel žiadny nový veľký model, v rebríčku videa si len vymenili 3. a 4. miesto MiniMax H3 a HeyGen Video.",
+  "Teaser človeka z Artificial Analysis „zajtra bude veľký deň“: zatiaľ len príspevok na X, pozrieme sa zajtra.",
+  "Gemini 4 Argon v Antigravity: len rozšírenie dostupnosti modelu z polovice októbra.",
+  "Cursor Agent SDK: X ho prezentuje ako novinku, no vyšiel už pred týždňom.",
+  "Codex nemá novú stabilnú verziu, len testovacie."
+ ],
+ "finance": {
+  "asOfText": "Ceny kryptomien z utorka 27. októbra okolo 6:15 (CoinGecko). Akcie sú zo záveru v pondelok 26. októbra na Wall Street a zmena je oproti piatku. Obchodovanie v New Yorku začne dnes o 14:30 nášho času.",
+  "summary": "Po dvoch stratových týždňoch Wall Street v pondelok rástla: S&P 500 pridal 0,7 percenta na 7 677 bodov a Nasdaq 0,8 percenta. Podľa Reuters náladu zlepšil prospekt Anthropicu, ktorý ukázal prudko rastúce tržby z AI, a ťahali hlavne čipy, ktorých index stúpol o 2,8 percenta, hoci za október je stále asi o 12 percent nižšie. Meta naopak klesla o 1,9 percenta, keď oznámila, že chce na dátové centrá získať až 95 miliárd dolárov predajom nových akcií. Tesla vyskočila o 5,2 percenta po tom, čo banka Barclays zlepšila jej hodnotenie. V stredu rozhoduje Fed, trh podľa CME FedWatch dáva len asi 13-percentnú šancu na zvýšenie úrokov, a v stredu večer hlásia výsledky Microsoft a Alphabet, vo štvrtok Amazon. Ropa WTI stojí okolo 101 dolárov za barel.",
+  "btc": {
+   "priceUsd": 79723,
+   "priceEur": 71388,
+   "changePct": -0.43,
+   "changePctEur": 0.05,
+   "low24h": 79421,
+   "high24h": 80680,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo mierne nadol",
+   "comment": "Bitcoin stojí okolo 79 700 dolárov, teda asi 71 400 eur, za 24 hodín je takmer bez zmeny, ale za týždeň asi o 2,8 percenta nižšie a za mesiac o 5,5 percenta. Pod hranicou 80 tisíc, ktorá doteraz fungovala ako [[podpora|support]], sa drží už druhý deň, čo je skôr [[bearish|bearish]] znamenie. Ethereum je na 2 312 dolároch, o 0,4 percenta nižšie. [[Index strachu a chamtivosti|fng]] klesol z 50 na neutrálnych 48 bodov. Veľký pohyb môže priniesť streda a rozhodnutie Fedu: zvýšenie úrokov by krypto zrejme stiahlo nižšie, návrat nad 82 tisíc by náladu zlepšil.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Fear & Greed Index (alternative.me)",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 216.0,
+    "changePct": 2.39,
+    "comment": "Čipy v pondelok ťahali celý trh nahor."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 532.6,
+    "changePct": 1.54,
+    "comment": "Pred stredajšími výsledkami rástol."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 316.8,
+    "changePct": -1.06,
+    "comment": "Klesá už štvrtý obchodný deň za sebou, výsledky má v stredu večer."
+   },
+   {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "close": 249.09,
+    "changePct": 0.44,
+    "comment": "Výsledky hlási vo štvrtok 29. októbra večer."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 630.56,
+    "changePct": -1.88,
+    "comment": "Chce predať nové akcie za až 95 miliárd dolárov na AI dátové centrá."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 343.91,
+    "changePct": -1.1,
+    "comment": "Výsledky má v pondelok 2. novembra."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 531.28,
+    "changePct": 2.8,
+    "comment": "Spolu s ostatnými čipmi sa odrazila nahor."
+   },
+   {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "close": 391.62,
+    "changePct": 5.21,
+    "comment": "Najvyššie za viac ako tri mesiace po zlepšení hodnotenia od Barclays."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Reuters (cez Yahoo Finance): pondelok na Wall Street",
+    "href": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-edge-oil-100215774.html"
+   },
+   {
+    "label": "AP: ako skončili indexy",
+    "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-693ac6c4e67da0332045e66804780be7"
+   }
+  ],
+  "gem": {
+   "ticker": "AMD",
+   "name": "AMD",
+   "close": 531.28,
+   "changePct": 2.8,
+   "why": "AMD vyrába procesory a grafické čipy, ktoré konkurujú Nvidii aj v AI dátových centrách. V pondelok pridala 2,8 percenta, keď sa podľa Reuters celý index čipov odrazil o 2,8 percenta, no za október je ten index stále asi o 12 percent nižšie. Prospekt Anthropicu ukázal, že tržby z AI medziročne narástli viac ako desaťnásobne a laboratóriá potrebujú obrovské množstvo výpočtového výkonu. Ak výsledky Microsoftu, Alphabetu a Amazonu tento týždeň potvrdia, že výdavky na dátové centrá pokračujú, čipy by mohli z októbrového poklesu ďalej rásť.",
+   "risks": "Riziká: AMD sa hýbe veľmi prudko, len minulý štvrtok výrazne padla. Ak hyperscaleri naznačia škrty vo výdavkoch alebo Fed v stredu zvýši úroky, rastové akcie a čipy by dostali zásah ako prvé. Vysoká ropa nad 100 dolárov drží infláciu a tým aj úroky vysoko.",
+   "links": [
+    {
+     "label": "Reuters (cez Yahoo Finance)",
+     "href": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-edge-oil-100215774.html"
+    },
+    {
+     "label": "Yahoo Finance: AMD",
+     "href": "https://finance.yahoo.com/quote/AMD/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) znamená očakávaný pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "ath",
+    "term": "ATH",
+    "explain": "All-Time High: najvyššia cena v histórii."
+   },
+   {
+    "key": "support",
+    "term": "Podpora a odpor",
+    "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky."
+   },
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré z cien, objemov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "futures",
+    "term": "Futures (termínové kontrakty)",
+    "explain": "Zmluvy na budúcu cenu indexu alebo komodity, obchodujú sa aj v noci a cez víkend. Preto naznačujú, ako môže burza otvoriť, ešte kým je zavretá."
+   },
+   {
+    "key": "ticker",
+    "term": "Ticker",
+    "explain": "Skratka akcie na burze, napríklad AAPL je Apple, NVDA je Nvidia."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-27.json",
+  "note": "V rebríčku jazykových modelov pribudol nový OpenAI GPT-6.1 Terra a hneď sa usadil na 10. mieste s indexom 48,1 bodu. Patrí medzi najlacnejšie modely v top 10 a s rýchlosťou okolo 91 tokenov za sekundu je rýchlejší ako drahšie GPT-6 Astra aj GPT-6.1 Sol. Prvá päťka sa nezmenila, vedie Claude Opus 5.5 s 57,6 bodu. Z rebríčka vypadol čínsky GLM-5.3-Flash. V aréne videa si len vymenili 3. a 4. miesto MiniMax H3 a HeyGen Video 1, rozdiel je necelé 2 body Elo, čo je v rámci štatistickej chyby."
+ }
+}
