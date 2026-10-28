@@ -1,0 +1,564 @@
+{
+ "date": "2026-10-28",
+ "label": "Streda 28. októbra 2026",
+ "shortLabel": "St 28. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Deň vedy a meraní. Deň po OpenAI zverejnil aj Anthropic vlastný dôkaz, že jeho Claude vyvrátil slávnu hypotézu z informatiky, a to úplne nezávisle. Artificial Analysis prerobil svoj hlavný rebríček na ťažšie a tajné testy, takže sa poradie modelov poriadne premiešalo. A Google ukázal Genie 4, ktorý vytvára interaktívne svety aj so zvukom a rečou postáv.",
+ "highlights": [
+  "Anthropic nezávisle od OpenAI zverejnil dôkaz, že Claude vyvrátil hypotézu o exponenciálnom čase; jadro našiel model sám, bez pomoci ľudí.",
+  "Artificial Analysis spustil novú verziu rebríčka na prevažne tajných testoch: vedie Claude Opus 5.5 s 58 bodmi, druhé je GPT-6 Astra a do top 5 sa dostala aj lacná GPT-6.1 Terra.",
+  "Google DeepMind ukázal Genie 4, ktorý v reálnom čase vytvára svety, po ktorých sa dá chodiť, aj so zvukom a rozhovormi postáv; zatiaľ len pre testerov.",
+  "Liquid AI vydal voľne stiahnuteľné malé modely LFM3, textový sa zmestí do 1 GB a zvláda agentov aj na notebooku či telefóne.",
+  "Bitcoin sa vrátil nad 80 000 dolárov, burza rástla vďaka čipom a dnes večer prídu výsledky Microsoftu a Alphabetu aj rozhodnutie Fedu; ako opatrný tip sledujeme Broadcom."
+ ],
+ "leadId": "anthropic-eth",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "anthropic-eth",
+     "title": "Aj Claude od Anthropicu vyvrátil slávnu hypotézu z informatiky, nezávisle od OpenAI a v ten istý deň",
+     "dateText": "utorok 27. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Čaká na nezávislú recenziu"
+      },
+      {
+       "kind": "closed",
+       "label": "Interný model · Anthropic"
+      }
+     ],
+     "keyFact": {
+      "value": "14 miliónov",
+      "label": "tokenov textu vyprodukoval Claude, kým sám našiel jadro dôkazu"
+     },
+     "body": [
+      "Anthropic v utorok 27. októbra zverejnil odbornú prácu s názvom „Algoritmus pre 3-SAT v subexponenciálnom čase“, ktorej pôvod je pripísaný modelu Claude. Práca tvrdí, že vyvracia [[hypotézu o exponenciálnom čase|eth]]: popisuje postup, ktorý istý typ zložitých logických hádaniek, takzvaný [[3-SAT|sat3]], vyrieši výrazne rýchlejšie ako skúšaním takmer všetkých možností. Algoritmus dokonca vie spočítať, koľko riešení hádanka má.",
+      "Podľa Anthropicu jadro postupu našiel interný výskumný model Claude vo štvrtok 16. októbra úplne sám, bez ľudského zásahu, a popri tom vyprodukoval asi 14 miliónov tokenov textu. Výskumníci potom s Claudom len vylepšili spôsob, akým je práca napísaná. Celý dôkaz je zapísaný v jazyku [[Lean|lean]], v ktorom ho vie skontrolovať počítač, a je verejný na GitHube.",
+      "Zaujímavé je, že OpenAI ohlásilo podobný výsledok o deň skôr, v pondelok 26. októbra, a Anthropic v práci priamo píše, že obe laboratóriá k nemu dospeli nezávisle a súbežne. Anthropic zároveň upozorňuje, že ide o čisto teoretický výsledok: v praxi by bol rýchlejší až pri obrovských úlohách, takže bežné programy na riešenie hádaniek nezmení, a slávnu otázku P verzus NP nerieši. Recenziu nezávislými matematikmi zatiaľ nemáme."
+     ],
+     "whyItMatters": "Keď dve rôzne AI laboratóriá v ten istý týždeň nezávisle nájdu rovnaký nový matematický výsledok, je to silný signál, že špičkové modely už robia pôvodný výskum. Kým to však nepotvrdia ľudskí experti, berte to ako veľmi sľubné, nie ako hotovú vec.",
+     "terms": [
+      {
+       "key": "eth",
+       "term": "Hypotéza o exponenciálnom čase",
+       "explain": "Domnienka z informatiky z roku 1999, že niektoré logické hádanky sa nedajú vyriešiť oveľa rýchlejšie ako hrubou silou, teda skúšaním takmer všetkých kombinácií. Keď sa vyvráti, mení sa, čo považujeme za „nemožne pomalé“."
+      },
+      {
+       "key": "sat3",
+       "term": "3-SAT",
+       "explain": "Typ logickej hádanky: máte veľa podmienok typu „A alebo nie B alebo C“ a hľadáte, či existuje nastavenie áno/nie pre všetky premenné, pri ktorom platia všetky naraz. Je to vzorový príklad veľmi ťažkej úlohy."
+      },
+      {
+       "key": "lean",
+       "term": "Lean",
+       "explain": "Programovací jazyk na zápis matematických dôkazov, ktorý počítač dokáže automaticky skontrolovať riadok po riadku."
+      }
+     ],
+     "links": [
+      {
+       "label": "Práca na Hexagone (Anthropic)",
+       "href": "https://hexagonmath.org/2610.00577v1"
+      },
+      {
+       "label": "Dôkaz v Leane na GitHube",
+       "href": "https://github.com/anthropics/formal-math/tree/main/eth"
+      }
+     ]
+    },
+    {
+     "id": "aa-index-v5",
+     "title": "Najdôležitejší rebríček AI modelov prešiel na tajné testy a poradie sa premiešalo",
+     "dateText": "utorok 27. októbra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Nové meranie"
+      }
+     ],
+     "keyFact": {
+      "value": "60 %",
+      "label": "nového indexu stojí na testoch, ktorých otázky sú tajné"
+     },
+     "body": [
+      "Nezávislá firma [[Artificial Analysis|aa]] v utorok 27. októbra spustila piatu verziu svojho [[Intelligence Indexu|aa-index]], najväčšiu zmenu od januára. Prvýkrát je z väčšej časti, presne na 60 percent, postavený na testoch so súkromnými otázkami alebo skrytými odpoveďami. Výrobcovia modelov ich tak nemôžu „nadrilovať“, teda trénovať model priamo na otázky z testu.",
+      "Index má štyri rovnako dôležité časti: kancelárska práca, programovanie, veda a všeobecné znalosti. Pribudol napríklad test FrontierCode 2.0 od firmy Cognition, ktorý hodnotí, či by správca skutočného open-source projektu prijal zmenu kódu, ktorú navrhol AI agent, a vedecký test v [[termináli|terminal]]. Naopak vypadli tri staršie testy.",
+      "Vedie Claude Opus 5.5 s 58 bodmi pred GPT-6 Astra s 57 a GPT-6.1 Sol s 55, celá prvá päťka patrí Anthropicu a OpenAI. Najlepší model s [[otvorenými váhami|open-weights]], čínsky Kimi K3.1 Pro, má 46 bodov a odstup voľne dostupných modelov od špičky sa zväčšil z 3 na 12 bodov. Veľké sú aj rozdiely v cene: jedna úloha z indexu stojí pri Opus 5.5 asi 10 dolárov, pri GPT-6.1 Terra necelý dolár."
+     ],
+     "whyItMatters": "Toto je rebríček, podľa ktorého si veľa ľudí a firiem vyberá model, a aj my ho máme dole v sekcii benchmarkov. Staré a nové body sa nedajú priamo porovnávať, takže dnešné presuny v poradí sú hlavne dôsledkom nového merania, nie nových modelov.",
+     "terms": [
+      {
+       "key": "open-weights",
+       "term": "Otvorené váhy (open weights)",
+       "explain": "Model, ktorého „mozog“, teda naučené čísla, si môže ktokoľvek stiahnuť a spustiť na vlastnom počítači alebo serveri, nielen cez službu výrobcu."
+      },
+      {
+       "key": "terminal",
+       "term": "Terminál",
+       "explain": "Textové okno, cez ktoré sa počítaču zadávajú príkazy. AI agenti ho používajú na spúšťanie programov a testov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Článok Artificial Analysis",
+       "href": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5"
+      }
+     ]
+    },
+    {
+     "id": "liquid-lfm3",
+     "title": "Liquid AI vydal malé voľne stiahnuteľné modely, ktoré zvládnu agentov, obrázky aj hlas priamo v telefóne",
+     "dateText": "utorok 27. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      },
+      {
+       "kind": "device",
+       "label": "Beží v zariadení"
+      }
+     ],
+     "keyFact": {
+      "value": "asi 1 GB",
+      "label": "zaberie textový model v úspornom režime"
+     },
+     "body": [
+      "Americký startup Liquid AI v utorok 27. októbra vydal rodinu modelov LFM3. Ide o šesť modelov s približne dvoma miliardami [[parametrov|params]], čo je zhruba stokrát menej ako špičkové modely, na text, obrázky a video, zvuk, ich kombináciu a na rýchle rozhodovanie. Všetky majú [[otvorené váhy|open-weights]] a vychádzajú z jedného spoločného základu, ktorý sa učil na 22 biliónoch tokenov textu.",
+      "Textový model si naraz prečíta zhruba 256 tisíc tokenov a v úspornom [[4-bitovom režime|quant]] sa zmestí asi do 1 GB pamäte, takže beží [[priamo v zariadení|on-device]]. Je doladený na prácu v agentoch, napríklad triedenie e-mailov, správu kalendára či ranné súhrny, a podľa testov firmy porazí aj niekoľkonásobne väčšie modely. Na zložité programovanie ho však ani samotný Liquid neodporúča.",
+      "Každý model sa dá doladiť na vlastné dáta na jednej grafickej karte. Pozor na licenciu: firmy s ročnými tržbami nad 10 miliónov dolárov potrebujú podľa licencie LFM Open License samostatnú dohodu, pre domáce použitie to problém nie je."
+     ],
+     "whyItMatters": "Malé modely, ktoré bežia bez internetu, chránia súkromie a nič nestoja za použitie. Pre domácich nadšencov je to jeden z najlepších kandidátov na vlastného lokálneho asistenta na notebooku.",
+     "terms": [
+      {
+       "key": "params",
+       "term": "Parametre",
+       "explain": "Naučené čísla vo vnútri modelu, niečo ako spojenia v mozgu. Viac parametrov zvyčajne znamená schopnejší, ale aj väčší a pomalší model."
+      },
+      {
+       "key": "quant",
+       "term": "4-bitový režim (kvantizácia)",
+       "explain": "Zmenšenie modelu tak, že sa jeho čísla uložia menej presne. Model potom zaberie niekoľkonásobne menej pamäte a stratí len trochu kvality."
+      },
+      {
+       "key": "on-device",
+       "term": "Priamo v zariadení (on-device)",
+       "explain": "Model beží na vašom telefóne alebo počítači, nie na serveri v cloude, takže dáta nikam neodchádzajú."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Liquid AI",
+       "href": "https://www.liquid.ai/blog/lfm3"
+      },
+      {
+       "label": "Modely na Hugging Face",
+       "href": "https://huggingface.co/collections/LiquidAI/lfm3"
+      }
+     ]
+    },
+    {
+     "id": "ling-31-flash",
+     "title": "Čínsky model Ling-3.1-flash je už voľne na stiahnutie, ale potrebuje obrovský počítač",
+     "dateText": "aktualizácia z utorka 27. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · MIT"
+      }
+     ],
+     "body": [
+      "Čínska skupina inclusionAI zverejnila na Hugging Face [[otvorené váhy|open-weights]] modelu Ling-3.1-flash-1019, ktorý bol pred týždňom dostupný len cez ich službu. Licencia [[MIT|mit]] dovoľuje model voľne používať aj komerčne. Ide o model typu [[MoE|moe]] so 560 miliardami parametrov, z ktorých pri každom slove pracuje 25 miliárd.",
+      "Súbor modelu má okolo 574 GB, takže na domácom počítači ho nespustíte. V novom rebríčku Artificial Analysis sa objavil na 18. mieste s 29,5 bodu."
+     ],
+     "whyItMatters": "Ďalší silný voľne dostupný model pre firmy a výskumníkov s veľkým hardvérom. Pre bežného používateľa skôr signál, že čínske laboratóriá stále pustia von veľa.",
+     "terms": [
+      {
+       "key": "mit",
+       "term": "Licencia MIT",
+       "explain": "Jedna z najvoľnejších licencií: model alebo kód môžete používať, upravovať aj predávať, stačí uviesť autora."
+      },
+      {
+       "key": "moe",
+       "term": "MoE (zmes expertov)",
+       "explain": "Model zložený z mnohých menších „expertov“, z ktorých pri každom slove pracuje len niekoľko. Preto je rýchlejší, než by zodpovedalo jeho celkovej veľkosti."
+      }
+     ],
+     "links": [
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrazu, zvuku a videa",
+   "icon": "film",
+   "items": [
+    {
+     "id": "genie-4",
+     "title": "Google ukázal Genie 4, ktorý vytvára svety na prechádzanie aj so zvukom a rozhovormi postáv",
+     "dateText": "utorok 27. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Len pre testerov"
+      }
+     ],
+     "body": [
+      "Google DeepMind v utorok 27. októbra predstavil Genie 4, takzvaný [[svetový model|world-model]]. Z textu alebo obrázka vytvorí fotorealistický svet, po ktorom sa dá v reálnom čase pohybovať klávesnicou, a prvýkrát k nemu sám generuje aj zvuk: vietor, vlny, hudbu a dokonca rozhovory postáv, ktoré reagujú na to, čo robíte.",
+      "Scénu môžete meniť obyčajnou vetou počas behu, napríklad zmeniť počasie, pohnúť kamerou alebo pridať novú postavu. V pozadí pritom pracuje Gemini ako režisér, ktorý sleduje dianie a dbá, aby svet dával zmysel. Google sám priznáva, že pri dlhších sedeniach sa detaily a predmety ešte môžu meniť a všetko generované video aj zvuk nesú neviditeľný vodoznak SynthID.",
+      "Zatiaľ ho skúšajú len vybraní testeri. Ako ďalší ho dostanú predplatitelia Google AI Ultra v projekte Project Genie a vybraní partneri cez [[API|api]], cena zatiaľ nie je známa."
+     ],
+     "whyItMatters": "Svetové modely sú základ pre budúce hry, predvizualizáciu filmov a hlavne lacný tréning robotov v simulácii. Genie 4 je zatiaľ najviditeľnejší skok, no vyskúšať si ho zatiaľ nedá.",
+     "terms": [
+      {
+       "key": "world-model",
+       "term": "Svetový model",
+       "explain": "AI, ktorá nesimuluje len obraz, ale aj to, ako sa svet správa: čo sa stane, keď niekam pôjdete alebo do niečoho narazíte. Vytvára tak interaktívne prostredie podobné hre."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré si iné programy objednávajú prácu od modelu a platia podľa množstva použitia."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google DeepMind",
+       "href": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+      }
+     ]
+    },
+    {
+     "id": "mai-image-27",
+     "title": "Microsoft má nový editor obrázkov, ktorý v rebríčku zaostáva len za najlepším od OpenAI",
+     "dateText": "utorok 27. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Preview · zatiaľ bez API"
+      }
+     ],
+     "keyFact": {
+      "value": "2. miesto",
+      "label": "v rebríčku úprav obrázkov Artificial Analysis"
+     },
+     "body": [
+      "Microsoft v utorok 27. októbra predstavil MAI-Image-2.7-Preview, model na úpravu obrázkov. Podľa Microsoftu má v aréne úprav obrázkov od Artificial Analysis 1193 bodov [[Elo|elo]], iba 6 bodov za GPT Image 2.5 Sunburst od OpenAI a o 42 bodov viac ako predchodca MAI-Image-2.6.",
+      "Najlepší je vraj v zmene štýlu a osvetlenia fotky a v úprave textu priamo v obrázku. Zatiaľ ho však skúsite len v MAI Playground a v aréne, tvorba obrázkov z textu má prísť „čoskoro“ a cena ani prístup pre vývojárov zatiaľ známe nie sú."
+     ],
+     "whyItMatters": "Microsoft je popri OpenAI a Google ďalší, kto má editor obrázkov na špičkovej úrovni, čo môže časom zlacniť takéto nástroje. Pre bežné použitie treba počkať, kým ho pridá do svojich produktov.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Oznámenie Microsoft AI",
+       "href": "https://microsoft.ai/news/mai-image-2-7-debut/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "Od chatu k práci",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "codex-0165",
+     "title": "Codex má novú stabilnú verziu s lacnou GPT-6.1 Terra, napojením na Google Cloud a lepšou pamäťou",
+     "dateText": "utorok 27. októbra večer",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Obsahuje bezpečnostnú opravu"
+      }
+     ],
+     "body": [
+      "OpenAI v utorok 27. októbra večer vydalo Codex 0.165.0, prvú stabilnú verziu po dlhšej sérii testovacích. Pribudol v ňom nový lacný model GPT-6.1 Terra, priame napojenie na Google Cloud Vertex AI, takže firmy môžu Codex používať aj s modelmi cez Google, a možnosť meniť, ako dlho model premýšľa, priamo počas rozhovoru.",
+      "Nová verzia pamäte, takzvaná memory v2, si vie pri nových profiloch preniesť zapamätané veci aj z iných agentov. Dôležitá je aj bezpečnostná oprava: pri inštalácii rozšírení z [[marketplace|marketplace]] sa Codex mohol nechtiac pripojiť na iný server, než mal."
+     ],
+     "whyItMatters": "Ak Codex používate, oplatí sa aktualizovať hlavne kvôli bezpečnostnej oprave. Terra navyše zvládne bežné úlohy za polovičnú cenu.",
+     "terms": [
+      {
+       "key": "marketplace",
+       "term": "Marketplace rozšírení",
+       "explain": "Obchod alebo katalóg doplnkov, z ktorého si do nástroja pridávate nové funkcie od iných autorov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Codex na GitHube",
+       "href": "https://github.com/openai/codex/releases/tag/rust-v0.165.0"
+      }
+     ]
+    },
+    {
+     "id": "claude-code-2-1-312",
+     "title": "Claude Code už neprepíše veľký súbor s pravidlami, ktorý si prečítal len do polovice",
+     "dateText": "utorok 27. októbra večer",
+     "tags": [],
+     "body": [
+      "Anthropic v utorok 27. októbra večer vydal Claude Code 2.1.312. Hlavná oprava sa týka chyby, keď Claude pri veľmi dlhom súbore CLAUDE.md alebo súbore s pravidlami prečítal len začiatok a potom ho celý prepísal, čím zvyšok potichu zmazal. Teraz musí súbor najprv prečítať celý, alebo ho len upraviť na konkrétnom mieste.",
+      "Opravené je aj to, že Claude nenašiel [[skills|skills]] uložené v podpriečinkoch, keď sa v projekte presunul hlbšie, a pre firmy pribudla možnosť prihlasovania cez firemné účty, napríklad Microsoft Entra ID."
+     ],
+     "whyItMatters": "Kto má rozsiahle pravidlá pre Clauda, prichádzal o ne bez varovania. Aktualizácia je malá, ale prakticky dôležitá.",
+     "terms": [
+      {
+       "key": "skills",
+       "term": "Skills",
+       "explain": "Balíčky návodov a skriptov, ktoré si agent načíta, keď potrebuje vedieť robiť konkrétnu vec, napríklad pracovať s PDF alebo dodržať firemný štýl."
+      }
+     ],
+     "links": [
+      {
+       "label": "Claude Code na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312"
+      }
+     ]
+    },
+    {
+     "id": "cursor-annotate",
+     "title": "V Cursore stačí kliknúť na tlačidlo v bežiacej aplikácii a povedať agentovi, čo s ním má urobiť",
+     "dateText": "október",
+     "tags": [],
+     "body": [
+      "Cursor nahradil svoj Design Mode novou funkciou Annotate. V zabudovanom prehliadači kliknete na prvok bežiacej aplikácie, napríklad tlačidlo, nakreslíte k nemu poznámku alebo rovno upravíte text či vzhľad a pošlete to agentovi. Ten dostane presný popis prvku, jeho štýly, snímku obrazovky aj názov súčasti v kóde.",
+      "Funkcia potrebuje Cursor 3.24.18 alebo novší a zapína sa skratkou Cmd+Shift+D. Presný dátum vydania sme neoverili, na X sa o nej začalo hovoriť v utorok a v stredu."
+     ],
+     "whyItMatters": "Úpravy vzhľadu aplikácie s pomocou AI sú rýchlejšie, keď nemusíte slovami opisovať, ktoré tlačidlo myslíte.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Dokumentácia Cursoru",
+       "href": "https://cursor.com/docs/agent/design-mode"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Čipy, peniaze, regulácia a infraštruktúra",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "nvidia-amd-meta",
+     "title": "Nvidia a AMD vložia do Mety 4 miliardy dolárov, aby si udržali jedného z najväčších zákazníkov",
+     "dateText": "utorok 27. októbra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Investícia"
+      }
+     ],
+     "keyFact": {
+      "value": "95 miliárd $",
+      "label": "chce Meta získať predajom nových akcií na AI"
+     },
+     "body": [
+      "Meta v pondelok 26. októbra oznámila, že chce na AI infraštruktúru získať až 95 miliárd dolárov: najprv 35 miliárd cez klasickú emisiu nových akcií a potom ďalších 60 miliárd postupným predajom akcií na burze. V utorok 27. októbra Nvidia oznámila, že z toho kúpi akcie za 3 miliardy dolárov, a AMD za 1 miliardu.",
+      "Podľa CNBC Meta zároveň rozšíri používanie najnovších čipov Nvidia Vera Rubin a obe firmy budú spolupracovať na Metinom AI agentovi Muse. AMD uviedlo, že jeho serverové racky Helios už v Mete bežia. Nvidia tento rok podľa Dealroomu investovala už do 121 kôl financovania firiem, medzi nimi aj OpenAI a Anthropic."
+     ],
+     "whyItMatters": "Výrobcovia čipov svojimi peniazmi financujú zákazníkov, ktorí od nich potom čipy kupujú. Ukazuje to obrovský rozsah výdavkov na AI, ale aj to, že sa peniaze točia v pomerne uzavretom kruhu firiem.",
+     "terms": [],
+     "links": [
+      {
+       "label": "CNBC",
+       "href": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
+      }
+     ]
+    },
+    {
+     "id": "vera-rubin-oci",
+     "title": "Najnovšie čipy Nvidie sú prvýkrát bežne dostupné vo veľkom cloude, u Oraclu",
+     "dateText": "utorok 27. októbra",
+     "tags": [],
+     "body": [
+      "Nvidia a Oracle v utorok 27. októbra oznámili, že systémy Vera Rubin NVL72, teda celé skrine so 72 najnovšími grafickými čipmi Nvidie, a procesory Vera sú všeobecne dostupné v cloude Oracle. Zákazníci si z nich môžu poskladať obrovské klastre s príkonom na úrovni viacerých gigawattov, čo je spotreba porovnateľná s niekoľkými jadrovými reaktormi.",
+      "K dispozícii je aj menšia zostava Rubin NVL8 pre menšie firmy. Ide o prvé veľké sprístupnenie novej generácie Nvidie v cloude."
+     ],
+     "whyItMatters": "Na týchto čipoch sa budú trénovať ďalšie generácie špičkových modelov, takže ich dostupnosť určuje tempo, akým prídu nové AI.",
+     "terms": [],
+     "links": [
+      {
+       "label": "NVIDIA Newsroom",
+       "href": "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Fable 5.5: v utorok len humbuk na X, oficiálne nevyšiel.",
+  "GLM-5.5-Flash: prázdny záznam v jednom katalógu, Zhipu nič neohlásilo.",
+  "Giotto.ai: „suverénny“ európsky model, ale časť váh je vraj prevzatá z čínskeho Kimi a nezávislé testovanie zakazuje; neoverené.",
+  "DeepSeek V4.1 Flash na čele OpenRouteru: zaujímavé čísla používania, ale model je zo 17. októbra.",
+  "Menšie modely na čítanie textu z obrázkov (MiniCPM-OCR, Baidu Unlimited OCR 2) a drobné produkty či štúdie: mimo hlavného zamerania.",
+  "Testovacie verzie Codexu 0.166.0 alpha."
+ ],
+ "finance": {
+  "asOfText": "Ceny kryptomien zo stredy 28. októbra okolo 6:15 (CoinGecko). Akcie sú zo záveru v utorok 27. októbra na Wall Street a zmena je oproti pondelku. Obchodovanie v New Yorku začne dnes o 14:30 nášho času.",
+  "summary": "Wall Street v utorok rástla druhý deň za sebou: S&P 500 pridal 0,6 percenta na 7 722,60 bodu, Nasdaq 1,18 percenta na 26 477,81 a Dow Jones stál takmer na mieste. Podľa CNBC opäť ťahali čipy, keď banky a Blackstone oznámili 63 miliárd dolárov na financovanie nákupu technológie Broadcomu pre Anthropic; Broadcom pridal 4 percentá a AMD vyše 5. Náladu zlepšila aj lacnejšia ropa, americká WTI klesla o 1,8 percenta tesne pod 100 dolárov za barel po signáloch z Iránu o podmienkach ukončenia konfliktu. Dnes je veľký deň: Fed oznámi rozhodnutie o úrokoch, trh podľa CME čaká, že sa nezmenia, a večer nášho času hlásia výsledky Microsoft a Alphabet.",
+  "btc": {
+   "priceUsd": 80870,
+   "priceEur": 72721,
+   "changePct": 1.46,
+   "changePctEur": 1.87,
+   "low24h": 79416,
+   "high24h": 81159,
+   "mood": "neutral",
+   "moodLabel": "Návrat nad 80 tisíc, ale bez jasného smeru",
+   "comment": "Bitcoin stojí okolo 80 900 dolárov, teda asi 72 700 eur, a za 24 hodín pridal 1,5 percenta. Po dvoch dňoch pod hranicou 80 tisíc sa nad ňu vrátil, no stále sa drží v úzkom pásme medzi zhruba 79 400 a 81 200 dolármi a od rekordu, takzvaného [[ATH|ath]] z októbra 2025, je asi o 36 percent nižšie. Ethereum je na 2 352 dolároch, o 1,7 percenta vyššie. [[Index strachu a chamtivosti|fng]] sa posunul zo 48 na neutrálnych 51 bodov. Rozhodne zrejme dnešný večer: pokojný Fed a dobré výsledky Microsoftu a Alphabetu by mohli pomôcť aj kryptu, sklamanie by ho stiahlo späť pod 80 tisíc.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Fear & Greed Index (alternative.me)",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 217.94,
+    "changePct": 0.9,
+    "comment": "Oznámila investíciu 3 miliardy dolárov do Mety, akcia pridala necelé percento."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 531.33,
+    "changePct": -0.24,
+    "comment": "Pred dnešnými večernými výsledkami takmer bez zmeny."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 320.58,
+    "changePct": 1.19,
+    "comment": "Po štyroch dňoch poklesu sa odrazil, výsledky hlási dnes večer."
+   },
+   {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "close": 253.1,
+    "changePct": 1.61,
+    "comment": "Výsledky hlási vo štvrtok 29. októbra."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 620.19,
+    "changePct": -1.64,
+    "comment": "Klesá ďalej, investori trávia plán predať nové akcie za 95 miliárd dolárov."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 347.1,
+    "changePct": 0.93,
+    "comment": "Mierne nahor, výsledky má v pondelok 2. novembra."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 560.26,
+    "changePct": 5.45,
+    "comment": "Spolu s čipmi silno rástla, oznámila aj investíciu 1 miliardy dolárov do Mety."
+   },
+   {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "close": 407.46,
+    "changePct": 4.04,
+    "comment": "Pokračuje v raste a je späť nad 400 dolármi."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "CNBC: utorok na Wall Street",
+    "href": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
+   },
+   {
+    "label": "Yahoo Finance: utorok na trhu",
+    "href": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-october-27-dow-sp-500-nasdaq-tech-sector-160557664.html"
+   },
+   {
+    "label": "AP: ako skončili indexy",
+    "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-eae2932c0c253be1039e1545909656a8"
+   }
+  ],
+  "gem": {
+   "ticker": "AVGO",
+   "name": "Broadcom",
+   "close": 342.33,
+   "changePct": 4.0,
+   "why": "Broadcom navrhuje zákaznícke AI čipy pre veľké firmy a sieťové čipy do dátových centier. V utorok pridal 4 percentá, keď podľa CNBC Bank of America, Citi, Morgan Stanley a Blackstone oznámili 63 miliárd dolárov na financovanie nákupu technológie Broadcomu pre Anthropic. To naznačuje, že popri Nvidii má Broadcom veľkého a dlhodobého odberateľa, ktorého tržby podľa prospektu rastú vyše desaťnásobne. Ak dnešné výsledky Microsoftu a Alphabetu potvrdia, že výdavky na dátové centrá pokračujú, môže to pomôcť celému sektoru.",
+   "risks": "Riziká: čipy sa po minulotýždňovom prepade odrážajú veľmi prudko a analytik BTIG podľa CNBC radí tento odraz skôr predávať. Broadcom je závislý od niekoľkých veľkých zákazníkov a Anthropic je zatiaľ hlboko stratový. Prípadné sprísnenie Fedu alebo sklamanie z výsledkov [[hyperscalerov|hyperscaler]] by zasiahlo čipy ako prvé.",
+   "links": [
+    {
+     "label": "CNBC: utorok na Wall Street",
+     "href": "https://www.cnbc.com/2026/10/26/stock-market-today-live-updates.html"
+    },
+    {
+     "label": "Yahoo Finance: AVGO",
+     "href": "https://finance.yahoo.com/quote/AVGO/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) znamená očakávaný pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "ath",
+    "term": "ATH",
+    "explain": "All-Time High: najvyššia cena v histórii."
+   },
+   {
+    "key": "support",
+    "term": "Podpora a odpor",
+    "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky."
+   },
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré z cien, objemov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "ticker",
+    "term": "Ticker",
+    "explain": "Skratka akcie na burze, napríklad AAPL je Apple, NVDA je Nvidia."
+   },
+   {
+    "key": "hyperscaler",
+    "term": "Hyperscaler",
+    "explain": "Obrí prevádzkovateľ cloudu a dátových centier, napríklad Microsoft, Google, Amazon alebo Meta. Ich výdavky na servery určujú dopyt po AI čipoch."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-28.json",
+  "note": "Veľké premiešanie, ale hlavne kvôli novému meraniu: Artificial Analysis prešiel na piatu verziu indexu s prevažne tajnými testami, takže body sa nedajú porovnať so včerajškom. Na čele ostáva Claude Opus 5.5 s 58,4 bodu, no druhé je teraz GPT-6 Astra (56,9), tretie GPT-6.1 Sol (54,5), štvrtý Claude Sonnet 5.5 a piata lacná GPT-6.1 Terra, ktorá poskočila z 10. miesta. Z prvej päťky vypadli Muse Wonder Full od Mety, čínsky Kimi K3.1 Pro (teraz 9.) a Claude Fable 5.1. Nováčikom je čínsky voľne dostupný Ling 3.1 Flash na 18. mieste; rebríčky obrázkov a videa sa nezmenili."
+ }
+}
