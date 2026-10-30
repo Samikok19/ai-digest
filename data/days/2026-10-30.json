@@ -1,0 +1,527 @@
+{
+ "date": "2026-10-30",
+ "label": "Piatok 30. októbra 2026",
+ "shortLabel": "Pi 30. 10.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Európa má po dlhom čase čím sa pochváliť: francúzsky Mistral dal voľne na stiahnutie svoj najväčší model Mistral Large 4, ktorý je teraz najsilnejším otvoreným modelom mimo Číny. Vo videu vyšiel otvorený model Pika H3 Flex, ktorý k obrazu rovno generuje aj zvuk. Na trhoch je zato zlé ráno: burzu Binance postihla zrejme najväčšia krádež kryptomien v histórii, bitcoin spadol pod 78 tisíc dolárov a Amazon s Alphabetom po výsledkoch výrazne klesli.",
+ "highlights": [
+  "Francúzsky Mistral zverejnil otvorené váhy modelu Mistral Large 4 s biliónom parametrov; je to najsilnejší voľne stiahnuteľný model mimo Číny a jeho používanie cez API zlacnelo zhruba na polovicu.",
+  "Pika vydala otvorený video model H3 Flex, ktorý vytvorí 15-sekundový klip aj so synchronizovaným zvukom asi za 7 sekúnd výpočtu.",
+  "GitHub Copilot spustil 26 overených konektorov (Slack, Notion, Figma a ďalšie), ktoré pripojíte raz a fungujú všade; Claude Code a Codex majú nové stabilné verzie.",
+  "Burzu Binance zasiahol útok za zhruba 6,3 miliardy dolárov a bitcoin spadol na šesťtýždňové minimum okolo 78 400 dolárov; Alphabet včera stratil takmer 13 percent a Amazon po výsledkoch večer okolo 6 percent.",
+  "Ako opatrný tip sledujeme Sandisk, ktorý prekonal očakávania a ohlásil delenie akcií; nejde o investičnú radu."
+ ],
+ "leadId": "mistral-large-4",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "mistral-large-4",
+     "title": "Francúzsky Mistral dal zadarmo na stiahnutie svoj najväčší model a ten je teraz najsilnejším otvoreným modelom mimo Číny",
+     "dateText": "štvrtok 29. októbra",
+     "tags": [
+      {
+       "kind": "eu",
+       "label": "Európsky model · Francúzsko"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      }
+     ],
+     "keyFact": {
+      "value": "≈ 1 bilión",
+      "label": "parametrov, pri každom slove naraz pracuje 52 miliárd"
+     },
+     "body": [
+      "Mistral vo štvrtok 29. októbra zverejnil [[otvorené váhy|open-weights]] modelu Mistral Large 4, ktorý si v firme prezývajú „Le Chonk“, teda niečo ako „poriadny kus“. Ide o vylepšenú verziu oproti skúšobnej verzii z októbra. Model má zhruba bilión [[parametrov|params]], no ako [[MoE model|moe]] ich pri každom slove využíva len 52 miliárd. Rozumie textu aj obrázkom, zvládne naraz spracovať text dlhý milión [[tokenov|token]], čo je niekoľko hrubých kníh, a má tri režimy, podľa toho, ako dlho má nad odpoveďou premýšľať.",
+      "Licencia je upravená [[MIT|mit]], takže model môžu firmy aj jednotlivci používať komerčne zadarmo; samostatnú licenciu od Mistralu potrebujú len tí, ktorí by ho chceli predávať ako hostovanú službu. Cez [[API|api]] Mistralu teraz stojí 0,70 dolára za milión tokenov na vstupe a 2,10 dolára na výstupe, čo je asi polovica ceny skúšobnej verzie. Váhy sú na Hugging Face a [[zmenšené verzie|quant]] už pripravil aj tím Unsloth.",
+      "V [[Intelligence Indexe|aa-index]] od [[Artificial Analysis|aa]] má 26 bodov. To je ďaleko za uzavretými špičkami ako Gemini 4 Carbon s 59 bodmi, ale medzi otvorenými modelmi je ôsmy a pred ním sú už len čínske modely. V rebríčku programovacích agentov je podľa Trending Topics druhý spomedzi otvorených modelov. Na domáci počítač je však príliš veľký, potrebuje serverové grafické karty."
+     ],
+     "whyItMatters": "Otvoreným modelom dlho dominujú čínske firmy ako DeepSeek, Qwen či Kimi a americké laby svoje najlepšie modely držia uzavreté. Mistral je jediný európsky hráč na tejto úrovni, takže európske firmy a úrady, ktoré chcú mať AI na vlastných serveroch a nie v Amerike či Číne, majú teraz omnoho silnejšiu možnosť.",
+     "terms": [
+      {
+       "key": "open-weights",
+       "term": "Otvorené váhy (open weights)",
+       "explain": "Model, ktorého „mozog“, teda naučené čísla, si môže ktokoľvek stiahnuť a spustiť na vlastnom počítači alebo serveri, nielen cez službu výrobcu."
+      },
+      {
+       "key": "params",
+       "term": "Parametre",
+       "explain": "Naučené čísla vo vnútri modelu, niečo ako spojenia v mozgu. Viac parametrov zvyčajne znamená schopnejší, ale aj väčší a pomalší model."
+      },
+      {
+       "key": "moe",
+       "term": "MoE (zmes expertov)",
+       "explain": "Model zložený z mnohých menších „expertov“, z ktorých pri každom slove pracuje len niekoľko. Preto je rýchlejší, než by zodpovedalo jeho celkovej veľkosti."
+      },
+      {
+       "key": "mit",
+       "term": "Licencia MIT",
+       "explain": "Jedna z najvoľnejších softvérových licencií: dielo môžete používať, upravovať aj predávať, stačí zachovať informáciu o autorovi. Mistral ju mierne upravil pre poskytovateľov hostovaných služieb."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré si iné programy objednávajú prácu modelu a platia za množstvo spracovaného textu."
+      },
+      {
+       "key": "quant",
+       "term": "Zmenšená verzia (kvantizácia)",
+       "explain": "Model sa uloží s menej presnými číslami. Zaberie potom niekoľkonásobne menej pamäte a stratí len trochu kvality."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Mistralu",
+       "href": "https://mistral.ai/news/mistral-large-4-oss/"
+      },
+      {
+       "label": "Trending Topics: Mistral v rebríčku",
+       "href": "https://www.trendingtopics.eu/mistral-large-4-open-weights-artificial-analysis-meta-china-ranking/"
+      }
+     ]
+    },
+    {
+     "id": "openai-model-spec",
+     "title": "OpenAI prepísal pravidlá, podľa ktorých sa správa ChatGPT, a bezplatnú verziu naučil odpovedať stručnejšie",
+     "dateText": "štvrtok 29. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Pravidlá správania"
+      }
+     ],
+     "body": [
+      "OpenAI vo štvrtok 29. októbra zverejnil novú verziu dokumentu [[Model Spec|modelspec]], ktorý opisuje, ako sa majú jeho modely správať. Nová verzia stojí na piatich hodnotách: vernosť tomu, čo človek naozaj chce, minimalizácia škôd, čestnosť a priehľadnosť, rešpekt k ľudskej samostatnosti a starostlivosť. Väčšinu podrobných pravidiel o štýle písania naopak vyhodila.",
+      "Pribudli pravidlá pre pamäť, prispôsobenie konkrétnemu človeku, dohľad a pre vedľajšie účinky, keď model ako agent sám vykonáva úlohy. Zaujímavosťou je, že model sa v dokumente už nevolá „asistent“, ale jednoducho „GPT“.",
+      "V ten istý deň OpenAI upravil GPT-6 pre bezplatný plán, lacný plán Go a neprihlásených používateľov tak, aby odpovedal stručnejšie a menej lichotil. Platení používatelia Plus a Pro majú model bez zmeny."
+     ],
+     "whyItMatters": "Keď AI čoraz častejšie koná sama, napríklad nakupuje alebo píše e-maily, záleží na tom, podľa akých pravidiel sa rozhoduje. Bežný používateľ bezplatného ChatGPT by mal hneď cítiť kratšie a vecnejšie odpovede.",
+     "terms": [
+      {
+       "key": "modelspec",
+       "term": "Model Spec",
+       "explain": "Verejný dokument OpenAI, ktorý popisuje, ako sa majú modely správať, čo smú a nesmú a čo uprednostniť, keď sú pokyny v rozpore."
+      }
+     ],
+     "links": [
+      {
+       "label": "OpenAI: nový Model Spec",
+       "href": "https://openai.com/index/updated-model-spec"
+      },
+      {
+       "label": "OpenAI: poznámky k vydaniam modelov",
+       "href": "https://help.openai.com/en/articles/9624314-model-release-notes"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrazu, videa a zvuku",
+   "icon": "film",
+   "items": [
+    {
+     "id": "pika-h3-flex",
+     "title": "Pika vydala otvorený video model, ktorý k obrazu rovno vytvorí aj zvuk a klip má hotový za pár sekúnd",
+     "dateText": "štvrtok 29. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      }
+     ],
+     "keyFact": {
+      "value": "≈ 7 sekúnd",
+      "label": "výpočtu na 15-sekundový klip v rozlíšení 768p"
+     },
+     "body": [
+      "Firma Pika vo štvrtok 29. októbra zverejnila H3 Flex, video model so synchronizovaným zvukom, postavený na otvorenom čínskom modeli MiniMax H3. Pika ho dotrénovala tak, že video vytvorí v 6 krokoch namiesto bežných 50. [[Difúzny model|diffusion]] totiž obraz postupne „vyčisťuje“ zo šumu a menej krokov znamená oveľa rýchlejší výsledok.",
+      "Model môže dostať až 12 vzorov naraz, teda obrázky, videá alebo zvuk, podľa ktorých sa má výsledok riadiť. Doma beží v rozlíšení 480p a 768p na jednej grafickej karte, testovaný bol však na serverovej karte H100 s 80 gigabajtmi pamäte a súbory majú okolo 210 gigabajtov. Rozlíšenie od 1080p po 4K a päť samostatných zvukových stôp dostanete len v platenom API Pika, za 1 až 2 centy za sekundu videa.",
+      "Na porovnávacom webe DesignArena je podľa Piky najlepší spomedzi otvorených video modelov. Dá sa použiť v populárnych nástrojoch diffusers a ComfyUI a v aplikácii Pika bude od pondelka 2. novembra."
+     ],
+     "whyItMatters": "Doteraz ste pre video so zvukom potrebovali drahé uzavreté služby. Toto je najlepšia otvorená alternatíva, hoci na bežnú hernú grafiku je zatiaľ priveľká.",
+     "terms": [
+      {
+       "key": "diffusion",
+       "term": "Difúzny model",
+       "explain": "Typ AI, ktorý začne z náhodného šumu a v desiatkach malých krokov z neho „vyčistí“ obrázok alebo video podľa zadania."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Pika",
+       "href": "https://pika.art/blog/pika-h3-flex"
+      }
+     ]
+    },
+    {
+     "id": "moss-image",
+     "title": "Malý otvorený model MOSS-Image vie do obrázka vpísať dlhé odstavce textu bez chýb",
+     "dateText": "štvrtok 29. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorený · Apache 2.0"
+      },
+      {
+       "kind": "preview",
+       "label": "Čísla len od tímu"
+      }
+     ],
+     "body": [
+      "Čínsky výskumný tím OpenMOSS zverejnil MOSS-Image, model na tvorbu obrázkov s 5 miliardami parametrov pod voľnou licenciou [[Apache 2.0|apache]]. Jeho silnou stránkou je text: dokáže spracovať veľmi dlhé zadanie a vykresliť celé odstavce po anglicky aj po čínsky so zachovanými riadkami, čo bežným modelom robí problém.",
+      "Rozloženie plagátu, teda kde má byť nadpis, blok textu či obrázok, sa dá presne zadať v štruktúrovanom formáte JSON ešte pred kreslením. V ľudskom hodnotení rozložení je podľa autorov druhý hneď za GPT Image 2, nezávislé overenie zatiaľ chýba. Obrázky vie len vytvárať, nie upravovať."
+     ],
+     "whyItMatters": "Kto robí plagáty, infografiky alebo slajdy s množstvom textu, dostáva malý model, ktorý sa zmestí aj na bežnú grafickú kartu a smie sa používať komerčne.",
+     "terms": [
+      {
+       "key": "apache",
+       "term": "Licencia Apache 2.0",
+       "explain": "Voľná licencia, ktorá dovoľuje model alebo kód používať, upravovať aj komerčne využívať bez poplatkov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Cocoloop: MOSS-Image",
+       "href": "https://news.cocoloop.cn/en/2026/10/moss-image-long-text-open/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "Programovanie, konektory a aplikácie",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "copilot-mcp",
+     "title": "GitHub Copilot sa po novom napojí na Slack, Notion či Figmu jedným kliknutím a pripojenie platí všade",
+     "dateText": "streda 28. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Verejná skúšobná verzia"
+      },
+      {
+       "kind": "standard",
+       "label": "MCP"
+      }
+     ],
+     "body": [
+      "GitHub v stredu 28. októbra spustil v Copilote 26 overených [[MCP konektorov|mcp]], medzi nimi Slack, Figma, Notion, Sentry, Linear, Atlassian, Cloudflare a Vercel. Nemusíte nič inštalovať ani ručne spravovať prihlasovacie kľúče, účet jednoducho pripojíte.",
+      "Raz pripojený konektor potom funguje v aplikácii Copilot, v príkazovom riadku, vo VS Code, v cloude aj v mobile. Funkcia je v [[skúšobnej verzii|preview]] pre všetky plány, vo firmách ju však musí povoliť správca."
+     ],
+     "whyItMatters": "Napájanie AI na vaše nástroje prestáva byť konfigurácia pre nadšencov a stáva sa obyčajným „pripoj účet“, podobne ako konektory v Grok Bot alebo v Claude.",
+     "terms": [
+      {
+       "key": "mcp",
+       "term": "MCP (Model Context Protocol)",
+       "explain": "Spoločný štandard, cez ktorý sa AI asistent pripája k iným aplikáciám, napríklad k e-mailu, kalendáru alebo Slacku, a môže v nich čítať či robiť úkony."
+      },
+      {
+       "key": "preview",
+       "term": "Skúšobná verzia (preview, beta)",
+       "explain": "Funkcia, ktorá je už dostupná, ale výrobca ju ešte ladí. Môže sa meniť alebo mať chyby."
+      }
+     ],
+     "links": [
+      {
+       "label": "GitHub Changelog",
+       "href": "https://github.blog/changelog/2026-10-28-connect-your-tools-to-copilot-without-all-the-setup/"
+      }
+     ]
+    },
+    {
+     "id": "claude-code-codex",
+     "title": "Claude Code dostal poistku proti zápisu mimo projektu a Codex po novom ponúka aj lacný model GPT-6.1 Terra",
+     "dateText": "štvrtok 29. a piatok 30. októbra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť agentov"
+      }
+     ],
+     "body": [
+      "Claude Code, programovací agent od Anthropicu, vydal v noci na piatok 30. októbra verziu 2.1.314. Hlavnou novinkou je nastavenie, ktoré agentovi zakáže zapisovať súbory mimo pracovných priečinkov, nech je zapnutý akýkoľvek režim povolení. Dlhé nečinné konverzácie sa vo VS Code a v aplikácii Claude Desktop po novom samy zhrnú, aby nezaberali pamäť, a opravených je množstvo chýb.",
+      "Konkurenčný Codex od OpenAI vydal vo štvrtok 29. októbra večer stabilnú verziu 0.166.0. Pribudol v nej model GPT-6.1 Terra, a to aj cez cloudy Google Vertex AI a Amazon Bedrock. Codex tiež zrozumiteľnejšie vysvetlí, prečo zablokoval nebezpečný príkaz, a navrhne bezpečnejšie zadanie."
+     ],
+     "whyItMatters": "Nové nastavenie v Claude Code je presne poistka proti útokom typu podvrhnutý súbor AGENTS.md, o ktorom sme písali v utorok, keď agent dostane skryté pokyny a začne meniť súbory inde v počítači.",
+     "links": [
+      {
+       "label": "Claude Code 2.1.314 na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314"
+      },
+      {
+       "label": "Codex 0.166.0 na GitHube",
+       "href": "https://github.com/openai/codex/releases/tag/rust-v0.166.0"
+      }
+     ]
+    },
+    {
+     "id": "claude-gemini-files",
+     "title": "Claude kreslí živé dashboardy a animácie, Gemini zase upravuje dokumenty a prezentácie priamo v chate",
+     "dateText": "štvrtok 29. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Čiastočne beta"
+      }
+     ],
+     "body": [
+      "Anthropic vo štvrtok 29. októbra pridal do Claude v [[skúšobnej verzii|preview]] dve funkcie. Dashboards sa napoja na firemné dátové sklady ako BigQuery, Snowflake či Databricks a udržiavajú živý prehľad čísel. Motion robí animované vysvetľujúce videá tak, že ich napíše ako kód, takže text, čísla aj časovanie sa dajú neskôr ľahko upraviť. Dokumenty, prezentácie a Design už skúšobnú fázu opustili.",
+      "Google v ten istý deň umožnil v aplikácii Gemini vytvárať a upravovať dokumenty, PDF, prezentácie, tabuľky aj kód v náhľade na celú obrazovku. Môžete písať priamo do súboru, alebo označiť časť textu a požiadať Gemini o zmenu. PDF funguje na webe aj v mobile, ostatné formáty zatiaľ len na webe, a to pre všetkých používateľov vo všetkých jazykoch."
+     ],
+     "whyItMatters": "Chatboty sa menia z „okna na otázky“ na pracovný nástroj, ktorý rovno vyrobí hotový súbor. Pre bežného používateľa to znamená menej kopírovania z chatu do Wordu.",
+     "links": [
+      {
+       "label": "Claude News: Dashboards a Motion",
+       "href": "https://claudenews.com/news/build-live-dashboards-and-animate-explainers-with-claude"
+      },
+      {
+       "label": "Blog Google: úprava súborov v Gemini",
+       "href": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech a biznis",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "distill-astra",
+     "title": "Čínske laby sa vraj pri učení svojich modelov preorientovali z Claude na GPT-6 Astra",
+     "dateText": "štvrtok 29. októbra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Neoverené správy"
+      }
+     ],
+     "body": [
+      "Podľa správ The Information a agentúry Reuters, ktoré sa odvolávajú na nemenované zdroje, čínske firmy Moonshot a DeepSeek pri tvorbe modelov Kimi K3.1 Pro a DeepSeek V4.1-Flash stavali na odpovediach modelu GPT-6 Astra od OpenAI. Ide o takzvanú [[destiláciu|distill]]. Dôvodom má byť, že Anthropic sťažil destiláciu z Claude o 90 až 99 percent. Firmy to oficiálne nepotvrdili."
+     ],
+     "whyItMatters": "Vysvetľovalo by to, prečo čínske otvorené modely tak rýchlo dobiehajú americké. Zároveň to môže viesť k tomu, že aj OpenAI sprísni prístup k svojim modelom.",
+     "terms": [
+      {
+       "key": "distill",
+       "term": "Destilácia",
+       "explain": "Menší alebo nový model sa učí z odpovedí silnejšieho modelu, akoby žiak odpisoval od majstra. Je to lacné, ale firmy to vo svojich podmienkach často zakazujú."
+      }
+     ],
+     "links": [
+      {
+       "label": "Zhrnutie na X (The Information, Reuters)",
+       "href": "https://x.com/i/trending/2115640742290821601"
+      }
+     ]
+    },
+    {
+     "id": "qwen4",
+     "title": "Alibaba chystá na budúci týždeň novú rodinu modelov Qwen4 vrátane menšej verzie na domáce počítače",
+     "dateText": "štvrtok 29. októbra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Čínsky otvorený model"
+      }
+     ],
+     "body": [
+      "Na konferencii Apsara v Amsterdame ukázala Alibaba slajd s modelmi Qwen4 Max, Plus, Flash a 27B a technický riaditeľ podľa správ na X potvrdil, že prídu budúci týždeň. Oficiálne oznámenie zatiaľ nie je, v kóde Qwenu sa však už objavila podpora pre text dlhý milión tokenov. Verzia s 27 miliardami parametrov je dôležitá, lebo podobne veľké modely Qwen patria k najpoužívanejším modelom, ktoré si ľudia spúšťajú doma."
+     ],
+     "whyItMatters": "Ak sa správy potvrdia, budúci týždeň môže priniesť nový najlepší model na vlastný počítač.",
+     "links": [
+      {
+       "label": "Zhrnutie na X",
+       "href": "https://x.com/i/trending/2115776139369304510"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Tripo EdenLive, otvorený renderer videa v reálnom čase: zaujímavý pre hry, ale výkon zatiaľ uvádza len firma.",
+  "FLUX.3 Image Klein a Runway Gen-3 Alpha Turbo: staré modely, ktoré agregátory znovu posúvajú.",
+  "Canva Brush, embeddingy Kakao Kanana-2 a výskumné projekty Bivia a Sabi: úzke alebo len výskumné.",
+  "Interná správa Anthropicu o tom, že Claude od júna pasívne sleduje zneužitie: bez dopadu na používateľov."
+ ],
+ "finance": {
+  "asOfText": "Ceny kryptomien z piatku 30. októbra okolo 6:15 nášho času (CoinGecko). Akcie sú zo záveru vo štvrtok 29. októbra na Wall Street a zmena je oproti stredu; pohyby po výsledkoch sú z obchodovania po zatvorení burzy. Obchodovanie v New Yorku začne dnes o 14:30 nášho času.",
+  "summary": "Wall Street vo štvrtok klesala pre Alphabet. Akcia materskej firmy Googlu stratila 12,6 percenta, čo AP označila za historický prepad, po slabšom raste tržieb a zápornom [[voľnom cash flow|fcf]] vo výške 9 miliárd dolárov. Nasdaq preto stratil 1,4 percenta na 26 184,72 bodu a S&P 500 0,3 percenta na 7 720,54, hoci väčšina akcií v indexe rástla a malé firmy v indexe Russell 2000 pridali 1 percento. Po zatvorení burzy sklamal Amazon, ktorý nesplnil očakávania v tržbách ani zisku a mal záporný voľný cash flow 42,4 miliardy dolárov, a Intel padal asi o 20 percent pre slabý výhľad. [[Futures|futures]] na Nasdaq-100 dnes ráno strácajú zhruba 2 percentá.",
+  "btc": {
+   "priceUsd": 78405,
+   "priceEur": 70088,
+   "changePct": -2.33,
+   "changePctEur": -2.73,
+   "low24h": 76443,
+   "high24h": 81840,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo skôr pokles",
+   "comment": "Bitcoin stojí okolo 78 400 dolárov, teda asi 70 100 eur, a za 24 hodín stratil 2,3 percenta, za týždeň takmer 4 percentá. V noci krátko spadol až k 76 400 dolárom, na šesťtýždňové minimum. Dôvodom je útok na Binance, najväčšiu kryptoburzu sveta: podľa nej sa týka aktív za zhruba 6,3 miliardy dolárov, čo by bola najväčšia krádež kryptomien v histórii, a analytici z TRM Labs ju spájajú so severokórejskými hackermi. Zhruba 3 miliardy sa podarilo zmraziť, Binance sľubuje pokryť všetky straty a vklady aj výbery má zatiaľ pozastavené. Pri prepade sa [[zlikvidovali|liquidation]] stávky na rast za vyše 1,5 miliardy dolárov, Ethereum je na 2 244 dolároch, o 3,5 percenta nižšie, a [[index strachu a chamtivosti|fng]] spadol z neutrálnych 51 na 30 bodov, teda strach. Za [[podporu|support]] analytici považujú pásmo okolo 76 tisíc dolárov.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "CoinDesk: útok na Binance a pád krypta",
+     "href": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead"
+    },
+    {
+     "label": "Reuters (cez Euronext): reakcie analytikov",
+     "href": "https://live.euronext.com/en/financial-news/analysts-react-binance-freezes-assets-after-63-billion-security-breach"
+    },
+    {
+     "label": "Fear & Greed Index (alternative.me)",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 283.82,
+    "changePct": -12.64,
+    "comment": "Historický prepad po slabších výsledkoch a zápornom voľnom cash flow; trh pochybuje, či sa obrovské investície do AI vrátia."
+   },
+   {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "close": 243.79,
+    "changePct": -4.25,
+    "comment": "Cez deň dole pred výsledkami, večer ďalších asi 6 percent po tom, čo nesplnil očakávania; investície do AI za 220 miliárd ročne ponechal."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 530.14,
+    "changePct": -0.16,
+    "comment": "Večerný rast po výsledkoch sa v riadnom obchodovaní nezopakoval, akcia skončila takmer bez zmeny."
+   },
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 213.66,
+    "changePct": -0.8,
+    "comment": "Mierne dole spolu s technologickým sektorom."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 624.52,
+    "changePct": 1.96,
+    "comment": "Po niekoľkých dňoch poklesu sa odrazila o takmer 2 percentá."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 348.91,
+    "changePct": 1.48,
+    "comment": "Rástol pred výsledkami, ktoré hlási v pondelok 2. novembra."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 566.42,
+    "changePct": -2.08,
+    "comment": "Po silnom raste si vybrala zisky."
+   },
+   {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "close": 403.3,
+    "changePct": -0.23,
+    "comment": "Takmer bez zmeny, drží sa nad 400 dolármi."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "AP: historický pád Alphabetu",
+    "href": "https://apnews.com/article/stocks-markets-ai-oil-fed-1b5c71d31b4ce1e46b0db47b33141f6b"
+   },
+   {
+    "label": "CNBC: štvrtok na Wall Street",
+    "href": "https://www.cnbc.com/2026/10/29/stock-market-today-live-updates.html"
+   },
+   {
+    "label": "CNBC: pohyby po zatvorení burzy",
+    "href": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-after-hours-amzn-intc-twlo-rddt.html"
+   }
+  ],
+  "gem": {
+   "ticker": "SNDK",
+   "name": "Sandisk",
+   "close": 1330.05,
+   "changePct": -5.32,
+   "why": "Sandisk, výrobca flash pamätí a diskov, vo štvrtok večer prekonal očakávania: upravený zisk na akciu bol 49,51 dolára pri odhade okolo 46,2 a tržby 11,03 miliardy pri odhade 10,64 miliardy. Zároveň ohlásil [[delenie akcií|split]] v pomere osem k jednej, takže jedna akcia bude lacnejšia a dostupnejšia pre drobných investorov. Dátové centrá pre AI potrebujú obrovské množstvo pamäte a vyššie ceny pamätí spomína aj MarketBeat pri Apple ako tlak na marže, čo je pre výrobcov ako Sandisk naopak dobrá správa. Akcia je od svojho ročného maxima zhruba 2 354 dolárov asi o 44 percent nižšie.",
+   "risks": "Riziká: akcia za posledný rok extrémne vyrástla zo zhruba 183 dolárov a je veľmi kolísavá, vo štvrtok cez deň stratila 5,3 percenta a po výsledkoch podľa CNBC ďalšie asi 3 percentá napriek dobrým číslam. Pamäte sú cyklický biznis, ceny môžu rýchlo spadnúť, keď výrobcovia dobehnú dopyt. A celý technologický sektor je teraz pod tlakom pre pochybnosti o návratnosti investícií do AI.",
+   "links": [
+    {
+     "label": "CNBC: Sandisk po výsledkoch",
+     "href": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-after-hours-amzn-intc-twlo-rddt.html"
+    },
+    {
+     "label": "Yahoo Finance: SNDK",
+     "href": "https://finance.yahoo.com/quote/SNDK/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "bearish",
+    "term": "Bearish / bullish",
+    "explain": "Burzový slang. Bearish (medvedí) znamená očakávaný pokles, medveď útočí labou zhora nadol. Bullish (býčí) znamená očakávaný rast, býk útočí rohmi zdola nahor."
+   },
+   {
+    "key": "support",
+    "term": "Podpora a odpor",
+    "explain": "Podpora je cenová úroveň, kde sa pokles v minulosti zastavil, lebo prišli kupujúci. Odpor je úroveň, kde sa rast zastavil, lebo predávajúci vyberali zisky."
+   },
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré z cien, objemov a sociálnych sietí odhaduje náladu na krypto trhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "liquidation",
+    "term": "Likvidácia pozícií",
+    "explain": "Keď niekto obchoduje na požičané peniaze (s pákou) a cena ide proti nemu, burza jeho pozíciu nútene zatvorí. Takéto hromadné predaje pokles ešte zrýchlia."
+   },
+   {
+    "key": "fcf",
+    "term": "Voľný cash flow",
+    "explain": "Peniaze, ktoré firme zostanú z bežného podnikania po zaplatení investícií, napríklad do serverov. Keď je záporný, firma minie viac, ako zarobí."
+   },
+   {
+    "key": "futures",
+    "term": "Futures",
+    "explain": "Kontrakty na budúcu cenu indexu, s ktorými sa obchoduje aj v noci. Ráno naznačujú, ako asi otvorí burza."
+   },
+   {
+    "key": "split",
+    "term": "Delenie akcií (split)",
+    "explain": "Firma rozdelí jednu akciu na viac menších, napríklad osem. Hodnota firmy sa nemení, len jedna akcia stojí osminu a ľahšie sa kupuje."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-10-30.json",
+  "note": "Medzi jazykovými modelmi sa prvá päťka nezmenila: vedie Gemini 4 Carbon s 59,4 bodu pred Claude Opus 5.5 a GPT-6 Astra. Nový je v zozname európsky Mistral Large 4 s 26 bodmi na 22. mieste, s rýchlosťou okolo 161 tokenov za sekundu a priemernou cenou 1,05 dolára za milión tokenov, teda patrí medzi rýchle a lacné modely. V aréne videa sa do prvej päťky dostal FLUX 3 Max a model HeyGen Video 1 klesol na šieste miesto; rozdiely sú však len pár bodov Elo, teda v rámci štatistickej neistoty."
+ }
+}
