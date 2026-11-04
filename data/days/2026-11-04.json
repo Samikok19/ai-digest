@@ -1,0 +1,386 @@
+{
+ "date": "2026-11-04",
+ "label": "Streda 4. novembra 2026",
+ "shortLabel": "St 4. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Európska firma Flower Labs vydala novú verziu svojho veľkého modelu Endeavor, ktorý beží na grafických kartách priamo v Európskej únii. Ruský Sber zadarmo uvoľnil model na hovoriace avatary a čínsky Moonshot má dnes splniť sľub, že zverejní model Kimi K3.1 Pro. Na trhoch sa nálada zlepšila: AMD po výsledkoch v noci vyskočilo asi o osem percent a bitcoin sa drží okolo 77 000 dolárov.",
+ "highlights": [
+  "Európska Flower Labs vydala Endeavor 1.1, silný AI model, ktorý dáta spracúva na serveroch v Európskej únii a teraz rozumie aj obrázkom.",
+  "Ruský Sber uvoľnil zadarmo model Kandinsky S2V, ktorý z jednej fotky a nahrávky hlasu spraví video hovoriacej osoby dlhé až minútu.",
+  "Dnes vyprší sľub čínskeho Moonshotu zverejniť model Kimi K3.1 Pro na stiahnutie, zatiaľ tam však nie je.",
+  "AMD v utorok večer ohlásilo rekordný štvrťrok, tržby z dátových centier sa takmer zdvojnásobili a akcia po zatvorení burzy stúpla asi o 8 percent.",
+  "Bitcoin je mierne vyššie okolo 77 300 dolárov a index strachu sa zlepšil z 26 na 34 bodov."
+ ],
+ "leadId": "endeavor-11",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "endeavor-11",
+     "title": "Európsky Endeavor 1.1 je múdrejší, vidí obrázky a beží na serveroch v Únii",
+     "dateText": "utorok 3. novembra",
+     "tags": [
+      {
+       "kind": "eu",
+       "label": "Európsky model"
+      }
+     ],
+     "keyFact": {
+      "value": "94,4",
+      "label": "bodu v teste GPQA, predtým 92,0"
+     },
+     "body": [
+      "Firma Flower Labs, ktorá vznikla v Európe, vydala v utorok 3. novembra novú verziu svojho veľkého modelu Endeavor 1.1. Podľa výrobcu lepšie uvažuje a programuje a v náročnom vedeckom teste [[GPQA|gpqa]] sa zlepšil z 92,0 na 94,4 bodu. Nová verzia navyše rozumie aj obrázkom, nielen textu.",
+      "Model beží na grafických kartách umiestnených v Európskej únii a firmy si ho môžu objednať ako službu, vo vlastnom súkromnom cloude alebo nainštalovať priamo do svojej serverovne. Ukazuje aj čitateľný postup svojho uvažovania, takže človek vidí, ako k odpovedi dospel. Všetky výsledky testov sú zatiaľ len od samotnej firmy."
+     ],
+     "whyItMatters": "Veľkým AI modelom dominujú americké firmy OpenAI, Anthropic a Google, takže európska alternatíva s dátami v Únii je dôležitá pre banky, nemocnice či úrady, ktoré nesmú posielať citlivé údaje do USA.",
+     "terms": [
+      {
+       "key": "gpqa",
+       "term": "GPQA",
+       "explain": "Sada veľmi ťažkých otázok z biológie, chémie a fyziky na úrovni doktorandov. Používa sa na porovnanie, ako dobre modely uvažujú."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Flower Labs",
+       "href": "https://flower.ai/blog/2026-11-03-introducing-endeavor-1.1"
+      }
+     ]
+    },
+    {
+     "id": "kimi-k31",
+     "title": "Čínsky Moonshot má dnes zverejniť Kimi K3.1 Pro, zatiaľ to neurobil",
+     "dateText": "termín v stredu 4. novembra",
+     "tags": [
+      {
+       "kind": "cn",
+       "label": "Čínsky model"
+      },
+      {
+       "kind": "open",
+       "label": "Sľúbené otvorené váhy"
+      }
+     ],
+     "body": [
+      "Čínska firma Moonshot sľúbila, že najneskôr v stredu 4. novembra zverejní celý model Kimi K3.1 Pro ako [[otvorený model|open]], teda na voľné stiahnutie. V utorok 3. novembra popoludní však na stránke Hugging Face, kde sa takéto modely zverejňujú, ešte nebol ani model, ani licencia.",
+      "V nezávislom rebríčku Artificial Analysis má tento model 55 bodov, čo by z neho po zverejnení urobilo najsilnejší model, ktorý si môže ktokoľvek stiahnuť a spustiť na vlastnom hardvéri."
+     ],
+     "whyItMatters": "Ak váhy dnes vyjdú, firmy aj nadšenci dostanú zadarmo model blízko absolútnej špičky. Ak nie, ide o sklz, ktorý stojí za to sledovať.",
+     "terms": [
+      {
+       "key": "open",
+       "term": "Otvorený model",
+       "explain": "Model, ktorého „váhy“, teda naučené čísla vo vnútri, si môže ktokoľvek stiahnuť a spustiť u seba bez platenia výrobcovi."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Kimi",
+       "href": "https://www.kimi.ai/blog/kimi-k3-1-pro"
+      },
+      {
+       "label": "Moonshot na Hugging Face",
+       "href": "https://huggingface.co/moonshotai"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie médií",
+   "icon": "film",
+   "items": [
+    {
+     "id": "kandinsky-s2v",
+     "title": "Sber zadarmo uvoľnil model, ktorý z fotky a hlasu spraví hovoriace video",
+     "dateText": "utorok 3. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorený · licencia MIT"
+      }
+     ],
+     "keyFact": {
+      "value": "až 60 sekúnd",
+      "label": "videa pri 25 snímkach za sekundu"
+     },
+     "body": [
+      "Ruská banka Sber, ktorá vyvíja rodinu modelov Kandinsky, zverejnila Kandinsky S2V 1.0. Z jednej fotky človeka, zvukovej nahrávky a krátkeho textového pokynu vytvorí video, v ktorom osoba hovorí a hýbe ústami podľa zvuku, až zhruba minútu dlhé.",
+      "Model je pod [[licenciou MIT|mit]], takže sa smie použiť aj komerčne. Existuje menšia verzia s 2 miliardami a väčšia s 21 miliardami [[parametrov|params]], plus [[destilované|distill]] varianty, ktoré sú asi 5,4-krát rýchlejšie. Kvalitu zatiaľ hodnotil len sám výrobca a na spustenie treba výkonnú serverovú grafickú kartu."
+     ],
+     "whyItMatters": "Je to voľná alternatíva k platenými službám na avatary ako HeyGen, napríklad na školiace videá alebo dabing.",
+     "terms": [
+      {
+       "key": "mit",
+       "term": "Licencia MIT",
+       "explain": "Veľmi voľná licencia: softvér môžete používať, meniť aj predávať, stačí ponechať pôvodné upozornenie o autoroch."
+      },
+      {
+       "key": "params",
+       "term": "Parametre",
+       "explain": "Čísla, ktoré sa model naučil počas tréningu. Viac parametrov zvyčajne znamená schopnejší, ale aj náročnejší model."
+      },
+      {
+       "key": "distill",
+       "term": "Destilácia",
+       "explain": "Postup, pri ktorom sa menší alebo rýchlejší model učí napodobňovať väčší, takže je rýchlejší za cenu malej straty kvality."
+      }
+     ],
+     "links": [
+      {
+       "label": "Kandinsky S2V na GitHube",
+       "href": "https://github.com/kandinskylab/kandinsky-s2v"
+      }
+     ]
+    },
+    {
+     "id": "pika-fastvideo",
+     "title": "Video model Pika H3 Flex teraz beží takmer v reálnom čase aj na hernej karte",
+     "dateText": "utorok 3. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorený model"
+      }
+     ],
+     "body": [
+      "Výskumníci z Hao AI Lab na univerzite v San Diegu zrýchlili otvorený model Pika H3 Flex, ktorý generuje video so zvukom a o ktorom sme písali v piatok 30. októbra. V ich nástroji FastVideo je až sedemkrát rýchlejší než pôvodný kód a päťsekundový klip v nižšom rozlíšení vytvorí na najsilnejšom serverovom čipe Nvidie za 5,8 sekundy.",
+      "Pribudli aj zmenšené verzie vo formáte NVFP4, kde sú čísla v modeli uložené menej presne, aby zabrali menej pamäte. Vďaka tomu model beží aj na hernej karte RTX 5090 či malom počítači DGX Spark."
+     ],
+     "whyItMatters": "Generovanie videa sa tak dostáva z drahých cloudov na domáce počítače nadšencov.",
+     "links": [
+      {
+       "label": "Blog Hao AI Lab",
+       "href": "https://haoailab.com/blogs/pika-h3-flex/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "AI agenti a nástroje",
+   "kicker": "Programovanie s AI",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "claude-code-2317",
+     "title": "Claude Code dostal ďalšie bezpečnostné poistky a opravy konektorov",
+     "dateText": "utorok 3. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "body": [
+      "Programovací asistent Claude Code od Anthropicu vyšiel vo verzii 2.1.317. Pri naplánovaných úlohách teraz upozorní, ak by sa použili [[konektory|mcp]], ktoré ste nepovolili, a pred odoslaním e-mailovej adresy účtu na sieť si to overí.",
+      "Vývojári, ktorí stavajú vlastných agentov, môžu nastaviť, aby sa práca pri zlyhaní kontroly úplne zastavila. Opravené je aj nečakané odpájanie konektorov v projektoch."
+     ],
+     "whyItMatters": "Agent, ktorý sám pracuje s vašimi účtami, má menej príležitostí urobiť niečo, čo ste nechceli.",
+     "terms": [
+      {
+       "key": "mcp",
+       "term": "Konektory (MCP)",
+       "explain": "Štandard, cez ktorý sa AI agent pripojí k iným službám, napríklad e-mailu, kalendáru alebo databáze."
+      }
+     ],
+     "links": [
+      {
+       "label": "Zoznam zmien Claude Code",
+       "href": "https://code.claude.com/docs/en/changelog"
+      }
+     ]
+    },
+    {
+     "id": "codex-167",
+     "title": "Testovací Codex ukáže navrhnutú zmenu kódu priamo pri schvaľovaní",
+     "dateText": "utorok 3. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Testovacia verzia"
+      }
+     ],
+     "body": [
+      "OpenAI vydalo testovaciu verziu svojho programovacieho agenta Codex 0.167.0-alpha.4. Keď agent žiada o povolenie upraviť kód, rovno pri otázke ukáže náhľad zmeny, takže netreba nič otvárať zvlášť.",
+      "Vylepšené je aj správanie konektorov, ktoré sa už navzájom nezdržujú. Bežná stabilná verzia zostáva 0.166.0."
+     ],
+     "whyItMatters": "Rýchlejšie a bezpečnejšie schvaľovanie toho, čo agent mení.",
+     "links": [
+      {
+       "label": "Vydania Codexu na GitHube",
+       "href": "https://github.com/openai/codex/releases"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech v skratke",
+   "kicker": "Čipy a peniaze za AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "nvidia-china",
+     "title": "Nvidia vraj obmedzuje Číňanom prenájom výpočtového výkonu v zahraničí",
+     "dateText": "utorok 3. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Neoverená správa"
+      }
+     ],
+     "body": [
+      "Podľa denníka Financial Times Nvidia ústne nariadila cloudovým partnerom, aby v nových zmluvách predávali aspoň 51 percent služieb zákazníkom mimo Číny. Agentúra Reuters správu nezávisle nepotvrdila.",
+      "Čínske firmy si totiž často prenajímajú výkonné čipy v dátových centrách v iných krajinách, keď ich kvôli americkým obmedzeniam nemôžu kúpiť doma."
+     ],
+     "whyItMatters": "Ak to platí, čínskym AI firmám sa ešte viac skomplikuje tréning modelov, čo vysvetľuje, prečo stavajú na domácich čipoch.",
+     "links": [
+      {
+       "label": "Správa (Yahoo Finance)",
+       "href": "https://finance.yahoo.com/technology/ai/articles/nvidia-reportedly-restricts-chinese-access-112552007.html"
+      }
+     ]
+    },
+    {
+     "id": "nscale-anthropic",
+     "title": "Nvidia zvažuje ručiť viac ako 5 miliardami za dátové centrum pre Anthropic",
+     "dateText": "utorok 3. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Peniaze"
+      }
+     ],
+     "body": [
+      "Magazín The Information píše, že Nvidia zvažuje záruku vyše 5 miliárd dolárov za kampus firmy Nscale v americkom štáte Západná Virgínia, ktorý má slúžiť Anthropicu s čipmi Vera Rubin.",
+      "Nvidia tak nielen predáva čipy, ale pomáha aj financovať stavby, kde sa budú používať."
+     ],
+     "whyItMatters": "Ukazuje to, aké obrovské peniaze idú do AI infraštruktúry a ako sú výrobcovia čipov a AI laboratóriá finančne poprepájaní.",
+     "links": [
+      {
+       "label": "Data Center Digest",
+       "href": "https://www.datacenterdigest.net/nvidia-reportedly-weighs-5bn-plus-backstop-for-nscales-anthropic-campus-in-west-virginia/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Facy.ai dlhšie videá, lebo je to len ohlásenie bez dátumu.",
+  "Gemini 4 Carbon a Mistral Large 4, lebo pri nich nie je nič nové.",
+  "Drobné opravy v Cursor CLI."
+ ],
+ "finance": {
+  "asOfText": "Ceny bitcoinu zo stredy 4. novembra okolo 6:15, akcie podľa záverečných cien z utorka 3. novembra.",
+  "summary": "Po niekoľkých dňoch poklesu sa technologické akcie v utorok odrazili, Nasdaq pridal 0,8 percenta a po zatvorení burzy výrazne potešilo AMD. Bitcoin sa stabilizoval a strach na trhu trochu povolil.",
+  "btc": {
+   "priceUsd": 77284,
+   "priceEur": 68821,
+   "changePct": 0.74,
+   "changePctEur": 0.4,
+   "mood": "neutral",
+   "moodLabel": "Stabilizácia po poklese",
+   "comment": "Bitcoin za posledný deň pridal necelé percento na približne 77 300 dolárov. Index strachu a chamtivosti sa zlepšil z 26 na 34 bodov, teda trh je stále opatrný, ale už nie v panike. Výraznejší obrat nahor to zatiaľ nie je.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 483.9,
+    "changePct": 3.65,
+    "comment": "Cez deň +3,7 percenta, po výsledkoch večer ešte asi o 7 až 8 percent vyššie, okolo 520 dolárov."
+   },
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 206.69,
+    "changePct": 2.29,
+    "comment": "Odraz po poklesoch, v správach obmedzenia pre čínskych zákazníkov."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 520.99,
+    "changePct": 2.74,
+    "comment": "Jeden z najsilnejších veľkých titulov dňa."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 280.03,
+    "changePct": 0.37,
+    "comment": "Mierne plus po minulotýždňovom prepade."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 331.9,
+    "changePct": -1.9,
+    "comment": "Pokračuje pokles po štvrťročných výsledkoch."
+   },
+   {
+    "ticker": "PLTR",
+    "name": "Palantir",
+    "close": 175.4,
+    "changePct": -1.65,
+    "comment": "Proti trendu dole."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Výsledky AMD (oficiálne)",
+    "href": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+   },
+   {
+    "label": "CNBC o AMD",
+    "href": "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html"
+   }
+  ],
+  "gem": {
+   "ticker": "AMD",
+   "name": "AMD",
+   "close": 483.9,
+   "changePct": 3.65,
+   "why": "AMD v utorok 3. novembra ohlásilo rekordné tržby 13,4 miliardy dolárov, o 45 percent viac ako pred rokom, a tržby z dátových centier stúpli o 97 percent. Na štvrtý štvrťrok čaká okolo 17 miliárd, čo je nad odhadmi analytikov, a firma tvrdí, že má zaistené dodávky súčiastok na ďalší rast.",
+   "risks": "Riziká: akcia je tento rok vyššie zhruba o 125 percent, takže veľa optimizmu je už v cene, a trh sa nedávno bál prehnaných investícií do AI. Herný segment klesol o 40 percent.",
+   "links": [
+    {
+     "label": "Tlačová správa AMD",
+     "href": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-04.json"
+ }
+}
