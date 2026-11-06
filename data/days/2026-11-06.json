@@ -1,0 +1,414 @@
+{
+  "date": "2026-11-06",
+  "label": "Piatok 6. novembra 2026",
+  "shortLabel": "Pi 6. 11.",
+  "greeting": "Dobré ráno, Samuel.",
+  "intro": "OpenAI vydalo GPT-6 Cyber, špecializovaný model na hľadanie bezpečnostných dier, ktorý už pomohol opraviť desiatky chýb vo Firefoxe a Linuxu. Google sprístupnil lacnejšie a dlhšie video Gemini Omni 1.2 Flash a Cursor vie z cloud agenta rovno nasadiť živú webovú aplikáciu. Na burze však technologické akcie v štvrtok prežili najprudší výpredaj od apríla 2025 a bitcoin spadol späť pod 76 000 dolárov.",
+  "highlights": [
+    "OpenAI vydalo GPT-6 Cyber: model na hľadanie bezpečnostných dier, zatiaľ len pre schválené bezpečnostné tímy.",
+    "Google sprístupnil Gemini Omni 1.2 Flash s videom až 15 sekúnd a cenou nižšou o 30 percent.",
+    "Cursor vie z cloud agenta postaviť a nasadiť živú webovú appku s databázou a prihlásením.",
+    "Technologické akcie v štvrtok prepadli: Nasdaq −5,5 %, Nvidia −9 %, AMD −17 %.",
+    "Bitcoin klesol asi o 6 percent na približne 75 600 dolárov a index strachu skočil na 28 bodov."
+  ],
+  "leadId": "gpt6-cyber",
+  "sections": [
+    {
+      "id": "llm",
+      "title": "Jazykové modely",
+      "kicker": "Chatboty a „mozgy“ AI",
+      "icon": "brain",
+      "items": [
+        {
+          "id": "gpt6-cyber",
+          "title": "OpenAI vypustilo GPT-6 Cyber, model špecializovaný na bezpečnosť softvéru",
+          "dateText": "štvrtok 5. novembra",
+          "tags": [
+            {
+              "kind": "safety",
+              "label": "Bezpečnosť · Daybreak Red"
+            }
+          ],
+          "keyFact": {
+            "value": "48,5 %",
+            "label": "na teste ExploitGym (predtým 32,1 %)"
+          },
+          "body": [
+            "OpenAI vo štvrtok 5. novembra predstavilo GPT-6 Cyber, model trénovaný tak, aby našiel a overil skutočne zneužiteľné [[zraniteľnosti|vuln]] v softvéri a zároveň zostal v rámci pravidiel, ktoré mu výskumník nastaví. Na interne vytvorenom teste ExploitGym dosiahol 48,5 percenta, čo je výrazný skok oproti 32,1 percenta u predchodcu GPT-5.6 Cyber. V samostatnom teste držania sa rozsahu sa bez bezpečnostného promptu držal v povolených medziach v 99,93 percentách prípadov a s promptom v sto percentách.",
+            "Model už pomohol voči reálnemu softvéru: výskumníci s ním vyvinuli 948 exploitov na zvyšovanie práv v Linuxe a našli 81 predtým neznámych vysoko závažných chýb vo Firefoxe; Mozilla začala opravy sadiť. OpenAI ho podľa vlastného [[Preparedness Framework|prep]] zaradilo do najvyššej kategórie Critical v kybernetickej bezpečnosti. Zatiaľ je dostupný cez API a Codex len schváleným zákazníkom programu Daybreak Red, teda tímom s povolením na ofenzívne bezpečnostné testovanie."
+          ],
+          "whyItMatters": "Je to najväčší oficiálny posun v AI na obranu a autorizované testovanie softvéru za posledné dni. Pre bežného používateľa to zatiaľ neznamená nový chatbota, ale pre firmy a open-source projekty môže znamenať rýchlejšie odhalenie dier skôr, než ich zneužije niekto zlý.",
+          "terms": [
+            {
+              "key": "vuln",
+              "term": "Zraniteľnosť",
+              "explain": "Chyba v programe, ktorú útočník môže zneužiť, napríklad na prečítanie dát alebo prevzatie kontroly. Bezpečnostný výskum ju hľadá preto, aby sa stihla opraviť."
+            },
+            {
+              "key": "prep",
+              "term": "Preparedness Framework",
+              "explain": "Vnútorný hodnotiaci systém OpenAI, ktorý priraďuje modelom úroveň rizika v citlivých oblastiach ako kybernetická bezpečnosť. Critical je najvyššia kategória a znamená prísnejšie obmedzenia prístupu."
+            }
+          ],
+          "links": [
+            {
+              "label": "Oznámenie OpenAI",
+              "href": "https://openai.com/index/introducing-gpt-6-cyber"
+            }
+          ]
+        },
+        {
+          "id": "ernie55",
+          "title": "Baidu zverejnilo váhy modelu ERNIE-5.5-Flash-Base",
+          "dateText": "štvrtok 5. novembra",
+          "tags": [
+            {
+              "kind": "open",
+              "label": "Čínsky otvorený model"
+            }
+          ],
+          "keyFact": {
+            "value": "280 mld.",
+            "label": "parametrov, z toho 14 mld. aktívnych"
+          },
+          "body": [
+            "Čínsky Baidu vo štvrtok zverejnil na Hugging Face a ModelScope plné [[váhy|vahy]] základného modelu ERNIE-5.5-Flash-Base. Ide o architektúru [[MoE|moe]] s 280 miliardami parametrov, z ktorých pri každej odpovedi beží asi 14 miliárd. Model trénovali na 33,5 bilióna tokenov; kontext pri tréningu bol až 128-tisíc tokenov a pri doladení či behu sľubujú až milión.",
+            "Súbory sú vo formátoch FP8 aj BF16 a na spustenie stačí populárny server vLLM alebo SGLang. Licencia je vlastná: firmy s tržbami nad zhruba 50 miliónov dolárov potrebujú na komerčné použitie súhlas Baidu."
+          ],
+          "whyItMatters": "Ďalší silný čínsky základný model, na ktorom si firmy a výskumníci môžu sami doladiť agenta alebo špecializovanú aplikáciu, bez toho aby všetko posielali do cudzej služby.",
+          "terms": [
+            {
+              "key": "vahy",
+              "term": "Váhy modelu",
+              "explain": "Naučené čísla, ktoré tvoria samotný model. Kto má váhy, môže model spustiť sám bez prístupu k službe výrobcu."
+            },
+            {
+              "key": "moe",
+              "term": "MoE (zmes expertov)",
+              "explain": "Model je rozdelený na veľa menších „expertov“ a pri každej otázke sa zapne len niekoľko z nich. Vďaka tomu je obrovský model rýchlejší a lacnejší na prevádzku."
+            }
+          ],
+          "links": [
+            {
+              "label": "ERNIE-5.5-Flash-Base na Hugging Face",
+              "href": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base"
+            },
+            {
+              "label": "Oznámenie Baidu",
+              "href": "https://ernie.baidu.com/release/ernie-5-5-flash-base/"
+            }
+          ]
+        },
+        {
+          "id": "ripple65",
+          "title": "Ricursive vypustilo Ripple-65B Preview s licenciou Apache 2.0",
+          "dateText": "štvrtok 5. novembra",
+          "tags": [
+            {
+              "kind": "open",
+              "label": "Otvorené váhy · USA"
+            }
+          ],
+          "body": [
+            "Americká firma Ricursive zverejnila náhľad modelu Ripple-65B: hustý model so 65 miliardami parametrov, trénovaný na zhruba 12 biliónoch tokenov a s kontextom až milión tokenov. Firma tvrdí, že ide o najsilnejší americký otvorený model na teste TerminalBench 2.1 so skóre 80,52, a že celkové náklady na vývoj boli okolo 32 miliónov dolárov. Váhy sú pod licenciou [[Apache 2.0|apache]] a API beží cez Together, OpenRouter a Fireworks."
+          ],
+          "whyItMatters": "Na rozdiel od veľkých čínskych MoE modelov ide o kompaktnejší hustý model, ktorý sa ľahšie nasadzuje na programovanie a agentické úlohy vo vlastnej infraštruktúre.",
+          "terms": [
+            {
+              "key": "apache",
+              "term": "Apache 2.0",
+              "explain": "Veľmi voľná open-source licencia: model môžete používať, upravovať aj predávať, stačí uviesť pôvod a zachovať oznámenie o licencii."
+            }
+          ],
+          "links": [
+            {
+              "label": "Stránka Ripple",
+              "href": "https://www.ricursive.com/ripple"
+            },
+            {
+              "label": "Ripple-65B na Hugging Face",
+              "href": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview"
+            }
+          ]
+        },
+        {
+          "id": "claude-finance",
+          "title": "Claude dostáva osobné financie a silnejšie podnikové bezpečnostné nástroje",
+          "dateText": "štvrtok 5. novembra",
+          "tags": [],
+          "body": [
+            "Anthropic spustil v USA beta funkciu Personal Finance pre predplatné Pro, Max a Ultra: Claude cez službu Plaid vie len na čítanie pozrieť účty a pomôcť s rozpočtom, bez toho aby peniaze posielal. Pre firmy pribudol Security Center v bete, ostré [[inference hooks|hooks]], samoobslužný zoznam povolených IP adries a odhlásenie používateľov cez Admin API."
+          ],
+          "whyItMatters": "Nie je to nový model, ale signál, že Claude chce byť každodenný pomocník aj v peňaženkách a že veľké firmy dostávajú viac kontroly nad tým, kto a odkiaľ s ním pracuje.",
+          "terms": [
+            {
+              "key": "hooks",
+              "term": "Inference hooks",
+              "explain": "Kontrolné body pred a počas behu modelu, napríklad pred volaním nástroja. Firma si cez ne môže automaticky skontrolovať alebo zablokovať rizikové kroky."
+            }
+          ],
+          "links": [
+            {
+              "label": "Personal Finance v Claude",
+              "href": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+            },
+            {
+              "label": "Enterprise security aktualizácie",
+              "href": "https://claude.com/resources/articles/claude-enterprise-security-updates"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "title": "Obrázky a video",
+      "kicker": "Generovanie obrázkov a videa",
+      "icon": "image",
+      "items": [
+        {
+          "id": "omni12",
+          "title": "Google sprístupnil Gemini Omni 1.2 Flash s dlhším a lacnejším videom",
+          "dateText": "štvrtok 5. novembra",
+          "tags": [],
+          "keyFact": {
+            "value": "15 s",
+            "label": "natívne klipy, cena −30 % oproti 1.1"
+          },
+          "body": [
+            "Google vo štvrtok uviedol do všeobecnej dostupnosti Gemini Omni 1.2 Flash. Natívne video môže mať 3 až 15 sekúnd namiesto predošlých maximálne desiatich, klipy sa dajú upravovať viackolovou konverzáciou a model lepšie drží referencie tvárí, produktov aj hlasu. Cena klesla o 30 percent oproti verzii 1.1, na 0,07 dolára za sekundu pri rozlíšení 720p.",
+            "Model je dostupný v Gemini API a na Google Cloude a výstupy nesú neviditeľný vodoznak SynthID. Google ho odporúča na produktové spoty, vysvetľujúce videá a reklamné varianty, kde sa oplatí rýchlo iterovať namiesto generovať všetko odznova."
+          ],
+          "whyItMatters": "Lacnejšie a dlhšie mainstreamové video generovanie znamená, že krátke marketingové a interné klipy už nemusia ísť cez drahé špecializované nástroje.",
+          "terms": [],
+          "links": [
+            {
+              "label": "Blog Google",
+              "href": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agents",
+      "title": "Agenti a nástroje",
+      "kicker": "Ako sa AI napája na prácu",
+      "icon": "bot",
+      "items": [
+        {
+          "id": "cursor-live",
+          "title": "Cursor vie z agenta rovno postaviť a nasadiť živú webovú appku",
+          "dateText": "štvrtok 5. novembra",
+          "tags": [],
+          "body": [
+            "Cursor vo štvrtok predstavil Build Live Apps: cloud agent postaví webovú aplikáciu, podľa potreby aj databázu Postgres, prihlásenie cez Cursor SSO a hosting. Pred zverejnením prejdú automatické aj agentické bezpečnostné kontroly a nič nejde von, kým kontroly neprejdú a vy výslovne nestlačíte publish.",
+            "Appku potom zdieľate v tíme alebo na individuálnych plánoch aj verejne. Funkcia je na všetkých platených plánoch s cloud agents."
+          ],
+          "whyItMatters": "Mizí klasický krok „mám to na localhoste, ešte musím riešiť deploy“. Interné nástroje pre obchod, personalistiku alebo operácie sa dajú dostať na odkaz bez vlastného devops pipeline.",
+          "terms": [],
+          "links": [
+            {
+              "label": "Changelog Cursor",
+              "href": "https://cursor.com/changelog/build-live-apps"
+            }
+          ]
+        },
+        {
+          "id": "codex-0167",
+          "title": "OpenAI Codex vyšiel v stabilnej verzii 0.167.0",
+          "dateText": "piatok 6. novembra",
+          "tags": [],
+          "body": [
+            "Po dlhšom behu na verzii 0.166 a alphách vyšla v noci na piatok stabilná Codex 0.167.0. Prináša príkazové centrum agentov, prepínanie backendov so zachovaním rozpracovaných návrhov, náhľad lokálnych obrázkov, sprievodcu nastavením Vertex AI a experimentálne systémové proxy. Alpha vetva pokračuje na 0.168."
+          ],
+          "whyItMatters": "Je to prvý väčší stabilný bump Codexu od konca októbra, takže tímy, čo čakajú na ostrú verziu namiesto alph, majú čo aktualizovať.",
+          "terms": [],
+          "links": [
+            {
+              "label": "GitHub releases openai/codex",
+              "href": "https://github.com/openai/codex/releases"
+            }
+          ]
+        },
+        {
+          "id": "hermes-hearth",
+          "title": "Nous Hermes Agent „Hearth“ spája všetky session do jedného gateway",
+          "dateText": "štvrtok 5. novembra",
+          "tags": [
+            {
+              "kind": "open",
+              "label": "Open source harness"
+            }
+          ],
+          "body": [
+            "Nous Research vydalo Hermes Agent v0.23.0 s prezývkou Hearth. Desktop workspace beží v prehliadači cez vlastný gateway, ktorý vlastní všetky session naraz (CLI, TUI, editor, boty aj cron). Pribudol príkaz /rewind, inline obrázky v termináli, limity útrat na platené MCP nástroje a katalóg pluginov s viac ako tisíc položkami. Staré nástroje browser_* nahrádza browser_exec."
+          ],
+          "whyItMatters": "Je to veľký update harnessu mimo Claude Code, Codexu a Cursora, pre ľudí, čo chcú open-source agenta s jedným miestom pre všetky bežiace úlohy.",
+          "terms": [],
+          "links": [
+            {
+              "label": "Hermes Agent releases",
+              "href": "https://github.com/NousResearch/hermes-agent/releases"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "title": "Tech v skratke",
+      "kicker": "Čo sa deje okolo",
+      "icon": "cpu",
+      "items": [
+        {
+          "id": "gpt-live-sip",
+          "title": "OpenAI GPT-Live už vie samo vytáčať telefónne čísla von",
+          "dateText": "štvrtok 5. novembra",
+          "tags": [],
+          "body": [
+            "Cez Live API s transportom typu SIP môže agent vytáčať čísla vo formáte E.164 cez SIP trunk so šifrovaním TLS a SRTP. Prichádzajúce hovory cez webhook už fungovali skôr; odchádzajúce volania sú teraz dostupné pre všetky organizácie."
+          ],
+          "whyItMatters": "Hlasoví agenti už nemusia len prijímať hovory, ale môžu sami volať zákazníkom alebo partnerom podľa pravidiel firmy.",
+          "terms": [],
+          "links": [
+            {
+              "label": "Dokumentácia Voice SIP",
+              "href": "https://developers.openai.com/api/docs/guides/voice-sip"
+            }
+          ]
+        },
+        {
+          "id": "hy4-update",
+          "title": "Tencent Hy4 váhy stále nie sú na stiahnutie",
+          "dateText": "piatok 6. novembra",
+          "tags": [],
+          "body": [
+            "Po ohlásení modelu Hy4 zo 4. a 5. novembra Tencent stále píše, že váhy prídu „v najbližších dňoch“. Na stránke na stiahnutie zatiaľ nič nie je, hoci model už figuruje v rebríčku Artificial Analysis."
+          ],
+          "whyItMatters": "Kým váhy nevyjdú, Hy4 ostáva skôr službou a rebríčkovým menom než modelom, ktorý si firma spustí sama.",
+          "terms": [],
+          "links": [
+            {
+              "label": "Oznámenie Tencentu",
+              "href": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    "Úniky a špekulácie o GPT-6.2 Astra a Fable 5.5, lebo chýba oficiálny release.",
+    "TwIL-8B, Images 2.6 a Claude Code 2.1.318, lebo už boli v digeste zo 5. novembra.",
+    "OpenAI partnerstvo s JPMorgan Chase, lebo ide o biznis dohodu, nie o model ani API."
+  ],
+  "finance": {
+    "asOfText": "Ceny bitcoinu z piatka 6. novembra okolo 6:20, akcie podľa záverečných cien zo štvrtka 5. novembra.",
+    "summary": "Po stredajšej rally prišiel vo štvrtok prudký výpredaj technológií: investori sa boja prísnejšej regulácie AI a spomalenia stavby dátových centier po víťazstve demokratov v Kongrese. Nasdaq klesol o 5,5 percenta do korekcie, Dow o 3,4 percenta a S&P 500 o 4,4 percenta, najviac od aprílového colného šoku v roku 2025. Bitcoin, ktorý deň predtým prekonal 80 000 dolárov, späť klesol pod 76 000.",
+    "btc": {
+      "priceUsd": 75566,
+      "priceEur": 67488,
+      "changePct": -6.0,
+      "changePctEur": -5.46,
+      "mood": "bearish",
+      "moodLabel": "Späť pod 76 000",
+      "comment": "Bitcoin za posledný deň klesol asi o 6 percent na približne 75 600 dolárov, teda asi 67 500 eur. Index strachu a chamtivosti spadol z neutrálnych 50 na 28 bodov, čo už je pásmo strachu. Je to ostré vybratie ziskov po stredajšom návrate nad 80 000 dolárov.",
+      "links": [
+        {
+          "label": "CoinGecko",
+          "href": "https://www.coingecko.com/en/coins/bitcoin"
+        },
+        {
+          "label": "Index strachu a chamtivosti",
+          "href": "https://alternative.me/crypto/fear-and-greed-index/"
+        }
+      ]
+    },
+    "stocks": [
+      {
+        "ticker": "AAPL",
+        "name": "Apple",
+        "close": 344.17,
+        "changePct": -1.53,
+        "comment": "Najodolnejší z veľkých techov; klesol výrazne menej ako čipy."
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet",
+        "close": 282.57,
+        "changePct": -2.2,
+        "comment": "Strata po stredajšom raste, stále miernejšia ako u čipov."
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft",
+        "close": 535.93,
+        "changePct": -3.58,
+        "comment": "Po stredajšom rekorde prišiel výber ziskov."
+      },
+      {
+        "ticker": "NVDA",
+        "name": "Nvidia",
+        "close": 181.6,
+        "changePct": -9.26,
+        "comment": "Najväčší ťaháč výpredaja; strata trhovej hodnoty cez 440 miliárd dolárov."
+      },
+      {
+        "ticker": "AMD",
+        "name": "AMD",
+        "close": 404.4,
+        "changePct": -17.26,
+        "comment": "Najprudší pád spomedzi sledovaných; čipy celkovo pod silným tlakom."
+      },
+      {
+        "ticker": "PLTR",
+        "name": "Palantir",
+        "close": 154.99,
+        "changePct": -9.73,
+        "comment": "Ďalší deň v poklese spolu s AI menami."
+      }
+    ],
+    "stocksLinks": [
+      {
+        "label": "CNBC o výpredaji AI akcií",
+        "href": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html"
+      },
+      {
+        "label": "AP o indexoch 5. novembra",
+        "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-afe254c608c3d1fe2ea792812ba9765a"
+      }
+    ],
+    "gem": {
+      "ticker": "AAPL",
+      "name": "Apple",
+      "close": 344.17,
+      "changePct": -1.53,
+      "why": "Pri výpredaji viazanom na AI infraštruktúru a reguláciu dátových centier Apple opäť klesol najmenej zo sledovaných veľkých techov. Firma stavia AI opatrnejšie a menej závisí od stavby obrovských dátových fariem, takže ju tento konkrétny strach zasahuje slabšie.",
+      "risks": "Riziká: aj Apple je stále drahá akcia po stredajšom rekorde, slabší výhľad marží z pondelka ostáva v hre a pri celotrhovom výpredaji môže klesnúť aj defenzívnejší titul.",
+      "links": [
+        {
+          "label": "CNBC",
+          "href": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html"
+        }
+      ],
+      "disclaimer": "Toto nie je investičná rada."
+    },
+    "terms": [
+      {
+        "key": "fng",
+        "term": "Index strachu a chamtivosti",
+        "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+      },
+      {
+        "key": "correction",
+        "term": "Korekcia",
+        "explain": "Pokles indexu aspoň o 10 percent od nedávneho maxima. Neznamená automaticky dlhodobý medvedí trh, ale ukazuje, že investori berú späť časť ziskov."
+      }
+    ]
+  },
+  "benchmarks": {
+    "snapshot": "data/benchmarks-2026-11-06.json",
+    "note": "V rebríčku Artificial Analysis pribudol Inkling 2 Small od Thinking Machines na 18. mieste s indexom 30,6 a nahradil starší Inkling. Prvá päťka sa nezmenila: vedie Gemini 4 Carbon so 60 bodmi, pred Claude Opus 5.5 a GPT-6 Astra."
+  }
+}
