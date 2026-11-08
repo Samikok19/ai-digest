@@ -1,0 +1,453 @@
+{
+ "date": "2026-11-08",
+ "label": "Nedeľa 8. novembra 2026",
+ "shortLabel": "Ne 8. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Najdôležitejšia správa dňa je praktická: Claude Code pri voľbe „áno a už sa nepýtaj“ ukladá schválené príkazy doslovne, aj s heslami, do súboru, ktorý sa ľahko dostane na GitHub. Thinking Machines ukázali druhú generáciu modelu Inkling a Nous Research vydal otvorený 27-miliardový model bez čínskej cenzúry. Nvidia pustila otvorené modely na simuláciu sveta a Perplexity spustila trvalých agentov.",
+ "highlights": [
+  "Pozor na Claude Code: voľba „áno a už sa nepýtaj“ ukladá príkazy aj s heslami do .claude/settings.local.json, ktorý sa často omylom commitne.",
+  "Thinking Machines ukázali Inkling 2 Small (594 miliárd parametrov, milión tokenov kontextu); otvorené váhy sľubujú o pár týždňov.",
+  "Nous Research vydal Arete-27B: otvorený Qwen bez čínskej štátnej propagandy, beží aj lokálne.",
+  "Perplexity spustila Teammates, trvalých agentov s vlastným prehliadačom; Claude Duet ovláda Claude Code z mobilu.",
+  "Bitcoin stojí okolo 75 800 dolárov, index strachu 28; akcie cez víkend bez zmeny po piatkovom odraze čipov."
+ ],
+ "leadId": "claude-code-secrets",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "inkling-2-small",
+     "title": "Thinking Machines ukázali Inkling 2 Small, otvorené váhy majú prísť o pár týždňov",
+     "dateText": "štvrtok 5. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Váhy zatiaľ zatvorené"
+      }
+     ],
+     "keyFact": {
+      "value": "594 mld.",
+      "label": "parametrov, naraz pracuje 17 miliárd"
+     },
+     "body": [
+      "Firma Thinking Machines, ktorú založila bývalá technická riaditeľka OpenAI Mira Murati, vo štvrtok 5. novembra predstavila Inkling 2 Small, prvý model druhej generácie Inkling. Je to [[MoE|moe]] model s 594 miliardami parametrov, z ktorých pri odpovedi beží 17 miliárd. Rozumie textu aj obrázkom, má kontext až milión [[tokenov|token]] a dá sa mu nastaviť, ako dlho má „premýšľať“.",
+      "Zatiaľ beží len na ich platforme Tinker, kde sa dá aj dotrénovať na vlastných dátach. Plné váhy pod voľnou licenciou [[Apache 2.0|apache]] sľubujú „v najbližších týždňoch“, po externom bezpečnostnom testovaní. V rebríčku Artificial Analysis má 30,6 bodu a je osemnásty, kým predchodca mal len 13 bodov."
+     ],
+     "whyItMatters": "Ak váhy naozaj vyjdú, bude to jeden z najsilnejších západných modelov, ktoré si človek môže stiahnuť a prevádzkovať sám. Dnes v tejto kategórii dominujú čínske modely, takže americká alternatíva by bola vítaná najmä pre firmy, ktoré čínskym modelom nedôverujú.",
+     "terms": [
+      {
+       "key": "moe",
+       "term": "MoE (zmes expertov)",
+       "explain": "Model je rozdelený na veľa menších „expertov“ a pri každej otázke sa zapne len niekoľko z nich. Vďaka tomu je obrovský model rýchlejší a lacnejší na prevádzku."
+      },
+      {
+       "key": "token",
+       "term": "Token",
+       "explain": "Základná jednotka textu pre jazykové modely, zhruba kus slova. Milión tokenov kontextu znamená, že model naraz „vidí“ veľmi dlhý dokument."
+      },
+      {
+       "key": "apache",
+       "term": "Apache 2.0",
+       "explain": "Voľná licencia: model sa dá zadarmo používať, upravovať aj nasadiť komerčne."
+      }
+     ],
+     "links": [
+      {
+       "label": "Stránka Inkling od Thinking Machines",
+       "href": "https://thinkingmachines.ai/inkling/"
+      },
+      {
+       "label": "Novinky Thinking Machines",
+       "href": "https://thinkingmachines.ai/news/"
+      }
+     ]
+    },
+    {
+     "id": "arete-27b",
+     "title": "Nous Research vydal Arete-27B, otvorený model bez čínskej štátnej propagandy",
+     "dateText": "tento týždeň",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · Apache 2.0"
+      }
+     ],
+     "keyFact": {
+      "value": "22 % → 1 %",
+      "label": "podiel propagandistických odpovedí podľa Nous"
+     },
+     "body": [
+      "Americké laboratórium Nous Research zverejnilo model Arete-27B. Vychádza z čínskeho modelu Qwen3.8 s 27 miliardami parametrov, ktorý dotrénovali tak, aby z odpovedí zmizli naratívy čínskej štátnej propagandy. Podľa Nous klesol ich podiel zo zhruba 22 percent na približne jedno percento, pričom všeobecné schopnosti aj práca v úlohách agenta ostali zachované.",
+      "Váhy aj tréningové dáta sú pod licenciou [[Apache 2.0|apache]] a komunita už pripravila zmenšené verzie vo formáte [[GGUF|gguf]], ktoré sa dajú spustiť na bežnejšom počítači."
+     ],
+     "whyItMatters": "Čínske otvorené modely sú dnes veľmi kvalitné, ale pri citlivých témach odpovedajú podľa oficiálnej línie Pekingu. Arete ponúka podobnú kvalitu pre lokálne použitie bez tejto zaujatosti.",
+     "terms": [
+      {
+       "key": "gguf",
+       "term": "GGUF",
+       "explain": "Formát súboru pre zmenšené (kvantizované) modely, ktoré sa dajú spustiť lokálne napríklad v programoch LM Studio alebo Ollama."
+      }
+     ],
+     "links": [
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/NousResearch/Arete-27B"
+      },
+      {
+       "label": "Zmenšené verzie GGUF",
+       "href": "https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "cosmos-3-nano",
+     "title": "Nvidia vydala otvorené modely Cosmos 3 Nano, ktoré simulujú svet pre autá a roboty",
+     "dateText": "tento týždeň",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      }
+     ],
+     "keyFact": {
+      "value": "4 × 16 mld.",
+      "label": "parametrov, štyri samostatné modely"
+     },
+     "body": [
+      "Nvidia zverejnila štyri otvorené modely Cosmos 3 Nano, každý so 16 miliardami parametrov. Nie sú to klasické generátory videí na zábavu, ale takzvané [[svetové modely|worldmodel]]: vedia vytvoriť pohľad viacerých kamier a lidaru pre autonómne jazdenie, premeniť jednoduchý simulátor na realistický obraz alebo vygenerovať video robota s dvoma rukami podľa zadaných pohybov.",
+      "Licencia OpenMDW 1.1 dovoľuje modely voľne používať. Ide o najsilnejšie otvorené vydanie v oblasti videa a simulácie za posledné dni."
+     ],
+     "whyItMatters": "Roboty a samoriadiace autá sa dnes učia hlavne v simulácii, lebo testovanie v reálnom svete je drahé a nebezpečné. Otvorené svetové modely znižujú vstupnú bariéru pre menšie firmy a univerzity.",
+     "terms": [
+      {
+       "key": "worldmodel",
+       "term": "Svetový model",
+       "explain": "AI, ktorá predpovedá, ako bude svet vyzerať o chvíľu, keď sa niečo pohne, napríklad auto alebo ruka robota. Slúži ako virtuálne ihrisko na tréning."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Nvidie na Hugging Face",
+       "href": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+      }
+     ]
+    },
+    {
+     "id": "underdog-woof",
+     "title": "Underdog Woof: drobný model, ktorý číta text nahlas priamo v prehliadači",
+     "dateText": "sobota 7. novembra",
+     "tags": [
+      {
+       "kind": "device",
+       "label": "Beží v zariadení"
+      }
+     ],
+     "body": [
+      "Firma Underdog v sobotu 7. novembra vydala Woof, model na prevod textu na reč, ktorý má len 31,7 megabajtu. Podľa autorov dosahuje najmenej chýb vo výslovnosti v pomere k svojej veľkosti a na jednom jadre procesora MacBooku beží až 18-krát rýchlejšie, než trvá samotná nahrávka. Funguje celý v prehliadači, bez servera.",
+      "Háčik je v licencii CC BY-NC 4.0, ktorá zakazuje komerčné použitie, takže je to skôr na experimenty a osobné projekty."
+     ],
+     "whyItMatters": "Hlas, ktorý beží lokálne, nič neposiela na internet a nič nestojí. Pre osobné aplikácie a súkromie je to zaujímavý smer.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Stránka Underdog",
+       "href": "https://underdog.ai"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "Ako sa AI napája na prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "claude-code-secrets",
+     "title": "Claude Code pri voľbe „už sa nepýtaj“ ukladá aj heslá, ktoré potom končia na GitHube",
+     "dateText": "štvrtok 5. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť · skontroluj si repá"
+      }
+     ],
+     "keyFact": {
+      "value": "1 379",
+      "label": "uniknutých tajomstiev v 1 122 verejných súboroch"
+     },
+     "body": [
+      "Bezpečnostná firma Apiiro vo štvrtok 5. novembra upozornila na zákerný problém v Claude Code. Keď schváliš príkaz voľbou „Yes, and don't ask again“, nástroj si ho uloží doslovne do súboru .claude/settings.local.json, a to aj vrátane hesla alebo [[tokenu|secret]], ktoré bolo v príkaze napísané.",
+      "Tento súbor je vylúčený len v globálnom nastavení gitu, nie v projektovom súbore .gitignore, a Claude ho často sám pridá do commitu. Apiiro našlo na GitHube 1 122 verejných kópií s 1 379 tajomstvami, medzi nimi 379 hesiel k databázam, 23 kľúčov k AWS a 42 tokenov ku GitHubu, GitLabu či npm.",
+      "Čo urobiť: v svojich repozitároch spusti git log --all -- .claude/settings.local.json, pridaj súbor do .gitignore a všetky heslá či kľúče, ktoré sa v ňom kedy objavili, vymeň za nové."
+     ],
+     "whyItMatters": "Je to priamo akčné pre každého, kto používa Claude Code. Raz uniknutý kľúč na verejnom GitHube treba považovať za kompromitovaný, aj keď ho neskôr zmažeš, lebo boty ich vyhľadávajú v priebehu minút.",
+     "terms": [
+      {
+       "key": "secret",
+       "term": "Token / tajomstvo",
+       "explain": "Heslo alebo prístupový kľúč, ktorým sa program prihlasuje k službe. Kto ho má, môže konať v tvojom mene."
+      }
+     ],
+     "links": [
+      {
+       "label": "The Hacker News o náleze Apiiro",
+       "href": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+      }
+     ]
+    },
+    {
+     "id": "perplexity-teammates",
+     "title": "Perplexity spustila Teammates, agentov, ktorí pracujú nonstop a ozvú sa, keď treba rozhodnúť",
+     "dateText": "piatok 6. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Výskumná ukážka · len Max"
+      }
+     ],
+     "body": [
+      "Perplexity v piatok 6. novembra predstavila Teammates, trvalých [[agentov|agent]] s vlastnou úlohou, pamäťou a vlastným virtuálnym počítačom s prehliadačom. Každý si môže rozdeliť prácu medzi viac pomocníkov naraz, sleduje Slack, GitHub alebo Linear a ozve sa, keď potrebuje tvoje rozhodnutie. Model si vyberáš pre každého zvlášť.",
+      "Zatiaľ ide o výskumnú ukážku len pre individuálne predplatné Max za 200 dolárov mesačne a len na webe."
+     ],
+     "whyItMatters": "Po OpenAI a Anthropicu prichádza ďalší veľký hráč s agentmi, ktorí nežijú len v jednom okne chatu, ale robia dlhodobú prácu na pozadí. Je to rovnaká kategória, do ktorej patrí aj Grok Bot.",
+     "terms": [
+      {
+       "key": "agent",
+       "term": "AI agent",
+       "explain": "Program postavený na jazykovom modeli, ktorý sám robí kroky, napríklad otvára stránky, píše kód alebo posiela správy, nie len odpovedá na otázky."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Perplexity",
+       "href": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work"
+      }
+     ]
+    },
+    {
+     "id": "claude-duet-mobile",
+     "title": "Claude Duet už ovláda Claude Code z mobilu",
+     "dateText": "piatok 6. a sobota 7. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Nová funkcia"
+      }
+     ],
+     "body": [
+      "Anthropic prepojil mobilného asistenta Claude Duet so sedeniami Claude Code. Z telefónu teraz vidíš, ako práca pokračuje, schvaľuješ zmeny a posielaš nové pokyny, a to pre cloudové aj lokálne sedenia. Pri lokálnych to ide cez funkciu Remote Control a len s prihlásením cez claude.ai, nie s [[API|api]] kľúčom.",
+      "Claude Code inak od verzie 2.1.319 z piatka nové vydanie nemá a Codex od OpenAI dostal len testovaciu verziu bez popisu zmien."
+     ],
+     "whyItMatters": "Programátorský agent tak nemusí stáť, keď odídeš od počítača. Stačí potvrdiť krok na telefóne a práca beží ďalej.",
+     "terms": [
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Programátorské rozhranie, cez ktoré aplikácia volá službu namiesto človeka v chate."
+      }
+     ],
+     "links": [
+      {
+       "label": "Dokumentácia Remote Control",
+       "href": "https://code.claude.com/docs/en/remote-control"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech v skratke",
+   "kicker": "Čo sa deje okolo",
+   "icon": "cpu",
+   "items": [
+    {
+     "id": "deepmind-rsa",
+     "title": "Agenti Google DeepMind našli dve nové slabiny v starom 1024-bitovom šifrovaní RSA",
+     "dateText": "piatok 6. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Kryptografia"
+      }
+     ],
+     "keyFact": {
+      "value": "1 600×",
+      "label": "rýchlejšie falšovanie podpisov v teoretickom odhade"
+     },
+     "body": [
+      "Google DeepMind v piatok 6. novembra ukázal, že jeho AI agenti pod dohľadom kryptografov Nadie Heninger a Emmanuela Thomé našli dve nové slabiny v starom 1024-bitovom [[RSA|rsa]]. Prvá je spôsob falšovania podpisov, ktorý je v teoretickom odhade asi 1 600-krát rýchlejší pri čiastočnej kontrole nad podpisovaným blokom. Druhá zlacňuje hromadné rozkladanie čísel asi 30-krát.",
+      "Moderné RSA s dĺžkou 2048 bitov a viac to nijako neohrozuje."
+     ],
+     "whyItMatters": "Je to konkrétny dôkaz, že AI agenti už robia skutočný nový výskum v kryptografii, nie len hľadajú chyby v kóde. Staré systémy s 1024-bitovými kľúčmi majú ďalší dôvod na výmenu.",
+     "terms": [
+      {
+       "key": "rsa",
+       "term": "RSA",
+       "explain": "Jeden z najrozšírenejších spôsobov šifrovania a digitálneho podpisu. Bezpečnosť stojí na tom, že veľké čísla sa ťažko rozkladajú na prvočísla."
+      }
+     ],
+     "links": [
+      {
+       "label": "Interesting Engineering o výskume",
+       "href": "https://interestingengineering.com/ai-robotics/1600x-faster-google-deepmind-agents-expose-weaknesses-in-older-encryption-methods"
+      }
+     ]
+    },
+    {
+     "id": "infra-money",
+     "title": "Peniaze v AI ďalej tečú: Google kupuje kampus, OpenAI a Anthropic pri bilionových valuáciách",
+     "dateText": "tento víkend",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Biznis"
+      }
+     ],
+     "body": [
+      "Podľa správ Google kúpil nedokončený kampus dátových centier firmy Crusoe vo Wyomingu, ktorý mal stáť 17 miliárd dolárov. OpenAI vraj získal ďalších 11 miliárd dolárov pri ocenení 1,25 bilióna a Anthropic tlačí na vstup na burzu ešte pred americkým Dňom vďakyvzdania pri ocenení 1,25 až 1,75 bilióna dolárov.",
+      "Ide o správy z médií, nie oficiálne oznámenia firiem."
+     ],
+     "whyItMatters": "Napriek štyrom týždňom poklesu technologických akcií investície do AI infraštruktúry nespomaľujú. Prípadný vstup Anthropicu na burzu by bol jedným z najväčších v histórii.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Slicast denný súhrn",
+       "href": "https://slicast.com/brief/2026-11-08"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Qoduck v Qoder IDE a teaser Qwen 4 — pôvod nepotvrdený, model nedostupný.",
+  "DeepSeek-V4.1-Flash „Ultrafast“ na Vercel — model zo septembra, nové je len rýchlejšie hostovanie.",
+  "Špekulácie o súboji GPT-6.2 Astra a Fable 5.5 — nič nevyšlo.",
+  "Audit METR o tempe Anthropicu, rozpustenie výskumného tímu Microsoftu, DOJ task force — biznis a regulácia bez priameho dopadu.",
+  "Tencent Hy4 — plné váhy stále nevyšli, len ukážka."
+ ],
+ "finance": {
+  "asOfText": "Ceny bitcoinu z nedele 8. novembra okolo 6:14 Europe/Bratislava; akcie podľa záverečných cien z piatka 6. novembra (víkend, trhy zatvorené).",
+  "summary": "Cez víkend sa na akciových trhoch nič nemení, platia piatkové ceny po odraze čipov: Nasdaq plus 1,1 percenta, AMD plus 11 a Nvidia plus 2,8 percenta, aj keď celkovo išlo o štvrtý stratový týždeň. Bitcoin v nedeľu ráno stojí okolo 75 800 dolárov, prakticky bez zmeny za deň, a nálada sa mierne zlepšila z extrémneho strachu na bežný strach.",
+  "btc": {
+   "priceUsd": 75805,
+   "priceEur": 68010,
+   "changePct": -0.06,
+   "changePctEur": -0.06,
+   "low24h": 75541,
+   "high24h": 76150,
+   "mood": "neutral",
+   "moodLabel": "Bočný pohyb, stále strach",
+   "comment": "Bitcoin sa už druhý deň drží tesne pod 76 000 dolárov (asi 68 000 eur) a za posledných 24 hodín sa pohyboval len v úzkom pásme medzi 75 500 a 76 150 dolármi. [[Index strachu a chamtivosti|fng]] sa zdvihol z 25 na 28 bodov, teda z extrémneho strachu na bežný strach. Trh sa upokojuje, ale signál na nový rast zatiaľ nie je.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 186.64,
+    "changePct": 2.78,
+    "comment": "Piatkový odraz o takmer 3 percentá po štvrtkovom páde o 9 percent."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 449.04,
+    "changePct": 11.04,
+    "comment": "Najsilnejší piatkový odraz zo sledovaných po štvrtkovom páde o 17 percent."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 530.61,
+    "changePct": -0.99,
+    "comment": "Mierne dole, odraz čipov ho minul."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 342.37,
+    "changePct": -0.52,
+    "comment": "Takmer bez zmeny, najstabilnejší zo sledovaných."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 284.78,
+    "changePct": 0.78,
+    "comment": "Mierny plus; v správach kúpa kampusu dátových centier vo Wyomingu."
+   },
+   {
+    "ticker": "PLTR",
+    "name": "Palantir",
+    "close": 160.38,
+    "changePct": 3.48,
+    "comment": "Odraz spolu s ostatnými AI menami."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Fox Business o piatkovom odraze Nasdaq",
+    "href": "https://www.foxbusiness.com/markets/stocks-11-6-2026"
+   },
+   {
+    "label": "UPI o týždňovej strate",
+    "href": "https://www.upi.com/Top_News/US/2026/11/06/nasdaq-rebounds-tech-stocks/5901794005326/"
+   }
+  ],
+  "gem": {
+   "ticker": "GOOGL",
+   "name": "Alphabet (Google)",
+   "close": 284.78,
+   "changePct": 0.78,
+   "why": "Alphabet patrí k firmám, ktoré majú AI aj vlastné peniaze na jej financovanie: Gemini 4 Carbon vedie rebríček Artificial Analysis a podľa správ firma kupuje ďalší kampus dátových centier vo Wyomingu. Akcia v piatok len mierne stúpla a nebola v centre volatility ako AMD, takže pre opatrnejšieho pozorovateľa je to stabilnejšia stávka na AI než čisté čipové firmy.",
+   "risks": "Riziká: obrovské výdavky na dátové centrá sa nemusia rýchlo vrátiť, technologické akcie sú štvrtý týždeň v strate a regulácia AI aj antimonopolné spory s Googlom pokračujú.",
+   "links": [
+    {
+     "label": "Slicast o kúpe kampusu",
+     "href": "https://slicast.com/brief/2026-11-08"
+    },
+    {
+     "label": "Artificial Analysis rebríček",
+     "href": "https://artificialanalysis.ai/models"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-08.json",
+  "note": "Oproti včerajšku sa v prvej päťke nič nezmenilo: vedie Gemini 4 Carbon so 60 bodmi pred Claude Opus 5.5 (59,1) a GPT-6 Astra (56,9). Z nových modelov je v zozname Tencent Hy4 na 13. mieste a Inkling 2 Small na 18. mieste."
+ }
+}
