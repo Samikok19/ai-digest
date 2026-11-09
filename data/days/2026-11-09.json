@@ -1,0 +1,481 @@
+{
+ "date": "2026-11-09",
+ "label": "Pondelok 9. novembra 2026",
+ "shortLabel": "Po 9. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Víkend bol na nové modely pokojný, zato sa veľa dialo okolo nástrojov, v ktorých s AI reálne pracujeme. Otvorený agent DeepSeek Harness vyrástol za päť týždňov na poldruha milióna denných používateľov a Garry Tan ukázal, že pri rovnakom modeli je jedno, ktorý takýto nástroj použiješ, líšia sa hlavne cenou. V technológiách rieši Nvidia vyšetrovanie svojho šéfa a Anthropic si kupuje vlastné elektrárne.",
+ "highlights": [
+  "DeepSeek Harness, otvorený AI agent na prácu s počítačom a kódom, má už 1,54 milióna denných používateľov a DeepSeek chystá oficiálny obchod s pluginmi.",
+  "Garry Tan porovnal sedem coding agentov s rovnakým modelom: úspešnosť vyšla prakticky rovnaká, rozdiel je v cene a rýchlosti.",
+  "HyperFlow H3 Flash zmenšil veľký video model tak, že video so zvukom vyrobí doma na jednej grafickej karte.",
+  "Nvidia spustila nezávislé vyšetrovanie šéfa Jensena Huanga a Anthropic dal 3,4 miliardy dolárov za vlastné plynové generátory.",
+  "Bitcoin cez víkend klesol na zhruba 74 600 dolárov, index strachu 29; americké futures ráno mierne v pluse."
+ ],
+ "leadId": "deepseek-harness",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "quiet-weekend",
+     "title": "Víkend bez nového veľkého modelu, otvorený Inkling 2 Small má prísť tento týždeň",
+     "dateText": "sobota 7. až pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Čaká sa na otvorené váhy"
+      }
+     ],
+     "body": [
+      "Od soboty do pondelňajšieho rána nevydal žiadny z veľkých vývojárov, teda Anthropic, OpenAI, Google, xAI ani Meta, nový model ani nezmenil ceny. Pokojný víkend potvrdzujú aj ďalšie pondelňajšie súhrny AI noviniek, takže ak niečo používaš, nemáš dôvod nič prepínať.",
+      "Jediná vec na sledovanie je Inkling 2 Small od Thinking Machines. Súhrny na X zo soboty večer opakujú, že plné [[otvorené váhy|openweights]] pod licenciou [[Apache 2.0|apache]] majú prísť budúci týždeň, teda práve tento. Na ich platforme Tinker stojí model 30 centov za milión vstupných [[tokenov|token]]. Zatiaľ však váhy nevyšli."
+     ],
+     "whyItMatters": "Ak Thinking Machines sľub dodrží, Inkling 2 Small môže byť najsilnejší západný model, ktorý si človek stiahne a prevádzkuje sám. Dnes v tejto kategórii vedú čínske modely.",
+     "terms": [
+      {
+       "key": "openweights",
+       "term": "Otvorené váhy",
+       "explain": "Firma zverejní samotný natrénovaný model na stiahnutie, takže ho môžeš spustiť na vlastnom počítači alebo serveri a nie si závislý od jej služby."
+      },
+      {
+       "key": "apache",
+       "term": "Apache 2.0",
+       "explain": "Voľná licencia: model sa dá zadarmo používať, upravovať aj nasadiť komerčne."
+      },
+      {
+       "key": "token",
+       "term": "Token",
+       "explain": "Základná jednotka textu pre jazykové modely, zhruba kus slova. Ceny modelov sa počítajú za milión tokenov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Stránka Inkling od Thinking Machines",
+       "href": "https://thinkingmachines.ai/inkling/"
+      },
+      {
+       "label": "Pondelňajší súhrn NHỊP",
+       "href": "https://nhip.verai.vn/en"
+      }
+     ]
+    },
+    {
+     "id": "maxxbench",
+     "title": "Drobná úprava testu zrazila DeepSeek V4.1 Flash zo 74 na 56 percent",
+     "dateText": "víkend 7. a 8. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Neoverené z primárneho zdroja"
+      }
+     ],
+     "keyFact": {
+      "value": "74,2 → 55,6 %",
+      "label": "úspešnosť DeepSeek V4.1 Flash po drobných úpravách úloh"
+     },
+     "body": [
+      "Vývojár Justin Lo vzal 89 programátorských úloh z testu DeepSWE a urobil v nich len kozmetické zmeny, napríklad zmenil veľké a malé písmená v názvoch súborov. Úloha sa tým v podstate nezmenila, no lacný model DeepSeek V4.1 Flash klesol zo 74,2 percenta vyriešených úloh na 55,6 percenta. Claude Opus 5.5 si naopak mierne polepšil na 76,4 percenta.",
+      "Čísla pochádzajú zo súhrnu na X, pôvodný zdroj sa Scoutovi nepodarilo overiť, preto ich ber s rezervou. Celej akcii sa na X hovorí MaxxBench."
+     ],
+     "whyItMatters": "Je to ďalší náznak, že niektoré modely sú [[pretrénované|overfit]] na verejné testy a v rebríčkoch vyzerajú lepšie, než v skutočnej práci. Ak si vyberáš lacný model na programovanie, vyskúšaj ho na vlastných úlohách, nie len podľa skóre.",
+     "terms": [
+      {
+       "key": "overfit",
+       "term": "Pretrénovanie na test",
+       "explain": "Model sa počas tréningu „naučí“ konkrétne testové úlohy, takže v teste exceluje, ale pri trochu inej úlohe výrazne zaostane. Podobné ako žiak, ktorý sa naspamäť naučil odpovede, nie látku."
+      }
+     ],
+     "links": [
+      {
+       "label": "Súhrn na X",
+       "href": "https://x.com/i/trending/2119115237014340081"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "hyperflow-h3-flash",
+     "title": "HyperFlow H3 Flash vyrobí video so zvukom na jednej hernej grafickej karte",
+     "dateText": "nedeľa 8. novembra",
+     "tags": [
+      {
+       "kind": "device",
+       "label": "Beží lokálne"
+      }
+     ],
+     "keyFact": {
+      "value": "92 sekúnd",
+      "label": "na 5-sekundový klip so zvukom na jednej RTX 5090"
+     },
+     "body": [
+      "Firma Video Rebirth v nedeľu 8. novembra vydala HyperFlow H3 Flash, zmenšenú verziu video modelu MiniMax H3. Pôvodný model mal zhruba 31 miliárd [[parametrov|params]], nová verzia má 13,7 miliardy, prípadne 13,9 miliardy vo variante, ktorý pracuje s referenčnými obrázkami. Zadáš prvý a posledný záber a model medzi nimi dopočíta video aj so zvukom.",
+      "Namiesto desiatok krokov mu stačia štyri až osem a nepotrebuje takzvané CFG, čo je technika, ktorá bežne zdvojnásobuje výpočty. Päť sekúnd videa tak vyrobí zhruba za 92 sekúnd na jednej grafickej karte RTX 5090 a [[komprimovaná verzia|gguf]] má len 9,1 gigabajtu."
+     ],
+     "whyItMatters": "Video so zvukom sa doteraz robilo hlavne v cloude za poplatok. Tento model ukazuje, že sa to dá aj doma na drahšom hernom počítači, bez posielania materiálu niekomu inému.",
+     "terms": [
+      {
+       "key": "params",
+       "term": "Parametre",
+       "explain": "Čísla, ktoré si model nastavil počas tréningu. Viac parametrov zvyčajne znamená schopnejší, ale aj väčší a pomalší model."
+      },
+      {
+       "key": "gguf",
+       "term": "GGUF a kvantizácia",
+       "explain": "Formát, v ktorom sa model „zhustí“ na menej presné čísla. Zaberie oveľa menej pamäte a beží na bežnejšom hardvéri, za cenu malej straty kvality."
+      }
+     ],
+     "links": [
+      {
+       "label": "Apply Coding o HyperFlow H3 Flash",
+       "href": "https://applycoding.com/news/2026-11-08-hyperflow-h3-flash-shrinks-a-huge-video-model-to-run-on-consumer-gpus"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "Ako sa AI napája na prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "deepseek-harness",
+     "title": "Otvorený agent DeepSeek Harness má poldruha milióna denných používateľov a dostane obchod s pluginmi",
+     "dateText": "piatok 6. až pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Open source · MIT"
+      }
+     ],
+     "keyFact": {
+      "value": "1,54 milióna",
+      "label": "denných používateľov, koncom septembra ich bolo asi 271 tisíc"
+     },
+     "body": [
+      "DeepSeek Harness je bezplatný [[harness|harness]] od čínskej firmy DeepSeek, teda program, v ktorom AI model samostatne pracuje s počítačom, súbormi a kódom. Funguje ako desktopová aplikácia, webové rozhranie aj príkazový riadok a takmer všetko v ňom je plugin. Kód je verejný pod voľnou licenciou MIT.",
+      "Podľa TechNode a Bloombergu mal k strede 4. novembra 1,54 milióna používateľov denne, kým koncom septembra asi 271 tisíc. Denne cez neho pretečie okolo 92 miliárd [[tokenov|token]] a komunita napísala približne 35 tisíc pluginov. DeepSeek teraz chystá oficiálny obchod s pluginmi, v ktorom vývojári dostanú tokeny zadarmo ako odmenu, dátum spustenia však nie je známy.",
+      "Harness sa dá používať aj s inými modelmi než od DeepSeeku, stačí služba s rozhraním kompatibilným s OpenAI."
+     ],
+     "whyItMatters": "Je to najrýchlejšie rastúci otvorený konkurent nástrojov ako Claude Code, Codex alebo aj Grok Bot. Pre bežného používateľa to znamená, že výkonný AI agent je dostupný zadarmo a dá sa doň zapojiť ľubovoľný model, takže tlak na ceny platených nástrojov porastie.",
+     "terms": [
+      {
+       "key": "harness",
+       "term": "Harness (agentový nástroj)",
+       "explain": "Program okolo AI modelu, ktorý mu dáva ruky: číta a píše súbory, spúšťa príkazy, otvára web. Model rozmýšľa, harness vykonáva."
+      }
+     ],
+     "links": [
+      {
+       "label": "TechNode o DeepSeek Harness",
+       "href": "https://technode.com/2026/11/06/deepseek-plans-official-plugin-marketplace-as-harness-daily-users-reach-1-54-million/"
+      },
+      {
+       "label": "DeepSeek Harness na GitHube",
+       "href": "https://github.com/deepseek-ai/deepseek-harness"
+      }
+     ]
+    },
+    {
+     "id": "harness-evals",
+     "title": "Garry Tan: pri rovnakom modeli sú coding agenti rovnako úspešní, líšia sa cenou",
+     "dateText": "nedeľa 8. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Otvorené porovnanie"
+      }
+     ],
+     "keyFact": {
+      "value": "71–79 %",
+      "label": "úspešnosť siedmich harnessov, štatisticky bez rozdielu"
+     },
+     "body": [
+      "Garry Tan, šéf startupového akcelerátora Y Combinator, zverejnil v nedeľu 8. novembra otvorené porovnanie siedmich programátorských agentov. Všetky dostali rovnaký špičkový model a rovnakých 20 úloh, menil sa len samotný [[harness|harness]]. Úspešnosť vyšla medzi 71 a 79 percentami, čo je štatisticky nerozlíšiteľné, a 14 úloh dopadlo vo všetkých rovnako.",
+      "Rozdiel je v peniazoch a čase. S modelom Opus bol najlacnejší a najrýchlejší Claude Code, s GPT-6.1 Sol zas Codex. OpenClaw vyšiel najdrahšie, asi 44 centov za vyriešenú úlohu, a bol aj najpomalší. Repozitár je čerstvý, takže výsledky ešte nikto nezávisle nezopakoval."
+     ],
+     "whyItMatters": "Praktická rada: nástroj vyberaj podľa modelu, ktorý používaš, a podľa toho, koľko ťa stojí, nie podľa marketingových sľubov o vyššej úspešnosti.",
+     "links": [
+      {
+       "label": "Porovnanie na GitHube",
+       "href": "https://github.com/garrytan/g-harness-evals"
+      }
+     ]
+    },
+    {
+     "id": "antigravity-chem",
+     "title": "Google DeepMind dal chemikom balík zručností pre agenta Antigravity",
+     "dateText": "utorok 3. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Pre vedcov"
+      }
+     ],
+     "body": [
+      "Google DeepMind v utorok 3. novembra predstavil Cheminformatics Skills, balík [[skills|skills]] v plugine Science pre svojho agenta Antigravity. Agent s nimi vie vytiahnuť molekuly z odborných článkov, porovnávať podobné molekuly, trénovať modely, ktoré predpovedajú účinnosť látky, a navrhovať, ako ju vyrobiť. Pod kapotou používa overené chemické nástroje RDKit a databázy ChEMBL a PubChem.",
+      "Desaťtisíc vedcov dostane najvyšší program Antigravity na šesť mesiacov zadarmo. Správa v piatkových súhrnoch chýbala, preto ju prinášame dnes."
+     ],
+     "whyItMatters": "Je to dobrý príklad, kam sa agenti posúvajú: nie jeden všeobecný chatbot, ale agent so špecializovanými zručnosťami, ktorý na presné výpočty volá spoľahlivé nástroje namiesto hádania.",
+     "terms": [
+      {
+       "key": "skills",
+       "term": "Skills (zručnosti agenta)",
+       "explain": "Balíček návodov a nástrojov, ktorý agent načíta, keď rieši určitý typ úlohy. Podobne ako keď si odborník otvorí príručku pre konkrétnu prácu."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google DeepMind",
+       "href": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+      }
+     ]
+    },
+    {
+     "id": "chatgpt-remix",
+     "title": "ChatGPT Remix: firemné stránky z ChatGPT si skopíruješ a upravíš v chate",
+     "dateText": "okolo piatka 6. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Business a Enterprise"
+      }
+     ],
+     "body": [
+      "OpenAI pridal pre firemné plány ChatGPT funkciu Remix. Keď ti kolega spraví stránku cez ChatGPT Sites, môžeš si ju skopírovať a v rozhovore z nej urobiť vlastnú verziu bez toho, aby si zmenil originál. Novinka je menšia, ale ukazuje, že ChatGPT Sites sa mení na tímovú platformu so šablónami. Mimochodom, Claude Code ostáva na verzii 2.1.319 a Codex na stabilnej 0.167.0."
+     ],
+     "whyItMatters": "Vo firmách to zjednoduší zdieľanie hotových nástrojov a stránok: jeden človek vytvorí, ostatní si to prispôsobia.",
+     "links": [
+      {
+       "label": "Pomocník OpenAI k ChatGPT Sites",
+       "href": "https://help.openai.com/en/articles/20001339-creating-and-using-chatgpt-sites"
+      },
+      {
+       "label": "Vydania Codexu",
+       "href": "https://github.com/openai/codex/releases"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech v skratke",
+   "kicker": "Čo sa deje okolo",
+   "icon": "cpu",
+   "items": [
+    {
+     "id": "nvidia-huang",
+     "title": "Rada Nvidie spustila nezávislé vyšetrovanie šéfa Jensena Huanga",
+     "dateText": "nedeľa 8. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Dopad na trh"
+      }
+     ],
+     "body": [
+      "Nezávislí členovia predstavenstva Nvidie s externými právnikmi preveria vzťah šéfa Jensena Huanga s manažérkou firmy Megaspeed. Podľa memorand amerických tajných služieb ju naverbovala čínska tajná služba, takzvané ministerstvo štátnej bezpečnosti. Huang aféru priznal a rada tvrdí, že firemné tajomstvá ani národná bezpečnosť ohrozené neboli."
+     ],
+     "whyItMatters": "Nvidia dodáva čipy takmer pre celý svet AI, takže akákoľvek neistota okolo jej šéfa sa môže prejaviť na akciách aj na vzťahoch s americkou vládou. V pondelok sa uvidí, ako zareaguje trh.",
+     "links": [
+      {
+       "label": "KillTheAI, súhrn 9. novembra",
+       "href": "https://killtheai.com/news/top-10-ai-news-today-november-9-2026/"
+      }
+     ]
+    },
+    {
+     "id": "anthropic-power",
+     "title": "Anthropic dal 3,4 miliardy dolárov za vlastné plynové generátory",
+     "dateText": "nedeľa 8. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Energia"
+      }
+     ],
+     "keyFact": {
+      "value": "1,7 GW",
+      "label": "výkon generátorov, zhruba ako jedna veľká elektráreň"
+     },
+     "body": [
+      "Podľa Financial Times, ktoré citoval CNBC, Anthropic prevzal od firmy OnePWR objednávku plynových turbín od Caterpillaru s výkonom 1,7 gigawattu za 3,4 miliardy dolárov. Chce si tak zabezpečiť vlastnú elektrinu pre dátové centrá, kde beží Claude."
+     ],
+     "whyItMatters": "Elektrina je dnes najväčšia brzda rastu AI. Kto ju nemá, nemôže pridávať kapacitu, a to sa prejaví aj na tom, ako často narazíš na limity používania.",
+     "links": [
+      {
+       "label": "CNBC o dohode Anthropicu",
+       "href": "https://www.cnbc.com/2026/11/08/anthropic-generator-deal-ai-data-centers.html"
+      }
+     ]
+    },
+    {
+     "id": "openai-funding",
+     "title": "OpenAI uzavrel prvú časť kola: 11 miliárd pri hodnote 1,25 bilióna dolárov",
+     "dateText": "víkend 7. a 8. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Investície"
+      }
+     ],
+     "body": [
+      "Podľa Bloombergu OpenAI uzavrel prvú [[tranžu|tranche]] investičného kola vo výške 11 miliárd dolárov pri ocenení firmy na 1,25 bilióna dolárov. To je menej, než chcel, pôvodne cielil na 1,4 bilióna. Celé kolo môže dosiahnuť zhruba 20 miliárd. Okrem toho OpenAI dal firme Hacktron širší prístup k svojim najnovším modelom, aby hľadala bezpečnostné diery v jeho systémoch, hlavne v prepojeniach s inými službami."
+     ],
+     "whyItMatters": "Nižšia hodnota, než OpenAI chcel, je signál, že investori sú pri AI firmách opatrnejší, čo sedí aj s poklesom technologických akcií v posledných týždňoch.",
+     "terms": [
+      {
+       "key": "tranche",
+       "term": "Tranža",
+       "explain": "Časť investície, ktorá sa vyplatí naraz. Veľké kolá sa často delia na viac tranží v rôznom čase."
+      }
+     ],
+     "links": [
+      {
+       "label": "AIDC denný súhrn",
+       "href": "https://aidchot.com/en/daily"
+      },
+      {
+       "label": "OpenAI o spolupráci s Hacktronom",
+       "href": "https://openai.com/index/partnering-with-hacktron"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "GPT-6.2 Sol: súhrny na X tvrdia, že niektorí predplatitelia ho už majú, OpenAI nič neoznámil.",
+  "Siri v iOS 27.3 len podľa Bloombergu, nič na vyskúšanie.",
+  "NIST CAISSI bez riaditeľa: regulácia bez priameho dopadu.",
+  "Vimoo 1.0 a FLUX 3 Max na fal.ai: zdroje sa nepodarilo overiť.",
+  "Qoduck v Qoder IDE: pôvod stále nepotvrdený."
+ ],
+ "finance": {
+  "asOfText": "Ceny bitcoinu z pondelka 9. novembra okolo 6:20 Europe/Bratislava; akcie podľa záverečných cien z piatka 6. novembra, americké futures z pondelňajšieho rána.",
+  "summary": "Americké burzy otvoria až popoludní nášho času, takže pri akciách stále platia piatkové ceny po odraze čipov. Futures na Nasdaq 100 a S&P 500 sú ráno mierne v pluse, zhruba o tretinu a polovicu percenta. Bitcoin cez noc stratil asi 1,6 percenta a za týždeň takmer 5 percent, ether padol výraznejšie, o vyše 4 percentá.",
+  "btc": {
+   "priceUsd": 74615,
+   "priceEur": 66859,
+   "changePct": -1.59,
+   "changePctEur": -1.71,
+   "low24h": 73963,
+   "high24h": 76106,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo skôr pokles",
+   "comment": "Bitcoin po dvoch pokojných dňoch skĺzol pod 75 000 dolárov a stojí okolo 74 600 dolárov, teda asi 66 900 eur. Za posledných 24 hodín sa pohyboval medzi 73 960 a 76 100 dolármi a za týždeň stratil takmer 5 percent. [[Index strachu a chamtivosti|fng]] sa napriek tomu pohol z 28 na 29 bodov, stále teda platí strach, nie panika. Trend zostáva skôr [[medvedí|bearish]].",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 186.64,
+    "changePct": 2.78,
+    "comment": "Piatkový odraz; v pondelok môže hýbať akciou správa o vyšetrovaní šéfa."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 449.04,
+    "changePct": 11.04,
+    "comment": "Najsilnejší piatkový odraz po štvrtkovom páde o 17 percent."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 530.61,
+    "changePct": -0.99,
+    "comment": "Mierne dole, odraz čipov ho minul."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 342.37,
+    "changePct": -0.52,
+    "comment": "Takmer bez zmeny, najstabilnejší zo sledovaných."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 284.78,
+    "changePct": 0.78,
+    "comment": "Mierny plus; Gemini 4 Carbon stále vedie rebríček modelov."
+   },
+   {
+    "ticker": "PLTR",
+    "name": "Palantir",
+    "close": 160.38,
+    "changePct": 3.48,
+    "comment": "Odraz spolu s ostatnými AI menami."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Fox Business o piatkovom odraze Nasdaq",
+    "href": "https://www.foxbusiness.com/markets/stocks-11-6-2026"
+   },
+   {
+    "label": "Futures na Nasdaq 100 (Yahoo Finance)",
+    "href": "https://finance.yahoo.com/quote/NQ%3DF/"
+   }
+  ],
+  "gem": {
+   "ticker": "MSFT",
+   "name": "Microsoft",
+   "close": 530.61,
+   "changePct": -0.99,
+   "why": "Microsoft v piatok odraz čipov nezachytil, takže nestojí na vrchole nadšenia ako AMD. Zarába na AI cez cloud Azure a predplatné Copilota a má podiel v OpenAI, ktorý práve uzavrel ďalšiu časť financovania. Pre opatrného pozorovateľa je to stabilnejší spôsob, ako sledovať AI, než čisté čipové firmy.",
+   "risks": "Riziká: OpenAI získal nižšie ocenenie, než chcel, čo naznačuje opatrnosť investorov; výdavky na dátové centrá sú obrovské a technologické akcie majú za sebou štyri stratové týždne.",
+   "links": [
+    {
+     "label": "Microsoft na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/MSFT/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   },
+   {
+    "key": "futures",
+    "term": "Futures",
+    "explain": "Zmluvy na budúcu cenu indexu, s ktorými sa obchoduje aj mimo otváracích hodín burzy. Ráno naznačujú, či trh otvorí vyššie alebo nižšie."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-09.json",
+  "note": "Pri jazykových modeloch sa nič nezmenilo: vedie Gemini 4 Carbon so 60 bodmi pred Claude Opus 5.5 (59,1) a GPT-6 Astra (56,9). V aréne videí si len vymenili miesta štvrtý a piaty: Dreamina Seedance 2.5 od ByteDance predbehla FLUX 3 Max od nemeckej firmy Black Forest Labs, ktorá je jediným európskym zástupcom v prvej päťke. Prvé tri miesta drží Wan 3.0, Utopai X a MiniMax H3."
+ }
+}
