@@ -1,0 +1,453 @@
+{
+ "date": "2026-11-10",
+ "label": "Utorok 10. novembra 2026",
+ "shortLabel": "Ut 10. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Hlavná správa dňa je od Anthropicu: nový Claude Fable 5.2 je rýchlejší, lacnejší a hneď skočil na prvé miesto rebríčka Artificial Analysis. Meta zároveň vydala veľmi lacný model Muse Ember pre agentov a ByteDance nový obrázkový model Seedream 5.5. Burzy sa v pondelok silno odrazili, len Nvidia klesla kvôli vyšetrovaniu svojho šéfa.",
+ "highlights": [
+  "Anthropic vydal Claude Fable 5.2, ktorý je o pätinu lacnejší, až o 30 percent rýchlejší a v rebríčku Artificial Analysis predbehol Gemini 4 Carbon.",
+  "Meta predstavila Muse Ember, malý model pre agentov za 10 centov za milión vstupných tokenov, ktorý sa vyrovná Claude Haiku 5.5.",
+  "ByteDance vydal Seedream 5.5, ktorý vie obrázok upravovať aj stokrát po sebe bez zhoršenia a kreslí s priehľadným pozadím.",
+  "Nasdaq v pondelok stúpol o 2,7 percenta a AMD o 13 percent, Nvidia však stratila vyše 4 percentá.",
+  "Bitcoin stojí okolo 74 700 dolárov a index strachu sa zlepšil z 29 na 32 bodov."
+ ],
+ "leadId": "claude-fable-5-2",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "claude-fable-5-2",
+     "title": "Anthropic vydal Claude Fable 5.2: rýchlejší, lacnejší a nová jednotka v rebríčku",
+     "dateText": "pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Platený model · všetky platformy"
+      }
+     ],
+     "keyFact": {
+      "value": "64,6 bodu",
+      "label": "v indexe Artificial Analysis, o 4,6 bodu pred Gemini 4 Carbon"
+     },
+     "body": [
+      "Anthropic v pondelok 9. novembra vydal novú verziu svojich najsilnejších modelov, Claude Fable 5.2 a Claude Mythos 5.2. Ide o ten istý model: Fable má zabudované [[ochrany|safeguards]] proti zneužitiu v kybernetickej bezpečnosti a biológii, a preto ho môže používať každý, kým Mythos bez týchto obmedzení dostanú len overené organizácie. Podľa Anthropicu odpovedá až o 30 percent rýchlejšie ako verzia 5.1 a zlepšil sa v programovaní, uvažovaní aj čítaní obrázkov a grafov.",
+      "Cena klesla zhruba o pätinu na 8 dolárov za milión vstupných a 40 dolárov za milión výstupných [[tokenov|token]]. Za dvojnásobnú cenu je k dispozícii aj rýchly režim, ktorý text generuje až dva a pol krát rýchlejšie. Predplatitelia dostanú tento týždeň navyše jedno až tri obnovenia limitu pre Fable a na pláne Pro môže Fable tvoriť až polovicu týždenného limitu.",
+      "Anthropic ukazuje aj pôsobivé pokusy: tisíc spolupracujúcich agentov s Fable 5.2 za 30 hodín počítačovo overilo dôkaz Veľkej Fermatovej vety a model navrhol tri funkčné elektronické zariadenia od nuly. Zároveň však sám odporúča, aby ľudia na bežnú prácu ostali pri Claude Opus 5.5 a po Fable siahli len pri naozaj ťažkých technických úlohách."
+     ],
+     "whyItMatters": "Je to prvý veľký model od Anthropicu odvtedy, čo šéf firmy Dario Amodei v septembri vyzýval na spomalenie vývoja AI, a podľa CNBC prichádza tesne pred vstupom firmy na burzu, ktorý môže byť už budúci týždeň. Pre bežného používateľa je dôležité, že najsilnejší dostupný model zlacnel a zrýchlil sa, a v Claude Code je od pondelka predvolený.",
+     "terms": [
+      {
+       "key": "safeguards",
+       "term": "Ochrany (safeguards)",
+       "explain": "Automatické filtre, ktoré rozpoznajú nebezpečné požiadavky, napríklad návod na útok na počítačový systém, a zablokujú ich alebo pošlú slabšiemu modelu."
+      },
+      {
+       "key": "token",
+       "term": "Token",
+       "explain": "Základná jednotka textu pre jazykové modely, zhruba kus slova. Ceny modelov sa počítajú za milión tokenov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Anthropicu",
+       "href": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      },
+      {
+       "label": "CNBC o vydaní a burze",
+       "href": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html"
+      }
+     ]
+    },
+    {
+     "id": "muse-ember",
+     "title": "Meta vydala Muse Ember, veľmi lacný model na drobnú prácu agentov",
+     "dateText": "pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Meta Model API"
+      }
+     ],
+     "keyFact": {
+      "value": "0,10 dolára",
+      "label": "za milión vstupných tokenov, výstup 0,50 dolára"
+     },
+     "body": [
+      "Meta v pondelok 9. novembra predstavila Muse Ember, najmenší a najlacnejší model z rodiny Muse. Je určený na úlohy, ktoré agent opakuje stále dokola: volanie nástrojov, menšie programátorské podúlohy, rozhodovanie, komu úlohu poslať, a vyťahovanie údajov z dlhých dokumentov. Rozumie textu, obrázkom, zvuku aj videu a naraz si prečíta až milión tokenov, čo je zhruba celý väčší projekt alebo kopa dokumentov.",
+      "V indexe Artificial Analysis získal 36 bodov, prakticky rovnako ako Claude Haiku 5.5 s 36,5 bodu, no podľa Mety za úlohu zaplatíš zhruba tretinu. Meta odporúča kombináciu, v ktorej väčší Muse Wonder vymyslí plán a lacný Ember ho vo veľkom vykoná. Model je dostupný cez Meta Model API a v nástroji Muse Code."
+     ],
+     "whyItMatters": "Väčšinu peňazí v agentoch nestojí premýšľanie, ale tisíce drobných krokov. Ak ich zvládne model za zlomok ceny, AI agenti sa stanú lacnejšími pre firmy aj jednotlivcov.",
+     "links": [
+      {
+       "label": "Blog Meta o Muse Ember",
+       "href": "https://research.meta.ai/blog/muse-ember"
+      },
+      {
+       "label": "TechCrunch o Muse Ember",
+       "href": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "seedream-5-5",
+     "title": "Seedream 5.5 od ByteDance upraví obrázok aj stokrát po sebe bez toho, aby ho pokazil",
+     "dateText": "pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Čínsky model"
+      }
+     ],
+     "keyFact": {
+      "value": "100 kôl",
+      "label": "úprav toho istého obrázka bez straty kvality"
+     },
+     "body": [
+      "ByteDance, firma za TikTokom, v pondelok 9. novembra vydal obrázkový model Seedream 5.5. Najväčšia novinka je stabilná úprava: keď zmeníš jednu vec, napríklad okuliare alebo prsteň, zvyšok obrázka ostane presne taký istý, bez posunu farieb a rozmazania, a to aj po sto úpravách po sebe.",
+      "Model vie tiež rovno kresliť obrázky s [[priehľadným pozadím|rgba]], takže logo alebo produkt netreba neskôr ručne vystrihovať. Lepšie zvláda aj svetlo, pleť a drobný text. Podľa vlastných testov ByteDance vedie v kvalite písma pred GPT Image 2.5 Sunburst a Nano Banana 2.1, nezávislý rebríček to zatiaľ nepotvrdil."
+     ],
+     "whyItMatters": "Pre e-shopy, dizajnérov a tvorcov sociálnych sietí je to praktickejšie než ďalší krajší obrázok: menej ručnej práce pri vystrihovaní a úpravy, ktoré sa nerozpadnú.",
+     "terms": [
+      {
+       "key": "rgba",
+       "term": "Priehľadné pozadie (RGBA)",
+       "explain": "Obrázok má okrem farieb aj štvrtú vrstvu, ktorá hovorí, ako veľmi je každý bod priehľadný. Taký obrázok sa dá rovno vložiť na iné pozadie."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog ByteDance Seed",
+       "href": "https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+      }
+     ]
+    },
+    {
+     "id": "minimax-h3-image",
+     "title": "MiniMax skúša obrázkový model H3-Image so 4K rozlíšením",
+     "dateText": "okolo pondelka 9. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Predbežný prístup · neoverené"
+      }
+     ],
+     "body": [
+      "Čínska firma MiniMax podľa súhrnov na webe a na X sprístupnila vo svojej aplikácii Hailuo predbežnú verziu obrázkového modelu H3-Image. Vraj vytvorí obrázky až v rozlíšení 4K, teda zhruba štyrikrát jemnejšie než bežné Full HD, a ako predlohu zoberie až 16 obrázkov naraz. Oficiálne oznámenie ani cenu sa nepodarilo nájsť, preto to ber ako prvé dojmy testerov."
+     ],
+     "whyItMatters": "Ak sa potvrdí, bude to ďalší silný konkurent pre OpenAI a Google pri realistických fotkách, kde viac predlôh pomáha udržať rovnakú tvár alebo produkt na všetkých obrázkoch.",
+     "links": [
+      {
+       "label": "AGI Hunt o H3-Image",
+       "href": "https://agihunt.info/en/p/1a1c154b6b99dad5a30b8205b06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "Ako sa AI napája na prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "claude-code-2-1-322",
+     "title": "Claude Code dostal Fable 5.2 a niekoľko dôležitých bezpečnostných opráv",
+     "dateText": "pondelok 9. a utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Odporúčaná aktualizácia"
+      }
+     ],
+     "body": [
+      "Claude Code, programátorský agent od Anthropicu, vyšiel vo verziách 2.1.321 a 2.1.322. Fable 5.2 je v ňom teraz predvolený model z rady Fable a novšia verzia pridala rýchly režim aj pre používateľov cez Google Vertex, a to aj v európskom regióne.",
+      "Dôležitejšie sú opravy bezpečnosti. Pri prihlasovaní k externým nástrojom cez [[MCP|mcp]] už agent pri presmerovaní neposiela prístupové kľúče na cudzí server. Príkazy, ktoré mali len čítať, už nebežia mimo [[sandboxu|sandbox]] bez opýtania a zákazy, ktoré si nastavíš, platia aj na kopírovanie a presúvanie súborov do zakázaných priečinkov."
+     ],
+     "whyItMatters": "Ak Claude Code používaš, oplatí sa aktualizovať hneď: opravy uzatvárajú cesty, ktorými sa mohol agent dostať k údajom alebo súborom, ku ktorým nemal.",
+     "terms": [
+      {
+       "key": "mcp",
+       "term": "MCP",
+       "explain": "Spoločný štandard, ktorým sa AI agent pripája k ďalším službám, napríklad ku kalendáru, databáze alebo GitHubu."
+      },
+      {
+       "key": "sandbox",
+       "term": "Sandbox",
+       "explain": "Uzavreté pieskovisko, v ktorom agent spúšťa príkazy tak, aby nemohol siahnuť na zvyšok počítača."
+      }
+     ],
+     "links": [
+      {
+       "label": "Vydanie Claude Code na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321"
+      }
+     ]
+    },
+    {
+     "id": "openai-dots-multi",
+     "title": "Agent dot od OpenAI si sám vyberie, na ktorom z tvojich počítačov úlohu spustí",
+     "dateText": "pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "ChatGPT"
+      }
+     ],
+     "body": [
+      "OpenAI rozšíril svojich stálych agentov, ktorých volá dots. Jeden dot sa teraz dá pripojiť k viacerým Macom alebo PC a sám rozhodne, kde úlohu spustí. Napríklad zdĺhavé zostavenie a testovanie programu pošle na výkonný stolový počítač, kým ty ďalej pracuješ na notebooku. Podľa webu RuntimeWire to OpenAI ohlásil na účte pre vývojárov a opísal v dokumentácii."
+     ],
+     "whyItMatters": "Agenti sa presúvajú z jedného okna v prehliadači na všetky tvoje zariadenia. Je to priama konkurencia nástrojov ako Claude Code či Grok Bot, ktoré tiež pracujú s počítačmi používateľa.",
+     "links": [
+      {
+       "label": "RuntimeWire o dots",
+       "href": "https://runtimewire.com/article/openai-dots-multiple-local-computers"
+      }
+     ]
+    },
+    {
+     "id": "spacefast",
+     "title": "Spacefast od Automatticu nasadí web vytvorený v Claude alebo ChatGPT rovno na internet",
+     "dateText": "pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Zo súhrnu na X"
+      }
+     ],
+     "body": [
+      "Automattic, firma za WordPressom, podľa súhrnu na X spustil službu Spacefast. Napojíš ju na Claude alebo ChatGPT a stránka či aplikácia, ktorú ti AI vyrobí, sa hneď objaví na živej adrese aj s databázou, vlastnou doménou a históriou verzií. Osobný plán má byť zadarmo."
+     ],
+     "whyItMatters": "Pri takzvanom vibe codingu, keď aplikáciu nadiktuješ AI, býva najťažší posledný krok: dostať ju na internet. Spacefast ho chce urobiť jedným klikom.",
+     "links": [
+      {
+       "label": "Súhrn na X",
+       "href": "https://x.com/i/trending/2119841380700946514"
+      }
+     ]
+    },
+    {
+     "id": "chatgpt-aws",
+     "title": "Firmy si kúpia ChatGPT Enterprise priamo cez Amazon",
+     "dateText": "pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Pre firmy"
+      }
+     ],
+     "body": [
+      "ChatGPT Enterprise je teraz v obchode AWS Marketplace. Firmy, ktoré už platia Amazonu za cloud, si ho tak kúpia na tú istú faktúru a započíta sa im do sumy, ktorú sa zaviazali u Amazonu minúť. Balík obsahuje ChatGPT, programátorského agenta Codex aj agentov dots. Codex mimochodom ostáva na stabilnej verzii 0.167.0."
+     ],
+     "whyItMatters": "Pre bežného človeka je to drobnosť, ale vo veľkých firmách často rozhoduje práve jednoduchý nákup. OpenAI sa tak dostáva k zákazníkom, ktorí doteraz siahali po Claude cez Amazon.",
+     "links": [
+      {
+       "label": "Oznámenie OpenAI",
+       "href": "https://openai.com/index/chatgpt-enterprise-aws-marketplace"
+      },
+      {
+       "label": "Vydania Codexu",
+       "href": "https://github.com/openai/codex/releases"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech v skratke",
+   "kicker": "Čo sa deje okolo",
+   "icon": "cpu",
+   "items": [
+    {
+     "id": "anthropic-ipo",
+     "title": "Anthropic môže ísť na burzu už budúci týždeň",
+     "dateText": "pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Burza"
+      }
+     ],
+     "keyFact": {
+      "value": "33,24 miliardy",
+      "label": "dolárov tržieb za prvých deväť mesiacov roka"
+     },
+     "body": [
+      "Podľa CNBC môže [[IPO|ipo]] Anthropicu prebehnúť už budúci týždeň. Firma cieli na ocenenie 1 až 1,5 bilióna dolárov, menej než skôr spomínané 2 bilióny. Podľa upraveného prospektu mala za prvých deväť mesiacov roka tržby 33,24 miliardy dolárov, zhruba trinásťkrát viac než rok predtým."
+     ],
+     "whyItMatters": "Vstup na burzu prinesie Anthropicu veľa peňazí na výpočtový výkon, ale aj tlak akcionárov na zisk, čo sa môže v budúcnosti prejaviť na cenách a limitoch Claude.",
+     "terms": [
+      {
+       "key": "ipo",
+       "term": "IPO",
+       "explain": "Prvý verejný predaj akcií firmy na burze. Odvtedy si jej akcie môže kúpiť ktokoľvek."
+      }
+     ],
+     "links": [
+      {
+       "label": "CNBC o Anthropicu",
+       "href": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html"
+      }
+     ]
+    },
+    {
+     "id": "abu-dhabi-openai",
+     "title": "Abú Zabí s OpenAI prepisuje zákony do podoby, ktorej rozumie AI",
+     "dateText": "pondelok 9. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Štát a AI"
+      }
+     ],
+     "body": [
+      "Abú Zabí a OpenAI spustili projekt, v ktorom zákony a predpisy prevedú do formátu čitateľného pre AI. Bežné žiadosti o povolenie potom AI posúdi za pár minút a pri rozhodnutí odkáže na konkrétny paragraf. Výpočty bežia na grafických kartách priamo v Spojených arabských emirátoch, takže údaje občanov neopúšťajú krajinu."
+     ],
+     "whyItMatters": "Je to prvý veľký príklad štátu, ktorý nechá AI vybavovať úradné veci. Ak to bude fungovať, podobný tlak príde aj na európske úrady.",
+     "links": [
+      {
+       "label": "Gulf News o projekte",
+       "href": "https://gulfnews.com/business/abu-dhabi-openai-launch-worlds-first-ai-native-government-initiative-to-speed-up-public-services-1.500741069"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Decision Index v2 od Artificial Analysis: len súhrn na X, priamo sa overiť nepodarilo.",
+  "OpenAI Control Room: oficiálna stránka nefunguje, neoverené.",
+  "Nuance Labs Emma, Rayline, Facy.ai, Maison AI: malé produkty bez nového modelu.",
+  "GPT-6.2 Sol: stále žiadne oficiálne vydanie."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny z utorka 10. novembra okolo 6:12 Europe/Bratislava; akcie podľa záverečných cien z pondelka 9. novembra.",
+  "summary": "Americké burzy sa v pondelok silno odrazili po minulotýždňovom výpredaji: Nasdaq stúpol o 2,74 percenta a S&P 500 o 2,35 percenta, čo bol jeho najlepší deň od apríla. Pomohla lacnejšia ropa a návrat nákupov čipových firiem, Nvidia však klesla kvôli vyšetrovaniu svojho šéfa. Bitcoin sa drží okolo 74 700 dolárov a nálada na kryptotrhu sa mierne zlepšila.",
+  "btc": {
+   "priceUsd": 74717,
+   "priceEur": 66546,
+   "changePct": 0.2,
+   "changePctEur": -0.4,
+   "low24h": 73709,
+   "high24h": 75477,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo skôr pokles",
+   "comment": "Bitcoin stojí okolo 74 700 dolárov, teda asi 66 500 eur, a za posledných 24 hodín sa takmer nepohol. Pohyboval sa medzi 73 700 a 75 500 dolármi, za týždeň však stratil necelé 3 percentá. Ether je na zhruba 2 120 dolároch a solana na 86 dolároch, obe mierne v mínuse. [[Index strachu a chamtivosti|fng]] sa zlepšil z 29 na 32 bodov, stále však ukazuje strach, takže trend ostáva skôr [[medvedí|bearish]], hoci akcie sa odrazili.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 178.67,
+    "changePct": -4.27,
+    "comment": "Jediná veľká AI firma v mínuse, trh reagoval na vyšetrovanie šéfa Jensena Huanga."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 508.58,
+    "changePct": 13.26,
+    "comment": "Prudký rast po tom, čo banka Oppenheimer zvýšila odporúčanie a cieľovú cenu na 600 dolárov."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 545.18,
+    "changePct": 2.74,
+    "comment": "Pekný odraz spolu s ostatnými veľkými technologickými firmami."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 350.69,
+    "changePct": 2.43,
+    "comment": "Rast v súlade s celým trhom."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 288.15,
+    "changePct": 1.18,
+    "comment": "Mierny plus; Gemini 4 Carbon prišiel o prvé miesto v rebríčku modelov."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 641.37,
+    "changePct": 5.11,
+    "comment": "Silný deň, v ktorom firma vydala aj lacný model Muse Ember."
+   },
+   {
+    "ticker": "PLTR",
+    "name": "Palantir",
+    "close": 169.2,
+    "changePct": 5.5,
+    "comment": "Odraz spolu s ostatnými AI menami."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "CNBC o pondelkovom obchodovaní",
+    "href": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html"
+   },
+   {
+    "label": "Yahoo Finance o pondelku",
+    "href": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+   }
+  ],
+  "gem": {
+   "ticker": "GOOGL",
+   "name": "Alphabet",
+   "close": 288.15,
+   "changePct": 1.18,
+   "why": "Alphabet v pondelok rástol menej než väčšina technologických firiem, takže nestojí na vlne nadšenia ako AMD. Zarába na AI cez cloud, vyhľadávanie aj vlastné čipy a jeho Gemini 4 Carbon je stále druhý najlepší model na svete. Pre opatrného pozorovateľa je to firma, ktorá na AI zarába viacerými cestami naraz.",
+   "risks": "Riziká: Anthropic práve predbehol Gemini v rebríčku a chystá sa na burzu, čo môže odlákať pozornosť investorov; regulácia vyhľadávania a obrovské výdavky na dátové centrá ostávajú otvorené otázky.",
+   "links": [
+    {
+     "label": "Alphabet na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/GOOGL/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-10.json",
+  "note": "Veľká zmena na vrchole: nový Claude Fable 5.2 od Anthropicu získal v súhrnnom indexe inteligencie 64,6 bodu a zosadil Gemini 4 Carbon od Googlu (60 bodov) na druhé miesto. Index je priemer viacerých ťažkých testov z programovania, matematiky a vedy, takže náskok viac než štyroch bodov je na tejto úrovni výrazný. Novým modelom je aj lacný Muse Ember od Mety na 12. mieste s 36 bodmi, tesne za Claude Haiku 5.5, ktorý stojí rovnako, ale podľa Mety za úlohu minie viac tokenov. V aréne obrázkov a videa sa prvá päťka nezmenila."
+ }
+}
