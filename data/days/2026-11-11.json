@@ -1,0 +1,581 @@
+{
+ "date": "2026-11-11",
+ "label": "Streda 11. novembra 2026",
+ "shortLabel": "St 11. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Hlavná správa dňa je od Googlu: Gemini 4 Carbon, druhý najlepší model v rebríčku, môže odteraz používať každý platiaci vývojár a do konca novembra za úvodnú nižšiu cenu. Anthropic premieňa Clauda na kancelársky balík so stretnutiami, tabuľkami a tabuľami a zároveň odštartoval cestu na burzu. Akcie Nvidie padli už druhý deň po sebe a bitcoin mierne zlacnel.",
+ "highlights": [
+  "Google sprístupnil Gemini 4 Carbon všetkým platiacim vývojárom za 2 doláre za milión vstupných tokenov, od 30. novembra sa cena zdvojnásobí.",
+  "Alibaba pustil do skúšobnej prevádzky Qwen4-Max zameraný na programovanie, zatiaľ len cez predplatné a bez oficiálnych výsledkov testov.",
+  "Anthropic pridal Claude Meetings, ktorý sa zapojí do hovoru v Google Meet, a ohlásil vstup na burzu za 70 až 78 dolárov za akciu.",
+  "Lightricks zverejnil otvorený video model LTX-2.5, ktorý beží aj na domácej grafickej karte s 12 GB pamäte.",
+  "Nvidia v utorok stratila ďalších 5,5 percenta, bitcoin stojí okolo 73 700 dolárov a index strachu klesol na 29."
+ ],
+ "leadId": "gemini-4-carbon-ga",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "gemini-4-carbon-ga",
+     "title": "Gemini 4 Carbon môže odteraz používať každý platiaci vývojár, a do konca novembra lacnejšie",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Platený model · Gemini API a Gemini app"
+      }
+     ],
+     "keyFact": {
+      "value": "2 doláre",
+      "label": "za milión vstupných tokenov, od 30. novembra 4 doláre"
+     },
+     "body": [
+      "Google v utorok 10. novembra sprístupnil svoj najsilnejší model Gemini 4 Carbon všetkým platiacim vývojárom. Doteraz ho mali len obrancovia v kybernetickej bezpečnosti v programe Fairwind, teraz je v [[Gemini API|api]] cez AI Studio aj vo firemnom Gemini a predplatitelia Google AI Ultra ho nájdu v aplikácii Gemini, v režime AI Mode vo vyhľadávaní a v programovacom nástroji Antigravity.",
+      "Úvodná cena je 2 doláre za milión vstupných a 10 dolárov za milión výstupných [[tokenov|token]], teda rovnako ako pri slabšom Gemini Argon. Od 30. novembra však stúpne na dvojnásobok, 4 a 20 dolárov. Google tvrdí, že Carbon je prvý v testoch CursorBench 4.0, Perplexity WANDR a Zapier AutomationBench, pričom jedna úloha s ním vyjde viac ako dvakrát lacnejšie než s najbližším konkurentom od inej firmy.",
+      "V nezávislom rebríčku Artificial Analysis je Carbon so 60 bodmi druhý, za včera vydaným Claude Fable 5.2, ktorý stojí za vstup štyrikrát viac."
+     ],
+     "whyItMatters": "Je to momentálne najlacnejší model zo samej špičky na dlhé úlohy pre agentov a programovanie. Kto ho chce vyskúšať, má do 30. novembra výhodnejšiu cenu, potom sa rozdiel oproti konkurencii zmenší.",
+     "terms": [
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré programy a aplikácie posielajú modelu požiadavky priamo, bez chatového okna. Platí sa podľa spotreby."
+      },
+      {
+       "key": "token",
+       "term": "Token",
+       "explain": "Základná jednotka textu pre jazykové modely, zhruba kus slova. Ceny modelov sa počítajú za milión tokenov."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google o Gemini 4 Carbon",
+       "href": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+      }
+     ]
+    },
+    {
+     "id": "qwen4-max-preview",
+     "title": "Alibaba pustil do skúšobnej prevádzky Qwen4-Max, svoj nový vlajkový model na programovanie",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Skúšobná verzia · čínsky model"
+      }
+     ],
+     "body": [
+      "Čínska Alibaba v stredu 11. novembra spustila [[preview|preview]] verziu modelu Qwen4-Max, najväčšieho z novej rodiny Qwen4. Zameriava sa na programovanie, tvorbu webových rozhraní a úlohy pre agentov. Po týždňoch únikov je to prvý model Qwen4, ktorý si ľudia môžu naozaj vyskúšať.",
+      "Zatiaľ je dostupný len cez predplatné Token Plan a v aplikáciách Alibaby ako Qwen App, QwenStudio či Qoder. Dá sa napojiť aj do Claude Code, pretože Alibaba ponúka rozhranie kompatibilné s Anthropicom. Predplatné je však určené len na interaktívne používanie, nie na automatizované nasadenie vo firmách.",
+      "Oficiálne výsledky testov ani cenu za tokeny Alibaba zatiaľ nezverejnila, informácie pochádzajú z oznámenia na X a návodov tretích strán."
+     ],
+     "whyItMatters": "Čínske modely Qwen bývajú výrazne lacnejšie ako americké, takže môže ísť o zaujímavú alternatívu do programovacích agentov. Kým nebudú nezávislé výsledky, oplatí sa s hodnotením počkať.",
+     "terms": [
+      {
+       "key": "preview",
+       "term": "Preview (skúšobná verzia)",
+       "explain": "Verzia, ktorú firma pustí ľuďom ešte pred plným vydaním. Môže sa meniť, mať obmedzenia a nemusí byť stabilná."
+      }
+     ],
+     "links": [
+      {
+       "label": "Qwen4-Max na X",
+       "href": "https://x.com/i/trending/2120340656795042196"
+      },
+      {
+       "label": "Návod Apidog",
+       "href": "https://apidog.com/blog/how-to-use-qwen-4-max/"
+      }
+     ]
+    },
+    {
+     "id": "grok-4-8",
+     "title": "Musk: Grok 4.8 sa doúča a tento týždeň ho dostanú prví používatelia",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Ohlásené · bez detailov"
+      }
+     ],
+     "body": [
+      "Elon Musk v utorok 10. novembra na X napísal, že nový Grok 4.8 má hotové základné trénovanie a teraz prechádza [[posilňovaným učením|rl]]. Spoločnosť xAI podľa neho prepísala tento tréning aj spúšťanie modelu do vlastného kódu v jazykoch C a C++.",
+      "Musk tvrdí, že 4.8 nebude mať nič spoločné s verziou 4.7 a zatiaľ vraj nie je ohromujúci. Postupné spustenie pre používateľov Grok Botu má prísť ešte tento týždeň. Oficiálne oznámenie od xAI, výsledky testov ani cena zatiaľ nie sú."
+     ],
+     "whyItMatters": "Týka sa to priamo Grok Botu, ktorý používaš. Ak sa nový model objaví, je dobré vedieť, že ide o úplne inú generáciu, nie drobnú opravu.",
+     "terms": [
+      {
+       "key": "rl",
+       "term": "Posilňované učenie (RL)",
+       "explain": "Fáza tréningu, keď model skúša riešiť úlohy a dostáva odmenu za dobré výsledky. Z naučeného textu sa tak stáva užitočný asistent."
+      }
+     ],
+     "links": [
+      {
+       "label": "Artificial Watch o Groku 4.8",
+       "href": "https://artificialwatch.com/wire/musk-grok-4-8-in-rl-soft-rollout-later-this-week"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "ltx-2-5",
+     "title": "Lightricks dal zadarmo video model LTX-2.5, ktorý beží aj na domácej grafickej karte",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      }
+     ],
+     "keyFact": {
+      "value": "12 GB",
+      "label": "grafickej pamäte stačí na spustenie doma"
+     },
+     "body": [
+      "Izraelská firma Lightricks v utorok 10. novembra zverejnila [[otvorené váhy|openweights]] modelu LTX-2.5, ktorý vytvára video aj so zvukom. Má 22 miliárd [[parametrov|params]] a vie v jednom behu natočiť viac záberov za sebou tak, aby postavy vyzerali stále rovnako.",
+      "K modelu pridala aj oficiálny nástroj na trénovanie vlastných [[LoRA doplnkov|lora]], takže si ho človek môže naučiť napríklad svoju tvár alebo štýl. Podľa Lightricks beží od 12 GB grafickej pamäte, ak sa použije úspornejší formát čísel a časť modelu sa presunie do bežnej pamäte. Firmy s tržbami pod 10 miliónov dolárov ho môžu používať komerčne zadarmo."
+     ],
+     "whyItMatters": "Je to momentálne najpraktickejší otvorený video model na domáce použitie a jeho licencia na rozdiel od niektorých čínskych modelov nevylučuje Európu.",
+     "terms": [
+      {
+       "key": "openweights",
+       "term": "Otvorené váhy",
+       "explain": "Firma zverejní samotný natrénovaný model, takže si ho môže ktokoľvek stiahnuť a spustiť na vlastnom počítači."
+      },
+      {
+       "key": "params",
+       "term": "Parametre",
+       "explain": "Čísla, ktoré sa model naučil počas tréningu. Viac parametrov zvyčajne znamená schopnejší, ale aj náročnejší model."
+      },
+      {
+       "key": "lora",
+       "term": "LoRA",
+       "explain": "Malý doplnok k veľkému modelu, ktorý ho rýchlo a lacno doučí niečo konkrétne, napríklad jednu postavu alebo štýl, bez trénovania celého modelu."
+      }
+     ],
+     "links": [
+      {
+       "label": "VP Land o LTX-2.5",
+       "href": "https://www.vp-land.com/stories/lightricks-releases-ltx-2-5-open-weights-for-custom-lora-training-free-under-10m-in-revenu"
+      }
+     ]
+    },
+    {
+     "id": "minimax-h3-image",
+     "title": "MiniMax zverejnil obrázkový model H3-Image, ale v Európe ho doma používať nesmieš",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · čínsky model"
+      }
+     ],
+     "body": [
+      "Čínsky MiniMax v utorok 10. novembra uvoľnil na Hugging Face váhy obrázkového modelu H3-Image, ktorý bol doteraz len v predbežnom prístupe. Model má 33,1 miliardy parametrov, generuje obrázky v rozlíšení 4K, teda zhruba štyrikrát ostrejšie ako Full HD, a vie naraz pracovať až so 16 vzorovými obrázkami.",
+      "Háčik je v licencii: použitie v USA, Európskej únii, Veľkej Británii a Južnej Kórei vyžaduje povolenie od MiniMaxu. Pre Slovensko je teda prakticky dostupný len cez platené API."
+     ],
+     "whyItMatters": "Ukazuje to, že otvorené neznamená vždy voľné pre každého. Pri čínskych modeloch sa oplatí pozrieť licenciu skôr, než do nich človek investuje čas.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Crypto Briefing o H3-Image",
+       "href": "https://cryptobriefing.com/minimax-h3-image-open-weight-4k-model/"
+      }
+     ]
+    },
+    {
+     "id": "pi-h3",
+     "title": "Výskumníci zo Stanfordu a Luma zrýchlili video z MiniMax H3 takmer na reálny čas",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Výskum"
+      }
+     ],
+     "body": [
+      "Tím zo Stanfordu a firmy Luma v utorok 10. novembra predstavil metódu pi-H3, ktorá z video modelu MiniMax H3 vytiahne päťsekundové HD video so stereo zvukom len za 3,8 sekundy na jednej grafickej karte Nvidia B200. Bežne to trvá oveľa dlhšie, pretože model video postupne vylepšuje v desiatkach krokov, pi-H3 ich potrebuje len dva až štyri.",
+      "Ukážka už beží na Hugging Face, váhy a kód majú prísť v týždni od 16. novembra. Licencia bude zrejme naviazaná na H3, takže môže platiť rovnaké obmedzenie pre Európu."
+     ],
+     "whyItMatters": "Video generované skoro tak rýchlo, ako sa pozerá, otvára cestu k interaktívnym aplikáciám a hrám, kde AI tvorí obraz za chodu.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog autorov pi-H3",
+       "href": "https://hanshengchen.com/blog/pi-h3/"
+      }
+     ]
+    },
+    {
+     "id": "pan-2",
+     "title": "PAN 2 z Abú Zabí simuluje, čo sa stane vo videu, a je úplne otvorený",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Apache 2.0 · vrátane tréningového kódu"
+      }
+     ],
+     "body": [
+      "Výskumný inštitút IFM pri univerzite MBZUAI v Spojených arabských emirátoch zverejnil v utorok 10. novembra PAN 2, takzvaný [[world model|worldmodel]]. Dostane úvodnú scénu a textový popis akcie a vytvorí video toho, čo by sa stalo, pričom sa snaží dodržať fyziku.",
+      "Zverejnili váhy aj kód na tréning a spúšťanie pod licenciou [[Apache 2.0|apache]]. V teste fyzikálneho realizmu Physics-IQ Verified je tretí celkovo a prvý medzi otvorenými modelmi."
+     ],
+     "whyItMatters": "Úplne otvorené world modely aj s tréningovým kódom sú vzácne a pomáhajú najmä pri vývoji robotov, ktoré sa potrebujú naučiť, ako svet reaguje na ich pohyby.",
+     "terms": [
+      {
+       "key": "worldmodel",
+       "term": "World model",
+       "explain": "Model, ktorý predpovedá, ako sa svet zmení po nejakej akcii. Roboty a agenti si v ňom môžu bezpečne skúšať, čo sa stane, skôr než to urobia naozaj."
+      },
+      {
+       "key": "apache",
+       "term": "Apache 2.0",
+       "explain": "Veľmi voľná licencia: model môžeš používať, upravovať aj komerčne predávať, stačí uviesť pôvodného autora."
+      }
+     ],
+     "links": [
+      {
+       "label": "Tlačová správa IFM",
+       "href": "https://ifm.ai/pan2/press-release/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "Ako sa AI napája na prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "claude-meetings",
+     "title": "Claude sa pridá do porady v Google Meet a počas debaty spíše plán a úlohy",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Beta · Team a Enterprise"
+      }
+     ],
+     "body": [
+      "Anthropic v utorok 10. novembra predstavil Claude Meetings. Claude sa pripojí do hovoru v Google Meet ako viditeľný účastník a počas rozhovoru priebežne píše plán, časový harmonogram a zoznam úloh. Zatiaľ je v [[bete|beta]] pre firemné plány Team a Enterprise.",
+      "Na všetkých platených plánoch pribudli v bete aj Whiteboards, teda tabule na kreslenie a plánovanie, a Sheets na prácu s tabuľkami. Doterajšie Claude Dashboards sú po novom plnohodnotne spustené ako Claude Data a prepojenia na služby ako Adobe, Atlassian, Box či Notion sa otvárajú ako celé aplikácie priamo vedľa chatu."
+     ],
+     "whyItMatters": "Claude sa mení z chatbota na kancelársky balík. Priamo tým konkuruje pracovným nástrojom ChatGPT aj asistentom, ako je Grok Bot.",
+     "terms": [
+      {
+       "key": "beta",
+       "term": "Beta",
+       "explain": "Skoro hotová verzia, ktorú už môžu skúšať bežní používatelia, ale firma ju ešte ladí a môže obsahovať chyby."
+      }
+     ],
+     "links": [
+      {
+       "label": "Claude o Sheets, Whiteboards a Data",
+       "href": "https://claude.com/resources/articles/sheets-whiteboards-data"
+      },
+      {
+       "label": "TechCrunch o Claude Meetings",
+       "href": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+      }
+     ]
+    },
+    {
+     "id": "antigravity-swarm",
+     "title": "Google Antigravity dostal príkaz /swarm, ktorý spustí celý tím agentov naraz",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Preview"
+      }
+     ],
+     "body": [
+      "Spolu s Carbonom Google v utorok 10. novembra pridal do programovacieho nástroja Antigravity príkaz /swarm. Jedna požiadavka spustí koordinovaný tím agentov, ktorí pracujú súbežne, každý vo vlastnom oddelenom pracovnom priestore.",
+      "Gemini 4 Carbon pritom robí návrh, koordináciu a kontrolu, ľahšie a lacnejšie modely robia bežnú prácu a špeciálni kontrolní agenti sa každú zmenu snažia zámerne rozbiť, aby odhalili chyby."
+     ],
+     "whyItMatters": "Je to priamy konkurent tímových režimov v Claude Code a Codexe. Veľké firmy sa zhodujú, že budúcnosť programovania sú skupiny agentov, nie jeden asistent.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog Google",
+       "href": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+      }
+     ]
+    },
+    {
+     "id": "workflowarena",
+     "title": "Nový test WorkflowArena: ani najlepší model nezvládne celý projekt s tímom agentov ani v polovici prípadov",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Benchmark · open source"
+      }
+     ],
+     "body": [
+      "Nový otvorený test WorkflowArena meria, ako dobre model riadi tím agentov na dlhých projektoch. Obsahuje 145 úloh v ôsmich oblastiach. Najlepší výsledok mal Claude Opus 5.5, ktorý celé zadanie dokončil len v 36,95 percentách úloh. Informácia pochádza zo súhrnu na X, test je zverejnený na GitHube."
+     ],
+     "whyItMatters": "Užitočné vytriezvenie pri nadšení z režimov ako /swarm: koordinácia viacerých agentov na dlhej práci je stále ťažká a často zlyháva.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Súhrn na X",
+       "href": "https://x.com/i/trending/2120225935333134528"
+      }
+     ]
+    },
+    {
+     "id": "businesses-chatgpt",
+     "title": "OpenAI pustil firmy do ChatGPT: vlastné profily, produkty aj platení agenti",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Obchod a reklama"
+      }
+     ],
+     "body": [
+      "OpenAI v utorok 10. novembra spustil Businesses in ChatGPT. Firmy si môžu prevziať svoj profil, nahrať zoznam produktov, napríklad cez napojenie na Shopify, a vidieť štatistiky, ako často ich ChatGPT spomína.",
+      "Vybrané americké e-shopy môžu spustiť aj vlastného obchodného agenta, ktorý odpovedá zákazníkom priamo v ChatGPT, a ten sa dá zviditeľniť cez reklamy v ChatGPT."
+     ],
+     "whyItMatters": "ChatGPT sa mení na vyhľadávač a nákupný kanál zároveň. Pre firmy začína byť dôležité, ako ich vidí AI, nielen Google.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Oznámenie OpenAI",
+       "href": "https://openai.com/index/introducing-businesses-chatgpt"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech v skratke",
+   "kicker": "Čo sa deje okolo",
+   "icon": "cpu",
+   "items": [
+    {
+     "id": "anthropic-ipo",
+     "title": "Anthropic ide na burzu: akcia za 70 až 78 dolárov pod značkou ANT",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "IPO"
+      }
+     ],
+     "keyFact": {
+      "value": "≈ 1,4 bilióna $",
+      "label": "možná hodnota firmy podľa Yahoo Finance"
+     },
+     "body": [
+      "Anthropic v utorok 10. novembra spustil takzvanú roadshow, teda sériu stretnutí s investormi pred [[vstupom na burzu|ipo]]. Ponúkne 825 miliónov akcií za 70 až 78 dolárov a obchodovať sa majú na Nasdaqu pod skratkou ANT, podľa správ možno už od 19. novembra.",
+      "Podľa Yahoo Finance by firma mohla mať hodnotu až okolo 1,4 bilióna dolárov. Nvidia a Google si podľa Anthropicu kúpia akcie každý za 10 miliárd dolárov."
+     ],
+     "whyItMatters": "Bude to najväčší vstup AI firmy na burzu. Peniaze z neho rozhodnú o tom, ako rýchlo Anthropic postaví ďalšie dátové centrá a vydá nové verzie Clauda.",
+     "terms": [
+      {
+       "key": "ipo",
+       "term": "IPO (vstup na burzu)",
+       "explain": "Moment, keď súkromná firma prvýkrát ponúkne svoje akcie verejnosti a začne sa s nimi obchodovať na burze."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Anthropicu",
+       "href": "https://www.anthropic.com/news/roadshow-launch"
+      }
+     ]
+    },
+    {
+     "id": "anthropic-rsp",
+     "title": "Anthropic priznal, že AI už zhruba zdvojnásobuje tempo jeho vlastného výskumu",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť AI"
+      }
+     ],
+     "body": [
+      "V upravených dokumentoch pre burzu Anthropic uvádza, že prekročil jednu z hraníc svojich bezpečnostných pravidiel, takzvanej [[RSP|rsp]]: AI už podľa neho zhruba zdvojnásobuje tempo výskumu vo firme. To znamená prísnejšie bezpečnostné opatrenia, nie zastavenie vývoja. Nezávislá organizácia METR odhaduje podobné zrýchlenie už od októbra 2025."
+     ],
+     "whyItMatters": "Je to oficiálne potvrdenie, že AI pomáha vyvíjať ďalšiu AI a tempo noviniek sa tak bude skôr zrýchľovať.",
+     "terms": [
+      {
+       "key": "rsp",
+       "term": "RSP (Responsible Scaling Policy)",
+       "explain": "Pravidlá Anthropicu, ktoré určujú, aké bezpečnostné opatrenia musí firma zaviesť, keď jej modely dosiahnu určité nebezpečné schopnosti."
+      }
+     ],
+     "links": [
+      {
+       "label": "Yahoo Finance o bezpečnostnom prahu",
+       "href": "https://finance.yahoo.com/markets/article/anthropic-says-a-key-ai-safety-alarm-has-been-triggered-days-before-its-ipo-171519615.html"
+      }
+     ]
+    },
+    {
+     "id": "nvidia-gr00t-2",
+     "title": "Nvidia ukázala otvorený model pre roboty GR00T 2 a malý model na autonómne riadenie",
+     "dateText": "utorok 10. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené modely · robotika"
+      }
+     ],
+     "body": [
+      "Na robotickej konferencii CoRL Nvidia v utorok 10. novembra predstavila GR00T 2, otvorený model, ktorý robotom pomáha chápať svet a rozhodovať sa o pohyboch. Dáta na tréning sú už zverejnené, váhy prídu v decembri. Pridala aj Alpamayo 2 Edge, malý otvorený model s dvoma miliardami parametrov na autonómne riadenie áut, ktorý beží priamo na čipe Nvidia DRIVE Thor v aute."
+     ],
+     "whyItMatters": "Nvidia ťahá otvorené modely do robotiky a áut, aby ľudia kupovali jej čipy aj mimo dátových centier. Pre bežné používanie chatbotov to zatiaľ nič nemení.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Nvidia Research o GR00T 2",
+       "href": "https://research.nvidia.com/labs/gear/gr00t-2/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "GPT-6.2 Sol: stále len dojmy vybraných používateľov, žiadne oficiálne vydanie.",
+  "TSMC a 3D pamäť pre Nvidiu: len správa The Information, nepotvrdené.",
+  "Codex 0.167.1: opravná verzia bez popisu zmien.",
+  "Hedra, Beeble, Gaxos a ďalšie malé produkty: skôr marketing."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny zo stredy 11. novembra okolo 6:09 Europe/Bratislava; akcie podľa záverečných cien z utorka 10. novembra.",
+  "summary": "Americké burzy v utorok mierne klesli: Nasdaq stratil 0,74 percenta a S&P 500 0,38 percenta. Inflácia za október bola o niečo vyššia, než sa čakalo, takže rastú obavy, že americká centrálna banka v decembri opäť zdvihne úroky. Nvidia padla o 5,5 percenta pre vyšetrovanie svojho šéfa, kým AMD a Broadcom rástli. Bitcoin zlacnel o vyše percenta a nálada na kryptotrhu sa zhoršila.",
+  "btc": {
+   "priceUsd": 73727,
+   "priceEur": 66030,
+   "changePct": -1.3,
+   "changePctEur": -0.7,
+   "low24h": 72744,
+   "high24h": 74893,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo skôr pokles",
+   "comment": "Bitcoin stojí okolo 73 700 dolárov, teda asi 66 000 eur, a za posledných 24 hodín stratil zhruba 1,3 percenta. Pohyboval sa medzi 72 700 a 74 900 dolármi a za týždeň je nižšie o 4,6 percenta. Ether klesol o 2,7 percenta na asi 2 060 dolárov. [[Index strachu a chamtivosti|fng]] sa zhoršil z 32 na 29 bodov, teda späť do pásma strachu, a vyššie úroky v USA kryptomenám zvyčajne neprospievajú, takže trend ostáva [[medvedí|bearish]].",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 168.89,
+    "changePct": -5.47,
+    "comment": "Druhý veľký pokles za sebou pre vyšetrovanie šéfa Jensena Huanga a hromadnú žalobu akcionárov; výsledky hospodárenia zverejní 17. novembra."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 515.21,
+    "changePct": 1.3,
+    "comment": "Pokračuje v silnom týždni, za päť dní vyššie zhruba o 5 percent."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 331.98,
+    "changePct": 3.91,
+    "comment": "Jeden z mála čipových výrobcov s výrazným rastom, investori presúvajú peniaze od Nvidie."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 533.16,
+    "changePct": -2.2,
+    "comment": "Pokles spolu s veľkými AI menami po správe o inflácii."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 287.38,
+    "changePct": -0.27,
+    "comment": "Takmer bez zmeny v deň, keď sprístupnil Gemini 4 Carbon."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 348.51,
+    "changePct": -0.62,
+    "comment": "Mierny pokles v súlade s trhom."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 641.39,
+    "changePct": 0.0,
+    "comment": "Bez zmeny po pondelkovom silnom raste."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Investopedia o utorňajšom obchodovaní",
+    "href": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11102026-12246538"
+   },
+   {
+    "label": "CNBC o Nvidii",
+    "href": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html"
+   }
+  ],
+  "gem": {
+   "ticker": "AVGO",
+   "name": "Broadcom",
+   "close": 331.98,
+   "changePct": 3.91,
+   "why": "Broadcom navrhuje vlastné AI čipy na mieru pre veľké firmy, napríklad pre Google, a vyrába sieťové čipy do dátových centier. Keď sa investori pre problémy Nvidie poobzerajú po iných čipových firmách, Broadcom je jedna z prirodzených alternatív, čo ukázal aj utorňajší rast takmer o 4 percentá. Za posledných päť obchodných dní je vyššie zhruba o 2 percentá, kým Nvidia stratila asi 16 percent.",
+   "risks": "Riziká: celý AI sektor je teraz veľmi rozkolísaný, vyššie úroky tlačia na drahé technologické akcie a Broadcom závisí od niekoľkých veľkých zákazníkov.",
+   "links": [
+    {
+     "label": "Broadcom na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/AVGO/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-11.json",
+  "note": "V prvej päťke jazykových modelov sa nič nezmenilo: vedie Claude Fable 5.2 so 64,6 bodu pred Gemini 4 Carbon so 60 bodmi. Pohyb nastal v aréne obrázkov, kde ľudia naslepo porovnávajú výsledky dvoch modelov: GPT Image 2.5 Sunburst sa so skóre 1 229 posunul na druhé miesto pred novší GPT Image 2.6 Flare, ktorý má 1 226. Rozdiel troch bodov je veľmi malý, takže prakticky ide o remízu, a celá päťka je naďalej od OpenAI."
+ }
+}
