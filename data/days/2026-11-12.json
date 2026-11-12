@@ -1,0 +1,537 @@
+{
+ "date": "2026-11-12",
+ "label": "Štvrtok 12. novembra 2026",
+ "shortLabel": "Št 12. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Google spustil nový lacný model Gemini Decision 1, ktorý nič nepíše, len bleskovo rozhoduje: áno alebo nie, ktorá možnosť, akú známku. xAI vydal Grok Voice 3, podľa firmy najlepší hlasový model na trhu, a Anthropic sa pochválil, že jeho AI preniesla Clauda na čipy AMD za pár dní. Burzy sa v stredu odrazili nahor a AMD vyskočilo o vyše 7 percent.",
+ "highlights": [
+  "Google spustil Gemini Decision 1, lacný model, ktorý za štvrť sekundy odpovie áno alebo nie či vyberie možnosť, a agentom tak ušetrí drahé volania.",
+  "xAI vydal Grok Voice 3, podľa firmy najlepší hlasový model na trhu, za rovnakú cenu 8 centov za minútu.",
+  "Anthropic tvrdí, že jeho model Mythos preniesol časť Clauda na čipy AMD asi za tri dni namiesto mesiacov, akcie AMD v stredu stúpli o 7 percent.",
+  "Video model Seedance 2.5 so 4K obrazom je zrazu dostupný bežným tvorcom na Pike, Kree, Picsarte a Magnificu.",
+  "Nasdaq v stredu pridal 1,6 percenta a Nvidia sa odrazila o necelé 3 percentá, bitcoin stojí okolo 73 600 dolárov a index strachu je na 28."
+ ],
+ "leadId": "gemini-decisions",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "gemini-decisions",
+     "title": "Google vydal model, ktorý nepíše texty, len bleskovo rozhoduje",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Platený model · Gemini API, aj zadarmo na skúšku"
+      }
+     ],
+     "keyFact": {
+      "value": "0,10 dolára",
+      "label": "za milión vstupných tokenov, odpoveď sa neplatí"
+     },
+     "body": [
+      "Google v stredu 11. novembra spustil novú službu Gemini Decisions a k nej model Gemini Decision 1. Na rozdiel od bežných chatbotov nepíše dlhé odpovede, ale rieši uzavreté otázky: áno alebo nie, výber z dvoch až 255 možností alebo hodnotenie podľa vopred daných kritérií. Ku každej odpovedi pridá aj to, nakoľko si je istý.",
+      "Model dostane naraz jeden vstup, pokojne text, obrázky, zvuk, video alebo PDF, a môže k nemu zodpovedať až tisíc otázok súčasne. Odpoveď príde zhruba za 150 až 250 milisekúnd, teda za štvrť sekundy. Stojí 10 centov za milión vstupných [[tokenov|token]], výstup sa neplatí vôbec a v AI Studiu sa dá vyskúšať aj zadarmo.",
+      "Google ho už sám používa: v Gemini Notebook vyberá, ktorý väčší model má na otázku odpovedať, a vo vyhľadávaní kontroluje, či je bezpečné spustiť externý nástroj cez [[MCP|mcp]]. Dá sa zapojiť aj cez OpenRouter, LangChain, Vercel a ďalšie bežné nástroje pre vývojárov."
+     ],
+     "whyItMatters": "AI agenti robia počas práce stovky malých rozhodnutí, napríklad ktorý nástroj použiť alebo či je odpoveď v poriadku. Doteraz na to často volali drahý veľký model, teraz to môže urobiť lacný a rýchly „rozhodca“, čo zlacní a zrýchli celé aplikácie.",
+     "terms": [
+      {
+       "key": "token",
+       "term": "Token",
+       "explain": "Základná jednotka textu pre jazykové modely, zhruba kus slova. Ceny modelov sa počítajú za milión tokenov."
+      },
+      {
+       "key": "mcp",
+       "term": "MCP (Model Context Protocol)",
+       "explain": "Spoločný štandard, cez ktorý sa AI napája na externé nástroje a služby, napríklad kalendár, databázu alebo web. Vďaka nemu nemusí mať každá aplikácia vlastné prepojenie."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google o Gemini Decisions",
+       "href": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+      }
+     ]
+    },
+    {
+     "id": "grok-voice-3",
+     "title": "xAI vydal Grok Voice 3, podľa firmy najlepší hlasový model na trhu",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Platený model · Grok API"
+      }
+     ],
+     "keyFact": {
+      "value": "86,9 bodu",
+      "label": "v hlasovom rebríčku Artificial Analysis podľa xAI"
+     },
+     "body": [
+      "Firma xAI Elona Muska vydala novú verziu hlasového modelu Grok Voice 3. Ide o takzvaný model reč na reč: počúva váš hlas a odpovedá priamo hlasom, bez medzikroku cez písaný text, takže rozhovor pôsobí prirodzenejšie a reaguje do jednej sekundy.",
+      "Podľa xAI je nový model prvý v hlasovom rebríčku Artificial Analysis s 86,9 bodu pred GPT-Live-1 od OpenAI s 83,2 bodu. V teste Full Duplex Bench, ktorý meria, ako dobre model zvláda skákanie do reči a prerušovanie ako v skutočnom rozhovore, dosiahol 97 percent.",
+      "Cena v [[API|api]] ostáva rovnaká ako pri predošlej verzii, 8 centov za minútu, a kto používal označenie grok-voice-latest, má nový model automaticky. Poháňa aj hlasový režim v aplikácii Grok a hlasového asistenta v autách Tesla."
+     ],
+     "whyItMatters": "Hlasoví asistenti sú čoraz bežnejší v telefónoch aj autách a tento model by mal byť pri rozhovore plynulejší a menej robotický. Čísla z rebríčka uvádza samotná xAI, takže sa oplatí počkať aj na nezávislé dojmy.",
+     "terms": [
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré programy a aplikácie posielajú modelu požiadavky priamo, bez chatového okna. Platí sa podľa spotreby."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie xAI o Grok Voice 3",
+       "href": "https://x.ai/news/grok-voice-3"
+      }
+     ]
+    },
+    {
+     "id": "ernie-5-5-flash-preview",
+     "title": "Baidu ukázal rýchly model na programovanie a sľubuje ho do 25. novembra dať zadarmo",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Skúšobná verzia · čínsky model"
+      }
+     ],
+     "keyFact": {
+      "value": "280 miliárd",
+      "label": "parametrov, naraz pracuje 14 miliárd"
+     },
+     "body": [
+      "Čínsky Baidu v stredu 11. novembra zverejnil skúšobnú verziu modelu ERNIE 5.5 Flash Preview, zameraného na programovanie, 3D a agentov. Má 280 miliárd [[parametrov|params]], ale vďaka architektúre [[MoE|moe]] pri každej odpovedi pracuje len 14 miliárd z nich, takže je rýchly: na Baiduovej platforme Qianfan vypíše vyše 200 tokenov za sekundu.",
+      "Zvládne aj veľmi dlhé vstupy, až milión tokenov, čo je zhruba niekoľko hrubých kníh naraz. Baidu priznáva, že dolaďovanie modelu ešte nie je hotové, ale sľubuje, že do 25. novembra zverejní [[otvorené váhy|openweights]] pod voľnou licenciou [[Apache 2.0|apache]]. Na službe OpenRouter sa dá do konca novembra skúšať zadarmo.",
+      "Pozor, nie je to ten istý model, o ktorom sme písali v piatok 6. novembra. Vtedy išlo o základnú verziu s vlastnou, prísnejšou licenciou."
+     ],
+     "whyItMatters": "Ak Baidu sľub dodrží, pribudne silný otvorený model na programovanie, ktorý si firmy aj jednotlivci môžu bez obmedzení spustiť na vlastnom hardvéri. Dátum 25. november sa oplatí sledovať.",
+     "terms": [
+      {
+       "key": "params",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil počas tréningu. Viac parametrov zvyčajne znamená schopnejší, ale aj väčší a drahší model."
+      },
+      {
+       "key": "moe",
+       "term": "MoE (zmes expertov)",
+       "explain": "Model je rozdelený na veľa menších častí, takzvaných expertov, a pri každej úlohe zapne len niektoré z nich. Preto je rýchlejší a lacnejší, než by naznačovala jeho celková veľkosť."
+      },
+      {
+       "key": "openweights",
+       "term": "Otvorené váhy",
+       "explain": "Firma zverejní hotový model na stiahnutie, takže si ho ktokoľvek môže spustiť na vlastnom počítači alebo serveri a upraviť."
+      },
+      {
+       "key": "apache",
+       "term": "Apache 2.0",
+       "explain": "Voľná licencia, ktorá dovoľuje model používať, upravovať aj komerčne využívať takmer bez obmedzení."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Baidu",
+       "href": "https://ernie.baidu.com/release/ernie-5-5-flash-preview/"
+      }
+     ]
+    },
+    {
+     "id": "botpsy",
+     "title": "Tether vydal maličký model, ktorý v telefóne zvládne ovládať nástroje",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "device",
+       "label": "Beží v zariadení · Apache 2.0"
+      }
+     ],
+     "body": [
+      "Firma Tether, známa najmä svojou kryptomenou naviazanou na dolár, zverejnila model BotPsy s 800 miliónmi parametrov. Je postavený na malom modeli Qwen3.5 od Alibaby a je vycvičený na takzvané volanie funkcií, teda na to, aby vedel správne zavolať nástroj, napríklad kalkulačku, kalendár alebo vyhľadávanie.",
+      "Podľa autorov je to najlepší model na prácu s nástrojmi medzi modelmi do 1,2 miliardy parametrov a menej sa zacyklí pri premýšľaní. Je zadarmo pod licenciou Apache 2.0 a dá sa spustiť [[priamo v zariadení|ondevice]] cez program llama.cpp aj v zmenšených verziách pre slabší hardvér."
+     ],
+     "whyItMatters": "Taký malý model zvládne jednoduché úlohy asistenta priamo v telefóne alebo notebooku, bez internetu a bez posielania dát do cloudu. Na náročné veci ale nestačí.",
+     "terms": [
+      {
+       "key": "ondevice",
+       "term": "Priamo v zariadení (on-device)",
+       "explain": "Model beží na vašom telefóne alebo počítači, nie na serveri firmy. Funguje aj bez internetu a dáta neodchádzajú preč."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog na Hugging Face o BotPsy",
+       "href": "https://huggingface.co/blog/qvac/botpsy"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "seedance-2-5-4k",
+     "title": "Špičkový video model Seedance 2.5 so 4K obrazom sa dostal k bežným tvorcom",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Platené · cez kreatívne platformy"
+      }
+     ],
+     "body": [
+      "Video model Seedance 2.5 od ByteDance, firmy za TikTokom, mali doteraz len veľkí firemní klienti jej cloudu BytePlus. V stredu 11. novembra ho naraz sprístupnili štyri kreatívne platformy: Magnific, Picsart, Pika a Krea, a Pika aj cez API.",
+      "Model vytvára video priamo v rozlíšení [[4K|4k]] s 10-bitovými farbami, teda s jemnejšími prechodmi bez pásikov. Šikovné je, že si najprv môžete lacno pozrieť náhľad v nízkej kvalite a až potom zaplatiť za drahé finálne video. ByteDance oficiálne spustenie ani cenu nezverejnil, podmienky si určuje každá platforma sama.",
+      "V aréne videí Artificial Analysis je Seedance 2.5 aktuálne štvrtý."
+     ],
+     "whyItMatters": "Kto robí reklamy, klipy alebo sociálne siete, dostáva do ruky jeden z najlepších video modelov bez firemnej zmluvy. Pre bežného človeka to znamená, že kvalitné AI video bude ešte bežnejšie.",
+     "terms": [
+      {
+       "key": "4k",
+       "term": "4K",
+       "explain": "Rozlíšenie videa zhruba 3 840 krát 2 160 bodov, štyrikrát viac než Full HD. Obraz je ostrejší aj na veľkej obrazovke."
+      }
+     ],
+     "links": [
+      {
+       "label": "Neural Brew o Seedance 2.5 na platformách",
+       "href": "https://neuralbrew.ai/en/articles/2026/11/seedance-2-5-4k-pika-krea-picsart-magnific/"
+      }
+     ]
+    },
+    {
+     "id": "minimax-h3-image-update",
+     "title": "MiniMax potvrdil 4K obrázky pod 10 sekúnd a týždeň dáva polovičnú zľavu",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · čínsky model"
+      }
+     ],
+     "body": [
+      "Čínsky MiniMax, o ktorého obrázkovom modeli H3-Image sme písali včera, ho teraz oficiálne predstavil na svojom blogu. Potvrdil, že vytvorí obrázok v rozlíšení 4 096 krát 4 096 bodov za menej ako 10 sekúnd a stojí polovicu až tretinu ceny konkurencie.",
+      "Počas úvodného týždňa dáva na 4K obrázky ešte 50-percentnú zľavu. Pre Európu však naďalej platí výnimka v licencii, takže používatelia a firmy z EÚ si musia podmienky pozorne prečítať."
+     ],
+     "whyItMatters": "Je to lacná a rýchla alternatíva k drahým obrázkovým modelom, ale práve pre Slovensko a zvyšok EÚ môže byť licencia prekážkou.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog MiniMax o H3-Image",
+       "href": "https://www.minimax.io/blog/minimax-h3-image"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "Ako sa AI napája na prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "aws-emulator",
+     "title": "Amazon dal zadarmo náhradu svojho cloudu na počítači, celú ju napísali AI agenti",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Open source · zadarmo"
+      }
+     ],
+     "keyFact": {
+      "value": "200+",
+      "label": "napodobených služieb AWS"
+     },
+     "body": [
+      "Amazon Web Services zverejnil bezplatný nástroj AWS Emulator, ktorý na vašom počítači napodobní vyše 200 služieb jeho cloudu. Programátori tak môžu skúšať svoje aplikácie bez pripojenia ku skutočnému cloudu a bez platenia za každý test, a je určený aj pre AI agentov, ktorí programujú.",
+      "Najzaujímavejšie je, ako vznikol: podľa AWS celý kód napísali a udržiavajú autonómni AI agenti a žiadny človek ho pred zverejnením nekontroloval. Zatiaľ ešte nevie úplne napodobniť výpadky a limity skutočného cloudu."
+     ],
+     "whyItMatters": "Je to praktický nástroj pre vývojárov a zároveň jeden z najväčších verejných príkladov softvéru, ktorý od začiatku do konca vytvorila AI. Ukáže sa, či bude dosť spoľahlivý.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog AWS o AWS Emulator",
+       "href": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/"
+      }
+     ]
+    },
+    {
+     "id": "databricks-genie",
+     "title": "Databricks pustil dátového agenta Genie pracovať nepretržite na pozadí",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Preview · pre firmy"
+      }
+     ],
+     "body": [
+      "Firma Databricks, ktorá firmám spravuje veľké dáta, rozšírila svojho agenta Genie o režim, v ktorom beží stále na pozadí a zvládne aj dlhšie úlohy bez toho, aby mu niekto písal pokyny. Nová funkcia Ontology k tomu mapuje, ako spolu súvisia ľudia, projekty a dáta vo firme.",
+      "Režim nepretržitej práce je zatiaľ len v skúšobnej verzii."
+     ],
+     "whyItMatters": "Je to ďalší krok od AI, ktorá čaká na otázku, k AI, ktorá sama sleduje dáta a pracuje ako kolega. Týka sa hlavne veľkých firiem.",
+     "terms": [],
+     "links": [
+      {
+       "label": "The Neuron, prehľad dňa",
+       "href": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech v skratke",
+   "kicker": "Čo sa deje okolo",
+   "icon": "cpu",
+   "items": [
+    {
+     "id": "anthropic-amd-mythos",
+     "title": "Anthropic tvrdí, že jeho AI preniesla Clauda na čipy AMD asi za tri dni",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Čipy · IPO"
+      }
+     ],
+     "body": [
+      "V propagačnom videu k vstupu na burzu Anthropic povedal, že jeho najsilnejší model Mythos sám napísal takmer všetky [[kernely|kernel]] potrebné na to, aby Claude spracúval otázky na grafických čipoch AMD MI355X. Trvalo to zhruba tri dni s minimom ľudskej práce, kým bežne to tímom zaberie šesť až dvanásť mesiacov.",
+      "Treba dodať, že ide len o spracovanie vstupu, nie o celý tréning ani o bežnú prevádzku Clauda pre používateľov. Akcie AMD v ten deň stúpli o vyše 7 percent, hoci veľkú časť rastu vysvetľujú aj dobré výsledky firmy CoreWeave."
+     ],
+     "whyItMatters": "Väčšina AI dnes beží na čipoch Nvidie, aj preto, že softvér je napísaný pre jej systém [[CUDA|cuda]]. Ak AI dokáže tento softvér rýchlo prepísať pre iné čipy, závislosť od Nvidie slabne a čipy môžu zlacnieť.",
+     "terms": [
+      {
+       "key": "kernel",
+       "term": "Kernel",
+       "explain": "Malý, veľmi optimalizovaný kus programu, ktorý na grafickom čipe vykonáva konkrétne výpočty. Pre každý typ čipu sa musí písať a ladiť zvlášť."
+      },
+      {
+       "key": "cuda",
+       "term": "CUDA",
+       "explain": "Programovací systém Nvidie pre jej grafické čipy. Väčšina AI softvéru je napísaná preň, preto je ťažké prejsť na čipy iných firiem."
+      }
+     ],
+     "links": [
+      {
+       "label": "Simon Willison o videu Anthropicu",
+       "href": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/"
+      }
+     ]
+    },
+    {
+     "id": "openai-q3",
+     "title": "OpenAI zarobil za štvrťrok 10 miliárd dolárov a prerobil takmer 11 miliárd",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Financie firmy"
+      }
+     ],
+     "body": [
+      "Podľa denníka Wall Street Journal, ktorého správu prebrala agentúra Reuters, mal OpenAI v treťom štvrťroku tržby približne 10 miliárd dolárov. Jeho upravená prevádzková strata, teda strata z bežného podnikania bez niektorých jednorazových položiek, však narástla na 10,9 miliardy dolárov z 10,1 miliardy v druhom štvrťroku.",
+      "Pomer straty k tržbám sa pritom zlepšil: kým v druhom štvrťroku prerábal 1,50 dolára na každom zarobenom dolári, teraz je to 1,09 dolára."
+     ],
+     "whyItMatters": "Ukazuje to, aké drahé je vyvíjať a prevádzkovať špičkovú AI, a vysvetľuje to cenovú vojnu medzi modelmi aj to, prečo investori tak pozorne sledujú vstup Anthropicu na burzu.",
+     "terms": [],
+     "links": [
+      {
+       "label": "WSJ cez Reuters (Investing.com)",
+       "href": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353"
+      }
+     ]
+    },
+    {
+     "id": "runway-praxis-1",
+     "title": "Runway, známy video generátorom, vydal otvorený model na ovládanie robotov",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · Apache 2.0"
+      }
+     ],
+     "body": [
+      "Firma Runway, ktorú poznáme hlavne vďaka generovaniu videa, zverejnila robotický model Praxis-1 s 27 miliardami parametrov. Naučil sa najprv z obrovského množstva videí, ako vyzerá svet a pohyb, a potom ovládať robotické ruky, jednu aj dve naraz.",
+      "Model je zadarmo pod licenciou Apache 2.0 aj so základnou verziou na ďalšie dotrénovanie a podľa Runwayu je najlepší v robotickom teste NVIDIA RoboLab-120."
+     ],
+     "whyItMatters": "Firmy, ktoré vedia generovať video, zisťujú, že rovnaké poznanie sveta sa hodí aj robotom. Otvorené váhy umožnia univerzitám a menším firmám experimentovať bez drahého vlastného tréningu.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Oznámenie Runway",
+       "href": "https://runway.com/news/company-news/praxis-1-is-now-available"
+      }
+     ]
+    },
+    {
+     "id": "deepmind-alphagenome-robotics",
+     "title": "Google DeepMind vydal AlphaGenome 2 na čítanie DNA a nový model pre roboty",
+     "dateText": "streda 11. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Výskum"
+      }
+     ],
+     "body": [
+      "Google DeepMind v stredu predstavil AlphaGenome 2, ktorý predpovedá, ako konkrétne zmeny v DNA ovplyvnia rôzne typy buniek v tele. Vedci ho môžu na nekomerčný výskum používať cez API a môže pomôcť pochopiť príčiny chorôb.",
+      "Zároveň vydal Gemini Robotics 2.5, model, ktorý spája videnie, jazyk a pohyb robota. V pilotnom projekte s automobilkou Mercedes-Benz podľa DeepMindu zvládol úlohy na 96 percent."
+     ],
+     "whyItMatters": "Nie sú to veci na každodenné použitie, ale ukazujú, že najväčší prínos AI môže prísť v medicíne a vo fabrikách, nielen v chatbotoch.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog DeepMind o AlphaGenome 2",
+       "href": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+      },
+      {
+       "label": "Blog DeepMind o Gemini Robotics 2.5",
+       "href": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Codex CLI 0.167.2: malá zmena len pre tých, čo púšťajú Codex cez Google Cloud.",
+  "Nemotron 3.5 Super: objavil sa v dnešných súhrnoch, ale vyšiel už 15. októbra.",
+  "RaylineAI ARC: len marketingové čísla na X bez nezávislého overenia.",
+  "Adobe Firefly, Unreal Engine 5.9, ElevenLabs a ďalšie drobné produktové novinky."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny zo štvrtka 12. novembra okolo 6:12 Europe/Bratislava; akcie podľa záverečných cien zo stredy 11. novembra.",
+  "summary": "Americké burzy sa v stredu výrazne odrazili: Nasdaq pridal 1,6 percenta a S&P 500 1,3 percenta, takže Nasdaq zmazal straty od novembrových volieb. Rast ťahali čipové firmy po silných výsledkoch CoreWeave, firmy prenajímajúcej výpočtový výkon pre AI, ktorej akcie vyskočili zhruba o štvrtinu. Po zatvorení búrz však New York Times a Wall Street Journal priniesli ďalšie správy o šéfovi Nvidie Jensenovi Huangovi, podľa WSJ sa ho predstavenstvo chystá odvolať, čo Nvidia oficiálne nepotvrdila. Bitcoin je takmer bez zmeny.",
+  "btc": {
+   "priceUsd": 73588,
+   "priceEur": 66420,
+   "changePct": -0.1,
+   "changePctEur": 0.7,
+   "low24h": 73366,
+   "high24h": 74695,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo skôr pokles",
+   "comment": "Bitcoin stojí okolo 73 600 dolárov, teda asi 66 400 eur, a za posledných 24 hodín sa takmer nepohol. Pohyboval sa medzi 73 400 a 74 700 dolármi, ale za týždeň je nižšie zhruba o 8,6 percenta. Ether stratil necelé percento na asi 2 050 dolárov. [[Index strachu a chamtivosti|fng]] klesol z 29 na 28 bodov a ostáva v pásme strachu. Kým akcie sa v stredu zotavili, bitcoin sa k nim nepridal, takže trend ostáva [[medvedí|bearish]].",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 173.73,
+    "changePct": 2.87,
+    "comment": "Odraz po dvoch veľkých poklesoch, no po zatvorení prišli nové správy o možnom odvolaní šéfa, takže dnes môže byť opäť rozkolísaná."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 552.9,
+    "changePct": 7.32,
+    "comment": "Najväčší rast z veľkých čipových firiem vďaka CoreWeave, odporúčaniu Goldman Sachs a správe o Claudovi na jej čipoch."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 345.22,
+    "changePct": 3.99,
+    "comment": "Ďalší deň rastu, investori naďalej hľadajú alternatívy k Nvidii."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 293.45,
+    "changePct": 2.11,
+    "comment": "Rast v deň, keď Google spustil Gemini Decisions."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 355.63,
+    "changePct": 2.04,
+    "comment": "Rast spolu so širokým trhom."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 521.13,
+    "changePct": -2.26,
+    "comment": "Jeden z mála veľkých technologických poklesov, druhý deň po sebe."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 628.77,
+    "changePct": -1.97,
+    "comment": "Mierny pokles napriek rastu trhu."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Investopedia o stredajšom obchodovaní",
+    "href": "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11112026-12248789"
+   },
+   {
+    "label": "Yahoo Finance, správy dňa",
+    "href": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
+   }
+  ],
+  "gem": {
+   "ticker": "AMD",
+   "name": "AMD",
+   "close": 552.9,
+   "changePct": 7.32,
+   "why": "AMD je hlavný konkurent Nvidie v AI čipoch. Tento týždeň má viac dobrých správ naraz: Google bude jej procesory používať vo svojom cloude, Anthropic ju spomína ako investora a ukázal, že Claude sa dá na jej čipy preniesť rýchlo, a v treťom štvrťroku mala rekordné tržby 13,4 miliardy dolárov. Keď má Nvidia problémy s vedením, AMD je prirodzená alternatíva.",
+   "risks": "Riziká: akcia od piatka 6. novembra vyrástla zhruba o 37 percent, takže veľa dobrých správ už môže byť v cene a pri sklamaní môže rýchlo padnúť. Celý AI sektor je rozkolísaný a vyššie úroky tlačia na drahé technologické akcie.",
+   "links": [
+    {
+     "label": "AMD na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/AMD/"
+    },
+    {
+     "label": "Motley Fool o stredajšom raste AMD",
+     "href": "https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-advanced-micro-devices-jumps-and-not-only-because-of-coreweave-s-results/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-12.json",
+  "note": "V prvej päťke jazykových modelov sa nič nezmenilo: vedie Claude Fable 5.2 so 64,6 bodu pred Gemini 4 Carbon so 60 bodmi. Malý pohyb nastal v aréne videí, kde ľudia naslepo porovnávajú výsledky dvoch modelov: na piate miesto sa posunul Gemini Omni Flash 1.2 od Googlu so skóre 1 154 a európsky FLUX 3 Max od nemeckého Black Forest Labs klesol na šieste s 1 153. Rozdiel je menej ako jeden bod, takže prakticky ide o remízu."
+ }
+}
