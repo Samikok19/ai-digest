@@ -532,6 +532,6 @@
  },
  "benchmarks": {
   "snapshot": "data/benchmarks-2026-11-12.json",
-  "note": "V prvej päťke jazykových modelov sa nič nezmenilo: vedie Claude Fable 5.2 so 64,6 bodu pred Gemini 4 Carbon so 60 bodmi. Malý pohyb nastal v aréne videí, kde ľudia naslepo porovnávajú výsledky dvoch modelov: na piate miesto sa posunul Gemini Omni Flash 1.2 od Googlu so skóre 1 154 a európsky FLUX 3 Max od nemeckého Black Forest Labs klesol na šieste s 1 153. Rozdiel je menej ako jeden bod, takže prakticky ide o remízu."
+  "note": "V prvej päťke jazykových modelov sa nič nezmenilo: vedie Claude Fable 5.2 so 64,6 bodu pred Gemini 4 Carbon so 60 bodmi. Malý pohyb nastal v aréne videí, kde ľudia naslepo porovnávajú výsledky dvoch modelov: na piate miesto sa posunul Gemini Omni Flash 1.2 od Googlu so skóre 1 154 a FLUX 3 Max klesol na šieste s 1 153. Rozdiel je menej ako jeden bod, takže prakticky ide o remízu."
  }
 }
