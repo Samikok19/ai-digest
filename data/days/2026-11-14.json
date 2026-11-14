@@ -1,0 +1,478 @@
+{
+ "date": "2026-11-14",
+ "label": "Sobota 14. novembra 2026",
+ "shortLabel": "So 14. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Dnes je to skôr deň praktických nástrojov než veľkých nových modelov. OpenAI spustilo peňaženku, cez ktorú môže ChatGPT nakupovať bez toho, aby videl vašu kartu, a DeepSeek otvoril vývojárom všetky funkcie svojej appky cez jedno lacné rozhranie. Na burze sa v piatok obrátila nálada a čipové firmy padali, bitcoin klesol až k 67 000 dolárom a index strachu spadol na 13 bodov.",
+ "highlights": [
+  "OpenAI spustilo ChatGPT Wallet: AI agent môže za vás nakupovať, ale vašu kartu nikdy neuvidí a každý nákup musíte schváliť. Zatiaľ len pre ChatGPT Pro v USA.",
+  "DeepSeek sprístupnil vývojárom cez API všetko, čo vie jeho appka, od vyhľadávania na webe po čítanie dokumentov a hlas, s novým lacným modelom deepseek-flash.",
+  "Microsoft vymieňa malý model vo Windows za nový Aion Instruct, ktorý pobeží priamo v počítači bez cloudu a neskôr aj na bežných grafických kartách.",
+  "Čipové akcie v piatok padali: AMD stratilo takmer 9 percent, Nvidia ďalšie 2 percentá a jej hodnota klesla pod 4 bilióny dolárov.",
+  "Bitcoin klesol na približne 67 100 dolárov, najnižšie za takmer tri mesiace, a index strachu spadol na 13 bodov."
+ ],
+ "leadId": "chatgpt-wallet",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "deepseek-api-flash",
+     "title": "DeepSeek otvoril vývojárom celú svoju appku cez jedno rozhranie aj s novým lacným modelom",
+     "dateText": "piatok 13. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Lacné API"
+      },
+      {
+       "kind": "plain",
+       "label": "Čínsky model"
+      }
+     ],
+     "keyFact": {
+      "value": "1 milión",
+      "label": "tokenov kontextu, odpoveď až 384 tisíc tokenov"
+     },
+     "body": [
+      "Čínsky DeepSeek v piatok 13. novembra sprístupnil vývojárom cez svoje [[API|api]] takmer všetko, čo doteraz vedela len jeho appka: vyhľadávanie na webe aj obrázkov, hĺbkové vyhľadávanie, čítanie súborov a webových stránok, bezpečnostné kontroly a hlas.",
+      "Jadrom je nový model deepseek-flash, ktorý naraz udrží v pamäti až milión [[tokenov|token]], zhruba niekoľko hrubých kníh, a odpovedať vie textom dlhým až 384 tisíc tokenov. Rozhranie je kompatibilné s formátmi, ktoré používajú OpenAI aj Anthropic, takže existujúce aplikácie ho vedia zapojiť s malou zmenou.",
+      "Vyhľadávanie, čítanie stránok, rozpoznávanie textu z obrázkov, prepis reči na text a čítanie textu nahlas sa dajú kúpiť aj samostatne."
+     ],
+     "whyItMatters": "Vývojár, ktorý doteraz skladal vyhľadávanie, čítanie dokumentov a hlas od troch rôznych firiem, to teraz dostane na jednom mieste a lacno. Pre bežného človeka to môže znamenať lacnejšie aplikácie s AI, treba však myslieť na to, že dáta idú na servery čínskej firmy.",
+     "terms": [
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré si jeden program pýta služby od iného. Vývojári cez API zapájajú AI modely do vlastných aplikácií a platia podľa spotreby."
+      },
+      {
+       "key": "token",
+       "term": "Token",
+       "explain": "Základná jednotka textu pre jazykové modely, zhruba kus slova. Ceny aj veľkosť pamäte modelov sa počítajú v tokenoch."
+      }
+     ],
+     "links": [
+      {
+       "label": "Crypto Briefing o novom API DeepSeeku",
+       "href": "https://cryptobriefing.com/deepseek-opens-app-features-developers-api/"
+      }
+     ]
+    },
+    {
+     "id": "microsoft-aion-instruct",
+     "title": "Microsoft dáva do Windows nový model, ktorý pobeží priamo vo vašom počítači",
+     "dateText": "piatok 13. novembra",
+     "tags": [
+      {
+       "kind": "device",
+       "label": "Beží v počítači"
+      },
+      {
+       "kind": "preview",
+       "label": "Windows Insider od konca novembra"
+      }
+     ],
+     "body": [
+      "Microsoft v piatok 13. novembra oznámil Aion Instruct, nový jazykový model, ktorý vo Windows nahradí doterajší Phi Silica. Ide o takzvaný [[lokálny model|on-device]]: beží priamo v počítači, takže aplikácie a agenti ho môžu používať aj bez internetu a bez posielania dát do cloudu.",
+      "Najprv ho od konca novembra dostanú testeri v programe Windows Insider na počítačoch Copilot+, teda tých so špeciálnym čipom na AI. Pre všetkých v bežných Windows má prísť okolo konca januára a novinkou je, že pobeží aj na bežných grafických kartách, nielen na Copilot+ počítačoch.",
+      "Viac podrobností Microsoft ukáže budúci týždeň na konferencii Ignite."
+     ],
+     "whyItMatters": "Ak sa to podarí, každý počítač s Windows bude mať vlastného malého pomocníka, ktorý zhrnie text alebo odpovie na otázku bez predplatného a bez toho, aby vaše súbory opustili počítač.",
+     "terms": [
+      {
+       "key": "on-device",
+       "term": "Lokálny model (on-device)",
+       "explain": "AI model, ktorý beží priamo vo vašom zariadení, nie na serveroch firmy. Je súkromnejší a funguje aj offline, ale býva menší a slabší ako veľké cloudové modely."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Microsoftu pre vývojárov",
+       "href": "https://devblogs.microsoft.com/foundry-on-windows/aion-instruct-local-ai-windows-gpu/"
+      }
+     ]
+    },
+    {
+     "id": "tencent-hy-realtime",
+     "title": "Tencent ukázal hlasového asistenta, ktorý sa rozpráva v reálnom čase a vie aj spievať",
+     "dateText": "piatok 13. novembra",
+     "tags": [
+      {
+       "kind": "plain",
+       "label": "Čínsky model · zatiaľ len v Číne"
+      }
+     ],
+     "body": [
+      "Čínsky Tencent v piatok 13. novembra predstavil Hy Realtime, model na plynulý hlasový rozhovor. Rozumie reči, plní pokyny, počas hovoru vie sám použiť nástroje, napríklad vyhľadať niečo na webe, a dokonca vie spievať.",
+      "Už ho používa v hlasových hovoroch svojej AI appky Yuanbao a v zákazníckej podpore. Vývojárom ho chce ponúknuť cez Tencent Cloud, cenu ani presný názov modelu však zatiaľ nezverejnil."
+     ],
+     "whyItMatters": "Hlasoví asistenti, s ktorými sa dá rozprávať ako s človekom, sú teraz najhorúcejšou disciplínou: len tento týždeň prišiel aj Grok Voice 3. Tencent je ďalší silný hráč, pre Európu je zatiaľ nedostupný.",
+     "terms": [],
+     "links": [
+      {
+       "label": "IT之家 (čínsky technologický web)",
+       "href": "https://www.ithome.com/1/026/825.htm"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "AI, ktorá sama robí prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "chatgpt-wallet",
+     "title": "ChatGPT dostal peňaženku: agent nakúpi za vás, ale vašu kartu nikdy neuvidí",
+     "dateText": "piatok 13. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Platby"
+      },
+      {
+       "kind": "preview",
+       "label": "Len ChatGPT Pro v USA"
+      }
+     ],
+     "keyFact": {
+      "value": "Amex, Mastercard, Visa",
+      "label": "dodávajú bezpečné platobné kódy namiesto čísla karty"
+     },
+     "body": [
+      "OpenAI v piatok 13. novembra spustilo ChatGPT Wallet, peňaženku pre [[AI agentov|agent]]. Keď necháte ChatGPT niečo kúpiť, nedostane číslo vašej karty, ale len jednorazový zástupný kód, takzvaný [[token platby|payment-token]], ktorý vydá Amex, Mastercard alebo Visa.",
+      "Každý nákup musíte sami schváliť a zostávajú vám bežné výhody karty aj ochrana pri sporných platbách. OpenAI zároveň zverejnilo návod pre obchodníkov, ako takýchto agentov na svojich e-shopoch neblokovať.",
+      "Zatiaľ to majú len predplatitelia ChatGPT Pro v Spojených štátoch, v Európe to dostupné nie je."
+     ],
+     "whyItMatters": "Doteraz bolo nakupovanie cez AI riskantné, lebo ste agentovi museli zveriť údaje karty. Toto je prvý veľký štandardizovaný spôsob, ako to urobiť bezpečne, a keďže sú v ňom zapojené všetky tri veľké kartové spoločnosti, podobný systém sa časom pravdepodobne dostane aj k nám.",
+     "terms": [
+      {
+       "key": "agent",
+       "term": "AI agent",
+       "explain": "Program, ktorý nielen odpovedá, ale sám robí kroky: otvorí stránku, vyplní formulár, vyhľadá na webe a pokračuje, kým úlohu nedokončí."
+      },
+      {
+       "key": "payment-token",
+       "term": "Token platby (tokenizácia)",
+       "explain": "Náhradný kód namiesto skutočného čísla karty. Obchodník alebo agent dostane len tento kód, ktorý sa nedá zneužiť inde. Rovnako funguje Apple Pay alebo Google Pay."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie OpenAI",
+       "href": "https://openai.com/index/introducing-chatgpt-wallet/"
+      }
+     ]
+    },
+    {
+     "id": "claude-manufacturing",
+     "title": "Anthropic pripojil Clauda na softvér tovární: ponuky, dodávatelia aj výpadky strojov",
+     "dateText": "piatok 13. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Claude Team a Enterprise"
+      }
+     ],
+     "keyFact": {
+      "value": "17",
+      "label": "pripravených zručností (skills) v jednom balíku"
+     },
+     "body": [
+      "Anthropic v piatok 13. novembra vydal Claude for Manufacturing, rozšírenie pre firemné verzie Clauda so 17 pripravenými [[zručnosťami|skills]]. Claude sa cez neho napojí na programy, ktoré fabriky bežne používajú, napríklad Autodesk Fusion na navrhovanie dielov, Oracle NetSuite na sklad a účtovníctvo, Microsoft 365 a Infor.",
+      "Vie potom pripraviť cenovú ponuku podľa skutočného stavu skladu, porovnať dodávateľov, napísať správu o kvalite alebo rozobrať, prečo stroj stál. Objednávky od náhradných dodávateľov pošle až potom, čo ich schváli človek.",
+      "Anthropic popri tom pripravuje skúšobný štandard Model Hardware Standard, ktorý má agentov pripojiť priamo k zariadeniam."
+     ],
+     "whyItMatters": "AI sa presúva z kancelárskeho chatu do konkrétnych odvetví. Pre teba je to dobrý vzor, ako sa skills balia: jeden balík zručností a prepojení na jednu profesiu namiesto univerzálneho pomocníka.",
+     "terms": [
+      {
+       "key": "skills",
+       "term": "Skills (zručnosti)",
+       "explain": "Návody a nástroje pre AI agenta uložené ako súbory, ktoré mu povedia, ako robiť konkrétnu prácu. Agent si ich načíta, keď ich potrebuje."
+      }
+     ],
+     "links": [
+      {
+       "label": "The Decoder o Claude for Manufacturing",
+       "href": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/"
+      }
+     ]
+    },
+    {
+     "id": "coding-tools-update",
+     "title": "Codex aj Claude Code dostali dôležité aktualizácie, pozor na zmenu schvaľovania príkazov",
+     "dateText": "piatok 13. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "body": [
+      "OpenAI v piatok 13. novembra vydalo stabilnú verziu Codex CLI 0.169.0, teda svojho programátorského agenta do príkazového riadku. Pribudlo viac bočných rozhovorov v jednom okne, hľadanie starších úloh a možnosť pridať si z terminálu vlastného poskytovateľa modelov. Dôležitá je bezpečnostná oprava: príkaz codex exec v neznámom priečinku už automaticky nespustí nastavenia projektu ani [[MCP servery|mcp]], dôveru treba potvrdiť prepínačom --trust.",
+      "V ten istý deň vyšiel aj Claude Code 2.1.325. Príkazy, ktoré beží v [[sandboxe|sandbox]], už predvolene neprechádzajú automaticky, ale cez bežné schvaľovanie. Kto chce staré správanie, musí ho zapnúť v nastaveniach. Vo VS Code pribudli návrhy ďalšej otázky klávesom Tab."
+     ],
+     "whyItMatters": "Ak máš automatizácie s Claude Code, môžu po aktualizácii nečakane zastať na výzve na schválenie. Pri Codexe zas zmena chráni pred tým, aby stiahnutý cudzí projekt potajme spustil vlastný kód.",
+     "terms": [
+      {
+       "key": "mcp",
+       "term": "MCP (Model Context Protocol)",
+       "explain": "Spoločný štandard, cez ktorý sa AI agenti pripájajú k nástrojom a dátam, napríklad ku kalendáru, databáze alebo GitHubu."
+      },
+      {
+       "key": "sandbox",
+       "term": "Sandbox",
+       "explain": "Uzavreté pieskovisko, v ktorom program beží oddelene od zvyšku počítača, aby nemohol nič pokaziť ani čítať, čo nemá."
+      }
+     ],
+     "links": [
+      {
+       "label": "Codex na GitHube",
+       "href": "https://github.com/openai/codex/releases"
+      },
+      {
+       "label": "Changelog Claude Code",
+       "href": "https://code.claude.com/docs/en/changelog"
+      }
+     ]
+    },
+    {
+     "id": "fastmcp-skills",
+     "title": "FastMCP 4.2 umožňuje rozdávať skills agentom zo servera, takže budú vždy aktuálne",
+     "dateText": "piatok 13. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Open source"
+      },
+      {
+       "kind": "preview",
+       "label": "Experimentálne"
+      }
+     ],
+     "body": [
+      "Knižnica FastMCP, na ktorej stavia veľa [[MCP serverov|mcp]], vo verzii 4.2 z piatka 13. novembra pridala možnosť posielať agentom okrem nástrojov aj [[skills|skills]], teda súbory SKILL.md s návodmi.",
+      "Keď niekto skill opraví na serveri, zmena sa hneď prejaví u všetkých agentov, ktorí sú naň pripojení, namiesto toho, aby si každý udržiaval vlastnú kópiu. Podpora je zatiaľ experimentálna, kým ju nezačnú podporovať aj aplikácie na strane agentov."
+     ],
+     "whyItMatters": "Rieši bežný problém tímov, kde každý má trochu inú, zastaranú verziu tých istých návodov pre AI. Je to presne typ zmeny, ktorý zjednodušuje prácu so skills vo väčšom.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog Prefectu o FastMCP 4.2",
+       "href": "https://www.prefect.io/blog/fastmcp-4-2-skills-over-mcp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Tech prehľad",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "nvidia-haas",
+     "title": "Nvidia vraj hľadá nového šéfa u Armu, akcie čipových firiem v piatok padali",
+     "dateText": "piatok 13. novembra",
+     "tags": [
+      {
+       "kind": "plain",
+       "label": "Neoficiálne správy"
+      }
+     ],
+     "body": [
+      "Podľa denníka [[Financial Times|ft]], ako ho cituje AI Weekly, predstavenstvo Nvidie oslovilo Reneho Haasa, šéfa britskej firmy Arm, ako možného nástupcu Jensena Huanga, ktorý vo štvrtok odstúpil. Haas je len jedným z kandidátov a nie je isté, či ponuku dostal alebo prijal. Nvidia zároveň potvrdila dodávku až 260 tisíc grafických čipov do Kórey.",
+      "Burza v piatok na neistotu reagovala zle. Index čipových firiem podľa MarketWatchu klesol o 3,6 percenta, akcia Nvidie stratila ďalšie 2 percentá a hodnota firmy prvýkrát po dlhom čase klesla pod 4 bilióny dolárov. Investori si podľa analytikov uvedomujú, že Nvidia pod Huangom nebola len predajcom čipov, ale aj hlavným finančným motorom celého AI odvetvia."
+     ],
+     "whyItMatters": "Kto povedie najdôležitejšiu AI firmu sveta, ovplyvní ceny a dostupnosť výpočtového výkonu pre všetkých. Ďalší dôležitý moment príde v utorok 17. novembra, keď Nvidia zverejní hospodárske výsledky.",
+     "terms": [
+      {
+       "key": "ft",
+       "term": "Financial Times (FT)",
+       "explain": "Britský ekonomický denník, jeden z najdôveryhodnejších zdrojov o firmách a trhoch."
+      }
+     ],
+     "links": [
+      {
+       "label": "AI Weekly",
+       "href": "https://aiweekly.co/ai-news-today"
+      },
+      {
+       "label": "Yahoo Finance o piatku na burze",
+       "href": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+      }
+     ]
+    },
+    {
+     "id": "nvidia-gpu-2027",
+     "title": "AI výpočty môžu budúci rok zdražieť: Nvidia sprísňuje kontroly a zvažuje platby vopred",
+     "dateText": "piatok 13. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Ceny"
+      }
+     ],
+     "body": [
+      "Taiwanský DigiTimes v piatok 13. novembra napísal, že Nvidia zaviedla pred dodaním grafických čipov kontrolu so 14 bodmi, čo spomaľuje dodávky AI serverov. Podľa správy sa v odvetví hovorí aj o platbách vopred a zdražení na rok 2027.",
+      "K tomu sa pripravujú prísnejšie americké pravidlá na vývoz čipov, ktoré môžu ponuku ešte viac obmedziť."
+     ],
+     "whyItMatters": "Drahšie čipy znamenajú drahšie dátové centrá a to sa časom môže premietnuť aj do cien predplatného AI služieb alebo do prísnejších limitov.",
+     "terms": [],
+     "links": [
+      {
+       "label": "DigiTimes",
+       "href": "https://www.digitimes.com/news/a20261113PD223/nvidia-ai-server-gpu-price-2027.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Obrázky a video: za posledný deň bez podstatnej novinky, Midjourney V9 má podľa správ prísť až okolo 11. decembra.",
+  "Microsoft Agent Framework 1.25, Mastra 1.83 a Cursor 3.30.14: bežné menšie aktualizácie.",
+  "Qwen4-Max, Grok 4.8, Gemini 4 Hydrogen a Seedance 2.5 Flash: už boli v predošlých vydaniach, nič nové."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny zo soboty 14. novembra okolo 6:20 Europe/Bratislava; akcie podľa záverečných cien z piatka 13. novembra.",
+  "summary": "Piatok na burze zmazal radosť z predošlých dní. Čipové firmy, ktoré po odchode Jensena Huanga z Nvidie najprv rástli, sa prudko otočili nadol: AMD stratilo takmer 9 percent a Broadcom takmer 5. Nasdaq klesol o 0,9 percenta a S&P 500 o 0,4 percenta, za celý týždeň však trhy skončili v pluse. Na trh tlačí aj inflácia: ceny výrobcov v USA sú medziročne vyššie o 6,5 percenta, výnos desaťročných amerických dlhopisov vystúpil až na 5,17 percenta a trh čaká, že americká centrálna banka v decembri zvýši úroky.",
+  "btc": {
+   "priceUsd": 67092,
+   "priceEur": 60867,
+   "changePct": -2.18,
+   "changePctEur": -1.88,
+   "low24h": 66492,
+   "high24h": 70045,
+   "mood": "bearish",
+   "moodLabel": "Krátkodobo pokles, najnižšie za takmer tri mesiace",
+   "comment": "Bitcoin pokračuje v poklese a v sobotu ráno stojí približne 67 100 dolárov, teda asi 60 900 eur, za 24 hodín je nižšie o vyše 2 percentá. Je to najnižšia cena za takmer tri mesiace a od rekordu z októbra 2025, ktorý bol 126 080 dolárov, je bitcoin nižšie zhruba o 47 percent. Podľa údajov CoinGlass, ktoré cituje The Crypto Times, burzy za deň nútene uzavreli pozície za 1,26 miliardy dolárov, z toho 86 percent tvorila [[likvidácia longov|liquidation]]. Z bitcoinových [[ETF|etf]] odchádzajú peniaze už šiesty deň po sebe a tlačia aj vyššie úroky v USA. [[Index strachu a chamtivosti|fng]] spadol z 20 na 13 bodov, hlboko do pásma extrémneho strachu, a trend ostáva [[medvedí|bearish]].",
+   "links": [
+    {
+     "label": "The Crypto Times o poklese",
+     "href": "https://www.cryptotimes.io/2026/11/14/bitcoin-price-today-btc-slides-to-67k-as-1-26b-crypto-liquidations-hit-longs-fed-hike-bets-rise/"
+    },
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 162.85,
+    "changePct": -2.01,
+    "comment": "Ďalší pokles po odchode Huanga a po tom, čo banka HSBC znížila odporúčanie na držať. Hodnota firmy klesla pod 4 bilióny dolárov, výsledky prídu v utorok 17. novembra."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 534.06,
+    "changePct": -8.75,
+    "comment": "Po štyroch rastových dňoch prudký obrat, investori začali pochybovať, či slabšia Nvidia naozaj pomôže konkurencii."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 347.01,
+    "changePct": -4.76,
+    "comment": "Rovnaký obrat ako pri AMD po silnom raste počas týždňa."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 295.77,
+    "changePct": -0.98,
+    "comment": "Mierny pokles spolu s trhom."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 523.88,
+    "changePct": 0.17,
+    "comment": "Takmer bez zmeny v deň, keď oznámil nový lokálny model pre Windows."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 356.27,
+    "changePct": 0.39,
+    "comment": "Mierny rast."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 641.69,
+    "changePct": 2.9,
+    "comment": "Odraz po troch dňoch poklesu."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Yahoo Finance o piatku na burze",
+    "href": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+   },
+   {
+    "label": "AMD na Yahoo Finance",
+    "href": "https://finance.yahoo.com/quote/AMD/"
+   }
+  ],
+  "gem": {
+   "ticker": "MSFT",
+   "name": "Microsoft",
+   "close": 523.88,
+   "changePct": 0.17,
+   "why": "V piatok, keď čipové firmy padali, sa Microsoft takmer nepohol. Zarába na predplatnom Microsoft 365, na cloude Azure aj na Windows, takže nie je závislý od jedného druhu čipov. Nový lokálny model Aion Instruct ukazuje, že chce mať AI priamo v stovkách miliónov počítačov, a budúci týždeň na konferencii Ignite môže ukázať ďalšie novinky.",
+   "risks": "Riziká: akcia je od začiatku novembra nižšie, z 545 na 524 dolárov. Celý technologický sektor je citlivý na možné zvýšenie úrokov v decembri a Microsoft míňa obrovské sumy na dátové centrá, ktoré sa musia ešte zaplatiť.",
+   "links": [
+    {
+     "label": "Microsoft na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/MSFT/"
+    },
+    {
+     "label": "Blog Microsoftu o Aion Instruct",
+     "href": "https://devblogs.microsoft.com/foundry-on-windows/aion-instruct-local-ai-windows-gpu/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   },
+   {
+    "key": "liquidation",
+    "term": "Likvidácia longov",
+    "explain": "Keď niekto staví na rast ceny s požičanými peniazmi a cena prudko klesne, burza jeho pozíciu nasilu predá. Tieto nútené predaje potom tlačia cenu ešte nižšie."
+   },
+   {
+    "key": "etf",
+    "term": "ETF",
+    "explain": "Fond, ktorý sa obchoduje na burze ako akcia. Bitcoinové ETF kupujú skutočný bitcoin, takže keď z nich ľudia peniaze vyberajú, fondy bitcoin predávajú."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-14.json"
+ }
+}
