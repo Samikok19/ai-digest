@@ -53,6 +53,11 @@
        "key": "token",
        "term": "Token",
        "explain": "Kúsok textu, na ktoré model rozdeľuje slová, zhruba tri štvrtiny slova. Podľa tokenov sa meria dĺžka pamäte modelu aj cena."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré iné programy posielajú modelu otázky a dostávajú odpovede. Platí sa podľa množstva textu, nie mesačným predplatným."
       }
      ],
      "links": [
