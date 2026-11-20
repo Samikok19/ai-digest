@@ -1,0 +1,688 @@
+{
+ "date": "2026-11-20",
+ "label": "Piatok 20. novembra 2026",
+ "shortLabel": "Pi 20. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Tencent zverejnil na stiahnutie svoj obrí model Hy4 a Google pustil vývojárom Genie 4, ktorý vytvára interaktívne svety. Anthropic mal na burze vydarený prvý deň, no zvyšok technologických akcií prudko padal a bitcoin klesol pod 62 000 dolárov.",
+ "highlights": [
+  "Tencent dal na stiahnutie svoj obrí model Hy4 so 770 miliardami parametrov; v nezávislom rebríčku je 17., ale patrí k najsilnejším modelom, ktoré si firma môže spustiť u seba.",
+  "Google pustil vývojárom Genie 4, ktorý z vety vytvorí svet, po ktorom sa dá chodiť, a Gemini na Macu už vie sám klikať v aplikáciách (zatiaľ len v USA).",
+  "Anthropic v prvý deň na burze stúpol o 17 percent na 97 dolárov, no Nasdaq v ten istý deň padol o 2,25 percenta a technologické akcie sú v medvedom trhu.",
+  "V rebríčku Artificial Analysis sa do top 5 vrátil Gemini 4 Carbon (4. miesto) a GPT-6.2 Sol vypadol na 6.; graf rýchlosti modelov opäť funguje.",
+  "Bitcoin je okolo 61 600 dolárov, za deň dole takmer o 3 percentá a za týždeň o 10, index strachu je na 12, teda extrémny strach."
+ ],
+ "leadId": "tencent-hy4-open",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "tencent-hy4-open",
+     "title": "Tencent dal na stiahnutie svoj najväčší model Hy4, jeden z najväčších verejne dostupných modelov vôbec",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Čínsky model · Tencent"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorené váhy, vlastná licencia"
+      }
+     ],
+     "keyFact": {
+      "value": "770 miliárd",
+      "label": "parametrov, pri každom slove pracuje 49 miliárd"
+     },
+     "body": [
+      "Čínsky technologický gigant Tencent, ktorý vlastní aj aplikáciu WeChat, zverejnil na stránke Hugging Face svoj vlajkový model Hy4 na stiahnutie. Ohlásil ho už začiatkom novembra, no až teraz si ho môže ktokoľvek stiahnuť a spustiť na vlastných serveroch. Model rozumie textu, obrázkom aj videu a vie ovládať počítač, teda klikať a písať v aplikáciách podobne ako človek, čomu sa hovorí [[computer use|computeruse]].",
+      "Model má 770 miliárd [[parametrov|parametre]], no je postavený ako takzvaný [[mix expertov|moe]]: pri každom slove sa zapne len 49 miliárd z nich, takže beží rýchlejšie a lacnejšie, ako by naznačovala jeho veľkosť. Naraz prečíta až milión tokenov, čo je zhruba niekoľko hrubých kníh. V nezávislom rebríčku Artificial Analysis je s 34,6 bodu na 17. mieste, teda ďaleko za americkou špičkou, ale medzi najsilnejšími modelmi, ktoré sa dajú stiahnuť.",
+      "Pozor na licenciu: nejde o úplne voľnú licenciu typu Apache, ale o vlastnú licenciu Tencentu, ktorú si treba pred firemným použitím prečítať. Na spustenie navyše treba server s ôsmimi výkonnými grafickými kartami, takže na domácom počítači ho nerozbehnete."
+     ],
+     "whyItMatters": "Kým americké firmy OpenAI, Anthropic a Google svoje najlepšie modely držia zatvorené, čínske firmy dávajú obrie modely na stiahnutie. Pre firmy aj v Európe to znamená možnosť mať silný model na vlastných serveroch, bez posielania dát do cudzieho cloudu.",
+     "terms": [
+      {
+       "key": "parametre",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil počas tréningu. Viac parametrov zvyčajne znamená schopnejší, ale aj väčší a drahší model."
+      },
+      {
+       "key": "moe",
+       "term": "Mix expertov (MoE)",
+       "explain": "Model je rozdelený na veľa menších „odborníkov“ a pri každom slove sa zapne len niekoľko z nich. Vďaka tomu je obrovský model rýchly a lacnejší na prevádzku."
+      },
+      {
+       "key": "computeruse",
+       "term": "Computer use",
+       "explain": "Schopnosť AI ovládať počítač: pozerá sa na obrazovku, kliká, píše a prechádza medzi aplikáciami, aby za vás dokončila úlohu."
+      },
+      {
+       "key": "openweights",
+       "term": "Otvorené váhy",
+       "explain": "Firma zverejní samotný natrénovaný model na stiahnutie, takže ho ľudia môžu spúšťať u seba a upravovať, nielen používať cez internet."
+      }
+     ],
+     "links": [
+      {
+       "label": "Tencent Hy4 na Hugging Face",
+       "href": "https://huggingface.co/tencent/Hy4"
+      }
+     ]
+    },
+    {
+     "id": "olala-mini-weights",
+     "title": "Francúzsky model Olala mini od OVHcloud sa už dá stiahnuť a pobeží aj na notebooku",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "eu",
+       "label": "Európsky model · Francúzsko"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · Apache 2.0"
+      }
+     ],
+     "keyFact": {
+      "value": "zhruba 1 miliarda",
+      "label": "aktívnych parametrov zo 6,8 miliardy"
+     },
+     "body": [
+      "Včera sme písali, že francúzsky cloudový poskytovateľ OVHcloud predstavil malý model Olala mini, no sľúbené súbory na stiahnutie ešte chýbali. Vo štvrtok 19. novembra ich firma zverejnila na Hugging Face pod licenciou [[Apache 2.0|apache]], ktorá dovoľuje model voľne používať aj komerčne.",
+      "Model má 6,8 miliardy parametrov, no pri každom slove pracuje len asi jedna miliarda, preto podľa OVHcloud beží aj na bežnom notebooku. Pred odpoveďou premýšľa, má štyri úrovne dôkladnosti a vie volať nástroje, napríklad vyhľadávanie. Trénovali ho na troch európskych superpočítačoch (JUPITER v Nemecku, Jean Zay vo Francúzsku a MeluXina v Luxembursku) a učil sa na 37 jazykoch, väčšinou európskych."
+     ],
+     "whyItMatters": "Európa má veľmi málo vlastných modelov a ešte menej takých, ktoré sú celé vytrénované na európskej infraštruktúre. Malý otvorený model, ktorý beží lokálne, je zaujímavý pre firmy, ktoré nechcú posielať dáta mimo EÚ.",
+     "terms": [
+      {
+       "key": "apache",
+       "term": "Licencia Apache 2.0",
+       "explain": "Jedna z najvoľnejších licencií: model alebo softvér môžete zadarmo používať, upravovať aj predávať v produkte, stačí zachovať informáciu o autorovi."
+      }
+     ],
+     "links": [
+      {
+       "label": "Olala mini na Hugging Face",
+       "href": "https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B"
+      }
+     ]
+    },
+    {
+     "id": "cloudflare-clairic",
+     "title": "Cloudflare zverejnil dva malé modely, ktoré z bločkov, PDF a dokumentov vytiahnu presne tie údaje, ktoré chcete",
+     "dateText": "streda 18. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy"
+      }
+     ],
+     "keyFact": {
+      "value": "pod 1 sekundu",
+      "label": "typická odpoveď podľa Cloudflare"
+     },
+     "body": [
+      "Firma Cloudflare, známa hlavne ochranou webov, v stredu 18. novembra uvoľnila na stiahnutie modely Clairic s 27 miliardami parametrov a menší Clairic-flash s 9 miliardami. Nie sú to chatboty: robia jedinú vec, takzvanú extrakciu dát, teda z fotky bločku, faktúry či viacstranového PDF vytiahnu napríklad dodávateľa, položky a sumu v úhľadnej tabuľke. Vedia aj jednoduché výpočty a odhady, napríklad dopočítať dátum alebo sumu.",
+      "V cloude Cloudflare stojí väčší model 24 centov a menší 10 centov za milión vstupných [[tokenov|token]], do 1. decembra sú oba za 10 centov. Výsledky testov presnosti sú zatiaľ len od samotného Cloudflare, firma sama upozorňuje, že ich treba brať orientačne."
+     ],
+     "whyItMatters": "Spracovanie faktúr a bločkov je nudná, ale veľmi častá práca. Malý špecializovaný model ju zvládne rýchlejšie a oveľa lacnejšie ako veľký chatbot a vďaka otvoreným váham sa dá spustiť aj u seba.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog Cloudflare",
+       "href": "https://blog.cloudflare.com/open-clairic/"
+      },
+      {
+       "label": "Clairic-flash na Hugging Face",
+       "href": "https://huggingface.co/Cloudflare/clairic-flash"
+      }
+     ]
+    },
+    {
+     "id": "gpt-live-11",
+     "title": "Hlasový model OpenAI lepšie vyslovuje a drží prízvuk, keď sa v rozhovore strieda viac jazykov",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "API pre vývojárov"
+      }
+     ],
+     "body": [
+      "OpenAI vo štvrtok 19. novembra pridalo do svojho [[API|api]] hlasový model GPT-Live-1.1. Podľa firmy lepšie vyslovuje, počas rozhovoru drží rovnaký prízvuk a presnejšie prepisuje reč, keď ľudia hovoria rôznymi jazykmi. Takéto modely poháňajú hlasových asistentov, ktorým firmy zverujú napríklad telefonickú zákaznícku linku.",
+      "Novinkou je aj pohotovostný režim: keď nikto nehovorí, model sa pozastaví a nepočíta, a znova sa rozbehne, až keď niekto prehovorí. Firmy tak neplatia za ticho v linke."
+     ],
+     "whyItMatters": "Hlasoví asistenti v menších jazykoch, ako je slovenčina, často zle vyslovujú alebo prepínajú prízvuk. Každé zlepšenie vo viacjazyčných rozhovoroch približuje použiteľných hlasových agentov aj u nás.",
+     "terms": [
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré si model zapoja do svojich aplikácií programátori a firmy. Platí sa podľa spotreby, nie mesačným predplatným."
+      }
+     ],
+     "links": [
+      {
+       "label": "Zoznam zmien OpenAI API",
+       "href": "https://developers.openai.com/api/docs/changelog"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky, video a hudba",
+   "kicker": "Generovanie obrázkov, videa a hudby",
+   "icon": "image",
+   "items": [
+    {
+     "id": "genie-4-api",
+     "title": "Google sprístupnil vývojárom Genie 4, model, ktorý z vety vytvorí svet, po ktorom sa dá chodiť",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Pre vývojárov"
+      }
+     ],
+     "keyFact": {
+      "value": "720p, 24 snímok/s",
+      "label": "interaktívny svet aj so zvukom"
+     },
+     "body": [
+      "Deň po predstavení modelu Genie 4 ho Google vo štvrtok 19. novembra pustil aj do Gemini API a Google AI Studia. Genie 4 je takzvaný [[model sveta|worldmodel]]: z textového zadania alebo obrázka vytvorí súvislý svet vo videokvalite 720p pri 24 snímkach za sekundu, vrátane zvukov prostredia aj dialógov postáv.",
+      "Po svete sa dá pohybovať klávesnicou ako v hre a počas behu ho meniť ďalšími vetami: zmeniť počasie, svetlo, pridať predmety či udalosti. Každý výstup má neviditeľný vodoznak SynthID, podľa ktorého sa dá spoznať, že ho vytvorila AI."
+     ],
+     "whyItMatters": "Doteraz si takéto svety mohli vyskúšať len vybraní ľudia. Teraz na nich môžu vývojári stavať prototypy hier, vizualizácie priestorov alebo cvičné prostredia na trénovanie robotov a AI agentov.",
+     "terms": [
+      {
+       "key": "worldmodel",
+       "term": "Model sveta",
+       "explain": "AI, ktorá negeneruje hotové video, ale simuluje prostredie v reálnom čase: reaguje na vaše pohyby a príkazy, podobne ako herný engine."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google",
+       "href": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/"
+      }
+     ]
+    },
+    {
+     "id": "gemini-omni-12-flash",
+     "title": "Google zlacnil a predĺžil svoje firemné videá: Gemini Omni 1.2 Flash zvládne 15-sekundové klipy",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Pre firmy"
+      }
+     ],
+     "keyFact": {
+      "value": "o 30 % lacnejšie",
+      "label": "od 7 centov za sekundu videa v 720p"
+     },
+     "body": [
+      "Google Cloud vo štvrtok 19. novembra plne sprístupnil firmám video model Gemini Omni 1.2 Flash, ktorý je dostupný v Gemini pre firmy, v aplikácii Google Vids aj cez API. Klip môže mať po novom 15 sekúnd namiesto desiatich a video v rozlíšení 720p stojí od 7 centov za sekundu, o 30 percent menej ako predchádzajúca verzia.",
+      "Model lepšie drží vzhľad produktu či postavy podľa referenčných obrázkov, má zrozumiteľnejšiu reč a presnejší [[lip-sync|lipsync]]. Najprv vytvoríte lacný náčrt a vybrané klipy potom zväčšíte až na 4K. V nezávislej video aréne Artificial Analysis sa model dostal na šieste miesto."
+     ],
+     "whyItMatters": "Krátke reklamné a produktové videá sú pre e-shopy čoraz lacnejšie. 15 sekúnd stačí na celú reklamu naraz, bez lepenia viacerých klipov.",
+     "terms": [
+      {
+       "key": "lipsync",
+       "term": "Lip-sync",
+       "explain": "Zosúladenie pohybu pier postavy vo videu s hovoreným slovom, aby to nevyzeralo ako zle nadabovaný film."
+      }
+     ],
+     "links": [
+      {
+       "label": "Dataconomy podľa Google Cloud",
+       "href": "https://dataconomy.com/2026/11/19/google-cloud-launches-gemini-omni-12-flash-for-business/"
+      }
+     ]
+    },
+    {
+     "id": "apple-fastframes",
+     "title": "Apple zverejnil video modely, ktoré generujú obraz takmer tak rýchlo, ako ho pozeráte",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Váhy na stiahnutie, obmedzená licencia"
+      }
+     ],
+     "body": [
+      "Výskumníci Apple zverejnili na Hugging Face dva video modely FastFrames: menší s 1,3 miliardy a väčší so 14 miliardami parametrov. Generujú video v rozlíšení 480p snímku po snímke a jedna snímka podľa autorov trvá na jednej grafickej karte okolo 36 milisekúnd, čo je rýchlosť blízka plynulému prehrávaniu.",
+      "Väčší model vznikol [[destiláciou|distill]] z čínskeho otvoreného modelu Wan 2.1. Licencia je však Applova vzorová licencia na kód a časť súborov smie byť použitá len nekomerčne, takže na biznis to zatiaľ nie je."
+     ],
+     "whyItMatters": "Rýchlosť je pri videu hlavná prekážka: dnes sa na klip často čaká minúty. Modely, ktoré stíhajú takmer v reálnom čase, otvárajú cestu k interaktívnemu videu a hrám poháňaným AI.",
+     "terms": [
+      {
+       "key": "distill",
+       "term": "Destilácia",
+       "explain": "Menší alebo rýchlejší model sa učí napodobňovať väčší model. Výsledok je lacnejší a rýchlejší, hoci zvyčajne o niečo menej presný."
+      }
+     ],
+     "links": [
+      {
+       "label": "FastFrames na Hugging Face",
+       "href": "https://huggingface.co/apple/FastFrames-L"
+      }
+     ]
+    },
+    {
+     "id": "ace-music-v1",
+     "title": "Suno prvýkrát nie je jednotkou v rebríčku piesní so spevom, tesne ho predbehol ACE Music",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Rebríček"
+      }
+     ],
+     "body": [
+      "V nezávislom hudobnom rebríčku Artificial Analysis, kde ľudia naslepo porovnávajú piesne so spevom, sa na prvé miesto dostal model ACE Music v1 so skóre 1160 bodov [[Elo|elo]]. Doterajší líder Suno v6 má 1144 bodov.",
+      "Rozdiel je však malý a štatistické rozpätia oboch modelov sa prekrývajú, takže nie je isté, či je ACE naozaj lepší. Ide skôr o signál, že Suno už nemá v AI hudbe istú pozíciu."
+     ],
+     "whyItMatters": "Suno bolo dlho synonymom AI piesní. Konkurencia znamená rýchlejšie zlepšovanie a pravdepodobne aj tlak na ceny predplatného.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Hudobný rebríček Artificial Analysis",
+       "href": "https://artificialanalysis.ai/music/leaderboard/vocals"
+      },
+      {
+       "label": "ACE Music v1",
+       "href": "https://acemusic.ai/acemusic-v1/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "AI, ktorá pracuje za vás",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "gemini-mac-computer-use",
+     "title": "Gemini na Macu už vie sám klikať v aplikáciách a vybavovať opakované úlohy",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Zatiaľ len USA, angličtina"
+      }
+     ],
+     "body": [
+      "Google vo štvrtok 19. novembra pridal do aplikácie Gemini pre Mac computer use: popíšete úlohu a Gemini sám prechádza menu, vypĺňa formuláre a kliká v aplikáciách aj na webe. Beží v samostatnom okne na pozadí, takže môžete ďalej pracovať, a v chate vidíte živý náhľad.",
+      "Sami vyberáte, ku ktorým aplikáciám má prístup, a dôležité kroky musíte schváliť. Zatiaľ je dostupný len v angličtine v USA pre predplatiteľov Google AI Plus, Pro a Ultra na Macoch s čipom Apple."
+     ],
+     "whyItMatters": "Google dobieha Anthropic a OpenAI, ktoré podobných desktopových agentov ponúkajú už dlhšie. Do Slovenska to zatiaľ nedorazilo, ale smer je jasný: AI asistent bude čoraz častejšie robiť klikanie za vás.",
+     "terms": [
+      {
+       "key": "agent",
+       "term": "AI agent",
+       "explain": "Program, ktorý nielen odpovedá, ale sám robí kroky: otvára súbory, kliká, hľadá na webe a pokračuje, kým úlohu nedokončí."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google",
+       "href": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+      }
+     ]
+    },
+    {
+     "id": "codex-0171",
+     "title": "Programátorský nástroj Codex od OpenAI má nový predvolený model a dá sa ovládať na diaľku",
+     "dateText": "piatok 20. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Nová verzia"
+      }
+     ],
+     "body": [
+      "V noci na piatok 20. novembra vyšla stabilná verzia 0.171.0 nástroja Codex, s ktorým AI programuje priamo v termináli. Predvoleným modelom je po novom GPT-6.2 Sol, k dispozícii je aj silnejší GPT-6.2 Astra, oba vyšli v utorok.",
+      "Prostredie v termináli teraz štandardne ukazuje náhľady dokumentov a obrázkov a priebeh práce pomocných agentov. Pribudlo diaľkové ovládanie, kde sa iné zariadenie spáruje kódom, a možnosť spustiť úlohu na už bežiacom serveri."
+     ],
+     "whyItMatters": "Kto Codex používa, po aktualizácii automaticky pracuje s novším modelom. Diaľkové ovládanie uľahčí nechať AI pracovať na počítači a kontrolovať ju odinakiaľ.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Codex 0.171.0 na GitHube",
+       "href": "https://github.com/openai/codex/releases/tag/rust-v0.171.0"
+      }
+     ]
+    },
+    {
+     "id": "claude-code-2329",
+     "title": "Claude Code lepšie upozorňuje na skryté automatické skripty v priečinkoch",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "body": [
+      "Vo štvrtok 19. novembra večer vyšla verzia 2.1.329 nástroja Claude Code. Pri otvorení nového priečinka teraz dialóg dôvery ukáže, kde sú definované takzvané [[hooky|hooks]], teda skripty, ktoré sa spúšťajú automaticky. Ak sa nenačítajú hooky nastavené firmou, objaví sa varovanie.",
+      "Príkaz /tasks ukazuje naplánované úlohy a opakované behy a pri pripojených nástrojoch cez [[MCP|mcp]] sa dá ľahšie zistiť, prečo spojenie zlyhalo."
+     ],
+     "whyItMatters": "Hooky v cudzom projekte môžu byť bezpečnostné riziko, lebo spúšťajú príkazy bez pýtania. Jasnejšie varovanie znižuje šancu, že si stiahnete projekt so zákerným skriptom.",
+     "terms": [
+      {
+       "key": "hooks",
+       "term": "Hooky",
+       "explain": "Krátke skripty, ktoré sa spustia automaticky pri určitej udalosti, napríklad pred alebo po tom, čo AI upraví súbor."
+      },
+      {
+       "key": "mcp",
+       "term": "MCP",
+       "explain": "Spoločný štandard, cez ktorý sa AI asistenti pripájajú k ďalším nástrojom a službám, napríklad ku kalendáru, GitHubu či databáze."
+      }
+     ],
+     "links": [
+      {
+       "label": "Claude Code na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases"
+      }
+     ]
+    },
+    {
+     "id": "gemini-tool-retrieval",
+     "title": "Agenti v Gemini API si načítajú návod k nástroju až vtedy, keď ho naozaj potrebujú",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Skúšobná verzia"
+      }
+     ],
+     "body": [
+      "Google vo štvrtok 19. novembra spustil v Gemini API skúšobnú funkciu Tool Retrieval. Keď má agent k dispozícii desiatky či stovky nástrojov, doteraz musel model pri každej požiadavke dostať podrobný popis každého z nich, čo stojí veľa tokenov a model sa v nich ľahšie pomýli.",
+      "Po novom model vidí len názvy a krátke popisy a podrobný návod k nástroju si vyžiada až vtedy, keď ho chce použiť, všetko v rámci jednej požiadavky. Funkcia nie je spoplatnená zvlášť; podobný prístup už ponúka aj Anthropic."
+     ],
+     "whyItMatters": "Pre firmy, ktoré stavajú agentov s veľa napojeniami, to znamená nižšie účty a presnejší výber správneho nástroja.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog Google",
+       "href": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+      }
+     ]
+    },
+    {
+     "id": "openai-performance-factory",
+     "title": "OpenAI ukázalo, ako AI agenti sami hľadajú a opravujú spomalenia ChatGPT",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Prax"
+      }
+     ],
+     "keyFact": {
+      "value": "vyše 600",
+      "label": "nájdených príčin spomalení za tri mesiace"
+     },
+     "body": [
+      "OpenAI vo štvrtok 19. novembra opísalo systém Performance Factory. Keď sa ChatGPT niekde spomalí, agent postavený na Codexe sám zistí príčinu, navrhne opravu a inžinier ju len skontroluje. Po nasadení iný agent overí, či sa rýchlosť vrátila na pôvodnú úroveň.",
+      "Za trochu viac ako tri mesiace systém spravil vyše 1 700 vyšetrovaní a vo viac ako 600 prípadoch našiel príčinu, teda zhruba 17 vyšetrovaní denne."
+     ],
+     "whyItMatters": "Je to konkrétny príklad, ako agenti pracujú v reálnej firme: nie ako chatbot, ale ako opakovaný postup s kontrolou výsledku. Rovnaký vzor môžu použiť aj iné firmy.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog OpenAI",
+       "href": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/"
+      }
+     ]
+    },
+    {
+     "id": "grok-bot-123",
+     "title": "Grok Bot umožňuje nastaviť každému nástroju zvlášť, či smie bežať sám alebo sa má pýtať",
+     "dateText": "streda 18. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Oprávnenia"
+      }
+     ],
+     "body": [
+      "Verzia 1.2.3 Grok Bota z 18. novembra pridáva pri každom napojenom konektore možnosť nastaviť jednotlivé nástroje: povoliť vždy, nechať automatickú kontrolu, vyžadovať schválenie alebo úplne zablokovať.",
+      "Rutiny po novom pošlú upozornenie, keď treba znova prihlásiť účet, a ak prihlásenie chýba, naplánované behy preskočia namiesto chyby."
+     ],
+     "whyItMatters": "Týka sa to priamo tvojho nastavenia s rannými rutinami: jemnejšie oprávnenia a jasnejšie upozornenia, keď sa niektorý účet odhlási.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Zoznam zmien Grok Bota",
+       "href": "https://x.ai/changelog/bot"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Technológie a trhy",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "anthropic-debut",
+     "title": "Akcie Anthropicu v prvý deň na burze stúpli o 17 percent, je to najväčší vstup na burzu v histórii",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Burza"
+      }
+     ],
+     "keyFact": {
+      "value": "97,17 $",
+      "label": "záverečná cena, o 17 % nad cenou 83 $"
+     },
+     "body": [
+      "Anthropic, firma za chatbotom Claude, vo štvrtok 19. novembra začal obchodovať na burze Nasdaq pod skratkou ANT. Akcie otvorili na 111,50 dolára, o 34 percent nad cenou z ponuky, no počas dňa zlacneli a skončili na 97,17 dolára, teda 17 percent nad 83 dolármi.",
+      "Firma získala 81,3 miliardy dolárov, čo je podľa CNBC najväčší [[vstup na burzu|ipo]] v histórii, väčší ako júnový vstup SpaceX. Pri započítaní všetkých akcií a opcií je firma podľa CNBC hodná zhruba 1,8 bilióna dolárov a je siedmou najhodnotnejšou americkou firmou. Za prvých deväť mesiacov roka mala tržby 33,2 miliardy dolárov, dvanásťkrát viac ako vlani."
+     ],
+     "whyItMatters": "Je to prvé veľké AI laboratórium, ktorého akcie si môže kúpiť bežný investor. Aj napriek úspechu Anthropicu však zvyšok technologických akcií v ten istý deň prudko padal, viac vo financiách nižšie.",
+     "terms": [
+      {
+       "key": "ipo",
+       "term": "IPO, vstup na burzu",
+       "explain": "Prvý predaj akcií firmy verejnosti. Od toho dňa sa s akciami voľne obchoduje na burze a cenu určuje ponuka a dopyt."
+      }
+     ],
+     "links": [
+      {
+       "label": "CNBC: Anthropic na burze",
+       "href": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ant-live-updates.html"
+      }
+     ]
+    },
+    {
+     "id": "tech-bear-market",
+     "title": "Technologické akcie sú po štvrtkovom prepade oficiálne v medvedom trhu",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Trh"
+      }
+     ],
+     "body": [
+      "Americký trh vo štvrtok 19. novembra prudko klesol: Nasdaq stratil 2,25 percenta, S&P 500 dve percentá a Dow Jones prvýkrát od júna zatvoril pod 50 000 bodmi. Ráno akcie rástli na vlne nadšenia z Anthropicu, no hneď po začiatku obchodovania s ANT sa obrátili, lebo investori začali vyberať zisky.",
+      "Fond sledujúci technologické firmy z indexu S&P 500 je podľa MarketWatch vyše 20 percent pod októbrovým vrcholom, čo sa považuje za [[medvedí trh|bearmarket]]. Index strachu na Wall Street VIX vyskočil najvyššie od marca. AMD padlo takmer o osem percent po tom, čo investičná firma Hunterbrook oznámila stávku na jeho pokles a poukázala na údajné porušovanie vývozných pravidiel do Číny."
+     ],
+     "whyItMatters": "Investori pochybujú, či sa obrovské investície do AI vrátia, a trápi ich aj vyšetrovanie predaja čipov do Číny. Pre bežného človeka to znamená, že aj široké fondy, ktoré drží v dôchodkovom sporení, sú teraz výrazne nižšie.",
+     "terms": [
+      {
+       "key": "bearmarket",
+       "term": "Medvedí trh",
+       "explain": "Keď cena akcie alebo indexu klesne o viac ako 20 percent od posledného vrcholu. Bežne sa tak označuje dlhšie obdobie poklesu a pesimizmu."
+      }
+     ],
+     "links": [
+      {
+       "label": "MarketWatch: trh po vstupe Anthropicu",
+       "href": "https://www.marketwatch.com/story/u-s-stocks-slide-as-ai-bust-continues-despite-anthropic-ipo-update-58c16ca1"
+      },
+      {
+       "label": "CNBC: priebeh obchodovania",
+       "href": "https://www.cnbc.com/2026/11/18/stock-market-today-live-updates.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Mistral Vibe Desktop: nová desktopová aplikácia na programovanie od Mistralu, zatiaľ len menšia novinka bez Linuxu a Mistral vo výkone zaostáva.",
+  "Tvrdenia o predaji 879 000 AI čipov do Číny a predvolanie Nvidie z Kalifornie: poznáme len titulky, text sa nepodarilo overiť.",
+  "Grok 4.8: stále len postupné sprístupňovanie bez oficiálneho dátumu.",
+  "Phancy Phai-M1: video so zvukom naraz, no bez váh na stiahnutie a s výkonom len podľa výrobcu.",
+  "Dohody Nvidie s dodávateľmi (Amkor, SPIL, Foxconn) a spolupráca Google s Blue Origin na vesmírnych dátových centrách: staršie alebo dlhodobé správy."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny z piatka 20. novembra o 6:17 Europe/Bratislava (CoinGecko, alternative.me); akcie podľa záverečných cien zo štvrtka 19. novembra (Yahoo Finance, CNBC, MarketWatch), burza v New Yorku sa otvára až popoludní nášho času.",
+  "summary": "Štvrtok bol na Wall Street ťažký deň: Nasdaq klesol o 2,25 percenta a S&P 500 o 2 percentá, hoci Anthropic mal úspešný vstup na burzu. Bitcoin pokračuje v poklese a je pod 62 000 dolármi.",
+  "btc": {
+   "priceUsd": 61557,
+   "priceEur": 56063,
+   "changePct": -2.88,
+   "changePctEur": -3.01,
+   "low24h": 61273,
+   "high24h": 64006,
+   "mood": "bearish",
+   "moodLabel": "Ďalej klesá, nálada veľmi zlá",
+   "comment": "Bitcoin stojí okolo 61 600 dolárov, teda približne 56 100 eur, a za posledných 24 hodín klesol takmer o 3 percentá. Za týždeň je nižšie asi o 10 percent, za mesiac o štvrtinu a od rekordu okolo 126 000 dolárov stratil viac ako polovicu. Ethereum je na približne 1 720 dolároch, za deň dole asi o 4 percentá. [[Index strachu a chamtivosti|fng]] je na 12 bodoch, stále extrémny strach, a trend ostáva [[medvedí|bearish]]; kryptomeny padajú spolu s technologickými akciami.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "ANT",
+    "name": "Anthropic",
+    "close": 97.17,
+    "changePct": 17.07,
+    "comment": "Prvý deň na burze: otvorenie 111,50 $, zmena počítaná od ceny z ponuky 83 $."
+   },
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 145.98,
+    "changePct": -3.3,
+    "comment": "Ráno rástla, potom sa obrátila do straty; za týždeň je dole asi o 10 percent."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 489.19,
+    "changePct": -7.72,
+    "comment": "Najväčší prepad dňa po stávke Hunterbrooku na pokles a otázkach o vývoze do Číny."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 346.65,
+    "changePct": -2.09,
+    "comment": "Odovzdala časť stredajšieho rastu."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 352.09,
+    "changePct": -2.9,
+    "comment": "Výrobca čipov pre takmer všetkých klesal spolu so sektorom."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 498.3,
+    "changePct": -1.97,
+    "comment": "Dole spolu s ostatnými technologickými gigantmi."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 272.66,
+    "changePct": -3.46,
+    "comment": "Výraznejší pokles napriek tomu, že Google vlastní asi 14 percent Anthropicu."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 596.22,
+    "changePct": -3.27,
+    "comment": "Ďalší deň v strate."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 349.21,
+    "changePct": -0.92,
+    "comment": "Najmenší pokles z veľkých firiem, Apple nie je vnímaný ako čistá AI stávka."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "CNBC: Nasdaq dole o 2 percentá",
+    "href": "https://www.cnbc.com/2026/11/18/stock-market-today-live-updates.html"
+   },
+   {
+    "label": "CNBC: Anthropic nepomohol AI akciám",
+    "href": "https://www.cnbc.com/2026/11/19/anthropic-ipo-ai-stocks-selloff.html"
+   },
+   {
+    "label": "AP: ako skončili indexy vo štvrtok",
+    "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2f178054aea79d282e5ccf8d62f26a28"
+   }
+  ],
+  "gem": {
+   "ticker": "TSM",
+   "name": "TSMC (Taiwan Semiconductor)",
+   "close": 352.09,
+   "changePct": -2.9,
+   "why": "TSMC vyrába čipy pre Nvidiu, AMD, Apple aj Google, takže zarába bez ohľadu na to, ktorá AI firma vyhrá. Od piatka 13. novembra akcia klesla zhruba o 12 percent spolu s celým sektorom, hoci samotný dopyt po výrobe čipov sa zatiaľ nezmenil. Pre opatrného investora, ktorý verí v AI dlhodobo, je to skôr menej rizikový spôsob ako staviť na jednu AI firmu.",
+   "risks": "Riziká: technologický sektor je v medvedom trhu a pokles môže pokračovať. TSMC sídli na Taiwane, takže ho ohrozuje napätie medzi Čínou a USA, a sprísňovanie vývozu čipov môže znížiť predaje do Ázie.",
+   "links": [
+    {
+     "label": "TSMC na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/TSM/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-20.json",
+  "note": "Gemini 4 Carbon od Googlu sa vrátil do sledovaného zoznamu hlavných modelov Artificial Analysis a so 60 bodmi je štvrtý. Nie je to nový model, vyšiel koncom októbra a včera v zozname len chýbal; Claude Opus 5.5 sa tým posunul na 5. miesto a GPT-6.2 Sol vypadol z top 5 na 6. Prvé tri miesta sa nezmenili: vedie Claude Fable 5.2 so 64,6 bodu pred GPT-6.2 Astra a Gemini 4 Neon. Graf rýchlosti opäť ukazuje dáta, Artificial Analysis ich len posiela inak: z desiatky najlepších píše najrýchlejšie Gemini 4 Hydrogen, asi 164 tokenov za sekundu. V aréne videa sa na 6. miesto dostal nový Gemini Omni 1.2 Flash, top 5 obrázkov aj videa je bez zmeny."
+ }
+}

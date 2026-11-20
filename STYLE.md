@@ -104,5 +104,5 @@ Rovnaký pojem stačí vysvetliť raz za deň (Slovníček dňa ich zlúči). Ce
   iné top 5 v aréne obrázkov/videa → `hasChange: true` → žltý baner „Zmena v rebríčku“ a grafy rozbalené.
   Bez zmeny: krátky riadok + prehľadové karty, grafy zbalené.
 - Ak AA zmení štruktúru stránky, skript skončí chybou (nezapíše nič). Oprava: pozri kľúče `intelligenceIndex`,
-  `timescaleData.medianOutputSpeed`, `price1mBlended0To3To1` a tabuľku `[{"formatted":{"rank":1,…`.
+  `timescaleData.medianOutputSpeed` (od 17. 11. 2026 `headline.outputSpeed`), `price1mBlended0To3To1` a tabuľku `[{"formatted":{"rank":1,…`.
 - Uchováva sa max 10 snapshotov (7 dní + rezerva).

@@ -117,7 +117,10 @@ def parse_llm(html):
             "releaseDate": o.get("releaseDate"),
             "isOpenWeights": bool(o.get("isOpenWeights")),
             "intelligenceIndex": num(o.get("intelligenceIndex"), 1),
-            "medianOutputSpeed": num((o.get("timescaleData") or {}).get("medianOutputSpeed"), 1),
+            # AA od 17. 11. 2026 posiela rýchlosť v "headline.outputSpeed" namiesto "timescaleData"
+            "medianOutputSpeed": num((o.get("timescaleData") or {}).get("medianOutputSpeed"), 1)
+            if num((o.get("timescaleData") or {}).get("medianOutputSpeed")) is not None
+            else num((o.get("headline") or {}).get("outputSpeed"), 1),
             "priceBlended": num(o.get("price1mBlended0To3To1"), 3),
             "priceInput": num(o.get("price1mInputTokens"), 3),
             "priceOutput": num(o.get("price1mOutputTokens"), 3),
