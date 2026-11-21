@@ -1,0 +1,566 @@
+{
+ "date": "2026-11-21",
+ "label": "Sobota 21. novembra 2026",
+ "shortLabel": "So 21. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Laboratórium Thinking Machines dalo zadarmo na stiahnutie šikovný model Inkling 2 Mini, ktorý beží aj na notebooku a vie dobre programovať. Claude sa vo firemných plánoch naučil ovládať počítač a na Wall Street prišiel v piatok najhorší deň za dlhé mesiace: Nvidia stratila 14 percent a Nasdaq vyše 5 percent.",
+ "highlights": [
+  "Thinking Machines dalo na stiahnutie model Inkling 2 Mini: zmestí sa do notebooku s 20 gigabajtmi pamäte a medzi voľne dostupnými modelmi svojej veľkosti najlepšie programuje.",
+  "Claude vo firemných plánoch Team a Enterprise už vie v skúšobnej verzii sám pracovať v aplikáciách na počítači.",
+  "Pozor na bezpečnosť: falošné verzie balíka agent-framework od Microsoftu (1.26.1 a 1.26.2) kradli heslá a kľúče, bezpečná je verzia 1.26.0.",
+  "Piatok na burze bol krutý: Nvidia klesla o 14 percent po správe o vyšetrovaní jej účtovníctva, Nasdaq o 5,3 percenta a za celý rok je už v mínuse.",
+  "Bitcoin spadol za noc takmer o 9 percent na zhruba 56 200 dolárov, index strachu je na 12, teda extrémny strach."
+ ],
+ "leadId": "inkling-2-mini",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "inkling-2-mini",
+     "title": "Thinking Machines dalo zadarmo model, ktorý sa zmestí do notebooku a programuje lepšie než konkurencia jeho veľkosti",
+     "dateText": "piatok 20. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · Apache 2.0"
+      },
+      {
+       "kind": "device",
+       "label": "Beží na notebooku"
+      }
+     ],
+     "keyFact": {
+      "value": "asi 20 GB",
+      "label": "pamäte stačí, model beží aj offline na MacBooku"
+     },
+     "body": [
+      "Americké laboratórium Thinking Machines Lab, ktoré založila bývalá technologická šéfka OpenAI Mira Murati, zverejnilo v piatok 20. novembra model Inkling 2 Mini. Dá sa voľne stiahnuť na stránke Hugging Face pod licenciou [[Apache 2.0|apache]] a celý zaberie približne 20 gigabajtov pamäte. Výskumníci ho podľa firmy spustili v lietadle bez internetu na MacBooku Pro so 48 gigabajtmi pamäte a model im za pár minút naprogramoval hrateľný letecký simulátor.",
+      "Model má 26,4 miliardy [[parametrov|parametre]], no je postavený ako [[mix expertov|moe]], takže pri každom slove pracuje len 3,4 miliardy z nich. Zvláštnosťou je takzvaná [[slučková architektúra|looped]]: stredné vrstvy modelu prejde pri každom slove trikrát, takže si viac „premyslí“ v hlave a nemusí toľko písať. V testoch programovania DeepSWE dosiahol 48,2 percenta vyriešených úloh, čím podľa firmy vedie medzi všetkými voľne dostupnými modelmi pod 100 miliárd parametrov.",
+      "Tieto výsledky sú zatiaľ len vlastné merania firmy, nezávislý rebríček Artificial Analysis model ešte nemá. Spustiť sa dá cez bežné nástroje ako Ollama, vLLM či SGLang a komunita už v prvý deň pripravila verzie pre Macy aj počítače s grafickou kartou."
+     ],
+     "whyItMatters": "Silný model na programovanie a prácu agentov, ktorý beží priamo na vašom notebooku, znamená, že kód ani dáta nemusia odísť do cudzieho cloudu a nič sa neplatí za použitie. Pre domáce experimenty s lokálnou AI je to dnes jeden z najzaujímavejších kandidátov.",
+     "terms": [
+      {
+       "key": "apache",
+       "term": "Licencia Apache 2.0",
+       "explain": "Veľmi voľná licencia: model môžete používať, upravovať aj komerčne nasadiť zadarmo, len treba zachovať upozornenie o autoroch."
+      },
+      {
+       "key": "parametre",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil počas tréningu. Viac parametrov zvyčajne znamená schopnejší, ale aj väčší a drahší model."
+      },
+      {
+       "key": "moe",
+       "term": "Mix expertov (MoE)",
+       "explain": "Model je rozdelený na veľa menších „expertov“ a pri každom slove sa zapne len niekoľko z nich. Vďaka tomu je rýchlejší a lacnejší, ako by naznačovala jeho celková veľkosť."
+      },
+      {
+       "key": "looped",
+       "term": "Slučková architektúra (looped transformer)",
+       "explain": "Model niektoré svoje vrstvy prechádza opakovane, akoby si myšlienku prešiel viackrát. Získa tak viac „premýšľania“ bez toho, aby bol väčší."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Thinking Machines",
+       "href": "https://thinkingmachines.ai/news/inkling-2-mini/"
+      },
+      {
+       "label": "Blog Hugging Face",
+       "href": "https://huggingface.co/blog/inkling2mini"
+      },
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/thinkingmachines/Inkling-2-Mini"
+      }
+     ]
+    },
+    {
+     "id": "wemm-video",
+     "title": "Tencent zverejnil modely, ktoré pozerajú video a zároveň počúvajú jeho zvuk",
+     "dateText": "piatok 20. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Čínsky model · Tencent"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · Apache 2.0"
+      }
+     ],
+     "body": [
+      "Čínsky Tencent dal v piatok na stiahnutie rodinu modelov WeMM-Video v štyroch veľkostiach, od 2 miliárd po 35 miliárd parametrov. Na rozdiel od väčšiny modelov, ktoré z videa vidia len obrázky, tieto spracujú aj pôvodnú zvukovú stopu: vedia opísať, čo sa vo videu deje, prepísať reč a odpovedať na otázky o tom, čo bolo vidieť aj počuť. Odpovedajú v angličtine alebo čínštine.",
+      "Najväčšia verzia je opäť mix expertov, ktorý má 35 miliárd parametrov, no pri každom slove pracujú len 3 miliardy, takže je pomerne nenáročný na výpočet. Tencent pripravil aj zmenšené, takzvané [[kvantizované|kvantizacia]] verzie, ktoré zaberú menej pamäte. Licencia je voľná Apache 2.0."
+     ],
+     "whyItMatters": "Kto chce doma alebo vo firme automaticky spracovať videá, napríklad urobiť prepis a zhrnutie porady či návodu, má teraz voľne dostupný model, ktorý rozumie obrazu aj zvuku naraz.",
+     "terms": [
+      {
+       "key": "kvantizacia",
+       "term": "Kvantizácia",
+       "explain": "Zmenšenie modelu tak, že sa jeho čísla ukladajú s menšou presnosťou. Model potom zaberie oveľa menej pamäte a beží rýchlejšie, za cenu malej straty kvality."
+      }
+     ],
+     "links": [
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/tencent/WeMM-Video-35BA3B"
+      },
+      {
+       "label": "Projekt na GitHube",
+       "href": "https://github.com/Tencent/WeMM-Video"
+      }
+     ]
+    },
+    {
+     "id": "openai-distillation",
+     "title": "OpenAI opísalo, ako bráni tomu, aby iní kopírovali jeho modely",
+     "dateText": "piatok 20. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "body": [
+      "OpenAI v piatok zverejnilo článok o boji proti takzvanej [[škodlivej destilácii|destilacia]]. Ide o situáciu, keď niekto hromadne zbiera odpovede silného modelu a trénuje na nich vlastný model, ktorý potom vie podobné veci, no bez bezpečnostných poistiek originálu. OpenAI sa obáva najmä toho, že by sa takto dali skopírovať schopnosti v kybernetickej bezpečnosti či biológii.",
+      "Firma najviac chráni takzvané uvažovanie modelu, teda medzikroky, ktoré si model robí pred odpoveďou. Podľa OpenAI pri novom GPT-6.2 Astra klesla úspešnosť pokusov o vytiahnutie tohto uvažovania v ich vlastnom teste z 54 percent na 0,2 percenta. Okrem toho nasadzuje automatické detektory podozrivého správania a vyšetruje koordinované kampane."
+     ],
+     "whyItMatters": "Pre bežného používateľa sa nič nemení, no vývojári, ktorí hromadne zbierajú výstupy modelov OpenAI na tréning vlastných modelov, môžu naraziť na prísnejšie obmedzenia.",
+     "terms": [
+      {
+       "key": "destilacia",
+       "term": "Destilácia",
+       "explain": "Technika, pri ktorej sa menší alebo nový model učí z odpovedí iného, silnejšieho modelu. Bežne sa používa legálne, no „škodlivá“ destilácia znamená kopírovanie cudzieho modelu bez povolenia."
+      }
+     ],
+     "links": [
+      {
+       "label": "Článok OpenAI",
+       "href": "https://openai.com/index/combatting-adversarial-distillation/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky, video a hudba",
+   "kicker": "Generovanie obrázkov, videa a hudby",
+   "icon": "image",
+   "items": [
+    {
+     "id": "kyutai-aura",
+     "title": "Francúzsky Kyutai ukázal avatara, ktorý v reálnom čase hovorí s tvárou podľa hlasu",
+     "dateText": "piatok 20. novembra",
+     "tags": [
+      {
+       "kind": "eu",
+       "label": "Európsky model · Francúzsko"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorené váhy, len nekomerčne"
+      }
+     ],
+     "keyFact": {
+      "value": "20,7 snímky",
+      "label": "za sekundu, video tváre plynulo podľa reči na jednej grafickej karte"
+     },
+     "body": [
+      "Parížske výskumné laboratórium Kyutai predstavilo v piatok AURA, modely, ktoré z hlasu priebežne vytvárajú video hovoriacej tváre. Menšia verzia s 1,3 miliardy parametrov zvládne video v rozlíšení 576 bodov na výšku v reálnom čase na jednej grafickej karte, väčšia s 5 miliardami dáva ostrejších 720 bodov, ale len asi 10 snímok za sekundu. Na rozdiel od starších riešení nemusí čakať na celú vetu, stačí jej práve vyslovený úsek reči.",
+      "Kyutai zverejnil výskumný článok, kód, váhy oboch modelov aj súbor 30 000 trénovacích videí a spustil verejné demo, kde sa dá rozprávať s tvárou ich hlasového asistenta Unmute. Avatar v deme zaostáva za hlasom asi o 1,2 sekundy. Pozor na licenciu: oba modely sa podľa Hugging Face smú používať len nekomerčne.",
+      "Štítok pôvodu uvádzame preto, lebo Kyutai je jedno z mála európskych laboratórií, ktoré otvorene zverejňuje špičkový výskum hlasovej AI, kým väčšinu podobných nástrojov ovládajú americké a čínske firmy."
+     ],
+     "whyItMatters": "Hlasoví asistenti s vlastnou tvárou, napríklad na zákazníckej linke alebo vo výučbe, sa vďaka tomu dajú skúšať bez drahých uzavretých služieb. Na komerčné použitie však treba počkať na inú licenciu.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog Kyutai",
+       "href": "https://kyutai.org/blog/2026-11-20-aura/"
+      },
+      {
+       "label": "Demo AURA",
+       "href": "https://aura.kyutai.org"
+      }
+     ]
+    },
+    {
+     "id": "ideogram-46",
+     "title": "Ideogram 4.6 kreslí a upravuje obrázky priamo vo veľmi vysokom rozlíšení",
+     "dateText": "štvrtok 19. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Aplikácia a API"
+      }
+     ],
+     "body": [
+      "Firma Ideogram vydala vo štvrtok 19. novembra model Ideogram 4.6 zameraný na presné úpravy obrázkov. Obrázky tvorí priamo v rozlíšení až 4K, teda zhruba štyritisíc bodov na šírku, bez dodatočného zväčšovania, takzvaného [[upscalingu|upscale]]. Pri úprave časti obrázka podľa firmy oveľa menej mení zvyšok, lepšie drží farby a potláča typický umelý „AI vzhľad“ s príliš hladkou pokožkou.",
+      "Dostupný je v aplikácii aj cez [[API|api]] a pri tvorbe môže použiť až päť vzorových obrázkov. Cena cez API je od necelého centa za rýchly obrázok po 60 centov za najkvalitnejšiu úpravu v 4K."
+     ],
+     "whyItMatters": "Kto robí produktové fotky alebo grafiku s textom, môže upravovať jeden detail po druhom bez toho, aby sa mu zvyšok obrázka „rozsypal“.",
+     "terms": [
+      {
+       "key": "upscale",
+       "term": "Upscaling",
+       "explain": "Dodatočné zväčšenie obrázka na vyššie rozlíšenie, pri ktorom AI dopočítava chýbajúce detaily. Natívne 4K znamená, že obrázok vzniká rovno vo veľkom rozlíšení."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré môžu programy a aplikácie službu používať priamo, bez klikania na webe. Zvyčajne sa platí podľa počtu požiadaviek."
+      }
+     ],
+     "links": [
+      {
+       "label": "Stránka Ideogram 4.6",
+       "href": "https://ideogram.ai/models/4.6/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "AI, ktorá pracuje za vás",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "claude-computer-use-team",
+     "title": "Claude vo firmách už vie sám pracovať v aplikáciách na počítači",
+     "dateText": "piatok 20. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Beta · Team a Enterprise"
+      }
+     ],
+     "body": [
+      "Anthropic v piatok sprístupnil pre firemné plány Team a Enterprise funkciu [[computer use|computeruse]] v skúšobnej, takzvanej [[beta|beta]] verzii. Claude vidí obrazovku používateľa a pracuje v desktopových aplikáciách, ktoré mu používateľ povolí. Funguje v novom Claude Desktop a dá sa spustiť aj z webu či mobilu, ak je na počítači zapnutý prístup.",
+      "Funkciu zapína správca firmy a do organizácií prichádza postupne. Doteraz bolo ovládanie počítača dostupné hlavne cez vývojárske rozhranie, teraz sa dostáva k bežným firemným používateľom."
+     ],
+     "whyItMatters": "Opakovanú prácu v programoch, ktoré nemajú prepojenie na AI, ako staré účtovné či firemné systémy, môže teraz Claude robiť za človeka. Je to priama konkurencia agentov ako Gemini na Macu alebo Grok Bot.",
+     "terms": [
+      {
+       "key": "computeruse",
+       "term": "Computer use",
+       "explain": "Schopnosť AI ovládať počítač ako človek: pozerá na obrazovku, hýbe myšou, kliká a píše v aplikáciách."
+      },
+      {
+       "key": "beta",
+       "term": "Beta",
+       "explain": "Skúšobná verzia funkcie, ktorá už funguje, ale môže mať chyby a ešte sa mení."
+      }
+     ],
+     "links": [
+      {
+       "label": "Poznámky k vydaniam Claude",
+       "href": "https://support.claude.com/en/articles/12138966-release-notes"
+      }
+     ]
+    },
+    {
+     "id": "agent-framework-pypi",
+     "title": "Podvrhnuté verzie Microsoft knižnice na AI agentov kradli heslá a kľúče",
+     "dateText": "utorok 17. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnostné varovanie"
+      }
+     ],
+     "body": [
+      "V utorok 17. novembra večer niekto zverejnil v [[PyPI|pypi]], hlavnom katalógu knižníc pre Python, dve škodlivé verzie balíka agent-framework, oficiálneho nástroja Microsoftu na stavbu AI agentov. Verzie 1.26.1 a 1.26.2 obsahovali skrytý kód, ktorý sa spustil pri každom štarte Pythonu, aj keď ste knižnicu vôbec nepoužili. Zbieral prístupové kľúče ku cloudu, tokeny z GitHubu a Azure a citlivé premenné prostredia.",
+      "Verzie už boli z katalógu stiahnuté a poslednou bezpečnou je 1.26.0. Podľa bezpečnostného upozornenia na GitHube treba postihnutý počítač považovať za kompromitovaný, preinštalovať ho a všetky kľúče a heslá, ktoré na ňom boli, vymeniť. Ide o takzvaný [[útok na dodávateľský reťazec|supplychain]]."
+     ],
+     "whyItMatters": "Ak niekde používaš agent-framework z PyPI, skontroluj verziu. Útoky sa čoraz častejšie zameriavajú priamo na nástroje pre AI agentov, lebo práve tie mávajú prístup k cenným kľúčom.",
+     "terms": [
+      {
+       "key": "pypi",
+       "term": "PyPI",
+       "explain": "Verejný katalóg knižníc pre programovací jazyk Python. Odtiaľ sa inštalujú balíky príkazom pip install."
+      },
+      {
+       "key": "supplychain",
+       "term": "Útok na dodávateľský reťazec",
+       "explain": "Útočník nenapadne vás priamo, ale podvrhne škodlivý kód do softvéru alebo knižnice, ktorú si sami nainštalujete, pretože jej dôverujete."
+      }
+     ],
+     "links": [
+      {
+       "label": "Bezpečnostné upozornenie na GitHube",
+       "href": "https://github.com/advisories/GHSA-764m-3ppc-5m73"
+      },
+      {
+       "label": "BleepingComputer",
+       "href": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/"
+      }
+     ]
+    },
+    {
+     "id": "claude-code-2330",
+     "title": "Claude Code teraz kreslí grafy priamo v termináli",
+     "dateText": "piatok 20. novembra",
+     "tags": [],
+     "body": [
+      "Nová verzia Claude Code 2.1.330 vyšla v piatok 20. novembra krátko pred polnocou nášho času. Pribudol vstavaný doplnok easel, ktorý na požiadanie nakreslí graf a automaticky aj pod výsledkami s číslami z napojených nástrojov; vypnúť sa dá v nastaveniach príkazom /config.",
+      "Firmy spravované cez administrátorskú konzolu Anthropicu sa teraz prihlásia jednoduchšie a Claude Code po prihlásení sám prevezme firemné nastavenia. Verzia opravuje aj množstvo chýb, napríklad zamŕzanie po skracovaní veľmi dlhej konverzácie."
+     ],
+     "whyItMatters": "Kto v Claude Code analyzuje dáta, uvidí výsledky rovno ako graf a nemusí ich kopírovať do tabuľky.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Vydania Claude Code na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Technológie a trhy",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "ai-selloff-nvidia-sec",
+     "title": "Nvidia v piatok spadla o 14 percent a stiahla so sebou celý trh",
+     "dateText": "piatok 20. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Trhy"
+      }
+     ],
+     "keyFact": {
+      "value": "−14 %",
+      "label": "Nvidia za jeden deň, Nasdaq −5,3 %"
+     },
+     "body": [
+      "Piatok 20. novembra bol na Wall Street najhorší deň za dlhé mesiace. Agentúra Reuters napísala, že americký dozor nad burzou SEC vyšetruje možné problémy v účtovníctve Nvidie, a akcia, ktorá už predtým strácala vyše 6 percent, uzavrela so stratou 14 percent. Nvidia klesá už siedmy týždeň po sebe, najdlhšie od finančnej krízy v roku 2008, a v novembri stratila takmer 40 percent hodnoty.",
+      "Firmu trápi aj odchod zakladateľa Jensena Huanga, ktorý odstúpil vo štvrtok 12. novembra po škandále, a obavy, či sa obrovské investície do AI dátových centier vyplatia. Ani dobré hospodárske výsledky z utorka ani úspešný vstup Anthropicu na burzu predaje nezastavili; Anthropic v piatok sám klesol o 8,5 percenta.",
+      "Index technologických firiem Nasdaq stratil 5,3 percenta a za celý rok 2026 je už v mínuse. Širší index S&P 500 klesol o 3,7 percenta a je v takzvanej [[korekcii|korekcia]], teda vyše 10 percent pod rekordom zo 6. októbra."
+     ],
+     "whyItMatters": "AI horúčka, ktorá dva roky ťahala burzy hore, sa prudko ochladzuje. Ak máte peniaze v indexových fondoch, tento týždeň ste to pocítili, pretože technologické firmy tvoria veľkú časť ich hodnoty.",
+     "terms": [
+      {
+       "key": "korekcia",
+       "term": "Korekcia",
+       "explain": "Pokles akcie alebo indexu o viac ako 10 percent od posledného vrcholu. Pri poklese o viac ako 20 percent sa hovorí o medvedom trhu."
+      }
+     ],
+     "links": [
+      {
+       "label": "Reuters: SEC skúma účtovníctvo Nvidie",
+       "href": "https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/"
+      },
+      {
+       "label": "CNBC: siedmy týždeň poklesu Nvidie",
+       "href": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
+      },
+      {
+       "label": "AP: S&P 500 v korekcii",
+       "href": "https://apnews.com/article/stock-markets-anthropic-ai-chips-boom-c4c3f4878b12989347f8a930ed813dad"
+      }
+     ]
+    },
+    {
+     "id": "nginx-security",
+     "title": "Webový server nginx dostal opravy viacerých vážnych chýb, aktualizujte",
+     "dateText": "streda 18. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "body": [
+      "Vývojári [[nginx|nginx]] vydali v stredu 18. novembra opravné verzie 1.31.9 a 1.30.7, ktoré riešia viac ako desať bezpečnostných chýb. Najvážnejšie sa týkajú protokolov HTTP/2 a HTTP/3, ktoré používa väčšina moderných webov: útočník mohol server zhodiť a podľa vývojárov nie je vylúčený ani horší dopad.",
+      "Zaujímavé je, že viaceré chyby našli firmy, ktoré na hľadanie zraniteľností používajú automatizované AI nástroje, napríklad Xint a Vexera AI."
+     ],
+     "whyItMatters": "Ak máte doma alebo vo firme niečo za nginx, napríklad vlastný web alebo domáci server, oplatí sa aktualizovať čo najskôr.",
+     "terms": [
+      {
+       "key": "nginx",
+       "term": "nginx",
+       "explain": "Jeden z najrozšírenejších webových serverov na svete. Stojí za veľkou časťou webových stránok a často slúži ako „vrátnik“ pred inými aplikáciami."
+      }
+     ],
+     "links": [
+      {
+       "label": "Novinky nginx",
+       "href": "https://nginx.org/"
+      },
+      {
+       "label": "Zoznam zmien nginx",
+       "href": "https://nginx.org/en/CHANGES"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Nvidia údajne rokuje o kúpe firmy Inception, ktorá robí jazykové modely na princípe difúzie, za viac ako 500 miliónov dolárov: zatiaľ len neoverené správy bez oficiálneho potvrdenia.",
+  "Suno Visuals na modeli MiniMax H3: potvrdenie poznáme len z neoficiálneho agregátora, nie z oznámenia Suno.",
+  "OpenAI MedChemBench, test z liečivej chémie s 99 úlohami: pre bežného čitateľa nízka priorita.",
+  "Codex CLI: len skúšobné alpha verzie bez podstatnej zmeny; GPT-6.2 v Microsoft Copilot a Gemini 4 Neon v GitHub Copilot sú len ďalšia distribúcia už známych modelov.",
+  "Spotrebiteľské novinky Googlu len pre USA (nákupy cez Connected Apps, telefonáty cez Gemini) a správa o autonómnom agentovi Apple len z odstránených pracovných inzerátov."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny zo soboty 21. novembra o 6:09 Europe/Bratislava (CoinGecko, alternative.me). Akcie podľa záverečných cien z piatka 20. novembra (Yahoo Finance, CNBC, AP), cez víkend burzy nebežia.",
+  "summary": "Piatok priniesol na Wall Street výpredaj AI akcií: Nasdaq klesol o 5,3 percenta a za rok je v mínuse, S&P 500 o 3,7 percenta a je v korekcii, čipové firmy stratili 12 až 14 percent. Do mínusu šlo takmer všetko vrátane zlata, ktoré kleslo o vyše 4 percentá, a bitcoin cez noc spadol pod 57 000 dolárov.",
+  "btc": {
+   "priceUsd": 56168,
+   "priceEur": 51189,
+   "changePct": -8.57,
+   "changePctEur": -8.5,
+   "low24h": 55615,
+   "high24h": 62224,
+   "mood": "bearish",
+   "moodLabel": "Prudký pokles, extrémny strach",
+   "comment": "Bitcoin stojí okolo 56 200 dolárov, teda približne 51 200 eur, a za posledných 24 hodín klesol takmer o 9 percent; ešte včera ráno bol nad 62 000. Za týždeň je nižšie o 16 percent a od rekordu okolo 126 000 dolárov z októbra 2025 stratil viac ako polovicu. Ethereum je na približne 1 560 dolároch, za deň dole asi o 9,5 percenta. [[Index strachu a chamtivosti|fng]] je na 12 bodoch, teda extrémny strach, a trend ostáva [[medvedí|bearish]]: kryptomeny padajú spolu s technologickými akciami, keď investori predávajú všetko rizikové.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 125.53,
+    "changePct": -14.01,
+    "comment": "Najväčší prepad po správe Reuters o vyšetrovaní účtovníctva; za týždeň dole o 23 percent."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 424.39,
+    "changePct": -13.25,
+    "comment": "Druhý deň po sebe veľký pokles, za dva dni stratila vyše 20 percent."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 304.41,
+    "changePct": -12.19,
+    "comment": "Výrobca čipov pre dátové centrá padal spolu s celým sektorom."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 318.71,
+    "changePct": -9.48,
+    "comment": "Ani výrobca čipov pre všetkých neunikol výpredaju."
+   },
+   {
+    "ticker": "ANT",
+    "name": "Anthropic",
+    "close": 88.91,
+    "changePct": -8.5,
+    "comment": "Druhý deň na burze vrátil polovicu štvrtkového zisku, stále je nad cenou z ponuky 83 dolárov."
+   },
+   {
+    "ticker": "ORCL",
+    "name": "Oracle",
+    "close": 101.19,
+    "changePct": -8.48,
+    "comment": "Prevádzkovateľ AI dátových centier pocítil obavy z ich výstavby."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 560.84,
+    "changePct": -5.93,
+    "comment": "Výrazný pokles, Meta patrí k najväčším investorom do AI."
+   },
+   {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "close": 246.82,
+    "changePct": -4.1,
+    "comment": "Dole spolu s ostatnými cloudovými firmami."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 484.52,
+    "changePct": -2.77,
+    "comment": "Pokles miernejší ako pri čipových firmách."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 265.29,
+    "changePct": -2.7,
+    "comment": "Za týždeň stratil asi 10 percent."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 342.56,
+    "changePct": -1.9,
+    "comment": "Opäť najmenší pokles z veľkých technologických firiem."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "CNBC: S&P 500 a Dow v korekcii",
+    "href": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+   },
+   {
+    "label": "CNBC: čo spôsobilo výpredaj",
+    "href": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html"
+   },
+   {
+    "label": "AP: ako skončili indexy v piatok",
+    "href": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c10b797a17c2acf37924d834efebe135"
+   }
+  ],
+  "gem": {
+   "ticker": "AAPL",
+   "name": "Apple",
+   "close": 342.56,
+   "changePct": -1.9,
+   "why": "Apple počas celého týždňa padal najmenej z veľkých technologických firiem, pretože investori ho nevnímajú ako čistú stávku na AI dátové centrá, ale ako firmu, ktorá zarába na telefónoch a službách. Od piatka 13. novembra je nižšie len asi o 4 percentá, kým Nvidia o 23. Pre opatrného investora, ktorý chce mať technológie, no menej sa báť AI bubliny, je to skôr pokojnejšia voľba.",
+   "risks": "Riziká: ak výpredaj pokračuje, môže stiahnuť aj Apple, a jeho akcia nie je lacná. Firma je závislá od predaja iPhonov a od výroby v Ázii, ktorú ohrozujú clá a napätie medzi USA a Čínou.",
+   "links": [
+    {
+     "label": "Apple na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/AAPL/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-21.json"
+ }
+}
