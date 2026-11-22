@@ -1,0 +1,463 @@
+{
+ "date": "2026-11-22",
+ "label": "Nedeľa 22. novembra 2026",
+ "shortLabel": "Ne 22. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Matematici potvrdili, že Riemannova hypotéza, jedna z najslávnejších nevyriešených úloh matematiky, je dokázaná, a kľúčové kroky dôkazu urobil Claude. Bitcoin sa cez víkend odrazil od dvojročného minima späť k 59 000 dolárom, akcie stoja na piatkových cenách po najhoršom týždni od jari 2025.",
+ "highlights": [
+  "Riemannova hypotéza, 167 rokov stará úloha o prvočíslach, je dokázaná: matematik Levent Alpöge z Anthropicu ju vyriešil s pomocou Claude za šesť týždňov a komunita okolo programu Lean v sobotu potvrdila, že dôkaz je správny.",
+  "OpenAI od piatka sprísnilo pravidlá: služby, ktoré ďalej predávajú prístup k jeho modelom, napríklad takzvané routery, potrebujú jeho schválenie.",
+  "Akcie stoja na piatkových cenách po najhoršom týždni od apríla 2025: Nvidia za týždeň mínus 23 percent, Nasdaq mínus 10 percent; v týždni s Dňom vďakyvzdania sa sleduje vyšetrovanie Nvidie a inflácia v stredu.",
+  "Bitcoin sa odrazil od dvojročného minima okolo 55 000 dolárov na približne 58 900 dolárov (za deň plus 4,6 percenta, za týždeň stále mínus 8,6), index strachu je na 11, teda extrémny strach.",
+  "V rebríčku Artificial Analysis sa nič nezmenilo, vedie Claude Fable 5.2 so skóre 64,6."
+ ],
+ "leadId": "riemann-claude",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "riemann-claude",
+     "title": "Claude pomohol dokázať Riemannovu hypotézu a matematici potvrdili, že dôkaz sedí",
+     "dateText": "piatok 20. a sobota 21. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Veda · matematika"
+      }
+     ],
+     "keyFact": {
+      "value": "17 miliónov",
+      "label": "riadkov kódu má dôkaz, počítač ho overil krok za krokom"
+     },
+     "body": [
+      "Matematik Levent Alpöge, ktorý pracuje v Anthropicu, zverejnil v piatok 20. novembra dôkaz Riemannovej hypotézy. Ide o úlohu z roku 1859 o tom, ako sú rozložené prvočísla, teda čísla deliteľné len jednotkou a samými sebou. Patrí medzi sedem takzvaných problémov milénia, za vyriešenie každého z nich ponúka Clayov matematický inštitút milión dolárov. Podľa Alpögeho kľúčové kroky dôkazu za zhruba šesť týždňov urobil Claude, cituje ho denník The Guardian.",
+      "Dôkaz nie je napísaný ako klasický článok, ale v programe [[Lean|lean]], kde počítač kontroluje každý logický krok. Má 17 miliónov riadkov kódu. V sobotu 21. novembra komunity okolo Leanu a knižnice Mathlib vyhlásili, že dôkaz je správny: kód sa bez chýb preložil u desiatok ľudí, dva nezávislé nástroje potvrdili, že dokázané tvrdenie je presne Riemannova hypotéza, a dôkaz prešlo viacero kontrolných programov napísaných rôznymi ľuďmi.",
+      "Alpöge sám priznal, že načasovanie deň po vstupe Anthropicu na burzu je nešťastné. Niektorí matematici zároveň upozorňujú, že ich znepokojuje, keď veľké súkromné firmy míňajú obrovské peniaze na to, aby AI riešila slávne úlohy. Ľudské vysvetlenie nových myšlienok dôkazu ešte len príde."
+     ],
+     "whyItMatters": "Je to zatiaľ najsilnejší dôkaz, že AI spolu s počítačovou kontrolou dokáže robiť skutočný výskum na hranici ľudského poznania, nie len opakovať, čo už vieme. Zároveň je to obrovská reklama pre Claude práve v čase, keď sa s akciami Anthropicu začalo obchodovať.",
+     "terms": [
+      {
+       "key": "lean",
+       "term": "Lean (formálny dôkaz)",
+       "explain": "Programovací jazyk, v ktorom sa matematický dôkaz zapíše ako kód. Počítač potom overí každý krok, takže sa nedá spoľahnúť na „to je zrejmé“ a chyba neprejde."
+      }
+     ],
+     "links": [
+      {
+       "label": "Vyhlásenie komunity Lean a Mathlib",
+       "href": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+      },
+      {
+       "label": "The Guardian",
+       "href": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai"
+      }
+     ]
+    },
+    {
+     "id": "metr-q4",
+     "title": "Nezávislí testéri z METR: dĺžka úloh, ktoré AI zvládne, sa zdvojnásobuje zhruba každé tri a pol mesiaca",
+     "dateText": "piatok 20. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť · meranie"
+      }
+     ],
+     "keyFact": {
+      "value": "3,6 mesiaca",
+      "label": "za toľko sa zdvojnásobí dĺžka úloh, ktoré AI zvládne"
+     },
+     "body": [
+      "Nezávislá organizácia METR, ktorá testuje schopnosti AI, zverejnila v piatok 20. novembra nové meranie najlepších verejných modelov vrátane Opus 5.5 a GPT-6 Astra. Sleduje takzvaný [[časový horizont|horizont]]: aké dlhé úlohy, merané časom skúseného človeka, zvládne AI aspoň v polovici prípadov. Ten sa podľa METR zdvojnásobuje zhruba každých 3,6 mesiaca.",
+      "Pre porovnanie: keď METR toto meranie v marci 2025 predstavil, najlepší model zvládal úlohy na zhruba hodinu. Dnes majú špičkové modely na novej, ťažšej sade úloh horizont až 27 hodín a pri programovaní a optimalizácii väčšinou vyrovnajú alebo prekonajú skúsených ľudí, takže METR už ťažko hľadá ľudí, ktorí by boli lepší.",
+      "METR zároveň zdôrazňuje, že meranie je čoraz ťažšie a drahšie a že nevie vylúčiť prudké zrýchlenie vývoja AI v najbližších pár rokoch, keď by ľudia už nestíhali posúdiť riziká nových systémov."
+     ],
+     "whyItMatters": "Toto číslo sa najčastejšie cituje, keď sa hovorí o tom, ako rýchlo AI agenti dokážu pracovať samostatne. Ak trend vydrží, o rok zvládnu úlohy zhruba desaťkrát dlhšie ako dnes.",
+     "terms": [
+      {
+       "key": "horizont",
+       "term": "Časový horizont (METR)",
+       "explain": "Dĺžka úlohy, meraná tým, koľko by trvala skúsenému človeku, ktorú AI vyrieši aspoň v polovici pokusov. Čím vyšší, tým dlhšiu prácu zvládne AI sama."
+      }
+     ],
+     "links": [
+      {
+       "label": "Správa METR",
+       "href": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/"
+      }
+     ]
+    },
+    {
+     "id": "openai-usage-policies",
+     "title": "OpenAI chce schvaľovať každého, kto ďalej predáva prístup k jeho modelom",
+     "dateText": "platí od piatka 20. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Pravidlá"
+      }
+     ],
+     "body": [
+      "Od piatka 20. novembra platia nové pravidlá používania OpenAI, ktoré firma ohlásila už v stredu 21. októbra. Najväčšia zmena: služby, ktoré dávajú iným ľuďom či firmám priamy prístup k modelom OpenAI, napríklad takzvané [[routery a brány|router]], teraz potrebujú predchádzajúce schválenie od OpenAI. Aplikácie, ktoré model len používajú vo svojich vlastných funkciách, schválenie nepotrebujú.",
+      "Pravidlá tiež výslovne zakazujú použiť modely OpenAI a ich odpovede na prípravu tréningových dát pre konkurenčné AI. Rozšírilo sa aj pravidlo o ľudskej kontrole: kým doteraz sa týkalo automatických rozhodnutí, teraz platí aj pre automatické akcie, ktoré AI vykoná. Upravené sú aj pravidlá ochrany detí a tínedžerov, informuje web PPC Land."
+     ],
+     "whyItMatters": "Kto používa modely OpenAI cez sprostredkovateľov, napríklad cez službu OpenRouter, by si mal všimnúť, či ich OpenAI schváli. Nadväzuje to na včerajší článok OpenAI o boji proti kopírovaniu jeho modelov.",
+     "terms": [
+      {
+       "key": "router",
+       "term": "Router a brána (gateway) pre AI",
+       "explain": "Služba, ktorá cez jedno rozhranie sprístupní modely rôznych firiem a sama vyberie, kam požiadavku pošle. Používatelia tak nemusia mať účet u každého poskytovateľa."
+      }
+     ],
+     "links": [
+      {
+       "label": "PPC Land",
+       "href": "https://ppc.land/openai-forces-ai-model-resellers-to-seek-its-approval-first/"
+      },
+      {
+       "label": "Pravidlá používania OpenAI",
+       "href": "https://openai.com/policies/usage-policies/"
+      }
+     ]
+    },
+    {
+     "id": "nemotron-sigma",
+     "title": "Nvidia dala na stiahnutie malé jazykové modely, ktoré píšu celé bloky textu naraz",
+     "dateText": "modely sú na Hugging Face od štvrtka 12. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · licencia Nvidie"
+      }
+     ],
+     "body": [
+      "Nvidia zhromaždila na stránke Hugging Face štrnásť verzií modelov Nemotron-Labs-Sigma s veľkosťou 3 a 8 miliárd parametrov. Na rozdiel od bežných chatbotov, ktoré píšu text slovo po slove, tieto modely fungujú na princípe [[difúzie|difuzia]]: celý blok textu začnú ako „šum“ a postupne ho vyčistia na zmysluplné vety. Najrýchlejšie verzie na to potrebujú len dva kroky.",
+      "Prvé modely sú na Hugging Face od štvrtka 12. novembra, kolekcia sa však rozrástla v posledných dňoch. Používať sa môžu aj komerčne podľa otvorenej licencie Nvidie. Na každodennú prácu sú zatiaľ malé, ide skôr o materiál na experimenty."
+     ],
+     "whyItMatters": "Difúzne jazykové modely môžu byť oveľa rýchlejšie ako dnešné chatboty, lebo nepíšu slovo za slovom. Ak sa ukážu ako dosť dobré, odpovede AI by mohli prichádzať takmer okamžite.",
+     "terms": [
+      {
+       "key": "difuzia",
+       "term": "Difúzny model",
+       "explain": "Model, ktorý začne s náhodným šumom a v niekoľkých krokoch ho upravuje, kým nevznikne výsledok. Takto bežne vznikajú obrázky z AI, tu sa to skúša na texte."
+      }
+     ],
+     "links": [
+      {
+       "label": "Kolekcia na Hugging Face",
+       "href": "https://huggingface.co/collections/nvidia/nemotron-labs-sigma"
+      },
+      {
+       "label": "Popis modelu 8B",
+       "href": "https://huggingface.co/nvidia/Nemotron-Labs-Sigma-8B-instruct"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "AI, ktorá pracuje za vás",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "claude-mobile",
+     "title": "Claude na mobile dostal nový vzhľad a z telefónu sa dá spustiť programovanie na počítači",
+     "dateText": "sobota 21. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Aplikácia · iPhone a Android"
+      }
+     ],
+     "body": [
+      "Anthropic začal v sobotu 21. novembra rozposielať všetkým používateľom prepracovanú aplikáciu Claude pre iPhone a Android. Dole pribudla lišta so záložkami pre kód, projekty a artefakty, teda hotové výstupy ako dokumenty či malé aplikácie. Na hlavnej obrazovke si vyberiete svoj počítač, spustíte na ňom reláciu Claude Code, teda programovacieho asistenta, a neskôr v nej môžete pokračovať.",
+      "Pribudla aj voľba písma pre aplikáciu aj odpovede a výber modelu je teraz malé koliesko, na ktorom dlhým podržaním nastavíte, ako veľmi má model premýšľať. Informoval o tom web iThinkDiff podľa príspevkov ľudí z Anthropicu na sieti X."
+     ],
+     "whyItMatters": "Ovládať programovacieho agenta z telefónu je presne to, čo dnes ponúkajú aj konkurenti od OpenAI či xAI. Kto má rozbehnutú prácu na počítači, môže ju skontrolovať a posunúť z gauča.",
+     "links": [
+      {
+       "label": "iThinkDiff",
+       "href": "https://www.ithinkdiff.com/claude-mobile-app-redesign-tab-bar-code-sessions/"
+      }
+     ]
+    },
+    {
+     "id": "browser-use-1",
+     "title": "Nástroj browser-use vyhodil 24 tlačidiel a nechal AI ovládať prehliadač vlastným kódom",
+     "dateText": "verzia z utorka 10. novembra, článok z piatka 20. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorený kód"
+      }
+     ],
+     "keyFact": {
+      "value": "o 14 až 33 bodov",
+      "label": "lepšie výsledky s tými istými modelmi, 2,7 až 5,2-krát lacnejšie"
+     },
+     "body": [
+      "Populárna knižnica browser-use, s ktorou AI agenti ovládajú webový prehliadač, vydala verziu 1.0 a v piatok 20. novembra vysvetlila, čo sa zmenilo. Namiesto 24 pripravených akcií, ako „klikni“ či „posuň stránku“, dostane model jediný nástroj: môže si písať vlastný kód v jazyku Python, ktorý priamo ovláda Chrome.",
+      "V ich vlastnom teste dosiahli tie isté tri modely o 14 až 33 bodov lepšie výsledky a stálo to 2,7 až 5,2-krát menej. Autori priznávajú, že vo verzii sa zmenilo viac vecí, takže zlepšenie nemožno pripísať len tejto zmene. Pozor: predvolene beží prehliadač aj model v ich platenom cloude, vlastný prehliadač treba zapnúť ručne."
+     ],
+     "whyItMatters": "Je to ďalší dôkaz trendu, ktorý vidno aj v Claude Code či Codexe: agent, ktorý si môže napísať vlastný kód, je šikovnejší než agent s pevným menu tlačidiel.",
+     "links": [
+      {
+       "label": "Blog browser-use",
+       "href": "https://browser-use.com/posts/simplicity"
+      },
+      {
+       "label": "Verzia 1.0 na GitHube",
+       "href": "https://github.com/browser-use/browser-use/releases/tag/1.0.0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Technológie a trhy",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "nvidia-sec-weekend",
+     "title": "Vyšetrovanie Nvidie je podľa New York Times ešte len na začiatku, Trump chce späť Huanga",
+     "dateText": "sobota 21. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Trhy"
+      }
+     ],
+     "body": [
+      "Americký dozor nad burzou [[SEC|sec]] vyšetruje účtovníctvo Nvidie, no podľa sobotňajšej správy denníka New York Times, ktorú prevzala agentúra AFP, je vyšetrovanie len v ranej fáze a môže skončiť aj bez obvinenia. Otázky sa točia okolo singapurskej firmy Megaspeed, ktorú americké úrady podozrievajú z pašovania zakázaných AI čipov do Číny, a okolo toho, že Nvidia minulý rok zmenila, ako vykazuje tržby podľa krajín, čím zo štatistík zmizol Singapur.",
+      "Firmu dočasne vedie bývalá finančná riaditeľka Colette Kress, po tom čo zakladateľ Jensen Huang začiatkom novembra odstúpil pre škandál. Prezident Trump v piatok povedal, že by bol rád, keby Huang dostal druhú šancu, predseda dozornej rady však jeho návrat vylúčil.",
+      "Akcia v piatok klesla o 14 percent a za týždeň o 23 percent, čo je podľa webu TheStreet najhorší týždeň od októbra 2008. V pondelok sa uvidí, či sa výpredaj zastaví."
+     ],
+     "whyItMatters": "Nvidia vyrába väčšinu čipov, na ktorých beží dnešná AI. Problémy firmy môžu ovplyvniť ceny a dostupnosť výpočtového výkonu aj americké pravidlá vývozu čipov.",
+     "terms": [
+      {
+       "key": "sec",
+       "term": "SEC",
+       "explain": "Americká komisia pre cenné papiere a burzu. Dohliada na to, aby firmy na burze nezavádzali investorov, a môže ich vyšetrovať a pokutovať."
+      }
+     ],
+     "links": [
+      {
+       "label": "AFP cez Yahoo Finance",
+       "href": "https://finance.yahoo.com/technology/ai/articles/nvidia-faces-us-accounting-probe-215354861.html"
+      },
+      {
+       "label": "Reuters: SEC skúma účtovníctvo Nvidie",
+       "href": "https://www.reuters.com/3fec1b0a85a0/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/"
+      }
+     ]
+    },
+    {
+     "id": "minimax-crypto",
+     "title": "Čínsky MiniMax tvrdí, že jeho interný model prelomil viacero šifrovacích návrhov",
+     "dateText": "piatok 20. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      },
+      {
+       "kind": "standard",
+       "label": "Čínsky model · MiniMax"
+      }
+     ],
+     "body": [
+      "Čínska firma MiniMax opísala v piatok 20. novembra, ako jej interný model, ktorý verejnosť nemôže používať, robil [[kryptoanalýzu|kryptoanalyza]]. Podľa firmy našiel prvé praktické útoky na viacero kandidátov z amerických súťaží NIST o nové šifrovacie štandardy, napríklad za pár sekúnd na jednom procesore obnovil tajný kľúč pri schémach LOCKER a ROLLO-I, a v referenčnom kóde ďalších schém našiel vyše tucta nenahlásených chýb.",
+      "MiniMax zdôrazňuje, že ide o akademické návrhy a staré kandidátne schémy, nie o šifrovanie, ktoré dnes používajú banky či internet. Postupy zverejnil na GitHube a autorov schém vopred upozornil. Nezávislé overenie výsledkov zatiaľ chýba."
+     ],
+     "whyItMatters": "AI rýchlo napreduje aj v hľadaní slabín šifrovania. Je to užitočné pre obrancov, no rovnaká schopnosť môže pomôcť aj útočníkom, preto bude kontrola ľudskými kryptografmi ešte dôležitejšia.",
+     "terms": [
+      {
+       "key": "kryptoanalyza",
+       "term": "Kryptoanalýza",
+       "explain": "Hľadanie slabín v šifrovaní, teda spôsobov, ako bez kľúča prečítať zašifrovanú správu alebo podvrhnúť podpis."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog MiniMax",
+       "href": "https://www.minimax.io/blog/practical-cryptanalysis-with-minimaxs-latest-internal-model"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Imagine Image 2.0 od xAI: podľa oficiálnej stránky x.ai vyšiel už v auguste, sobotné články nie sú nová správa.",
+  "ByteDance Axion 1.0: zverejnil len postup tréningu agentného modelu, oficiálne váhy na stiahnutie zatiaľ nie sú.",
+  "Týždenný prehľad otvorených modelov na obrázky a video (zrýchlenia pre ComfyUI): žiadny nový základný model, preto dnes bez sekcie obrázkov a videa.",
+  "ChatGPT Space pre plán Plus a premenovanie Cursoru na „Grok Build“ v interných verziách: len neoficiálne alebo sekundárne zdroje.",
+  "Claude Code a Codex CLI: od piatka bez novej stabilnej verzie."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny z nedele 22. novembra o 6:18 Europe/Bratislava (CoinGecko, alternative.me). Akcie podľa záverečných cien z piatka 20. novembra (Associated Press, CNBC, Yahoo Finance), cez víkend burzy nebežia a americké futures sa otvoria až v nedeľu večer.",
+  "summary": "Burzy majú za sebou najhorší týždeň od apríla 2025: Nasdaq stratil za týždeň 10 percent a za rok 2026 je v mínuse 2,7 percenta, S&P 500 a Dow Jones sú v korekcii. Bitcoin sa cez víkend odrazil od dvojročného minima, no trend ostáva medvedí a nový týždeň bude kratší pre Deň vďakyvzdania. V týždni sa bude sledovať najmä vyšetrovanie Nvidie, hospodárske výsledky firiem Dell a HPE v utorok, ktoré ukážu dopyt po AI serveroch, a v stredu údaj o inflácii; vo štvrtok je burza zatvorená.",
+  "btc": {
+   "priceUsd": 58898,
+   "priceEur": 53672,
+   "changePct": 4.56,
+   "changePctEur": 4.57,
+   "low24h": 55298,
+   "high24h": 60799,
+   "mood": "bearish",
+   "moodLabel": "Odraz v klesajúcom trende, extrémny strach",
+   "comment": "Bitcoin stojí okolo 58 900 dolárov, teda približne 53 700 eur, a za posledných 24 hodín pridal 4,6 percenta. V sobotu ráno klesol až na zhruba 55 100 dolárov, najnižšie od septembra 2024, potom sa podľa CoinDesku vrátil nad 60 000. Odraz pomohol koniec [[nútených predajov|likvidacia]]: za deň zmizli páky v hodnote 1,8 miliardy dolárov, väčšinou stávky na rast, takže zmizol veľký zdroj predajov. Za týždeň je bitcoin stále nižšie o 8,6 percenta a z amerických [[ETF fondov|etf]] odišlo za týždeň 1,1 miliardy dolárov. Ethereum je na približne 1 660 dolároch, za deň plus 5,8 percenta. [[Index strachu a chamtivosti|fng]] je na 11 bodoch, teda extrémny strach, a trend ostáva [[medvedí|bearish]]; analytici z QCP Capital upozorňujú, že trvalejší rast potrebuje upokojenie technologických akcií.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    },
+    {
+     "label": "CoinDesk: odraz nad 60 000",
+     "href": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 125.53,
+    "changePct": -14.01,
+    "comment": "Najhorší týždeň od októbra 2008: za týždeň mínus 23 percent, za november takmer mínus 40."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 424.39,
+    "changePct": -13.25,
+    "comment": "Druhý deň po sebe veľký pokles, za dva dni stratila vyše 20 percent."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 304.41,
+    "changePct": -12.19,
+    "comment": "Výrobca čipov pre dátové centrá padal spolu s celým sektorom."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 318.71,
+    "changePct": -9.48,
+    "comment": "Ani výrobca čipov pre všetkých neunikol výpredaju."
+   },
+   {
+    "ticker": "ANT",
+    "name": "Anthropic",
+    "close": 88.91,
+    "changePct": -8.5,
+    "comment": "Týždeň uzavrel na 88,91 dolára, stále nad cenou z ponuky 83 dolárov."
+   },
+   {
+    "ticker": "ORCL",
+    "name": "Oracle",
+    "close": 101.19,
+    "changePct": -8.48,
+    "comment": "Prevádzkovateľ AI dátových centier pocítil obavy z ich výstavby."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 560.84,
+    "changePct": -5.93,
+    "comment": "Výrazný pokles, Meta patrí k najväčším investorom do AI."
+   },
+   {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "close": 246.82,
+    "changePct": -4.1,
+    "comment": "Dole spolu s ostatnými cloudovými firmami."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 484.52,
+    "changePct": -2.77,
+    "comment": "Pokles miernejší ako pri čipových firmách."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "close": 265.29,
+    "changePct": -2.7,
+    "comment": "Za týždeň stratil asi 10 percent."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 342.56,
+    "changePct": -1.9,
+    "comment": "Opäť najmenší pokles z veľkých technologických firiem."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "CNBC: čo spôsobilo výpredaj",
+    "href": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html"
+   },
+   {
+    "label": "Wall Street Feed: týždeň v číslach a čo príde",
+    "href": "https://wallstfeed.com/weekend-briefing-worst-week-since-april-2025-pce-thanksgiving-week-november-21/"
+   }
+  ],
+  "gem": {
+   "ticker": "AAPL",
+   "name": "Apple",
+   "close": 342.56,
+   "changePct": -1.9,
+   "why": "Apple počas celého výpredaja padal najmenej z veľkých technologických firiem, v piatok len o 1,9 percenta, pretože investori ho nevnímajú ako čistú stávku na AI dátové centrá, ale ako firmu, ktorá zarába na telefónoch a službách. Pre opatrného investora, ktorý chce mať technológie, no menej sa báť AI bubliny, zostáva skôr pokojnejšou voľbou. Ceny sa od piatka nezmenili, burza cez víkend nebeží.",
+   "risks": "Riziká: ak výpredaj pokračuje, môže stiahnuť aj Apple, a jeho akcia nie je lacná. Firma je závislá od predaja iPhonov a od výroby v Ázii, ktorú ohrozujú clá a napätie medzi USA a Čínou.",
+   "links": [
+    {
+     "label": "Apple na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/AAPL/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   },
+   {
+    "key": "likvidacia",
+    "term": "Likvidácia (nútený predaj)",
+    "explain": "Keď niekto obchoduje na požičané peniaze, teda s pákou, a cena ide proti nemu, burza jeho pozíciu automaticky predá. Takéto hromadné predaje pád ešte zrýchlia."
+   },
+   {
+    "key": "etf",
+    "term": "ETF fond",
+    "explain": "Fond, s ktorým sa obchoduje na burze ako s akciou. Bitcoinové ETF umožňujú investovať do bitcoinu bez toho, aby ste ho sami držali."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-22.json"
+ }
+}
