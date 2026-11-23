@@ -1,0 +1,344 @@
+{
+ "date": "2026-11-23",
+ "label": "Pondelok 23. novembra 2026",
+ "shortLabel": "Po 23. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Hlavný vedec OpenAI navrhuje, aby sa všetky AI firmy dohodli na spoločnom meradle inteligencie a na limitoch, ktoré neprekročia, kým nebudú vedieť AI lepšie kontrolovať. Po najhoršom týždni na burzách za vyše šesť rokov americké futures v noci výrazne rastú a bitcoin sa vrátil nad 61 000 dolárov.",
+ "highlights": [
+  "Hlavný vedec OpenAI Jakub Pachocki navrhuje spoločné meradlo pokroku AI pre všetky firmy a dohodnuté limity vývoja, kým nebude lepšia kontrola nad AI; OpenAI prvýkrát zverejnilo svoje interné merania.",
+  "Indický Sarvam vydal otvorený model na zákaznícku podporu a hlasových asistentov, ktorý je podľa firmy rovnako dobrý ako Gemini 3.5 Flash-Lite, no viac ako päťkrát lacnejší.",
+  "Akcie po najhoršom týždni za vyše šesť rokov v noci ožívajú: futures na Nasdaq 100 sú vyššie zhruba o 2,8 percenta, S&P 500 o 2,1 percenta; Nvidia skončila piatok na 125,53 dolára.",
+  "Bitcoin pokračuje v odraze na približne 61 100 dolárov (za deň plus 3,5 percenta, za týždeň mínus 5,6), index strachu je stále na 11, teda extrémny strach.",
+  "Rebríček jazykových modelov Artificial Analysis bez zmeny, vedie Claude Fable 5.2 so skóre 64,6; vo videu sa len tesne vymenili štvrté a piate miesto."
+ ],
+ "leadId": "openai-perplexita",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "openai-perplexita",
+     "title": "Hlavný vedec OpenAI chce, aby si AI firmy stanovili spoločné limity, a zverejnil, ako rýchlo sa ich modely zlepšujú",
+     "dateText": "nedeľa 22. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť · návrh pravidiel"
+      }
+     ],
+     "keyFact": {
+      "value": "z 0,99 na 0,76",
+      "label": "pokles chyby predpovede od modelu za pôvodným ChatGPT po model, ktorý začal riešiť otvorené matematické úlohy"
+     },
+     "body": [
+      "Jakub Pachocki, hlavný vedec OpenAI, v nedeľu 22. novembra navrhol, aby všetky veľké AI firmy merali pokrok rovnakým číslom, takzvanou [[perplexitou|perplexita]]. Zjednodušene ukazuje, ako dobre model odhaduje ďalšie slovo v texte, ktorý nikdy nevidel: čím nižšie číslo, tým lepší model. OpenAI ako prvý krok zverejnilo svoje interné merania od modelu GPT-3.5, na ktorom vznikol pôvodný ChatGPT.",
+      "Čísla sú zaujímavé samy osebe. GPT-3.5 mal hodnotu približne 0,99, GPT-4 asi 0,91 a keď OpenAI prešlo na model s hodnotou okolo 0,76, ten podľa Pachockiho začal jeden za druhým riešiť otvorené matematické problémy. Pri hodnotách okolo 0,68 až 0,70 očakáva ďalšie zásadné nové schopnosti, hoci nevie povedať aké, a podľa grafu sa pokrok v roku 2026 prudko zrýchlil.",
+      "Hlavný návrh je politický: firmy by sa mali dohodnúť na spoločnej hranici, ktorú neprekročia, kým nebudú vedieť správanie AI spoľahlivo sledovať. Pachocki sám priznáva slabiny, napríklad že každá firma meria na iných dátach a že „premýšľanie“ modelov pred odpoveďou sa v tomto čísle vôbec neprejaví."
+     ],
+     "whyItMatters": "Je to zriedkavý pohľad do kuchyne najväčšej AI firmy a zároveň signál, že OpenAI samo chce brzdy pre celé odvetvie. Ak by sa takéto limity ujali, mohli by ovplyvniť, ako rýchlo prídu nové modely a aké pravidlá budú platiť aj pre otvorené modely.",
+     "terms": [
+      {
+       "key": "perplexita",
+       "term": "Perplexita",
+       "explain": "Číslo, ktoré meria, ako veľmi je model „prekvapený“ skutočným textom, teda ako presne odhaduje, čo príde ďalej. Nižšia hodnota znamená lepšie pochopenie jazyka a sveta. OpenAI uvádza jej logaritmus, preto sú čísla okolo jednej."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog OpenAI (Jakub Pachocki)",
+       "href": "https://openai.com/index/perplexity-and-intelligence/"
+      }
+     ]
+    },
+    {
+     "id": "sarvam-105b",
+     "title": "Indický Sarvam vydal otvorený model pre hlasových asistentov, ktorý je päťkrát lacnejší ako porovnateľný Gemini",
+     "dateText": "nedeľa 22. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · Apache 2.0"
+      },
+      {
+       "kind": "standard",
+       "label": "Indický model"
+      }
+     ],
+     "keyFact": {
+      "value": "0,15 $",
+      "label": "za milión tokenov, Gemini 3.5 Flash-Lite stojí 0,85 $"
+     },
+     "body": [
+      "Indická firma Sarvam v nedeľu 22. novembra zverejnila novú verziu svojho modelu so 105 miliardami [[parametrov|parametre]]. Je postavený ako [[zmes expertov|moe]] a určený na veľké objemy jednoduchšej práce: zákaznícku podporu, hlasových asistentov a úlohy, pri ktorých model volá iné programy. Váhy sú voľne na stiahnutie pod licenciou [[Apache 2.0|apache]].",
+      "Na ôsmich testoch konverzačných agentov má podľa Sarvamu priemer 73,9 bodu, takmer rovnako ako Gemini 3.5 Flash-Lite so 74,0, ale za 0,15 dolára za milión [[tokenov|token]] namiesto 0,85. Oproti februárovej verzii sa výrazne zlepšil v plnení pokynov a v indických jazykoch. Všetky čísla sú zatiaľ len od samotnej firmy.",
+      "Zmenšená verzia má 65 gigabajtov a zmestí sa na jednu pracovnú grafickú kartu Nvidia RTX PRO 6000, kde odpovedá rýchlosťou okolo 99 tokenov za sekundu. Banky či úrady ju tak môžu prevádzkovať na vlastných serveroch."
+     ],
+     "whyItMatters": "Väčšinu trhu ovládajú americké a čínske firmy, Sarvam ukazuje, že aj menšia krajina vie postaviť konkurencieschopný model. Pre firmy, ktoré nechcú posielať dáta do cudzieho cloudu, je to lacná otvorená alternatíva.",
+     "terms": [
+      {
+       "key": "parametre",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil počas tréningu. Viac parametrov zvyčajne znamená schopnejší, ale aj drahší a pomalší model."
+      },
+      {
+       "key": "moe",
+       "term": "Zmes expertov (MoE)",
+       "explain": "Model rozdelený na veľa menších „odborníkov“. Pri každom slove pracuje len malá časť z nich, takže model je veľký, no beží rýchlo a lacno."
+      },
+      {
+       "key": "apache",
+       "term": "Licencia Apache 2.0",
+       "explain": "Veľmi voľná licencia: model môže ktokoľvek používať, upravovať aj komerčne nasadiť, stačí uviesť pôvod."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Sarvamu",
+       "href": "https://www.sarvam.ai/blogs/sarvam-105b-1711"
+      },
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/sarvamai/sarvam-105b-1711"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "pi-h3",
+     "title": "Výskumníci zo Stanfordu zrýchlili otvorený video model tak, že vyrobí klip rýchlejšie, ako trvá jeho prehratie",
+     "dateText": "sobota 21. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · ComfyUI"
+      }
+     ],
+     "keyFact": {
+      "value": "3,8 sekundy",
+      "label": "na vygenerovanie päťsekundového HD videa so zvukom"
+     },
+     "body": [
+      "Tím zo Stanfordskej univerzity, ktorý čiastočne pracoval aj v Luma AI, zverejnil v sobotu 21. novembra verziu 1.0 projektu pi-H3. Ide o zrýchlenú, takzvanú [[destilovanú|destilacia]] verziu otvoreného video modelu MiniMax H3, ktorá namiesto desiatok krokov potrebuje len dva až štyri.",
+      "Na jednej výkonnej grafickej karte Nvidia B200 vytvorí päťsekundové video vo vysokom rozlíšení aj so zvukom za 3,8 sekundy a pätnásťsekundové za 18,6 sekundy, teda viac ako dvakrát rýchlejšie ako doteraz najrýchlejšia verzia. Váhy aj kód na spúšťanie sú voľne dostupné a model sa dá používať v programe [[ComfyUI|comfyui]], kód na tréning príde neskôr."
+     ],
+     "whyItMatters": "Kvalitné video sa tak blíži k tvorbe v reálnom čase, čo otvára cestu napríklad k interaktívnym avatarom či hrám. Bežný počítač na to zatiaľ nestačí, ide o kartu pre dátové centrá.",
+     "terms": [
+      {
+       "key": "destilacia",
+       "term": "Destilácia",
+       "explain": "Postup, pri ktorom sa menší alebo rýchlejší model učí napodobňovať väčší. Výsledok je takmer rovnako dobrý, no oveľa rýchlejší."
+      },
+      {
+       "key": "comfyui",
+       "term": "ComfyUI",
+       "explain": "Bezplatný program, v ktorom si človek poskladá postup generovania obrázkov či videa z blokov a spúšťa ho na vlastnom počítači."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog autorov pi-H3",
+       "href": "https://hanshengchen.com/blog/pi-h3/"
+      },
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/Lakonik/pi-H3"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Technológie a trhy",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "clayton-nvidia",
+     "title": "Šéf americkej rozviedky: čipy Nvidie sú klenot, ktorý chce každý, a vyšetrujeme údajnú čínsku špiónku",
+     "dateText": "nedeľa 22. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Čipy · geopolitika"
+      }
+     ],
+     "body": [
+      "Šéf americkej spravodajskej služby Jay Clayton v nedeľu 22. novembra v relácii This Week stanice ABC potvrdil, že Washington preveruje údajnú čínsku špiónku napojenú na bývalého šéfa Nvidie Jensena Huanga. Čipy Nvidie nazval „klenotom, ktorý chce každý“.",
+      "Denník New York Times v ten istý deň napísal, že čínska tajná služba pomáhala tamojším firmám získať pokročilé americké čipy. Expert z inštitútu Brookings Kyle Chan zároveň upozornil, že americké [[exportné obmedzenia|export]] tlačia Čínu k tomu, aby si celý reťazec výroby čipov postavila doma."
+     ],
+     "whyItMatters": "Škandál okolo Nvidie, ktorý minulý týždeň stiahol akcie, sa tak ďalej rozrastá. Pravdepodobné sú prísnejšie pravidlá vývozu čipov, čo môže ovplyvniť ich ceny aj dostupnosť výpočtového výkonu pre AI.",
+     "terms": [
+      {
+       "key": "export",
+       "term": "Exportné obmedzenia",
+       "explain": "Pravidlá, ktorými USA zakazujú alebo obmedzujú predaj najvýkonnejších čipov do niektorých krajín, najmä do Číny."
+      }
+     ],
+     "links": [
+      {
+       "label": "Semafor",
+       "href": "https://www.semafor.com/article/11/22/2026/us-spy-chief-calls-nvidia-chips-jewels"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Konkrétne čísla perplexity pre GPT-6.2 Astra a nevydaný model kolujú len na X, v článku OpenAI nie sú pri názvoch modelov uvedené.",
+  "Medicínsky model LingSante-3.1-flash od Ant Group: bez oficiálneho oznámenia, výsledky len z popisu modelu a doma nespustiteľný.",
+  "Nvidia Alpamayo 2 Edge pre autonómne autá, DreamCoder a TestSprite 4.0: nízka priorita.",
+  "Senátor Cotton a údajné schválenie 580 000 čipov: zatiaľ bez overeného primárneho zdroja.",
+  "„Seedream 5.5“ cez Runway: pochybný zdroj, oficiálne nepotvrdené.",
+  "Claude Code, Codex a Claude aplikácie: cez víkend bez novej stabilnej verzie."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny z pondelka 23. novembra o 6:10 Europe/Bratislava (CoinGecko, alternative.me). Akcie podľa záverečných cien z piatka 20. novembra, futures podľa Fortune a CNBC z noci na pondelok (okolo 3:15 Europe/Bratislava).",
+  "summary": "Po najhoršom týždni pre Nasdaq a Dow Jones za vyše šesť rokov, keď všetky tri hlavné indexy skončili v [[korekcii|korekcia]], americké [[futures|futures]] v noci výrazne rastú: Nasdaq 100 asi o 2,8 percenta, S&P 500 o 2,1 a Dow o 1,7 percenta. Ázia je však dole, kórejský index Kospi klesol o vyše 3 percentá a Japonsko má sviatok. Týždeň je kratší: v stredu príde údaj o inflácii, vo štvrtok je burza pre Deň vďakyvzdania zatvorená a v piatok sa obchoduje len do obeda.",
+  "btc": {
+   "priceUsd": 61141,
+   "priceEur": 55676,
+   "changePct": 3.52,
+   "changePctEur": 3.39,
+   "low24h": 58817,
+   "high24h": 61713,
+   "mood": "bearish",
+   "moodLabel": "Odraz v klesajúcom trende, extrémny strach",
+   "comment": "Bitcoin stojí približne na 61 100 dolároch, teda okolo 55 700 eur, a za posledných 24 hodín pridal 3,5 percenta. Odraz od sobotného dvojročného minima pri 55 000 dolároch tak pokračuje a v noci ho podporil aj rast amerických futures. Za týždeň je však stále nižšie o 5,6 percenta. Ethereum je na približne 1 720 dolároch, za deň plus 4 percentá. [[Index strachu a chamtivosti|fng]] stojí tretí deň na 11 bodoch, teda extrémny strach, takže trend ostáva [[medvedí|bearish]], kým sa neupokoja technologické akcie.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 125.53,
+    "changePct": -14.01,
+    "comment": "Za týždeň mínus 23 percent; v piatok po zatvorení burzy sa obchodovala okolo 130 dolárov."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 424.39,
+    "changePct": -13.25,
+    "comment": "Za posledné dva dni stratila vyše 20 percent."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 304.41,
+    "changePct": -12.19,
+    "comment": "Výrobca čipov pre dátové centrá padal s celým sektorom."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 318.71,
+    "changePct": -9.48,
+    "comment": "Taiwanská burza mala najhorší týždeň od roku 1990."
+   },
+   {
+    "ticker": "ANT",
+    "name": "Anthropic",
+    "close": 88.91,
+    "changePct": -8.5,
+    "comment": "Stále nad cenou z ponuky 83 dolárov."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 560.84,
+    "changePct": -5.93,
+    "comment": "Jeden z najväčších investorov do AI."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 484.52,
+    "changePct": -2.77,
+    "comment": "Pokles miernejší ako pri čipových firmách."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 342.56,
+    "changePct": -1.9,
+    "comment": "Najmenší pokles z veľkých technologických firiem."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Fortune: futures v noci na pondelok",
+    "href": "https://fortune.com/2026/11/22/stock-market-today-dow-futures-sp500-nasdaq-correction-ai-bust/"
+   },
+   {
+    "label": "CNBC: priebežné správy z trhov",
+    "href": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
+   },
+   {
+    "label": "Reuters (cez Investing.com): Ázia sa pripravuje na ďalšie predaje",
+    "href": "https://www.investing.com/news/economy-news/us-futures-bounce-while-asia-markets-brace-for-ai-wipeout-5044181"
+   }
+  ],
+  "gem": {
+   "ticker": "MSFT",
+   "name": "Microsoft",
+   "close": 484.52,
+   "changePct": -2.77,
+   "why": "Microsoft v piatok klesol oveľa menej ako výrobcovia čipov, pretože zarába na široko rozložených veciach: na Office, Windows a cloude Azure, nielen na predaji hardvéru pre AI. Ak sa trh po výpredaji upokojí, takéto stabilnejšie firmy bývajú pre opatrného investora pokojnejšou cestou, ako mať technológie v portfóliu. Cena je z piatkového zatvorenia, dnešný obchod začína až popoludní nášho času.",
+   "risks": "Riziká: Microsoft míňa na AI dátové centrá desiatky miliárd ročne, a ak trh začne pochybovať o ich návratnosti, môže akcia ďalej klesať. Výpredaj z minulého týždňa sa ešte nemusel skončiť.",
+   "links": [
+    {
+     "label": "Microsoft na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/MSFT/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   },
+   {
+    "key": "futures",
+    "term": "Futures (termínové kontrakty)",
+    "explain": "Zmluvy na budúcu hodnotu indexu, s ktorými sa obchoduje aj v noci, keď je burza zatvorená. Preto naznačujú, ako sa ráno otvorí trh, no nie je to istota."
+   },
+   {
+    "key": "korekcia",
+    "term": "Korekcia",
+    "explain": "Pokles indexu alebo akcie o 10 a viac percent od posledného maxima. Pri poklese o 20 percent sa hovorí o medvedom trhu."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-23.json",
+  "note": "Pri jazykových modeloch sa nič nezmenilo, vedie Claude Fable 5.2 so skóre 64,6 pred GPT-6.2 Astra a Gemini 4 Neon. V aréne videí, kde ľudia naslepo vyberajú lepšie video, sa vymenilo štvrté a piate miesto: otvorený model Hyperflow H3 od firmy Video Rebirth predbehol Seedance 2.5 od ByteDance, no rozdiel je len necelý jeden bod, čo je v rámci štatistickej nepresnosti."
+ }
+}
