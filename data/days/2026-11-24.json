@@ -1,0 +1,548 @@
+{
+ "date": "2026-11-24",
+ "label": "Utorok 24. novembra 2026",
+ "shortLabel": "Ut 24. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Anthropic spustil Claude Ship, sadu AI agentov, ktorí v programátorských tímoch kontrolujú, opravujú a dokonca schvaľujú zmeny v kóde. Na burze bol pondelok veľkolepý: Jensen Huang sa vrátil do čela Nvidie, jej akcie vyleteli o 31 percent a Nasdaq zažil najlepší deň od apríla 2025. Bitcoin sa k rastu nepridal a drží sa okolo 60 500 dolárov.",
+ "highlights": [
+  "Anthropic spustil Claude Ship: AI agenti v GitHube kontrolujú kód, sami opravujú padajúce testy a rutinné zmeny môžu aj schváliť podľa pravidiel tímu.",
+  "Čínsky Z.ai predstavil GLM-5.4, prvý veľký model, ktorý „premýšľa v slučke“, teda opakovane prechádza tými istými vrstvami namiesto toho, aby bol väčší.",
+  "ChatGPT dostal ako hlavný chatový model GPT-6.2 a staršie GPT-5.6 skončia v stredu 23. decembra, takže kto ich používa v Codexe, má mesiac na prechod.",
+  "Nvidia po návrate Jensena Huanga do funkcie šéfa vzrástla o 31,5 percenta na 165 dolárov, Nasdaq pridal 6,5 percenta a S&P 500 takmer 4,7 percenta.",
+  "Bitcoin je na približne 60 500 dolároch, za deň mínus 1 percento a za týždeň mínus 7, index strachu stále 11; rebríček modelov Artificial Analysis bez zmeny."
+ ],
+ "leadId": "claude-ship",
+ "sections": [
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "AI, ktorá za vás robí prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "claude-ship",
+     "title": "Anthropic spustil agentov, ktorí za programátorov kontrolujú, opravujú a schvaľujú kód",
+     "dateText": "pondelok 23. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Pre firemné tímy"
+      },
+      {
+       "kind": "preview",
+       "label": "Časť v testovacej verzii"
+      }
+     ],
+     "keyFact": {
+      "value": "3 agenti",
+      "label": "kontrola kódu, oprava zmien a schvaľovanie podľa pravidiel tímu"
+     },
+     "body": [
+      "Anthropic v pondelok 23. novembra predstavil Claude Ship, balík troch AI agentov pre tímy, ktoré píšu softvér. Prvý, Code Review, číta navrhnuté zmeny v kóde, takzvané [[pull requesty|pr]], a hľadá v nich chyby; je už plne dostupný v troch úrovniach dôkladnosti, od rýchlej po hĺbkovú.",
+      "Druhý agent, PR Steward, je zatiaľ v [[testovacej verzii|beta]] a sám opravuje to, čo zastaví zmenu: padajúce automatické testy, konflikty s kódom kolegov aj pripomienky z kontroly. Zlúčiť zmenu do hlavného kódu však sám nesmie. Tretí, Claude Approvals, môže rutinné zmeny rovno schváliť podľa pravidiel, ktoré si tím zapíše do súboru v repozitári; Anthropic ho prirovnáva k múdrejšej verzii pravidla, kto musí čo schváliť.",
+      "V nástroji Claude Code pribudol aj príkaz /ship, ktorý zmenu odošle, otvorí žiadosť o zlúčenie, nechá ju skontrolovať a dotiahne do konca. Služba je pre tímové a firemné predplatné a veľké firmy môžu do 15. januára 2027 získať kredit najmenej desaťtisíc dolárov."
+     ],
+     "whyItMatters": "Doteraz AI kód hlavne písala a človek ho schvaľoval. Claude Ship posúva hranicu: AI môže časť zmien aj schváliť, čo zrýchli prácu, ale tímy si musia dobre premyslieť, čo jej dovolia.",
+     "terms": [
+      {
+       "key": "pr",
+       "term": "Pull request (žiadosť o zlúčenie)",
+       "explain": "Navrhnutá zmena v kóde, ktorú si pred pridaním do hlavnej verzie programu prezrú a schvália kolegovia. Je to bežný spôsob tímovej práce na GitHube."
+      },
+      {
+       "key": "beta",
+       "term": "Beta (testovacia verzia)",
+       "explain": "Funkcia, ktorá už funguje a dá sa používať, ale firma ju ešte dolaďuje a môže sa zmeniť alebo mať chyby."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Anthropicu",
+       "href": "https://claude.com/resources/articles/introducing-claude-ship"
+      },
+      {
+       "label": "TechCrunch",
+       "href": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+      }
+     ]
+    },
+    {
+     "id": "claude-code-codex",
+     "title": "Claude Code a Codex dostali nové verzie, ktoré opravujú zamŕzanie a zrýchľujú štart",
+     "dateText": "pondelok 23. a utorok 24. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Aktualizácia nástrojov"
+      }
+     ],
+     "body": [
+      "Claude Code, programátorský pomocník od Anthropicu v termináli, vyšiel v pondelok večer vo verzii 2.1.331. Najpraktickejšia novinka je oprava chyby, pri ktorej volania [[MCP|mcp]] nástrojov mohli zamrznúť až na pol hodiny, keď nástroj vrátil chybnú odpoveď. Pribudol aj príkaz claude doctor, ktorý ukáže, či je spojenie so serverom v poriadku, a desktopová aplikácia na Macu dostala nový bočný panel s kartami, ktoré sa dajú presúvať.",
+      "Konkurenčný Codex od OpenAI vydal v noci na utorok stabilnú verziu 0.172.0. Nástroje cez MCP sa v nej spúšťajú až vtedy, keď ich model naozaj potrebuje, takže program štartuje rýchlejšie, a pre jednotlivé nástroje sa dá nastaviť, kto ich použitie schvaľuje. Pribudol aj návod, ako prejsť na nové modely GPT-6.2."
+     ],
+     "whyItMatters": "Ak tieto nástroje používaš, oplatí sa aktualizovať: hlavne oprava zamŕzania v Claude Code ušetrí čas pri každodennej práci.",
+     "terms": [
+      {
+       "key": "mcp",
+       "term": "MCP (Model Context Protocol)",
+       "explain": "Spoločný štandard, cez ktorý sa AI pripája k ďalším nástrojom a službám, napríklad ku kalendáru, databáze alebo GitHubu."
+      }
+     ],
+     "links": [
+      {
+       "label": "Claude Code 2.1.331 na GitHube",
+       "href": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331"
+      },
+      {
+       "label": "Codex verzie na GitHube",
+       "href": "https://github.com/openai/codex/releases"
+      }
+     ]
+    },
+    {
+     "id": "shirudo",
+     "title": "OpenAI a Cisco dali zadarmo nástroj, ktorý dočasne zablokuje útok na server, kým príde oprava",
+     "dateText": "pondelok 23. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorený kód"
+      },
+      {
+       "kind": "safety",
+       "label": "Bezpečnosť"
+      }
+     ],
+     "body": [
+      "OpenAI spolu s Ciscom zverejnili otvorený nástroj Shirudo. Keď sa objaví nová bezpečnostná diera, AI Codex podľa nej napíše dočasný „štít“, malý program pre jadro Linuxu založený na technológii [[eBPF|ebpf]], ktorý zablokuje presne to správanie, ktoré útok potrebuje. Server sa pritom nemusí reštartovať.",
+      "Štít nenasadí AI sama: správca ho najprv vyskúša a schváli. V ukážke takto zastavili útok nazvaný Java4Shell na vyhľadávacej databáze Elasticsearch."
+     ],
+     "whyItMatters": "Medzi zverejnením diery a vydaním opravy býva niekoľko dní, keď sú servery zraniteľné. Takýto nástroj môže tento čas prekryť, čo je praktické využitie AI agentov v bezpečnosti.",
+     "terms": [
+      {
+       "key": "ebpf",
+       "term": "eBPF",
+       "explain": "Technológia v Linuxe, ktorá umožňuje bezpečne vložiť malý program priamo do jadra systému za behu, napríklad na sledovanie alebo blokovanie určitých operácií."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie OpenAI",
+       "href": "https://openai.com/index/introducing-shirudo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "glm-5-4",
+     "title": "Čínsky Z.ai vydal model, ktorý namiesto zväčšovania premýšľa v slučke",
+     "dateText": "pondelok 23. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Zatiaľ len v aplikáciách Z.ai"
+      }
+     ],
+     "keyFact": {
+      "value": "až 200",
+      "label": "tokenov za sekundu mimo špičky, v špičke 70 až 80"
+     },
+     "body": [
+      "Čínska firma Z.ai v pondelok 23. novembra vydala GLM-5.4, ktorý označuje za prvý veľký model typu [[loop transformer|loop]]. Namiesto toho, aby mal viac [[parametrov|parametre]], prechádza tými istými vrstvami opakovane, a tak môže nad úlohou „premýšľať hlbšie“ bez toho, aby rástol.",
+      "Z.ai tvrdí, že sa tak vyrovná modelom s dvoma až troma biliónmi parametrov; je to tvrdenie firmy, nezávislé meranie zatiaľ nie je. Mimo špičky generuje až 200 [[tokenov|token]] za sekundu. Firma otvorene priznáva aj slabinu: model má sklon premýšľať zbytočne dlho.",
+      "Zatiaľ je dostupný len v programátorskom predplatnom GLM Coding Plan, v editore ZCode a v chate Z.ai. Prístup pre vývojárov cez [[API|api]] má prísť čoskoro a voľne stiahnuteľné váhy až po bezpečnostnom doladení."
+     ],
+     "whyItMatters": "Ak sa prístup osvedčí, modely by mohli byť múdrejšie bez toho, aby potrebovali obrovské množstvo pamäte. Čínske laboratóriá sú v posledných mesiacoch zdrojom väčšiny takýchto nových nápadov a zvyčajne aj lacných otvorených modelov.",
+     "terms": [
+      {
+       "key": "loop",
+       "term": "Loop transformer (model v slučke)",
+       "explain": "Model, ktorý tú istú skupinu vrstiev použije viackrát po sebe. Výpočet je hlbší, ale počet parametrov a teda veľkosť modelu ostáva rovnaká."
+      },
+      {
+       "key": "parametre",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil pri tréningu. Zhruba platí, že viac parametrov znamená schopnejší, ale aj väčší a drahší model."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré môžu programy a firmy používať model priamo vo svojich aplikáciách, zvyčajne s platbou za množstvo textu."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Z.ai",
+       "href": "https://z.ai/blog/glm-5.4"
+      }
+     ]
+    },
+    {
+     "id": "gpt-6-2-chatgpt",
+     "title": "ChatGPT prešiel na GPT-6.2 a staršie modely GPT-5.6 o mesiac skončia",
+     "dateText": "pondelok 23. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Platené predplatné"
+      },
+      {
+       "kind": "safety",
+       "label": "Bezpečnostná správa"
+      }
+     ],
+     "body": [
+      "OpenAI v pondelok 23. novembra nasadilo do ChatGPT verziu GPT-6.2 vyladenú na bežný rozhovor. Je postavená na modeli GPT-6.2 Sol a dostali ju predplatitelia Plus a Pro, podľa médií aj firemné účty. Médiá píšu o veľkom zlepšení v chápaní obrázkov, toto číslo sme však na oficiálnom zdroji neoverili.",
+      "V zverejnenej [[bezpečnostnej karte|systemcard]] OpenAI uvádza, že model dosiahol najvyšší, „kritický“ stupeň rizika v kybernetickej bezpečnosti a vysoký stupeň pri biológii a chémii aj pri schopnosti zlepšovať samého seba. Pri takých stupňoch firma nasadzuje dodatočné ochrany.",
+      "Zároveň oznámilo, že GPT-5.6 Sol zmizne z ChatGPT a Codexu v stredu 23. decembra a rovnako GPT-5.6 Terra z pracovných nástrojov a Codexu."
+     ],
+     "whyItMatters": "Mení sa predvolený model, s ktorým sa rozpráva väčšina platiacich používateľov. Kto má nastavené pracovné postupy na GPT-5.6, napríklad v Codexe, má zhruba mesiac na prechod.",
+     "terms": [
+      {
+       "key": "systemcard",
+       "term": "Bezpečnostná karta modelu (system card)",
+       "explain": "Dokument, v ktorom firma popisuje, ako model testovala, aké riziká našla a aké ochrany zaviedla."
+      }
+     ],
+     "links": [
+      {
+       "label": "Bezpečnostná karta OpenAI",
+       "href": "https://deploymentsafety.openai.com/gpt-6-2-chatgpt"
+      },
+      {
+       "label": "9to5Mac",
+       "href": "https://9to5mac.com/2026/11/23/chatgpt-expands-gpt-6-2-sol-as-openai-sets-retirement-date-for-two-models/"
+      }
+     ]
+    },
+    {
+     "id": "gemini-file-slicing",
+     "title": "Gemini si z veľkého dokumentu či videa prečíta len tú časť, ktorú potrebuje, a platí sa len za ňu",
+     "dateText": "pondelok 23. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Pre vývojárov"
+      }
+     ],
+     "body": [
+      "Google v pondelok 23. novembra pridal do Gemini API takzvané krájanie súborov. Vývojár nahrá súbor raz, napríklad PDF, tabuľku, prezentáciu, nahrávku alebo video, a model si potom sám vypýta len konkrétne strany, bunky, úsek záznamu alebo nižšie rozlíšenie. Gemini teraz priamo číta aj súbory z Office a otvorené formáty dokumentov.",
+      "Platí sa len za [[tokeny|token]] z časti, ktorú model naozaj prezrie. Pri hrubej zmluve alebo hodinovom videu to môže znamenať výrazne nižší účet."
+     ],
+     "whyItMatters": "Aplikácie postavené na Gemini nebudú musieť samy rozrezávať dokumenty a videá, budú jednoduchšie a lacnejšie. Pre bežného človeka to môže znamenať rýchlejšie odpovede nad veľkými súbormi.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Blog Google",
+       "href": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/"
+      }
+     ]
+    },
+    {
+     "id": "claude-vp-vnp",
+     "title": "Claude podľa Anthropicu dokázal ďalší veľký matematický problém, ľudia ho ešte neoverili",
+     "dateText": "pondelok 23. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Zatiaľ neoverené matematikmi"
+      }
+     ],
+     "body": [
+      "Len dva dni po správe o Riemannovej hypotéze Anthropic zverejnil, že jeho interný model Claude dokázal takzvanú Valiantovu hypotézu z roku 1979. Zjednodušene tvrdí, že isté výpočty, konkrétne takzvaný permanent matice, sa nedajú urobiť efektívne. Nejde však o slávny problém P verzus NP, s ktorým sa niekedy zamieňa.",
+      "Dôkaz je zapísaný v jazyku [[Lean|lean]], ktorý počítačovo kontroluje každý krok, a kontrolou prešiel. Anthropic však sám upozorňuje, že ho ešte nepreveril žiadny matematik a nie je isté, či formálne zadanie presne zodpovedá tomu, čo matematici myslia."
+     ],
+     "whyItMatters": "Ak sa to potvrdí, AI by riešila otvorené matematické problémy v rýchlom slede. Kým to však nepreveria ľudia, treba to brať opatrne.",
+     "terms": [
+      {
+       "key": "lean",
+       "term": "Lean",
+       "explain": "Programovací jazyk na zápis matematických dôkazov. Počítač v ňom overí, že každý krok logicky vyplýva z predchádzajúceho."
+      }
+     ],
+     "links": [
+      {
+       "label": "Preprint dôkazu",
+       "href": "https://hexagonmath.org/2611.00954v1"
+      },
+      {
+       "label": "Repozitár Anthropicu",
+       "href": "https://github.com/anthropics/formal-math"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "kling-image-4",
+     "title": "Kling oficiálne vydal obrázkový model, ktorý vie fotky v rozlíšení 8K",
+     "dateText": "pondelok 23. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Komerčná služba"
+      }
+     ],
+     "keyFact": {
+      "value": "8K",
+      "label": "priamo vytvorené rozlíšenie, zhruba 33 miliónov bodov"
+     },
+     "body": [
+      "Čínsky Kling, ktorý patrí firme Kuaishou, v pondelok 23. novembra oficiálne spustil Kling Image 4.0. Ukážku sme spomínali už v stredu 18. novembra, teraz je hotová verzia s priamym výstupom v [[rozlíšení 8K|8k]], lepšie zvládnutým textom v obrázkoch a možnosťou vytvoriť z jedného zadania až desať obrázkov, ktoré k sebe pasujú.",
+      "Kling uvádza, že jeho skorá verzia vedie rebríček Artificial Analysis pre tvorbu aj úpravu obrázkov. V rebríčku tvorby obrázkov, ktorý pre digest denne sťahujeme, je však dnes na čele GPT Image 2.6 Sunburst od OpenAI, takže toto tvrdenie berieme s rezervou."
+     ],
+     "whyItMatters": "Sady konzistentných obrázkov vo vysokom rozlíšení sa hodia na reklamu, produktové fotky či návrhy, kde treba viac záberov v jednom štýle.",
+     "terms": [
+      {
+       "key": "8k",
+       "term": "Rozlíšenie 8K",
+       "explain": "Obrázok so šírkou okolo 7 680 bodov, teda štyrikrát viac bodov ako 4K. Dá sa vytlačiť vo veľkom formáte bez rozmazania."
+      }
+     ],
+     "links": [
+      {
+       "label": "Tlačová správa Klingu",
+       "href": "https://www.globenewswire.com/news-release/2026/11/23/3408138/0/en/kling-ai-launches-kling-image-4-0-with-photographic-realism-and-native-8k-generation.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Technológie a trhy",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "nvidia-huang",
+     "title": "Jensen Huang je späť v čele Nvidie a jej hodnota za deň vzrástla takmer o bilión dolárov",
+     "dateText": "pondelok 23. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Trhy"
+      }
+     ],
+     "keyFact": {
+      "value": "+31,5 %",
+      "label": "rast akcie Nvidia za pondelok"
+     },
+     "body": [
+      "Rada Nvidie v pondelok 23. novembra jednomyseľne a s okamžitou platnosťou vrátila Jensena Huanga do funkcie prezidenta, generálneho riaditeľa aj člena rady, jedenásť dní po jeho odchode pre osobné aféry. Rada uviedla, že rozhodnutie padlo aj po vyjadreniach z najvyšších úrovní americkej vlády a že Huang nepredstavuje bezpečnostné riziko; podľa agentúry Reuters zasiahol prezident Trump, ktorý to sám potvrdil v rozhovore pre CNBC. Do funkcie finančnej riaditeľky sa vracia aj Colette Kress.",
+      "Akcia Nvidie vzrástla o 31,5 percenta na 165,05 dolára a firma za deň pridala takmer bilión dolárov hodnoty. Vyšetrovanie americkým dozorom nad burzou, SEC, a kauza predaja čipov však pokračujú a niektorí politici volajú po ďalšom vyšetrovaní."
+     ],
+     "whyItMatters": "Nvidia vyrába väčšinu čipov, na ktorých AI beží, takže neistota v jej vedení ťahala dole celý trh. Návrat Huanga tento tlak uvoľnil, právne otázky sú však stále otvorené.",
+     "terms": [
+      {
+       "key": "sec",
+       "term": "SEC",
+       "explain": "Americký úrad, ktorý dozerá na burzu a firmy na nej obchodované, napríklad na pravdivosť ich účtovníctva."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Nvidie",
+       "href": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+      },
+      {
+       "label": "Reuters",
+       "href": "https://www.reuters.com/3fec1b0a85a0/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/"
+      }
+     ]
+    },
+    {
+     "id": "megaspeed",
+     "title": "USA zaradili singapurskú firmu Megaspeed na čiernu listinu pre podozrenie z presmerovania čipov do Číny",
+     "dateText": "pondelok 23. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Regulácia"
+      }
+     ],
+     "body": [
+      "Americký úrad pre kontrolu vývozu pridal v pondelok 23. novembra spoločnosť Megaspeed International a šesť jej pobočiek v Singapure, Malajzii a Thajsku na takzvaný [[Entity List|entitylist]]. Na nákup takmer akéhokoľvek amerického tovaru teraz potrebujú licenciu, ktorú úrady v zásade zamietnu.",
+      "Dôvodom je riziko, že by firma presmerovala pokročilé AI čipy do Číny. Je to prvý konkrétny regulačný krok v kauze toku čipov Nvidie, o ktorej sme písali v posledných dňoch."
+     ],
+     "whyItMatters": "Washington ukazuje, že cesty čipov cez tretie krajiny bude stopovať, čo môže sprísniť pravidlá aj pre ďalších predajcov v Ázii.",
+     "terms": [
+      {
+       "key": "entitylist",
+       "term": "Entity List (čierna listina)",
+       "explain": "Zoznam firiem a osôb, ktorým americké firmy nesmú bez zvláštneho povolenia predávať tovar ani technológie."
+      }
+     ],
+     "links": [
+      {
+       "label": "Semafor",
+       "href": "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist"
+      },
+      {
+       "label": "CNBC",
+       "href": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "MemTensor MemT-1.0-Pro, otvorený model s pamäťou v parametroch: výsledky sme neoverili a na domáce použitie je príliš veľký.",
+  "NVIDIA SANA-Video 2.0: zatiaľ len z neoficiálneho zdroja a dátum vydania je nejasný.",
+  "Gemini 4 Carbon v Antigravity, qwen-audio-3.1-live, Qoder HungerG: len rozšírenie prístupu alebo bez oficiálnych detailov.",
+  "Správy o čipoch Nvidia v ruských raketách a o kvantových obvodoch od DeepMindu: neoverené na primárnom zdroji."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny z utorka 24. novembra o 6:17 Europe/Bratislava (CoinGecko, alternative.me). Akcie podľa záverečných cien z pondelka 23. novembra (Yahoo Finance, CNBC).",
+  "summary": "Pondelok bol na amerických burzách najlepší deň od apríla 2025: Nasdaq vzrástol o 6,5 percenta na 24 089,56 bodu, S&P 500 o 4,7 percenta na 7 237,17 a Dow Jones o 3 percentá. Rast odštartoval návrat Jensena Huanga do vedenia Nvidie, ktorý vrátil investorom dôveru v obchod s AI, a ťahal nahor najmä výrobcov čipov. V noci sú [[futures|futures]] takmer bez pohybu. Týždeň je kratší: v stredu príde údaj o inflácii, vo štvrtok je burza pre Deň vďakyvzdania zatvorená a v piatok sa obchoduje len do obeda.",
+  "btc": {
+   "priceUsd": 60536,
+   "priceEur": 55498,
+   "changePct": -1.04,
+   "changePctEur": -0.34,
+   "low24h": 59467,
+   "high24h": 64446,
+   "mood": "bearish",
+   "moodLabel": "Rast na burze ho minul, extrémny strach",
+   "comment": "Bitcoin stojí približne na 60 500 dolároch, teda okolo 55 500 eur, a za 24 hodín stratil asi 1 percento. Počas pondelka sa síce s akciami vyšplhal až k 64 400 dolárom, no rast neudržal a za týždeň je nižšie o necelých 7 percent. Ethereum je na približne 1 700 dolároch, za deň mínus 1,3 percenta. [[Index strachu a chamtivosti|fng]] je štvrtý deň na 11 bodoch, teda extrémny strach, a trend ostáva [[medvedí|bearish]].",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 165.05,
+    "changePct": 31.48,
+    "comment": "Najväčší denný rast za dlhé obdobie po návrate Huanga, celý piatkový prepad zmazaný."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 363.6,
+    "changePct": 14.08,
+    "comment": "Taiwanský výrobca čipov pre Nvidiu sa vrátil nad úroveň spred piatku."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 453.46,
+    "changePct": 6.85,
+    "comment": "Rástla so sektorom, no stále výrazne pod začiatkom minulého týždňa."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 597.6,
+    "changePct": 6.55,
+    "comment": "Jeden z najväčších nákupcov AI čipov."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 282.1,
+    "changePct": 6.34,
+    "comment": "Takmer na úrovni spred týždňa."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 313.55,
+    "changePct": 3,
+    "comment": "Odraz oveľa slabší ako pri Nvidii."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 349.08,
+    "changePct": 1.9,
+    "comment": "Pokojný rast."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 492.5,
+    "changePct": 1.65,
+    "comment": "Pridal len mierne."
+   },
+   {
+    "ticker": "ANT",
+    "name": "Anthropic",
+    "close": 87.64,
+    "changePct": -1.43,
+    "comment": "Ako jedna z mála AI akcií klesla, stále nad cenou z ponuky 83 dolárov."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "CNBC: pondelok na trhoch",
+    "href": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
+   },
+   {
+    "label": "Yahoo Finance: priebeh dňa",
+    "href": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html"
+   },
+   {
+    "label": "BBC: Nvidia pridala takmer bilión dolárov",
+    "href": "https://www.bbc.com/news/articles/cq62pn6j42jko"
+   }
+  ],
+  "gem": {
+   "ticker": "GOOGL",
+   "name": "Alphabet (Google)",
+   "close": 282.1,
+   "changePct": 6.34,
+   "why": "Google v posledných dňoch pridáva nové veci takmer denne: model Gemini 4 Neon je v rebríčku Artificial Analysis tretí a v pondelok pribudlo lacnejšie čítanie veľkých súborov pre vývojárov. Na rozdiel od čisto čipových firiem zarába na vyhľadávaní, YouTube aj cloude, a pondelkový rast o 6,3 percenta ho vrátil takmer na úroveň spred výpredaja. Pre opatrného investora je to skôr stabilnejší spôsob, ako mať v portfóliu AI.",
+   "risks": "Riziká: celý technologický sektor je po minulom týždni veľmi rozkolísaný a jeden deň rastu ešte neznamená koniec poklesu. Google tiež čelí antimonopolným sporom a obrovským výdavkom na dátové centrá.",
+   "links": [
+    {
+     "label": "Alphabet na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/GOOGL/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   },
+   {
+    "key": "futures",
+    "term": "Futures (termínové kontrakty)",
+    "explain": "Zmluvy na budúcu hodnotu indexu, s ktorými sa obchoduje aj v noci, keď je burza zatvorená. Preto naznačujú, ako sa ráno otvorí trh, no nie je to istota."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-24.json"
+ }
+}
