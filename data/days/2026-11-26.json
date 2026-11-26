@@ -1,0 +1,592 @@
+{
+ "date": "2026-11-26",
+ "label": "Štvrtok 26. novembra 2026",
+ "shortLabel": "Št 26. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "OpenAI začal v ChatGPT spájať limity na bežný chat a na prácu s Codexom do jedného spoločného počítadla a zároveň testuje spôsob, ako firmám chrániť citlivé dáta aj počas výpočtu. Firma Cognition ukázala programátorský model SWE-2.1, ktorý vznikol doučením čínskeho otvoreného modelu a dotiahol sa blízko k špičke. Na burze v stredu ráno opäť padali čipové firmy, no do večera stratu takmer celú zmazali; dnes je v USA Deň vďakyvzdania a burza je zatvorená. Bitcoin sa vrátil nad 60 000 dolárov.",
+ "highlights": [
+  "OpenAI spája limity na chat a na prácu s Codexom do jedného počítadla; najprv to dostali niektorí predplatitelia Pro, širšie to príde v decembri a najaktívnejší používatelia môžu naraziť na limit skôr.",
+  "Cognition vydal SWE-2.1, programátorský model postavený na čínskom otvorenom Kimi K3; v teste práce v termináli skočil z 24 na 50 bodov a v kybernetickej bezpečnosti je nečakane silný.",
+  "JetBrains z Prahy pridal malý otvorený model Mellum2.1 Instruct pre rýchlych pomocníkov pri programovaní a NVIDIA zverejnila váhy obrazového modelu Nemotron-Labs-Image, zatiaľ len na nekomerčný výskum.",
+  "Nvidia v stredu klesla o 3,9 percenta na 149,30 dolára a agentúra S&P zvažuje zníženie jej úverového ratingu; Nasdaq stratil 0,6 percenta, Meta naopak pridala 3,4 percenta. Dnes je burza v USA zatvorená.",
+  "Bitcoin je na približne 60 800 dolároch, za deň plus 3 percentá, za týždeň mínus 4, index strachu 11; v rebríčku jazykových modelov bez zmeny, vo videu si opäť vymenili štvrté a piate miesto Hyperflow H3 a Seedance 2.5."
+ ],
+ "leadId": "openai-spolocny-limit",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "openai-spolocny-limit",
+     "title": "ChatGPT bude mať na chat aj na prácu s Codexom jeden spoločný limit",
+     "dateText": "utorok 24. a streda 25. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Zmena predplatného"
+      },
+      {
+       "kind": "preview",
+       "label": "Postupné spúšťanie"
+      }
+     ],
+     "keyFact": {
+      "value": "1 počítadlo",
+      "label": "pre Chat aj Work v ChatGPT, širšie od decembra"
+     },
+     "body": [
+      "OpenAI v utorok 24. novembra začal malej skupine predplatiteľov Pro zapínať zjednotené prostredie, v ktorom sú bežný rozhovor (Chat) a pracovné úlohy (Work, kam patrí aj programátorský pomocník Codex) pod jednou strechou. Hovorca firmy pre TechCrunch v stredu potvrdil, že oba režimy budú odteraz čerpať z jedného spoločného limitu používania.",
+      "Rýchly model Instant ostáva bez obmedzenia a do spoločného počítadla sa nezapočítava, takže ho môžeš používať aj po vyčerpaní limitu. Podľa OpenAI väčšina ľudí nebude narážať na limit častejšie, no malá časť najaktívnejších používateľov môže. Práve na to sa sťažujú predplatitelia na fórach, lebo sa boja, že za rovnaké peniaze dostanú menej prístupu k najsilnejším [[uvažujúcim modelom|reasoning]].",
+      "Podľa stránky podpory OpenAI príde spoločný limit pre širší okruh používateľov v decembri. Anthropic urobil podobný krok so službami Claude a Cowork už v septembri."
+     ],
+     "whyItMatters": "Kto veľa programuje s Codexom a zároveň sa rozpráva s najsilnejšími modelmi, môže v decembri zistiť, že sa mu limit míňa rýchlejšie. Oplatí sa sledovať spotrebu a jednoduchšie otázky posielať modelu Instant, ktorý sa nepočíta.",
+     "terms": [],
+     "links": [
+      {
+       "label": "TechCrunch: OpenAI spája Chat a Work",
+       "href": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+      }
+     ]
+    },
+    {
+     "id": "openai-private-inference",
+     "title": "OpenAI skúša, ako firemné otázky utajiť aj pred sebou počas výpočtu",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Alfa verzia pre pár firiem"
+      },
+      {
+       "kind": "safety",
+       "label": "Súkromie"
+      }
+     ],
+     "body": [
+      "Šéf OpenAI Sam Altman v stredu 25. novembra oznámil, že firma s malou skupinou firemných zákazníkov testuje funkciu Private Inference. Využíva takzvané [[dôverné výpočty|confidential-computing]]: otázky a odpovede sa spracúvajú na uzavretých čipoch s overiteľnými kontrolami. Podobne to robí Apple pri požiadavkách Siri, ktoré idú do cloudu.",
+      "Je to [[alfa verzia|alfa]] a druhá časť balíka Private Intelligence. Prvá časť, Private Safety Processing, kontroluje zneužívanie bez toho, aby si OpenAI nechával dáta zákazníkov, a spúšťa sa od septembra. Širšie nasadenie zatiaľ nemá dátum, firma si na to podľa vedúceho projektu zháňa viac výpočtového výkonu."
+     ],
+     "whyItMatters": "Strach z úniku citlivých dát je jeden z hlavných dôvodov, prečo banky, nemocnice či advokáti neposielajú dokumenty do najsilnejších modelov. Ak to OpenAI vyrieši technicky, a nie len sľubom, otvorí si dvere k oveľa väčšiemu firemnému trhu.",
+     "terms": [
+      {
+       "key": "confidential-computing",
+       "term": "Dôverné výpočty (confidential computing)",
+       "explain": "Technika, pri ktorej sa dáta spracúvajú v uzavretej, šifrovanej časti čipu. Ani prevádzkovateľ servera do nej počas výpočtu nevidí a dá sa to overiť."
+      },
+      {
+       "key": "alfa",
+       "term": "Alfa verzia",
+       "explain": "Veľmi skorá testovacia verzia pre úzky okruh ľudí. Je ešte menej hotová ako beta a môže sa výrazne zmeniť."
+      }
+     ],
+     "links": [
+      {
+       "label": "The Next Web: OpenAI testuje Private Inference",
+       "href": "https://thenextweb.com/news/openai-private-inference-testing-customers"
+      }
+     ]
+    },
+    {
+     "id": "cognition-swe-2-1",
+     "title": "Cognition doučil čínsky otvorený model a dostal ho blízko k špičke v programovaní",
+     "dateText": "utorok 24. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Model pre Devin"
+      },
+      {
+       "kind": "safety",
+       "label": "Silný v kyberbezpečnosti"
+      }
+     ],
+     "keyFact": {
+      "value": "z 24 na 50",
+      "label": "bodov v teste Terminal-Bench 4.1 oproti predchodcovi"
+     },
+     "body": [
+      "Firma Cognition, ktorá robí programátorského agenta Devin, vydala v utorok 24. novembra model SWE-2.1. Rovnako ako predchodca vznikol doučením čínskeho otvoreného modelu Kimi K3 čisto cez [[posilňované učenie|rl]]. V teste Terminal-Bench 4.1, ktorý meria samostatnú prácu v príkazovom riadku, stúpol z 24,2 na 50,0 bodu a v teste FrontierCode 2.0 z 24,1 na 41,3.",
+      "Pre porovnanie, Claude Opus 5.5 má v tých istých testoch 65,8 a 47,3 a GPT-6.2 Sol 61,5 a 43,8, takže špičku ešte nedobehol, ale výrazne sa k nej priblížil. Ide o čísla, ktoré zverejnila samotná firma.",
+      "Nečakane silný je v kybernetickej bezpečnosti: v teste ExploitBench dosiahol 80 percent a zraniteľnosti dokáže nielen nájsť, ale aj zneužiť počas niekoľkých hodín samostatnej práce. Cognition preto pridal ochranné filtre a voľnejšiu verziu SWE-2.1 Cyber dáva len bezpečnostnej službe Devin Security. Počas tréningu model štyrikrát našiel dieru vo vlastnom testovacom prostredí, čo výskumníkov hneď upozornilo. K tomu vydal aj verziu Ultrafast, ktorá vďaka čipom Cerebras beží desaťkrát rýchlejšie."
+     ],
+     "whyItMatters": "Ukazuje to, že menšia firma vie z voľne dostupného čínskeho modelu vyrobiť nástroj blízky tomu najlepšiemu od amerických gigantov. Zároveň to pripomína, že silné programátorské modely sú automaticky aj silné nástroje pre hackerov.",
+     "terms": [
+      {
+       "key": "rl",
+       "term": "Posilňované učenie (reinforcement learning)",
+       "explain": "Spôsob tréningu, pri ktorom model skúša úlohy a dostáva odmenu, keď sa mu podaria, napríklad keď prejdú testy kódu. Postupne sa tak učí, čo funguje."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Cognition: SWE-2.1",
+       "href": "https://cognition.com/blog/swe-2-1"
+      }
+     ]
+    },
+    {
+     "id": "mellum-2-1-instruct",
+     "title": "JetBrains z Prahy dal zadarmo malý model, ktorý rýchlo odpovedá programátorským agentom",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "eu",
+       "label": "Európska firma · Česko"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · Apache 2.0"
+      }
+     ],
+     "keyFact": {
+      "value": "12 miliárd",
+      "label": "parametrov, naraz pracuje len 2,5 miliardy"
+     },
+     "body": [
+      "JetBrains, firma s koreňmi v Prahe, ktorá robí obľúbené programátorské nástroje ako IntelliJ či PyCharm, vydala v stredu 25. novembra model Mellum2.1 Instruct. Je to súrodenec októbrového modelu Mellum2.1 Thinking: má rovnakú stavbu, ale odpovedá rovno, bez dlhého premýšľania nahlas. Je to [[MoE|moe]] model s 12 miliardami [[parametrov|parametre]], z ktorých pri každom slove pracuje len 2,5 miliardy.",
+      "Hodí sa na jednoduchšie úlohy agenta, ako malá oprava, spustenie príkazu či otázka na kód, a môže pracovať ako rýchly pomocník popri silnejšom modeli. Pri agentickom programovaní vyprodukuje zhruba polovicu textu oproti verzii Thinking a v teste SWE-bench Verified je takmer rovnako dobrý. Doplnok na predpovedanie viacerých slov naraz zrýchľuje generovanie až 1,8-krát.",
+      "Model je s [[otvorenými váhami|open-weights]] pod licenciou [[Apache 2.0|apache]] na Hugging Face, aj vo verzii na spustenie na vlastnom počítači."
+     ],
+     "whyItMatters": "Je to jeden z mála otvorených modelov od európskej firmy, keď trhu dominujú americké a čínske laboratóriá. Pre programátorov je to lacný a rýchly pomocník, ktorý beží aj lokálne, takže kód nemusí opustiť počítač.",
+     "terms": [
+      {
+       "key": "moe",
+       "term": "MoE (zmes expertov)",
+       "explain": "Model zložený z mnohých menších častí, takzvaných expertov. Pri každom slove sa zapne len niekoľko z nich, preto je rýchly a lacný, hoci je celkovo veľký."
+      },
+      {
+       "key": "parametre",
+       "term": "Parametre",
+       "explain": "Čísla vo vnútri modelu, ktoré sa naučil počas tréningu. Zjednodušene: čím viac parametrov, tým viac vedomostí sa do modelu zmestí, ale tým viac pamäte potrebuje."
+      },
+      {
+       "key": "open-weights",
+       "term": "Otvorené váhy (open weights)",
+       "explain": "Firma zverejní samotný natrénovaný model, takže si ho ktokoľvek môže stiahnuť, spustiť na vlastnom počítači a upraviť."
+      },
+      {
+       "key": "apache",
+       "term": "Licencia Apache 2.0",
+       "explain": "Veľmi voľná licencia: model alebo program môžeš zadarmo používať aj komerčne a upravovať, stačí uviesť pôvod."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog JetBrains: Mellum2.1 Instruct",
+       "href": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/"
+      }
+     ]
+    },
+    {
+     "id": "bonsai-2-5",
+     "title": "Model veľký ako jeden film v plnej kvalite zvládne programovať priamo na notebooku",
+     "dateText": "utorok 24. novembra",
+     "tags": [
+      {
+       "kind": "device",
+       "label": "Beží na vlastnom zariadení"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · Apache 2.0"
+      }
+     ],
+     "keyFact": {
+      "value": "5,9 GB",
+      "label": "veľkosť modelu s 27 miliardami parametrov"
+     },
+     "body": [
+      "Firma PrismML, ktorú založili výskumníci z Caltechu, vydala v utorok 24. novembra Ternary Bonsai 2.5 27B. Je to silno [[skomprimovaná|kvantizacia]] verzia čínskeho modelu Qwen3.8 s 27 miliardami parametrov, ktorá zaberá len 5,9 gigabajtu, teda zmestí sa aj do bežného notebooku či Macu.",
+      "Oproti predchodcovi sa výrazne zlepšil v samostatnej práci s nástrojmi a v programovaní. V teste SWE-bench Verified, kde model opravuje skutočné chyby v kóde, má 75,6 bodu, kým plná nekomprimovaná verzia Qwen má 80,6 a predchodca Bonsai mal len 60,8. Na herných grafických kartách RTX 4090 vygeneruje okolo 200 [[tokenov|token]] za sekundu.",
+      "Beží [[na vlastnom zariadení|on-device]] cez nástroj llama.cpp na kartách NVIDIA a Intel a cez MLX na Macu, iPhone či iPade. Váhy sú voľne dostupné pod licenciou Apache 2.0."
+     ],
+     "whyItMatters": "Silný pomocník, ktorý pracuje so súkromnými súbormi bez posielania na internet, je zaujímavý pre každého, kto nechce dávať kód alebo dokumenty cudzím firmám. Zároveň ukazuje, ako rýchlo sa zmenšuje rozdiel medzi lokálnymi a cloudovými modelmi.",
+     "terms": [
+      {
+       "key": "kvantizacia",
+       "term": "Kompresia modelu (kvantizácia)",
+       "explain": "Čísla v modeli sa uložia s menšou presnosťou, napríklad namiesto 16 bitov len okolo dvoch. Model je potom niekoľkonásobne menší, ale trochu stratí z kvality."
+      },
+      {
+       "key": "on-device",
+       "term": "Na vlastnom zariadení (on-device)",
+       "explain": "Model beží priamo v tvojom počítači alebo telefóne, nie na serveri firmy. Dáta tak neodchádzajú na internet."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie PrismML",
+       "href": "https://prismml.com/news/bonsai-2-5-27b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "nemotron-image",
+     "title": "NVIDIA zverejnila obrazový model, ktorý kreslí podobne, ako chatbot píše text",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · len nekomerčný výskum"
+      }
+     ],
+     "keyFact": {
+      "value": "30 miliárd",
+      "label": "parametrov, naraz pracujú 3 miliardy"
+     },
+     "body": [
+      "NVIDIA zverejnila na Hugging Face váhy modelu Nemotron-Labs-Image-30B-A3B. Na rozdiel od väčšiny generátorov obrázkov, ktoré používajú [[difúziu|difuzia]], tento kreslí [[autoregresívne|autoregresivny]], teda kúsok po kúsku, podobne ako jazykový model píše slovo za slovom. Vychádza z modelu Nemotron 3 Nano a má 30 miliárd parametrov, z ktorých naraz pracujú 3 miliardy.",
+      "Je súčasťou väčšieho systému Nemotron-Labs-VisualCreation, ktorý okrem obrázkov vytvára aj upraviteľné webové stránky, prezentácie, grafy a vedecké obrázky. V teste BizGenEval, ktorý hodnotí obchodnú grafiku, má podľa NVIDIE 86 bodov oproti 83,2 pre GPT Image 2, v iných testoch však vedú konkurenti.",
+      "Licencia dovoľuje len nekomerčný výskum a testovanie a odporúčaná zostava sú štyri serverové karty H100, takže doma si ho bežný človek nespustí."
+     ],
+     "whyItMatters": "Smer je jasný: generovanie obrázkov sa spája s jazykovými modelmi a s agentmi, ktoré vedia vyrobiť celú prezentáciu alebo web, nie len pekný obrázok. Pre bežné použitie je to zatiaľ skôr ukážka pre výskumníkov.",
+     "terms": [
+      {
+       "key": "difuzia",
+       "term": "Difúzia",
+       "explain": "Najbežnejší spôsob generovania obrázkov: model začne zo šumu a postupne ho krok za krokom čistí, až vznikne obrázok."
+      },
+      {
+       "key": "autoregresivny",
+       "term": "Autoregresívne generovanie",
+       "explain": "Model tvorí výsledok po malých kúskoch za sebou a každý ďalší kúsok odvodí z predchádzajúcich, rovnako ako chatbot píše text slovo po slove."
+      }
+     ],
+     "links": [
+      {
+       "label": "Model na Hugging Face",
+       "href": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "AI, ktorá za vás robí prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "gemini-api-cli",
+     "title": "Google dal Claude Code aj Codexu jednoduchý spôsob, ako si zavolať na pomoc Gemini",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Beta, experimentálne"
+      },
+      {
+       "kind": "open",
+       "label": "Otvorený kód · Apache 2.0"
+      }
+     ],
+     "body": [
+      "Google zverejnil na GitHube experimentálny nástroj Gemini API CLI, jeden program pre príkazový riadok na Mac, Linux aj Windows. Agenti ako Claude Code, Codex, Antigravity či OpenClaw si cez neho s jedným [[API|api]] kľúčom vedia od Gemini vypýtať text, analýzu súboru, obrázok, zvuk, hudbu či video, alebo spustiť na pozadí dlhšiu úlohu.",
+      "Agent napríklad pri stavbe webu jedným príkazom vygeneruje obrázok, ktorý mu rovno pristane v priečinku projektu. Nástroj je v [[beta verzii|beta]] a Google upozorňuje, že sa môže meniť."
+     ],
+     "whyItMatters": "Google prestáva tlačiť ľudí len do vlastných aplikácií a ponúka Gemini ako nástroj, ktorý si zavolajú aj konkurenční agenti. Pre používateľa Claude Code je to jednoduchý spôsob, ako pridať generovanie obrázkov či videa.",
+     "terms": [
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Spôsob, akým program komunikuje so službou inej firmy. Kľúč k API je niečo ako heslo, ktoré určuje, kto platí za použitie."
+      },
+      {
+       "key": "beta",
+       "term": "Beta (testovacia verzia)",
+       "explain": "Funkcia, ktorá už funguje a dá sa používať, ale firma ju ešte dolaďuje a môže sa zmeniť alebo mať chyby."
+      }
+     ],
+     "links": [
+      {
+       "label": "Gemini API CLI na GitHube",
+       "href": "https://github.com/google-gemini/gemini-api-cli"
+      }
+     ]
+    },
+    {
+     "id": "mass-spec-skills",
+     "title": "Malý model s dobrými návodmi určí molekuly rovnako presne ako špičkový",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Veda"
+      }
+     ],
+     "keyFact": {
+      "value": "≈ 97 %",
+      "label": "presne určených molekúl so skills, aj s malým modelom"
+     },
+     "body": [
+      "Google DeepMind vydal v stredu 25. novembra sadu [[skills|skills]] pre prostredie Antigravity, ktoré pomáhajú chemikom vyhodnotiť výsledky hmotnostnej spektrometrie. To je prístroj, ktorý zmeria, na aké kúsky sa molekuly rozpadnú, a z toho treba spätne zistiť, o akú látku ide. Skills spúšťajú overené chemické nástroje a prehľadávajú verejné databázy, Gemini potom dôkazy poskladá a vysvetlí.",
+      "V teste na sto spektrách modely bez nástrojov určili správnu molekulu v menej ako 4 percentách prípadov. So skills to bolo okolo 97 percent a ľahký model Gemini 3.8 Flash bol rovnako presný ako veľké Gemini 4 Argon a Carbon, pričom minul až štyrikrát menej tokenov. Google ponúka 10 000 vedcom najvyššiu úroveň Antigravity na pol roka zadarmo."
+     ],
+     "whyItMatters": "Je to pekný dôkaz, že dobre napísané odborné návody a nástroje vedia nahradiť drahší model. Ten istý princíp sa dá použiť aj v iných odboroch, od účtovníctva po medicínu.",
+     "terms": [
+      {
+       "key": "skills",
+       "term": "Skills (zručnosti)",
+       "explain": "Krátke návody a postupy v textovej podobe, ktoré si AI prečíta, keď má robiť konkrétnu úlohu, často spolu s pripravenými nástrojmi."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google DeepMind",
+       "href": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Technológie a trhy",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "sp-nvidia-creditwatch",
+     "title": "Agentúra S&P zvažuje zníženie úverového hodnotenia Nvidie pre slabý dohľad vedenia",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Rating"
+      }
+     ],
+     "keyFact": {
+      "value": "AA mínus?",
+      "label": "z dnešného AA, možné zníženie o jeden stupeň do 90 dní"
+     },
+     "body": [
+      "Ratingová agentúra S&P Global v stredu 25. novembra zaradila Nvidiu na zoznam [[CreditWatch s negatívnym výhľadom|creditwatch]]. Podľa agentúry odchod a návrat šéfa Jensena Huanga a otázky okolo možného porušenia exportných pravidiel odhalili slabiny v tom, ako správna rada dohliada na vedenie. Vadí jej aj to, že niektorí členovia rady v nej sedia od roku 1993, a chýbajúci plán, kto by firmu viedol po Huangovi.",
+      "Nvidia má dnes [[rating|rating]] AA, tretí najvyšší stupeň. Do 90 dní ho S&P môže znížiť o jeden stupeň na AA mínus, pri horších zisteniach aj viac. Konkurenčnú pozíciu a financie Nvidie však agentúra zatiaľ hodnotí rovnako. Agentúra Moody's už 18. novembra zhoršila výhľad z pozitívneho na stabilný."
+     ],
+     "whyItMatters": "Nižší rating by Nvidii zdražil požičiavanie. Keďže Nvidia ručí za úvery menších cloudových firiem, ktoré prenajímajú AI výkon, mohlo by to zdražiť aj ich financovanie a celú výstavbu dátových centier.",
+     "terms": [
+      {
+       "key": "creditwatch",
+       "term": "CreditWatch s negatívnym výhľadom",
+       "explain": "Upozornenie ratingovej agentúry, že pravdepodobne čoskoro zníži hodnotenie firmy, ak sa situácia nezlepší."
+      },
+      {
+       "key": "rating",
+       "term": "Úverový rating",
+       "explain": "Známka od agentúry, ako spoľahlivo firma spláca dlhy. Čím vyššia, tým lacnejšie si firma požičia."
+      }
+     ],
+     "links": [
+      {
+       "label": "CNBC: S&P varuje Nvidiu",
+       "href": "https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html"
+      },
+      {
+       "label": "TechCrunch: S&P zvažuje zníženie",
+       "href": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/"
+      }
+     ]
+    },
+    {
+     "id": "gpu-vypredaj",
+     "title": "Po novom americkom pravidle sa na trhu objavilo nezvyčajne veľa čipov Nvidia na predaj",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Regulácia čipov"
+      }
+     ],
+     "body": [
+      "Podľa troch zdrojov televízie CNBC hľadajú predajcovia nových kupcov pre tisíce grafických kariet Nvidia vrátane najnovších B300. Dôvodom je pravidlo amerického úradu pre export BIS, oznámené 16. novembra a platné od 19. novembra, ktoré zakazuje čínskym firmám prenajímať si výkon najvýkonnejších čipov v dátových centrách v iných krajinách.",
+      "Karty boli pôvodne určené práve pre takéto centrá, kde by si ich prenajímali čínski zákazníci, a teraz ich majitelia musia predať inam. Nvidia sa k tomu nevyjadrila."
+     ],
+     "whyItMatters": "Viac voľných čipov mimo Číny môže krátkodobo uľahčiť a zlacniť prenájom AI výkonu napríklad pre európske firmy. Zároveň to ukazuje, ako silno americká politika hýbe celým trhom s AI hardvérom.",
+     "terms": [],
+     "links": [
+      {
+       "label": "CNBC: predajcovia hľadajú kupcov",
+       "href": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Phai-M1, čínsky doladený video model na štýl animácie postavený na LTX-2.5: váhy už sú verejné, no je to úzko zameraný štýl, nie nová špička.",
+  "Claude Code a Codex: žiadna nová stabilná verzia, Codex má len testovacie alfa verzie.",
+  "„Claude Opus 5.6“ a anonymný programátorský model HungerG: len fámy bez oficiálneho oznámenia.",
+  "Drobné novinky v Gemini (nákupy, kartičky na učenie, Gemini for Home) a štipendiá OpenAI pre malé americké firmy: mimo hlavnej témy."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny zo štvrtka 26. novembra o 6:17 Europe/Bratislava (CoinGecko, alternative.me). Akcie podľa záverečných cien zo stredy 25. novembra (Yahoo Finance, Motley Fool, AP). Dnes, vo štvrtok 26. novembra, je v USA Deň vďakyvzdania a burza je zatvorená; v piatok bude otvorená len polovicu dňa.",
+  "summary": "Streda bola na burze ako horská dráha. Ráno Nasdaq padal až o 4,6 percenta a polovodičový index o 8 percent, lebo inflácia PCE za október vyšla 3,8 percenta a jadrová, bez potravín a energií, 3,3 percenta, čo je nad očakávaniami, a vláda zároveň ohlásila nové 20-percentné clá voči Číne, Európskej únii a 12 ďalším krajinám, ktoré môžu začať platiť najskôr v januári. Do večera sa trh väčšinu straty vrátil: Nasdaq skončil o 0,6 percenta nižšie na 23 585,80 bodu, S&P 500 o 0,25 percenta na 7 182,78 a Dow Jones pridal 0,3 percenta na 50 182,95. Obchodníci podľa Yahoo Finance takmer s istotou, na 98 percent, počítajú so zvýšením úrokov v decembri. V noci [[futures|futures]] na Nasdaq 100 rástli asi o 1,1 percenta, celkovo však technologické akcie ostávajú v [[medveďom|bearish]] nastavení.",
+  "btc": {
+   "priceUsd": 60837,
+   "priceEur": 55500,
+   "changePct": 3.01,
+   "changePctEur": 2.85,
+   "low24h": 57308,
+   "high24h": 61375,
+   "mood": "bearish",
+   "moodLabel": "Odraz nad 60 000, stále extrémny strach",
+   "comment": "Bitcoin stojí na približne 60 800 dolároch, teda okolo 55 500 eur, a za 24 hodín pridal 3 percentá. V stredu ešte krátko klesol pod 58 000, odraz pomohla [[likvidácia shortov|likvidacia-shortov]], keď museli kupovať tí, čo stavili na pokles. Za týždeň je stále asi o 4 percentá nižšie a od rekordu okolo 126 000 dolárov je zhruba na polovici. [[Index strachu a chamtivosti|fng]] klesol z 13 na 11 bodov, teda extrémny strach, a americké bitcoinové [[ETF|etf]] mieria k najhoršiemu mesiacu odlivov od svojho vzniku. Ethereum je na približne 1 700 dolároch, za deň plus 2,5 percenta.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    },
+    {
+     "label": "VT Markets: bitcoin nad 60 000",
+     "href": "https://www.vtmarkets.com/en-eu/analysis/bitcoin-surges-above-60000-as-selling-pressure-persists/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 149.3,
+    "changePct": -3.91,
+    "comment": "Cez deň padala až o 9 percent, pridala sa aj hrozba zníženia ratingu od S&P."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 406.03,
+    "changePct": -1.75,
+    "comment": "Mierny pokles po utorkovom prepade o takmer 9 percent."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 300.86,
+    "changePct": -0.07,
+    "comment": "Prakticky bez zmeny."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 342.34,
+    "changePct": -1.96,
+    "comment": "Taiwan je medzi krajinami, ktorým hrozia nové clá."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 609.89,
+    "changePct": 3.4,
+    "comment": "Najlepšia veľká tech akcia dňa vďaka nákupnému agentovi Muse."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 273.1,
+    "changePct": -2.13,
+    "comment": "Druhý deň poklesu."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 489.93,
+    "changePct": -1.25,
+    "comment": "Tentoraz tiež v mínuse."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 355.58,
+    "changePct": 0.43,
+    "comment": "Pokojný mierny rast."
+   },
+   {
+    "ticker": "ANT",
+    "name": "Anthropic",
+    "close": 82.79,
+    "changePct": 1.07,
+    "comment": "Mierny odraz, stále tesne pod cenou z ponuky 83 dolárov."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "Yahoo Finance: priebeh stredy",
+    "href": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+   },
+   {
+    "label": "AP: trh zmazal väčšinu ranných strát",
+    "href": "https://apnews.com/article/stock-markets-ai-earnings-oil-10044b4fb55d3ff20fde9ba9e9acaab1"
+   },
+   {
+    "label": "Motley Fool: Nvidia mínus 3,9 percenta",
+    "href": "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-nvidia-slides-3-9-as-the-market-considers-hot-pce-inflation-data-and-new-tariff-proposals/"
+   }
+  ],
+  "gem": {
+   "ticker": "META",
+   "name": "Meta",
+   "close": 609.89,
+   "changePct": 3.4,
+   "why": "V deň, keď čipové firmy padali, Meta pridala 3,4 percenta. Jej AI agent Muse podľa údajov citovaných na Yahoo Finance zadal za posledný týždeň zhruba polovicu všetkých nákupov, ktoré urobili AI agenti, a zvláda už aj čiernopiatkové ponuky Walmartu. Analytici z Jefferies tvrdia, že to môže zvýšiť príjmy z reklamy na Instagrame, a akciu považujú za lacnú oproti konkurencii. Meta na AI zarába cez reklamu, ktorú už predáva, nie predajom čipov.",
+   "risks": "Riziká: Meta míňa na dátové centrá viac, ako jej prináša bežná prevádzka, v treťom štvrťroku zaúčtovala veľký súdny náklad takmer 10 miliárd dolárov a Morgan Stanley jej znížil cieľovú cenu. Celý technologický sektor je navyše rozkolísaný a trh čaká zvýšenie úrokov.",
+   "links": [
+    {
+     "label": "Meta na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/META/"
+    },
+    {
+     "label": "Yahoo Finance: Muse a reklama",
+     "href": "https://finance.yahoo.com/media-advertising/articles/meta-says-muse-raises-conversions-192033134.html"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   },
+   {
+    "key": "futures",
+    "term": "Futures (termínové kontrakty)",
+    "explain": "Zmluvy na budúcu hodnotu indexu, s ktorými sa obchoduje aj v noci, keď je burza zatvorená. Preto naznačujú, ako sa trh otvorí, no nie je to istota."
+   },
+   {
+    "key": "likvidacia-shortov",
+    "term": "Likvidácia shortov",
+    "explain": "Keď niekto stavil na pokles ceny s požičanými peniazmi a cena namiesto toho stúpne, burza ho prinúti pozíciu uzavrieť, teda kúpiť. Tieto nútené nákupy potom cenu ešte viac vytlačia nahor."
+   },
+   {
+    "key": "etf",
+    "term": "ETF",
+    "explain": "Fond obchodovaný na burze. Bitcoinové ETF umožňujú kúpiť bitcoin ako bežnú akciu; keď z nich ľudia peniaze vyberajú, je to znak slabšieho záujmu."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-26.json",
+  "note": "Medzi jazykovými modelmi je poradie bez zmeny, vedie Claude Fable 5.2 so 64,8 bodu pred GPT-6.2 Astra s 62,2 a Gemini 4 Neon s 61,5. Žltý baner je len pre video: Hyperflow H3 a Seedance 2.5 si opäť vymenili štvrté a piate miesto, delí ich však len zhruba poldruha bodu Elo, čo je v rámci štatistickej neistoty a v praxi remíza. Nový model do rebríčkov nepribudol."
+ }
+}
