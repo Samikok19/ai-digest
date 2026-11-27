@@ -1,0 +1,458 @@
+{
+ "date": "2026-11-27",
+ "label": "Piatok 27. novembra 2026",
+ "shortLabel": "Pi 27. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "Ruská banka Sber zverejnila GigaChat 4, obrovský otvorený jazykový model s voľnou licenciou, ktorý si môže stiahnuť a používať ktokoľvek. OpenAI priznal chybu v počítaní spotreby nových modelov GPT-6.2, takže predplatitelia teraz minú limit rýchlejšie, a Google od februára nariadi AI agentom pristupovať ku Gmailu či Disku len cez nové oficiálne nástroje. Americká burza bola vo štvrtok zatvorená kvôli Dňu vďakyvzdania a dnes bude otvorená len do siedmej večer nášho času, no futures naznačujú silný rast technologických akcií. Bitcoin je na približne 61 600 dolároch.",
+ "highlights": [
+  "Ruský Sber zverejnil GigaChat 4, otvorený model so 708 miliardami parametrov a kontextom na milión tokenov pod voľnou licenciou MIT, takže ho možno použiť aj komerčne.",
+  "OpenAI opravil chybu v počítaní spotreby GPT-6.2: na Astre sa limit predplatného minie o 40 percent rýchlejšie, na Sole o 25 percent; ako ospravedlnenie dostanú predplatitelia jeden extra reset limitu.",
+  "Google od 1. februára 2027 nariadi AI agentom pristupovať ku Gmailu, Disku či Kalendáru len cez oficiálne MCP servery alebo príkazový nástroj Workspace CLI; Anthropic s pomocou Clauda prepísal svoje API do jazyka Rust a ušetril 70 percent výkonu procesorov.",
+  "Burza v USA bola vo štvrtok zatvorená, dnes obchoduje len do 19:00 nášho času; futures na Nasdaq 100 sú ráno asi 2,5 percenta vyššie. Nvidia zastavila dodávky serverov do štyroch krajín juhovýchodnej Ázie.",
+  "Bitcoin je na približne 61 600 dolároch, za deň plus 1,3 percenta, za týždeň takmer bez zmeny, index strachu 12; v rebríčkoch modelov dnes bez zmeny."
+ ],
+ "leadId": "gigachat-4",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "gigachat-4",
+     "title": "Ruský Sber dal zadarmo obrovský model, ktorý si môže stiahnuť ktokoľvek a používať aj na biznis",
+     "dateText": "štvrtok 26. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · MIT"
+      },
+      {
+       "kind": "standard",
+       "label": "Ruský model"
+      }
+     ],
+     "keyFact": {
+      "value": "708 miliárd",
+      "label": "parametrov, naraz pracuje 41 miliárd"
+     },
+     "body": [
+      "Najväčšia ruská banka Sber vo štvrtok 26. novembra zverejnila na Hugging Face model GigaChat 4 s [[otvorenými váhami|open-weights]]. Má 708 miliárd [[parametrov|parametre]], no vďaka architektúre [[MoE|moe]] pri každom slove naraz pracuje len 41 miliárd z nich, čo ho robí výrazne lacnejším na prevádzku, než by napovedala jeho veľkosť.",
+      "Na rozdiel od predchodcu zvláda jeden model oba režimy: rýchle odpovede aj dlhšie premýšľanie, ktoré si zvolíš pri každej otázke. Prečíta naraz až milión [[tokenov|token]], teda zhruba niekoľko hrubých kníh, a kombinuje dva šetrnejšie spôsoby, ako si model pamätá dlhý text. Hneď pri vydaní pribudli aj komprimované verzie a základný model s priebežnými medzikrokmi tréningu pre výskumníkov.",
+      "Licencia MIT je jedna z najvoľnejších: model možno upravovať a nasadiť aj v komerčnom produkte bez poplatkov. Na prevádzku plnej verzie však treba silný server s viacerými grafickými kartami, na bežnom notebooku nepobeží."
+     ],
+     "whyItMatters": "Veľké otvorené modely doteraz prichádzali hlavne z Číny a USA, GigaChat 4 ukazuje, že aj ďalšie krajiny vedia vyrobiť niečo porovnateľne veľké. Pri používaní ruského modelu však treba myslieť na to, z akého prostredia pochádza a ako môže byť naladený pri citlivých témach.",
+     "terms": [
+      {
+       "key": "open-weights",
+       "term": "Otvorené váhy (open weights)",
+       "explain": "Firma zverejní samotný natrénovaný model na stiahnutie. Ktokoľvek ho môže spustiť na vlastnom hardvéri a upravovať, nemusí ísť cez službu výrobcu."
+      },
+      {
+       "key": "parametre",
+       "term": "Parametre",
+       "explain": "Čísla vnútri modelu, ktoré sa naučil počas tréningu. Čím ich je viac, tým viac toho model zvyčajne vie, ale tým drahší je na prevádzku."
+      },
+      {
+       "key": "moe",
+       "term": "MoE (zmes expertov)",
+       "explain": "Model je rozdelený na veľa menších „expertov“ a pri každom slove sa zapne len niekoľko z nich. Preto má obrovský počet parametrov, no pracuje rýchlo a lacnejšie."
+      }
+     ],
+     "links": [
+      {
+       "label": "GigaChat 4 na Hugging Face",
+       "href": "https://huggingface.co/ai-sage/GigaChat4-708B-A41B"
+      }
+     ]
+    },
+    {
+     "id": "openai-gpt62-limity",
+     "title": "OpenAI počítal nové modely lacnejšie, než mal, a teraz sa limit minie rýchlejšie",
+     "dateText": "štvrtok 26. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Zmena predplatného"
+      }
+     ],
+     "keyFact": {
+      "value": "o 40 % rýchlejšie",
+      "label": "sa minie limit na GPT-6.2 Astra, na Sole o 25 %"
+     },
+     "body": [
+      "Manažér OpenAI Thibault Sottiaux vo štvrtok 26. novembra na sieti X priznal, že od spustenia modelov GPT-6.2 Astra a Sol v utorok 17. novembra firma väčšine ľudí omylom počítala ich používanie so zľavou. Chybu opravili, takže tá istá práca teraz zoberie z limitu predplatného viac: na Astre sa limit minie zhruba o 40 percent rýchlejšie, na Sole o 25 percent.",
+      "Za minulé používanie nikomu nič dodatočne nezaúčtujú a cenníky predplatného ostávajú rovnaké. Ako malé ospravedlnenie dostanú predplatitelia plánov Go, Plus, Pro a Business jeden extra reset limitu, ktorý si môžu uplatniť, keď ho budú potrebovať. Iných modelov sa zmena netýka.",
+      "Prichádza to deň po tom, čo OpenAI začal spájať limity na chat a na prácu s Codexom do jedného počítadla. Na Reddite časť používateľov reagovala skepticky a jediný reset označila za slabé ospravedlnenie."
+     ],
+     "whyItMatters": "Za rovnaké peniaze teraz dostaneš menej práce s najsilnejšími modelmi, čo pocítia hlavne ľudia, ktorí veľa programujú s Codexom. Podľa OpenAI by mal byť GPT-6.2 aj tak výhodnejší než predchádzajúce verzie.",
+     "terms": [],
+     "links": [
+      {
+       "label": "The Next Web: chyba v počítaní GPT-6.2",
+       "href": "https://thenextweb.com/news/openai-billing-mistake-gpt-6-2-usage-limits"
+      },
+      {
+       "label": "Fórum OpenAI",
+       "href": "https://community.openai.com/t/codex-used-less-of-your-allowance-than-intended/1420514"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "ming-image-design",
+     "title": "Ant Group dal zadarmo obrazový model na plagáty, webové návrhy a reklamné fotky s čitateľným textom",
+     "dateText": "štvrtok 26. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Otvorené váhy · MIT"
+      }
+     ],
+     "keyFact": {
+      "value": "6 miliárd",
+      "label": "parametrov, beží na jednej veľkej grafickej karte"
+     },
+     "body": [
+      "Čínska Ant Group, sesterská firma Alibaby, cez svoj tím inclusionAI zverejnila obrazový model Ming-Image-0.2-Design. Je zameraný na dizajn: návrhy webových stránok a aplikácií, hlavné obrázky produktov pre e-shopy, plagáty s presne napísaným textom aj vizualizácie interiérov.",
+      "Podľa firmy je v predbežnom hodnotení Artificial Analysis k strede 25. novembra najlepší spomedzi modelov s otvorenými váhami v rebríčku tvorby obrázkov z textu. Do celkovej top 20, kde vládnu uzavreté modely OpenAI a Microsoftu, sa podľa dnešných dát nedostal. Má 6 miliárd parametrov a odporúčaná konfigurácia je jedna grafická karta s 80 gigabajtmi pamäte, teda serverová, nie herná.",
+      "Licencia MIT dovoľuje použitie aj v komerčných projektoch. Novinkou je aj rozklad hotového obrázka na samostatné vrstvy až po časti postáv, ktoré sa dajú ďalej upravovať alebo animovať."
+     ],
+     "whyItMatters": "Malé firmy a dizajnéri môžu generovať reklamné vizuály a návrhy webov na vlastnom serveri bez platenia za každý obrázok. Čitateľný text v obrázku bol dlho slabinou otvorených modelov.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Ming-Image-0.2-Design na Hugging Face",
+       "href": "https://huggingface.co/inclusionAI/Ming-Image-0.2-Design"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "AI, ktorá za vás robí prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "google-workspace-mcp",
+     "title": "Google od februára pustí AI agentov ku Gmailu a Disku už len cez svoje oficiálne nástroje",
+     "dateText": "utorok 24. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Povinné od februára 2027"
+      }
+     ],
+     "keyFact": {
+      "value": "1. februára 2027",
+      "label": "začne Google vynucovať prístup agentov cez MCP alebo CLI"
+     },
+     "body": [
+      "Google v utorok 24. novembra spustil pre všetkých oficiálne [[MCP servery|mcp]] pre Workspace a príkazový nástroj Workspace CLI. Cez ne sa AI agenti bezpečne napoja na Gmail, Disk, Dokumenty, Tabuľky, Prezentácie, Kalendár, Chat a Úlohy bez toho, aby si každý musel písať vlastné prepojenie.",
+      "Zásadné je pravidlo, že od 1. februára 2027 musia AI agenti používať práve tieto nástroje a nesmú už priamo volať klasické [[API|api]] Workspace. Agenti sa majú pri prihlasovaní označiť, správcovia firiem ich uvidia v konzole ako bežné aplikácie a môžu nastaviť, aby citlivé kroky, napríklad zdieľanie dát, musel používateľ potvrdiť.",
+      "Pribudli aj dve úrovne využívania: štandardná zadarmo s pevnými limitmi a rozšírená, za ktorú sa od 1. apríla 2027 platí za spotrebu nad denný bezplatný strop. Podľa Googlu sa viac ako 99 percent vývojárov zmestí do bezplatnej úrovne."
+     ],
+     "whyItMatters": "Týka sa to každého asistenta, ktorý číta tvoj Gmail alebo Kalendár, vrátane konektorov v nástrojoch ako Grok Bot či Claude. Ich tvorcovia musia do februára prejsť na nový spôsob, inak im prístup začne viaznuť.",
+     "terms": [
+      {
+       "key": "mcp",
+       "term": "MCP (Model Context Protocol)",
+       "explain": "Otvorený štandard, cez ktorý sa AI asistent pripája k aplikáciám a službám, podobne ako univerzálna zásuvka. Asistent si sám zistí, aké nástroje služba ponúka, a môže ich použiť."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré si programy medzi sebou posielajú požiadavky a dáta. Namiesto klikania v aplikácii sa s ňou „rozpráva“ iný program."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Google Workspace Updates",
+       "href": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+      }
+     ]
+    },
+    {
+     "id": "anthropic-rust",
+     "title": "Claude pomohol prepísať srdce služieb Anthropicu do rýchlejšieho jazyka bez jedinej odstávky",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Technický blog"
+      }
+     ],
+     "keyFact": {
+      "value": "−70 %",
+      "label": "výkonu procesora na jednu požiadavku"
+     },
+     "body": [
+      "Anthropic v stredu 25. novembra opísal, ako presunul svoje Messages API, teda bránu, cez ktorú ide každá požiadavka na Clauda vrátane Claude Code, z programovacieho jazyka Python do jazyka Rust. Prevádzka tohto API od začiatku roka 2024 do jesene 2026 narástla zhruba 1 800-násobne a Python už bol príliš pomalý.",
+      "Prvú verziu hlavnej časti napísal Claude asi za týždeň. Ťažšie bolo overiť, že nová verzia sa správa presne ako stará, preto ju inžinieri nechali potichu spracúvať kópie skutočnej prevádzky a porovnávať výsledky, takzvaný [[shadowing|shadowing]]. Kde sa líšili, automaticky poslali agentov, aby rozdiel našli a opravili.",
+      "Výsledok podľa firmy: o 70 percent menej výkonu procesora na jednu požiadavku a o zhruba 20 percent rýchlejšie prvé slovo odpovede, bez odstávky služby a bez zastavenia vývoja. Verejná prevádzka prešla na Rust v septembri."
+     ],
+     "whyItMatters": "Je to konkrétny návod, ako nechať AI prerobiť živý systém, od ktorého závisia milióny ľudí. Hlavná lekcia: AI kód napíše rýchlo, ale rozhoduje, či máš spoľahlivý spôsob, ako jej prácu overiť.",
+     "terms": [
+      {
+       "key": "shadowing",
+       "term": "Shadowing (tieňová prevádzka)",
+       "explain": "Nová verzia systému dostáva kópie skutočných požiadaviek, ale jej odpovede sa používateľom neposielajú. Slúžia len na porovnanie so starou verziou, takže chyby sa nájdu bez rizika."
+      }
+     ],
+     "links": [
+      {
+       "label": "Blog Anthropicu",
+       "href": "https://www.anthropic.com/research/migrating-api-to-rust"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Technológie a trhy",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "nvidia-jv-azia",
+     "title": "Nvidia zastavila dodávky AI serverov do štyroch krajín juhovýchodnej Ázie",
+     "dateText": "štvrtok 26. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Čipy a export"
+      }
+     ],
+     "body": [
+      "Podľa denníkov Wall Street Journal a Financial Times, ktoré cituje TechCrunch aj Reuters, Nvidia povedala výrobným partnerom ako Dell a Super Micro, aby na neurčito zastavili dodávky serverov do Malajzie, Singapuru, Thajska a Indonézie. Kým potrvá zastavenie, Nvidia preverí, či tamojší partneri dodržiavajú americké exportné pravidlá.",
+      "Dôvod: čínske firmy si cez dátové centrá v týchto krajinách na diaľku prenajímali výkon čipov Nvidia. Túto medzeru zatvorilo pravidlo amerického ministerstva obchodu, ktoré platí od štvrtka 19. novembra. Podľa výskumného inštitútu Institute for Progress tieto zahraničné dátové centrá dávajú asi 24 percent čínskeho výpočtového výkonu pre AI. Pre kvalifikované americké firmy platia výnimky."
+     ],
+     "whyItMatters": "Prenájom grafických kariet v juhovýchodnej Ázii sa zúži a môže zdražieť. Pre Nvidiu to znamená menšie dodávky v regióne, ktorý jej v posledných rokoch rýchlo rástol.",
+     "terms": [],
+     "links": [
+      {
+       "label": "TechCrunch: Nvidia pozastavila dodávky",
+       "href": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+      }
+     ]
+    },
+    {
+     "id": "cina-glm-kimi-meskanie",
+     "title": "Čínske otvorené modely meškajú: GLM-5.5 a Kimi K4 brzdí nedostatok čipov aj ochrana proti kopírovaniu",
+     "dateText": "štvrtok 26. novembra",
+     "tags": [
+      {
+       "kind": "open",
+       "label": "Čínske otvorené modely"
+      }
+     ],
+     "body": [
+      "Agentúra Reuters vo štvrtok 26. novembra s odvolaním na nemenované zdroje napísala, že čínska firma Z.ai mešká s ďalším veľkým modelom GLM-5.5 s približne 3 biliónmi parametrov. Mal vyjsť v novembri, no nové americké obmedzenia výpočtového výkonu ho môžu posunúť na prvý štvrťrok 2027 alebo neskôr.",
+      "Konkurent Moonshot, autor modelov Kimi, si výpočtový výkon na tréning prenajíma hlavne v zahraničí, a ak oň príde, interval medzi veľkými modelmi sa mu môže predĺžiť zo šiestich mesiacov na rok. Kimi K4 tak podľa zdroja môže prísť až okolo polovice roka 2027. Obe firmy brzdí aj to, že OpenAI a Anthropic lepšie blokujú [[destiláciu|destilacia]]; Moonshot podľa zdroja preto začal destilovať z modelov Googlu a Meta, firma však v minulosti podobné obvinenia odmietla."
+     ],
+     "whyItMatters": "Čínske otvorené modely tlačili ceny AI nadol a dávali ľuďom silné modely zadarmo. Ak ďalšia generácia pár mesiacov počká, tento tlak na americké firmy na čas oslabne.",
+     "terms": [
+      {
+       "key": "destilacia",
+       "term": "Destilácia",
+       "explain": "Menší alebo novší model sa učí z odpovedí silnejšieho modelu, akoby odpisoval od lepšieho žiaka. Je to lacnejšie ako trénovať od nuly, no veľké firmy to pri svojich modeloch zakazujú."
+      }
+     ],
+     "links": [
+      {
+       "label": "Reuters (cez Yahoo Finance)",
+       "href": "https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html"
+      }
+     ]
+    },
+    {
+     "id": "agentx-tpu-trainium",
+     "title": "Nezávislý test: čipy Amazonu a Googlu vychádzajú pri agentoch lacnejšie ako Nvidia, s výhradami",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Predbežné výsledky"
+      }
+     ],
+     "body": [
+      "Analytická firma SemiAnalysis meria vo svojom teste AgentX, ako rýchlo a lacno vedia rôzne čipy obsluhovať programátorských agentov; test prehráva skutočné relácie Claude Code s dlhými textami. V stredu 25. novembra zverejnila prvé výsledky čipu Amazon Trainium3: pri modeli GLM vyšiel až 2,28-krát výhodnejšie na dolár ako Nvidia GB300 a AMD MI355X. Už začiatkom novembra tam čip Google TPU v7 dosiahol podľa modelu 1,15 až 2,7-krát viac tokenov za dolár než viaceré systémy Nvidie a AMD.",
+      "Má to však háčiky. Výsledky Trainium3 sú označené ako predbežné a takmer celá výhoda vychádza z toho, že SemiAnalysis odhaduje hodinovú cenu Trainium3 na menej ako polovicu ceny Nvidie, nie zo samotnej rýchlosti. Najnovší systém Nvidie Vera Rubin podľa toho istého panelu vychádza ešte výhodnejšie."
+     ],
+     "whyItMatters": "Ak majú veľké cloudy vlastné lacnejšie čipy, môžu znižovať ceny za používanie AI a byť menej závislé od Nvidie. Pre investorov je to ďalší signál, že Nvidia nemá trh navždy istý.",
+     "terms": [],
+     "links": [
+      {
+       "label": "SemiAnalysis: metodika AgentX",
+       "href": "https://inferencex.semianalysis.com/infx/agentx"
+      },
+      {
+       "label": "Supercomputing News: Trainium3 v AgentX",
+       "href": "https://www.supercomputing.news/ai/trainium3-semianalysis-agentx-benchmark-preview"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Tencent DFly2, technika na zrýchlenie odpovedí veľkých otvorených modelov: čísla sú zatiaľ len z vlastného článku Tencentu, pre bežného používateľa bez priameho dopadu.",
+  "Menšia 37-miliardová verzia GigaChat 4 a nová verzia Grok Bot 1.3.0: zatiaľ len správy na X bez overenia v oficiálnych zdrojoch.",
+  "Claude Code a Codex: žiadna nová stabilná verzia, Codex má len testovacie alfa verzie.",
+  "Únik rozhrania „Gemini Bots“, posun v hlasovom rebríčku a staršie novinky, ktoré sa na X len znova šírili."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny z piatku 27. novembra o 6:15 Europe/Bratislava (CoinGecko, alternative.me). Akcie podľa záverečných cien zo stredy 25. novembra (Yahoo Finance), lebo vo štvrtok 26. novembra bola burza v USA zatvorená kvôli Dňu vďakyvzdania. Futures o 6:15 Europe/Bratislava. Dnes, v piatok 27. novembra, je skrátený obchodný deň: burza otvára o 15:30 a zatvára už o 19:00 nášho času.",
+  "summary": "Americká burza vo štvrtok neobchodovala, no Ázia a Európa zažili technologickú rally a v noci rástli aj americké [[futures|futures]]: na Nasdaq 100 sú ráno asi o 2,5 percenta vyššie a na S&P 500 o 1,7 percenta. Od pondelka je Nasdaq zatiaľ asi o 4,3 percenta vyššie a S&P 500 o 3,9 percenta, takže týždeň smeruje k zisku, hoci celý november je pre technologické akcie výrazne stratový. Dnešný skrátený deň mávajú malé objemy obchodov, takže pohyby môžu byť prudšie a menej vypovedajúce. Trh stále trápi Nvidia po škandále jej šéfa, nové clá a takmer istý decembrový rast úrokov, preto technologické akcie ostávajú v [[medveďom|bearish]] nastavení.",
+  "btc": {
+   "priceUsd": 61613,
+   "priceEur": 56141,
+   "changePct": 1.26,
+   "changePctEur": 1.12,
+   "low24h": 59942,
+   "high24h": 61678,
+   "mood": "bearish",
+   "moodLabel": "Mierny rast, stále extrémny strach",
+   "comment": "Bitcoin stojí na približne 61 600 dolároch, teda okolo 56 100 eur, a za 24 hodín pridal asi 1,3 percenta. Za celý týždeň je takmer na rovnakej úrovni, lebo v piatok 20. novembra klesol pod 56 000 a odvtedy sa postupne vracia. Rástol spolu s lepšou náladou na akciových trhoch v Ázii. [[Index strachu a chamtivosti|fng]] sa posunul z 11 len na 12 bodov, stále teda extrémny strach. Ethereum je na približne 1 740 dolároch, za deň plus 2,5 percenta.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 149.3,
+    "changePct": -3.91,
+    "comment": "Streda v mínuse, za týždeň stále asi o 19 percent vyššie po pondelkovom návrate Huanga; teraz zastavila dodávky do juhovýchodnej Ázie."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 406.03,
+    "changePct": -1.75,
+    "comment": "Tretí deň poklesu po prudkom páde v utorok."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 300.86,
+    "changePct": -0.07,
+    "comment": "Prakticky bez zmeny."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 342.34,
+    "changePct": -1.96,
+    "comment": "Čipové akcie v Ázii vo štvrtok a v piatok rástli, čo môže pomôcť aj dnes."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 609.89,
+    "changePct": 3.4,
+    "comment": "V stredu najlepšia z veľkých technologických firiem."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 273.1,
+    "changePct": -2.13,
+    "comment": "Dva dni poklesu, no jej čipy TPU dostali dobré hodnotenie v nezávislom teste."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 489.93,
+    "changePct": -1.25,
+    "comment": "Mierne v mínuse."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 355.58,
+    "changePct": 0.43,
+    "comment": "Pokojný mierny rast."
+   },
+   {
+    "ticker": "ANT",
+    "name": "Anthropic",
+    "close": 82.79,
+    "changePct": 1.07,
+    "comment": "Tesne pod cenou z úpisu 83 dolárov."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "CNBC: futures pred skráteným dňom",
+    "href": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html"
+   },
+   {
+    "label": "Investing.com: futures v sviatočnom obchodovaní",
+    "href": "https://www.investing.com/news/stock-market-news/us-stock-futures-rise-in-holidaythinned-trade-tech-rebound-in-focus-5052775"
+   },
+   {
+    "label": "Nasdaq: sviatočné obchodné hodiny",
+    "href": "https://www.nasdaqtrader.com/TraderNews.aspx?id=ETA2026-69"
+   }
+  ],
+  "gem": {
+   "ticker": "GOOGL",
+   "name": "Alphabet (Google)",
+   "close": 273.1,
+   "changePct": -2.13,
+   "why": "Alphabet má popri vyhľadávaní a YouTube aj vlastné AI čipy TPU, ktoré v nezávislom teste SemiAnalysis vychádzajú pri obsluhe agentov na dolár lacnejšie než viaceré systémy Nvidie. Jeho model Gemini 4 Neon je tretí v rebríčku inteligencie a Google teraz pevne určuje, ako sa AI agenti napájajú na Gmail a Disk. Po dvoch dňoch poklesu je akcia zhruba na úrovni spred týždňa, takže nejde o naháňanie rekordu.",
+   "risks": "Riziká: výsledky testu čipov sú čiastočne predbežné a závisia od odhadovaných cien, Google čelí regulačným sporom o vyhľadávanie a reklamu, nové clá a rast úrokov môžu tlačiť celý technologický sektor nadol a jeho výdavky na dátové centrá sú obrovské.",
+   "links": [
+    {
+     "label": "Alphabet na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/GOOGL/"
+    },
+    {
+     "label": "SemiAnalysis: TPU pri inferencii",
+     "href": "https://inferencex.semianalysis.com/blog/tpu-strikes-the-king"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   },
+   {
+    "key": "futures",
+    "term": "Futures (termínové kontrakty)",
+    "explain": "Zmluvy na budúcu hodnotu indexu, s ktorými sa obchoduje aj v noci, keď je burza zatvorená. Preto naznačujú, ako sa trh otvorí, no nie je to istota."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-27.json"
+ }
+}
