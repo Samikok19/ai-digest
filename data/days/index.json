@@ -1,6 +1,11 @@
 {
  "days": [
   {
+   "date": "2026-11-28",
+   "label": "Sobota 28. novembra 2026",
+   "shortLabel": "So 28. 11."
+  },
+  {
    "date": "2026-11-27",
    "label": "Piatok 27. novembra 2026",
    "shortLabel": "Pi 27. 11."
@@ -29,11 +34,6 @@
    "date": "2026-11-22",
    "label": "Nedeľa 22. novembra 2026",
    "shortLabel": "Ne 22. 11."
-  },
-  {
-   "date": "2026-11-21",
-   "label": "Sobota 21. novembra 2026",
-   "shortLabel": "So 21. 11."
   }
  ]
 }

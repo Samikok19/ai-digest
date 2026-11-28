@@ -1,0 +1,468 @@
+{
+ "date": "2026-11-28",
+ "label": "Sobota 28. novembra 2026",
+ "shortLabel": "So 28. 11.",
+ "greeting": "Dobré ráno, Samuel.",
+ "intro": "OpenAI v piatok podal protižalobu na Apple a tvrdí, že Apple mu kradol plány nových zariadení a tlačil na dodávateľov, aby s ním nespolupracovali. Pre Deň vďakyvzdania v USA bol inak pokojnejší deň, novinky prišli najmä z Japonska, Ruska a Číny. Americké akcie v skrátenom piatkovom obchodovaní výrazne rástli a uzavreli najlepší týždeň od jari 2025, no bitcoin sa k rally nepridal a spadol pod 60 000 dolárov.",
+ "highlights": [
+  "OpenAI podal protižalobu na Apple: tvrdí, že bývalý zamestnanec odniesol do Applu vyše sto dôverných súborov o pripravovanom zariadení OpenAI a že Apple tlačil na spoločných dodávateľov. Apple to odmieta.",
+  "Japonská Sakana AI ukázala Namazu Small, menší premýšľajúci model, ktorý by mal bežať aj na vlastnom firemnom serveri; v testoch vyhľadávania na webe výrazne predbehol väčšie modely Nvidie. Ruský Sber pridal do GigaChatu Kandinsky 6.5 na videá v 2K.",
+  "Podľa agentúry Bloomberg skončili najvýkonnejšie čipy Nvidie v najmenej dvoch čínskych dátových centrách napojených na firmu Megaspeed, hoci ich vývoz do Číny nebol povolený.",
+  "Akcie: Nasdaq v piatok plus 2,3 percenta, S&P 500 plus 1,6 percenta, za týždeň Nasdaq plus 6,7 percenta. Anthropic vyskočil o 11 percent na takmer 92 dolárov, Nvidia len plus 0,8 percenta.",
+  "Bitcoin je na približne 59 800 dolároch, za deň mínus 3 percentá, za týždeň plus 6 percent; index strachu klesol na 10, teda extrémny strach. Rebríčky modelov bez zmeny."
+ ],
+ "leadId": "openai-apple-protizaloba",
+ "sections": [
+  {
+   "id": "llm",
+   "title": "Jazykové modely",
+   "kicker": "Chatboty a „mozgy“ AI",
+   "icon": "brain",
+   "items": [
+    {
+     "id": "sakana-namazu-small",
+     "title": "Japonská Sakana AI ukázala menší premýšľajúci model, ktorý zvládne vyhľadávať na webe lepšie než štyrikrát väčší model Nvidie",
+     "dateText": "streda 25. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Japonský model"
+      },
+      {
+       "kind": "preview",
+       "label": "Váhy zatiaľ nezverejnené"
+      }
+     ],
+     "keyFact": {
+      "value": "30 miliárd",
+      "label": "parametrov, naraz pracujú asi 3 miliardy"
+     },
+     "body": [
+      "Tokijská firma Sakana AI v stredu 25. novembra predstavila model Sakana Namazu Small. Nevznikol od nuly: Sakana vzala základnú verziu otvoreného modelu Nemotron 3 Nano od Nvidie a sama ho ďalej trénovala, aby lepšie zvládal bežnú kancelársku prácu. Má 30 miliárd [[parametrov|parametre]], no vďaka architektúre [[MoE|moe]] pri každom slove naraz pracujú len asi 3 miliardy, takže je relatívne lacný na prevádzku. Ide o [[premýšľajúci model|reasoning]], ktorý si pred odpoveďou sám rozpisuje postup.",
+      "Sakana ho porovnala v 25 testoch s pôvodným Nemotron 3 Nano aj so štyrikrát väčším Nemotron 3 Super. Najviac vyniká vo vyhľadávaní na webe: v náročnom teste BrowseComp, kde model musí dohľadať ťažko nájditeľné informácie, má 73,5 bodu oproti 36,1 bodu väčšieho modelu Nvidie. Výrazne lepší je aj pri čítaní dlhých dokumentov s citovaním zdrojov. Nie je však lepší všade: v teste všeobecných faktov SimpleQA alebo v zdravotníckych otázkach HealthBench zaostáva.",
+      "Firma model plánuje ponúkať aj na spustenie priamo vo firmách, na ich vlastných serveroch; podrobnosti sľubuje v prvej polovici decembra. Samotné [[váhy|open-weights]] ani licenciu zatiaľ nezverejnila, takže si ho nateraz nikto stiahnuť nemôže."
+     ],
+     "whyItMatters": "Sakana je jeden z mála silných AI labov mimo USA a Číny. Ukazuje, že s menším modelom a dobrým dotrénovaním sa dá na konkrétne úlohy, ako je prieskum na webe, dostať na úroveň oveľa väčších modelov, čo zlacňuje nasadenie vo firmách, ktoré nechcú posielať dáta do cudzieho cloudu.",
+     "terms": [
+      {
+       "key": "parametre",
+       "term": "Parametre",
+       "explain": "Čísla vnútri modelu, ktoré sa naučil počas tréningu. Čím ich je viac, tým viac toho model zvyčajne vie, ale tým drahší je na prevádzku."
+      },
+      {
+       "key": "moe",
+       "term": "MoE (zmes expertov)",
+       "explain": "Model je rozdelený na veľa menších „expertov“ a pri každom slove sa zapne len niekoľko z nich. Preto má veľký počet parametrov, no pracuje rýchlo a lacnejšie."
+      },
+      {
+       "key": "open-weights",
+       "term": "Otvorené váhy (open weights)",
+       "explain": "Firma zverejní samotný natrénovaný model na stiahnutie. Ktokoľvek ho potom môže spustiť na vlastnom hardvéri a upravovať."
+      }
+     ],
+     "links": [
+      {
+       "label": "Oznámenie Sakana AI",
+       "href": "https://sakana.ai/namazu-small/"
+      }
+     ]
+    },
+    {
+     "id": "deepseek-ceny",
+     "title": "DeepSeek začal v aplikácii ukazovať, koľko by stála každá konverzácia, podľa používateľov to môže byť predzvesť platenej verzie",
+     "dateText": "piatok 27. novembra",
+     "tags": [
+      {
+       "kind": "preview",
+       "label": "Neoverené"
+      },
+      {
+       "kind": "standard",
+       "label": "Čínska firma"
+      }
+     ],
+     "body": [
+      "Používatelia čínskeho DeepSeeku si v piatok 27. novembra všimli, že webová stránka aj aplikácia pri každej konverzácii zobrazujú nový panel. Ukazuje, koľko by konverzácia stála podľa cien za spracovaný text, vrátane nižších nočných sadzieb, a koľko percent z dostupnej pamäte rozhovoru, takzvaného kontextu, je už využitých.",
+      "Rozhranie je stále označené ako bezplatné a DeepSeek sa k zmene oficiálne nevyjadril. Správa pochádza z denného prehľadu japonského webu Epoch 0, ktorý zbiera hlásenia používateľov, preto ju berieme ako neoverenú."
+     ],
+     "whyItMatters": "DeepSeek je obľúbený práve tým, že je zadarmo a lacný. Ak by zaviedol platenú verziu aplikácie, bol by to signál, že aj čínske firmy začínajú tlačiť na zarábanie, nie len na získavanie používateľov.",
+     "terms": [],
+     "links": [
+      {
+       "label": "Epoch 0: denný prehľad 27. novembra",
+       "href": "https://epoch0.tokyo/daily/2026-11-27/en"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "title": "Obrázky a video",
+   "kicker": "Generovanie obrázkov a videa",
+   "icon": "image",
+   "items": [
+    {
+     "id": "kandinsky-65",
+     "title": "Ruský Sber vie v GigaChate poskladať video z viacerých fotiek ľudí, vecí a miest naraz",
+     "dateText": "štvrtok 26. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Ruský model"
+      },
+      {
+       "kind": "closed",
+       "label": "Len v GigaChate"
+      }
+     ],
+     "keyFact": {
+      "value": "2K, 10 sekúnd",
+      "label": "maximálna kvalita a dĺžka videa"
+     },
+     "body": [
+      "Banka Sber vo štvrtok 26. novembra predstavila novú generáciu modelov Kandinsky 6.5, jeden na obrázky a jeden na videá, obe dostupné v jej asistentovi GigaChat. Video model dokáže z viacerých nahratých fotiek, napríklad moderátora, výrobku a interiéru obchodu, poskladať jednu scénu podľa textového popisu a počas celého klipu udržať, aby ľudia vyzerali stále rovnako.",
+      "Používateľ môže zadať aj prvý a posledný záber a model sám dopočíta prechod medzi nimi, čo sa hodí napríklad na premenu predmetu alebo presun deja medzi miestami. Videá majú najviac 10 sekúnd v rozlíšení [[2K|2k]] a model lepšie generuje aj zvukové efekty, hudbu a reč postáv.",
+      "Obrázkový model presnejšie prenáša tvár z fotky a lepšie zvláda nápisy, takže sa ním dajú robiť plagáty či jednoduché infografiky bez ďalšej úpravy. Sber spolu s tým otvorene zverejnil aj modely Kandinsky Super Resolution 2.0 na zväčšovanie obrázkov až do 8K."
+     ],
+     "whyItMatters": "Skladanie videa z viacerých referenčných fotiek sa stáva štandardom aj mimo amerických a čínskych firiem. Spolu s modelom GigaChat 4, ktorý Sber zverejnil deň predtým, má Rusko vlastnú ucelenú sadu nástrojov na text, obrázky aj video.",
+     "terms": [
+      {
+       "key": "2k",
+       "term": "2K rozlíšenie",
+       "explain": "Obraz široký približne 2 000 bodov, o niečo jemnejší než bežné Full HD. 4K a 8K sú ešte ostrejšie."
+      }
+     ],
+     "links": [
+      {
+       "label": "Computerra: Kandinsky 6.5",
+       "href": "https://www.computerra.ru/377491/sber-vypustil-kandinsky-6-5-s-generatsiej-izobrazhenij-i-video-v-2k/"
+      }
+     ]
+    },
+    {
+     "id": "tencent-hy3d-36",
+     "title": "Tencent vylepšil model, ktorý z obrázka postavy vyrobí 3D model pripravený pre hry",
+     "dateText": "piatok 27. novembra",
+     "tags": [
+      {
+       "kind": "closed",
+       "label": "Cez API · 5 pokusov denne zadarmo"
+      }
+     ],
+     "body": [
+      "Čínsky Tencent v piatok 27. novembra vydal Hy3D 3.6, novú verziu modelu na generovanie trojrozmerných objektov. Z referenčného obrázka vytvorí 3D model s detailnejším tvarom a s takzvanými [[PBR materiálmi|pbr]], teda informáciou o tom, či je povrch kovový, lesklý alebo matný, ktorú potom môže grafik ďalej upravovať.",
+      "Podľa Tencentu sa najviac hodí na postavy, príšery, oblečenie a zložité rekvizity. Vývojári ho môžu zapojiť cez [[API|api]] v službe Tencent Cloud a bežní používatelia si ho môžu vyskúšať v službe Hunyuan 3D, ktorá dáva päť generovaní denne zadarmo."
+     ],
+     "whyItMatters": "Výroba 3D modelov pre hry a produktové vizualizácie je drahá ručná práca. Nástroje ako tento ju neodstránia, ale môžu výrazne skrátiť prvý návrh.",
+     "terms": [
+      {
+       "key": "pbr",
+       "term": "PBR materiály",
+       "explain": "Spôsob popisu povrchu 3D objektu tak, aby sa správal ako v skutočnosti: ako odráža svetlo, či je kovový, drsný alebo lesklý."
+      },
+      {
+       "key": "api",
+       "term": "API",
+       "explain": "Rozhranie, cez ktoré môže iný program posielať požiadavky priamo modelu, bez klikania v aplikácii. Platí sa zvyčajne podľa spotreby."
+      }
+     ],
+     "links": [
+      {
+       "label": "TechNode: Hy3D 3.6",
+       "href": "https://technode.com/2026/11/27/tencent-launches-hy3d-3-6-for-professional-3d-asset-generation/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "agents",
+   "title": "Agenti a nástroje",
+   "kicker": "AI, ktorá za vás robí prácu",
+   "icon": "bot",
+   "items": [
+    {
+     "id": "codex-80-percent",
+     "title": "Codex od OpenAI teraz pri práci sťahuje asi o 80 percent menej dát, stačila jedna drobná úprava",
+     "dateText": "piatok 27. novembra",
+     "tags": [
+      {
+       "kind": "standard",
+       "label": "Programovanie s AI"
+      }
+     ],
+     "keyFact": {
+      "value": "7,48 MB na 930 kB",
+      "label": "dáta jedného dlhého rozhovoru pred úpravou a po nej"
+     },
+     "body": [
+      "Charlie Marsh z tímu Codexu, programovacieho asistenta od OpenAI, v piatok 27. novembra na sieti X napísal, že Codex teraz zo servera OpenAI sťahuje približne o 80 percent menej dát. V jednom jeho dlhom rozhovore klesol objem zo 7,48 megabajtu na 930 kilobajtov.",
+      "Príčina bola prekvapivo jednoduchá: server pri každej odpovedi znova posielal celý zoznam nástrojov, ktoré Codex môže používať, hoci ho Codex už mal. Jedna nová hlavička v požiadavke serveru povie, aby tento zoznam vynechal. Úpravy sú vo verejnom kóde Codexu a používatelia nemusia nič meniť.",
+      "Marsh zdôrazňuje, že ide o merania na jeho vlastných rozhovoroch, takže úspora sa bude líšiť podľa dĺžky práce a počtu nástrojov. Zrýchlenie odpovedí je pravdepodobné, ale zatiaľ ho nikto nezmeral."
+     ],
+     "whyItMatters": "Pri dlhej práci AI [[agentov|agent]] sa objem prenášaných dát rýchlo nafukuje. Menej dát znamená plynulejšiu prácu na pomalšom pripojení a nižšie náklady pre firmy, ktoré agentov spúšťajú vo veľkom.",
+     "terms": [
+      {
+       "key": "agent",
+       "term": "AI agent",
+       "explain": "Program s AI, ktorý sám vykonáva viac krokov za sebou, napríklad píše a spúšťa kód alebo hľadá na webe, nie len odpovedá na jednu otázku."
+      }
+     ],
+     "links": [
+      {
+       "label": "Automater News: Codex a 80 percent menej dát",
+       "href": "https://automater.ai/news/codex-responses-api-tool-catalog-80-percent-cut/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "title": "Technológie a trhy",
+   "kicker": "Čo sa deje okolo AI",
+   "icon": "chip",
+   "items": [
+    {
+     "id": "openai-apple-protizaloba",
+     "title": "OpenAI vrátil Applu úder: tvrdí, že mu kradol plány nových zariadení a strašil dodávateľov",
+     "dateText": "piatok 27. novembra",
+     "tags": [
+      {
+       "kind": "money",
+       "label": "Súdny spor"
+      }
+     ],
+     "keyFact": {
+      "value": "vyše 100",
+      "label": "dôverných súborov mal podľa OpenAI odniesť bývalý zamestnanec"
+     },
+     "body": [
+      "OpenAI v piatok 27. novembra podal na federálnom súde v kalifornskom San Jose [[protižalobu|protizaloba]] proti Applu. Odpovedá tak na júlovú žalobu Applu, podľa ktorej OpenAI cez nábor jeho ľudí získaval Apple [[obchodné tajomstvá|obchodne-tajomstvo]] o hardvéri.",
+      "OpenAI teraz tvrdí opak: inžinier, ktorý prešiel z Applu do OpenAI a po pol roku sa vrátil, si mal na súkromné účty poslať vyše sto dôverných súborov o aspoň jednom nevydanom zariadení OpenAI, vrátane fotiek, technických a výrobných údajov a zoznamu dodávateľov. Okrem toho Apple podľa OpenAI tlačil na spoločných dodávateľov, aby mu hlásili projekty pre OpenAI. Jeden dodávateľ vraj presunul výrobu pre OpenAI na nočné zmeny, aby sa nestretla s prácou pre Apple.",
+      "Apple obvinenia odmieta. Podľa neho nenašiel žiadne dôkazy a protižaloba je len snaha odviesť pozornosť od toho, že súd už OpenAI nariadil prestať používať dôverné informácie Applu. OpenAI s bývalým dizajnérom Applu Jonym Iveom pripravuje rodinu vlastných zariadení s AI."
+     ],
+     "whyItMatters": "Spor ukazuje, že OpenAI to so vstupom na trh zariadení myslí vážne a Apple ho vníma ako priameho konkurenta. Bojiskom už nie sú len aplikácie, ale aj továrne a dodávatelia, od ktorých závisí, kto dostane súčiastky a ľudí.",
+     "terms": [
+      {
+       "key": "protizaloba",
+       "term": "Protižaloba",
+       "explain": "Keď žalovaná strana v tom istom súdnom spore sama zažaluje toho, kto ju žaluje. Súd potom rieši obe obvinenia naraz."
+      },
+      {
+       "key": "obchodne-tajomstvo",
+       "term": "Obchodné tajomstvo",
+       "explain": "Dôverné firemné informácie, napríklad plány výrobkov alebo výrobné postupy, ktoré majú hodnotu práve preto, že ich konkurencia nepozná. Ich krádež je protizákonná."
+      }
+     ],
+     "links": [
+      {
+       "label": "Reuters: OpenAI žaluje Apple",
+       "href": "https://www.reuters.com/5f374b32b07b/technology/openai-countersues-apple-stealing-trade-secrets-ft-reports-2026-11-27/"
+      },
+      {
+       "label": "Bloomberg (cez Yahoo Finance): tlak na dodávateľov",
+       "href": "https://finance.yahoo.com/technology/ai/articles/openai-says-apple-pressured-suppliers-190210134.html"
+      },
+      {
+       "label": "9to5Mac: reakcia Applu",
+       "href": "https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/"
+      }
+     ]
+    },
+    {
+     "id": "megaspeed-blackwell",
+     "title": "Najvýkonnejšie čipy Nvidie sa napriek zákazu dostali do čínskych dátových centier",
+     "dateText": "piatok 27. novembra",
+     "tags": [
+      {
+       "kind": "safety",
+       "label": "Export čipov"
+      }
+     ],
+     "body": [
+      "Agentúra Bloomberg v piatok 27. novembra napísala, že čipy Nvidia Blackwell GB200 a GB300, teda jej najvýkonnejšie AI čipy, sú nainštalované v najmenej dvoch čínskych dátových centrách napojených na firmu Megaspeed. Ich vývoz do Číny pritom nebol povolený. Megaspeed je bývalá firma podnikateľky Alice Huang a USA ju už zaradili na [[čiernu listinu|entity-list]].",
+      "Prichádza to len deň po tom, čo Nvidia zastavila dodávky serverov do štyroch krajín juhovýchodnej Ázie. Zároveň podľa obchodných správ začali platiť nové americké pravidlá, podľa ktorých potrebujú prevádzkovatelia dátových centier v niektorých krajinách juhovýchodnej Ázie a v Brazílii povolenie na nákup pokročilých čipov."
+     ],
+     "whyItMatters": "Každý takýto únik zvyšuje tlak na ďalšie sprísnenie vývozu čipov. To môže Nvidii ubrať tržby a v konečnom dôsledku obmedziť, kde a za koľko sa dá vo svete prenajať výpočtový výkon pre AI.",
+     "terms": [
+      {
+       "key": "entity-list",
+       "term": "Čierna listina (Entity List)",
+       "explain": "Zoznam firiem, ktorým americké firmy nesmú bez zvláštneho povolenia predávať citlivé technológie, napríklad pokročilé čipy."
+      }
+     ],
+     "links": [
+      {
+       "label": "The Verge (podľa Bloombergu)",
+       "href": "https://www.theverge.com/tech/1043882/nvidias-most-powerful-chips-made-it-into-chinese-dat"
+      },
+      {
+       "label": "VolumeBrief: nové exportné pravidlá a Nvidia",
+       "href": "https://www.volumebrief.com/reports/2026-11-27"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  "Video model MAGI-2 za údajne dvadsaťkrát nižšiu cenu než Seedance 2.5: len porovnania používateľov na X, model sme spomínali v stredu 25. novembra.",
+  "Medicínsky model LingSante-3.1 od InclusionAI, návod Google Cloud na dotrénovanie otvorených modelov a nový neoficiálny index kvality základných modelov: mimo hlavného diania alebo bez overenej metodiky.",
+  "Claude Code a Codex: žiadna nová stabilná verzia, Codex má len testovacie alfa verzie.",
+  "Krátky výpadok Clauda, anekdoty o prechode z Clauda na Gemini a znova zdieľané staršie novinky ako OpenAI Presence z júla."
+ ],
+ "finance": {
+  "asOfText": "Kryptomeny zo soboty 28. novembra o 6:10 Europe/Bratislava (CoinGecko, alternative.me). Akcie podľa záverečných cien z piatku 27. novembra (Yahoo Finance, CNBC). Piatok bol po Dni vďakyvzdania skrátený obchodný deň, burza v USA zatvárala už o 19:00 nášho času. Cez víkend sa akcie neobchodujú.",
+  "summary": "Americké akcie v piatok rástli naprieč všetkými odvetviami: Nasdaq pridal 2,3 percenta na 24 129,5 bodu, S&P 500 1,6 percenta na 7 297,5 bodu a Dow Jones 1,2 percenta. Za celý týždeň je Nasdaq vyššie o 6,7 percenta a S&P 500 o 5,6 percenta, čo je ich najlepší týždeň od jari 2025, a Dow Jones mal najlepší týždeň od roku 2022. Ťahali to čipové firmy a veľké technologické akcie, lebo strach okolo AI po predchádzajúcom prudkom výpredaji poľavil; deň so sviatočne nízkym objemom obchodov však pohyby zväčšuje. Zlato v termínovom obchode pridalo takmer 3 percentá na približne 3 640 dolárov za uncu. Trh stále ťaží obava, že americká centrálna banka Fed na decembrovom zasadnutí zvýši úroky, lebo októbrová inflácia vyšla vyššie, než sa čakalo, a celý november je pre technologické akcie stratový. Krátkodobo sa teda nálada zlepšila, no dlhší trend technologických akcií je stále skôr [[medvedí|bearish]].",
+  "btc": {
+   "priceUsd": 59755,
+   "priceEur": 54598,
+   "changePct": -3.08,
+   "changePctEur": -2.81,
+   "low24h": 58910,
+   "high24h": 62097,
+   "mood": "bearish",
+   "moodLabel": "Pokles pod 60 000, extrémny strach",
+   "comment": "Bitcoin stojí na približne 59 800 dolároch, teda okolo 54 600 eur, a za 24 hodín stratil asi 3 percentá. Ráno v piatok ešte rástol spolu s akciami nad 62 000, no po otvorení burzy v New Yorku ho zasiahli predaje a spadol až k 58 760. Pád pod okrúhlu hranicu 60 000 spustil [[likvidácie|likvidacia]] pozícií na úver v hodnote asi 162 miliónov dolárov za jedinú hodinu. Za týždeň je stále asi o 6 percent vyššie, lebo v piatok 20. novembra padol pod 56 000, no za celý november stratil približne 23 percent, čo je najhorší mesiac za viac než štyri roky. Z amerických bitcoinových [[ETF|etf]] fondov investori v novembri vybrali rekordných 5,39 miliardy dolárov. [[Index strachu a chamtivosti|fng]] klesol z 12 na 10 bodov, teda extrémny strach. Ethereum je na približne 1 660 dolároch, za deň mínus 5 percent.",
+   "links": [
+    {
+     "label": "CoinGecko",
+     "href": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "label": "Index strachu a chamtivosti",
+     "href": "https://alternative.me/crypto/fear-and-greed-index/"
+    },
+    {
+     "label": "Mint (podľa Bloombergu): bitcoin pod 60 000",
+     "href": "https://www.livemint.com/market/cryptocurrency/bitcoin-slips-back-below-60-000-missing-out-on-wall-street-rally-from-thanksgiving-break-11795829583101.html"
+    },
+    {
+     "label": "CoinDesk: rekordný odliv z ETF",
+     "href": "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help"
+    }
+   ]
+  },
+  "stocks": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "close": 150.49,
+    "changePct": 0.8,
+    "comment": "Ráno klesala o takmer 3 percentá, nakoniec mierne v pluse; od októbrového rekordu je stále asi o 37 percent nižšie."
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "close": 424.54,
+    "changePct": 4.56,
+    "comment": "Po troch dňoch poklesu výrazný odraz spolu s ostatnými výrobcami čipov."
+   },
+   {
+    "ticker": "AVGO",
+    "name": "Broadcom",
+    "close": 312.34,
+    "changePct": 3.82,
+    "comment": "Rástla s celým čipovým sektorom."
+   },
+   {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "close": 353.34,
+    "changePct": 3.21,
+    "comment": "Pomohla aj silná čipová rally v Ázii, kórejský index KOSPI pridal 4,3 percenta."
+   },
+   {
+    "ticker": "META",
+    "name": "Meta",
+    "close": 628.96,
+    "changePct": 3.13,
+    "comment": "Tretí deň po sebe medzi najsilnejšími veľkými technologickými firmami."
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "close": 274.96,
+    "changePct": 0.68,
+    "comment": "Mierny rast po dvoch dňoch poklesu."
+   },
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "close": 492.85,
+    "changePct": 0.6,
+    "comment": "Pokojný mierny rast."
+   },
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "close": 358.54,
+    "changePct": 0.83,
+    "comment": "Spor s OpenAI akciu zatiaľ nepohol."
+   },
+   {
+    "ticker": "ANT",
+    "name": "Anthropic",
+    "close": 91.88,
+    "changePct": 10.98,
+    "comment": "Po dvoch dňoch pod cenou z úpisu 83 dolárov skok o 11 percent; v prvý deň obchodovania sa dostala až na 115 dolárov."
+   }
+  ],
+  "stocksLinks": [
+   {
+    "label": "CNBC: najlepší týždeň Dow Jones od roku 2022",
+    "href": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html"
+   },
+   {
+    "label": "Yahoo Finance: AI akcie rástli",
+    "href": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-major-indexes-140450439.html"
+   },
+   {
+    "label": "Kiplinger: piatok po Dni vďakyvzdania",
+    "href": "https://www.kiplinger.com/investing/stocks/dow-adds-592-points-on-black-friday-as-ai-fear-fades-stock-market-today"
+   }
+  ],
+  "gem": {
+   "ticker": "AVGO",
+   "name": "Broadcom",
+   "close": 312.34,
+   "changePct": 3.82,
+   "why": "Broadcom navrhuje pre veľké technologické firmy čipy na mieru, medzi nimi aj AI čipy TPU pre Google, a vyrába sieťové čipy, ktoré prepájajú tisíce grafických kariet v dátových centrách. Nezávisí teda len od toho, či vyhrá Nvidia, ale od toho, že sa AI výpočty budujú všeobecne. Aj po piatkovom raste je akcia asi o 10 percent nižšie než v stredu 19. novembra, takže nejde o naháňanie rekordu.",
+   "risks": "Riziká: veľkú časť tržieb robí s niekoľkými obrími zákazníkmi, sprísnenie vývozu čipov a clá môžu obmedziť predaj, očakávané zvyšovanie úrokov tlačí celý technologický sektor nadol a sviatočné obchodovanie mohlo piatkový rast nafúknuť.",
+   "links": [
+    {
+     "label": "Broadcom na Yahoo Finance",
+     "href": "https://finance.yahoo.com/quote/AVGO/"
+    }
+   ],
+   "disclaimer": "Toto nie je investičná rada."
+  },
+  "terms": [
+   {
+    "key": "fng",
+    "term": "Index strachu a chamtivosti",
+    "explain": "Číslo od 0 do 100, ktoré meria náladu na kryptotrhu. Pod 25 je extrémny strach, nad 75 extrémna chamtivosť."
+   },
+   {
+    "key": "bearish",
+    "term": "Medvedí trend (bearish)",
+    "explain": "Obdobie, keď cena skôr klesá a investori sú opatrní. Opak je býčí trend (bullish), keď cena rastie."
+   },
+   {
+    "key": "likvidacia",
+    "term": "Likvidácia",
+    "explain": "Keď niekto obchoduje na požičané peniaze a cena ide proti nemu, burza mu pozíciu nasilu uzavrie. Tieto nútené predaje potom pokles ešte zrýchlia."
+   },
+   {
+    "key": "etf",
+    "term": "ETF fond",
+    "explain": "Fond obchodovaný na burze ako akcia. Bitcoinové ETF držia skutočné bitcoiny, takže keď z nich investori vyberajú peniaze, fondy bitcoiny predávajú."
+   }
+  ]
+ },
+ "benchmarks": {
+  "snapshot": "data/benchmarks-2026-11-28.json"
+ }
+}
